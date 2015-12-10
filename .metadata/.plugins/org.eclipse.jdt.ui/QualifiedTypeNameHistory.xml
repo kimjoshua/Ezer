@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.dao.DataAccessException"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="com.lruntrade.www.dao.LrtMember"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="com.lruntrade.www.service.Lrunservice"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="com.lruntrade.www.dto.LrtmemDto"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="com.ezer_g.www.service.Lrunservice"/>
+<fullyQualifiedTypeName name="com.ezer_g.www.dao.LtadminDa"/>
+<fullyQualifiedTypeName name="com.ezer_g.www.dao.LrtMember"/>
+<fullyQualifiedTypeName name="com.ezer_g.www.dto.LrtmemDto"/>
+<fullyQualifiedTypeName name="com.ezer_g.www.dto.LtadminDt"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+</qualifiedTypeNameHistroy>

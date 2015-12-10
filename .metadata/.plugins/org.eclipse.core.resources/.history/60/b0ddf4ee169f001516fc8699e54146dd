@@ -1,0 +1,192 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%-- 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> --%>
+<%
+	String cp = request.getContextPath();
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>Color Ez - 컬러테라피 아카데미 스</title>
+<link rel="shortcut icon" href="<%=cp%>/imag/withtest.png" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Business Casual - Start Bootstrap Theme</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="<%=cp%>/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="<%=cp%>/css/business-casual.css" rel="stylesheet">
+
+<!-- Fonts -->
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+	rel="stylesheet" type="text/css">
+<link
+	href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+	rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style type="text/css">
+div.mContents {
+	margin-top: 10%;
+}
+
+.navbar {
+	margin-top: 3%;
+}
+
+.brand {
+	font-size: 26px;
+	left: 5%;
+	position: absolute;
+	top: 2px;
+}
+</style>
+
+</head>
+</head>
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+	<div class="container navc">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse"
+			id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">컬러이즈 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="compIntr">회사소개</a></li>
+						<li><a href="eduDir">교욱 이사</a></li>
+						<li><a href="serviceA">사업 영역</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="eduAcc">교육/ 강좌 접수</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="htc">찾아오는 길 </a></li>
+					</ul></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">교육 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="eduname1">교육 명</a></li>
+						<li><a href="eduname2">교육 명</a></li>
+						<li><a href="eduname3">교육 명</a></li>
+						<li><a href="eduname4">교육 명</a></li>
+					</ul></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">강좌 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="eduClass">클래스</a></li>
+						<li><a href="eduLect">강연</a></li>
+						<li><a href="eduCoc">코칭</a></li>
+						<li><a href="eduInd">개별</a></li>
+					</ul></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">컨설팅 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="coT">컬러 테라피 컨설팅</a></li>
+						<li><a href="esT">에스테틱 컨설팅</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="conInq">컬설팅 문의</a></li>
+					</ul></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">커뮤니티 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="coCo">컬러 소통</a></li>
+						<li><a href="media">미디어</a></li>
+						<li><a href="qa">Q & A</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="ono">1:1 문의k</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="contactus">제휴 문의</a></li>
+					</ul></li>
+
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container --> </nav>
+	<div class="sub_nav"></div>
+
+	
+		<!-- /.container -->
+
+		<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<p>Copyright &copy; Your Website 2014</p>
+				</div>
+			</div>
+		</div>
+		</footer>
+		<!-- jQuery -->
+		<script src="<%=cp%>/js/jquery.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(window)
+						.scroll(
+								function() {
+									// Change this to target a different percentage
+									var targetPercentage = 10;
+									//Change this to the ID of the content you are trying to show.
+									var targetID = ".navc";
+									//Window Math
+									var scrollTo = $(window).scrollTop(), docHeight = $(
+											document).height(), windowHeight = $(
+											window).height();
+									scrollPercent = (scrollTo / (docHeight - windowHeight)) * 100;
+									/* console.log(scrollPercent) */
+								}).trigger('scroll');
+			});
+		</script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="<%=cp%>/js/bootstrap.min.js"></script>
+
+		<!-- Script to Activate the Carousel -->
+		<script>
+			$('.carousel').carousel({
+				interval : 5000
+			//changes the speed
+			})
+		</script>
+		</body>
+
+</html>
+
+
+</body>
+
+</html>
