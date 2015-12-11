@@ -5,7 +5,310 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-12-09T16:27:42Z</updated>
+  <updated>2015-12-10T17:31:00Z</updated>
+  <entry>
+    <title>Spring Boot Memory Performance</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/12/10/spring-boot-memory-performance" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Dave Syer</name>
+    </author>
+    <id>tag:spring.io,2015-12-10:2320</id>
+    <updated>2015-12-10T17:31:00Z</updated>
+    <content type="html">&lt;p&gt;It has sometimes been suggested that Spring and Spring Boot are &amp;ldquo;heavyweight&amp;rdquo;, perhaps just because they allow apps to punch above their weight, providing a lot of features for not very much user code. In this article we concentrate on memory usage and ask if we can quantify the effect of using Spring? Specifically we would like to know more about the real overhead of using Spring compared to other JVM applications. We start by creating a basic application with Spring Boot, and look at a few different ways to measure it when it is running. Then we look at some comparison points: plain Java apps, apps that use Spring but not Spring Boot, an app that uses Spring Boot but no autoconfiguration, and some Ratpack sample apps.&lt;/p&gt;&lt;h2&gt;&lt;a href="#vanilla-spring-boot-app" class="anchor" name="vanilla-spring-boot-app"&gt;&lt;/a&gt;Vanilla Spring Boot App&lt;/h2&gt;
+&lt;p&gt;As a baseline we build a static app with a few webjars and &lt;code&gt;spring.resources.enabled=true&lt;/code&gt;. This is perfectly fine for serving nice-looking static content maybe with a REST endpoint or two. The source code for the app we used to test is &lt;a href="https://github.com/dsyer/spring-boot-memory-blog/blob/master/demo"&gt;in github&lt;/a&gt;. You can build it with the &lt;code&gt;mvnw&lt;/code&gt; wrapper script if you have a JDK 1.8 available and on your path (&lt;code&gt;mvnw package&lt;/code&gt;). It can be launched like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ java -Xmx32m -Xss256k -jar target/demo-0.0.1-SNAPSHOT.jar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The we add some load, just to warm up the thread pools and force all the code paths to be exercised:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ ab -n 2000 -c 4 http://localhost:8080/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can try and limit threads a bit in &lt;code&gt;application.properties&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;server.tomcat.max-threads: 4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;but in the end it doesn&amp;rsquo;t make a lot of difference to the numbers. We conclude from the analysis below that it would save at most a MB with the stack size we are using. All the Spring Boot webapps we analyse have this same configuration.&lt;/p&gt;
+&lt;p&gt;We might have to worry about how big the classpath is, in order to estimate what happens to the memory. Despite some claims in the internet that the JVM memory maps all jars on the classpath, we actually don&amp;rsquo;t find any evidence that the size of the classpath has any effect on the running app. For reference, the size of the dependency jars (not including JDK) in the vanilla sample is 18MB:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ jar -tvf  target/demo-0.0.1-SNAPSHOT.jar | grep lib/.*.jar | awk &amp;#39;{tot+=$1;} END {print tot}&amp;#39;&#xD;
+18893563
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This includes Spring Boot Web and Actuator starters, plus 3 or 4 webjars for static resources and the webjar locator. A completely minimal Spring Boot application including Spring and some logging but no web server would be around 5MB of jars.&lt;/p&gt;&lt;h3&gt;&lt;a href="#jvm-tools" class="anchor" name="jvm-tools"&gt;&lt;/a&gt;JVM Tools&lt;/h3&gt;
+&lt;p&gt;To measure memory usage there are some tools in the JVM. You can get quite a lot of useful information from JConsole or JVisualVM (with the JConsole plugin so you can inspect MBeans).&lt;/p&gt;
+&lt;p&gt;Heap usage for our vanilla app is a saw tooth, bounded above by the heap size and below by the amount of memory used in a quiescent state. The average weighs in at roughly 25MB for an app under load (and 22MB after a manual GC). JConsole also reports 50MB non-heap usage (which is the same as you get from the &lt;code&gt;java.lang:type=Memory&lt;/code&gt; MBean). The non-heap usage breaks down as Metaspace: 32MB, Compressed Class Space: 4MB, Code Cache: 13MB (you can get these numbers from the &lt;code&gt;java.lang:type=MemoryPool,name=*&lt;/code&gt; MBeans). There are 6200 classes and 25 threads, including a few that are added by the monitoring tool that we use to measure them.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a graph of the heap usage from a quiescent app under load,&lt;br/&gt;followed by a manual garbage collection (the double nick in the&lt;br/&gt;middle) and a new equilibrium with a lower heap usage.&lt;/p&gt;
+&lt;img src="https://raw.githubusercontent.com/dsyer/spring-boot-memory-blog/master/manual-gc-web.png" width="80%"/&gt;
+&lt;p&gt;Some tools in the JVM other than JConsole might also be&lt;br/&gt;interesting. The first is &lt;code&gt;jps&lt;/code&gt; which is useful for getting the&lt;br/&gt;process id of the app you want to inspect with the other tools:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ jps&#xD;
+4289 Jps&#xD;
+4330 demo-0.0.1-SNAPSHOT.jar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we have the &lt;code&gt;jmap&lt;/code&gt; histogram:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ jmap -histo 4330 | head&#xD;
+&#xD;
+ num     #instances         #bytes  class name&#xD;
+----------------------------------------------&#xD;
+   1:          5241        6885088  [B&#xD;
+   2:         21233        1458200  [C&#xD;
+   3:          2548        1038112  [I&#xD;
+   4:         20970         503280  java.lang.String&#xD;
+   5:          6023         459832  [Ljava.lang.Object;&#xD;
+   6:         13167         421344  java.util.HashMap$Node&#xD;
+   7:          3386         380320  java.lang.Class&#xD;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This data is of limited use because you can&amp;rsquo;t trace the &amp;ldquo;big&amp;rdquo; objects back to their owners. For that you need a more fully featured profiler, like YourKit. YourKit does the aggregation for you and presents a list (although the details of how it does that are rather unclear).&lt;/p&gt;
+&lt;p&gt;Classloader statistics might also be revealing, and &lt;code&gt;jmap&lt;/code&gt; has a way to inspect the classloaders in an app. It needs to run as root:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ sudo ~/Programs/jdk1.8.0/bin/jmap -clstats 4330&#xD;
+Attaching to process ID 4330, please wait...&#xD;
+Debugger attached successfully.&#xD;
+Server compiler detected.&#xD;
+JVM version is 25.60-b23&#xD;
+finding class loader instances ..done.&#xD;
+computing per loader stat ..done.&#xD;
+please wait.. computing liveness....................................liveness analysis may be inaccurate ...&#xD;
+class_loader  classes  bytes  parent_loader  alive?  type&#xD;
+&#xD;
+&amp;lt;bootstrap&amp;gt;	2123	3609965	  null  	live	&amp;lt;internal&amp;gt;&#xD;
+0x00000000f4b0d730	1	1476	0x00000000f495c890	dead	sun/reflect/DelegatingClassLoader@0x0000000100009df8&#xD;
+0x00000000f5a26120	1	1483	0x00000000f495c890	dead	sun/reflect/DelegatingClassLoader@0x0000000100009df8&#xD;
+0x00000000f52ba3a8	1	1472	  null  	dead	sun/reflect/DelegatingClassLoader@0x0000000100009df8&#xD;
+0x00000000f5a30520	1	880	0x00000000f495c890	dead	sun/reflect/DelegatingClassLoader@0x0000000100009df8&#xD;
+0x00000000f495c890	3972	6362902	0x00000000f495c8f0	dead	org/springframework/boot/loader/LaunchedURLClassLoader@0x0000000100060828&#xD;
+0x00000000f5b639b0	1	1473	0x00000000f495c890	dead	sun/reflect/DelegatingClassLoader@0x0000000100009df8&#xD;
+0x00000000f4b80a30	1	1473	0x00000000f495c890	dead	sun/reflect/DelegatingClassLoader@0x0000000100009df8&#xD;
+...&#xD;
+&#xD;
+total = 93	6300	10405986	    N/A    	alive=1, dead=92	    N/A
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are loads of &amp;ldquo;dead&amp;rdquo; entries, but there is also a warning that the liveness information is not accurate. A manual GC doesn&amp;rsquo;t get rid of them.&lt;/p&gt;&lt;h3&gt;&lt;a href="#kernel-memory-tools" class="anchor" name="kernel-memory-tools"&gt;&lt;/a&gt;Kernel Memory Tools&lt;/h3&gt;
+&lt;p&gt;You would think that a Linux OS would provide plenty of insight into a running process, and it does, but Java processes are notoriously hard to analyse. This &lt;a href="http://stackoverflow.com/questions/561245/virtual-memory-usage-from-java-under-linux-too-much-memory-used"&gt;popular SO link&lt;/a&gt; talks about some of the problems in general. Lets have a look at some of the tools that are available and see what they tell us about our app.&lt;/p&gt;
+&lt;p&gt;First up is the good old &lt;code&gt;ps&lt;/code&gt; (the tool you use to look at processes on the command line). You can get a lot of the same information from &lt;code&gt;top&lt;/code&gt;. Here&amp;rsquo;s our application process:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ ps -au&#xD;
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND&#xD;
+dsyer     4330  2.4  2.1 2829092 169948 pts/5  Sl   18:03   0:37 java -Xmx32m -Xss256k -jar target/demo-0.0.1-SNAPSHOT.jar&#xD;
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;RSS (Resident Set Size) values are in the range 150-190MB according to &lt;code&gt;ps&lt;/code&gt;. There is a tool called &lt;code&gt;smem&lt;/code&gt; that is supposed to give a more sanitized view, and to accurately reflect non-shared memory, but the values there (for instance of PSS) aren&amp;rsquo;t that different. Interestingly the PSS values for a non-JVM process are usually ?*significantly*? lower than RSS, whereas for a JVM they are comparable. The JVM is very jealous of its memory.&lt;/p&gt;
+&lt;p&gt;A lower level tool is &lt;code&gt;pmap&lt;/code&gt;, where we can look at the memory&lt;br/&gt;allocations assigned to a process. Numbers from &lt;code&gt;pmap&lt;/code&gt; don&amp;rsquo;t seem to&lt;br/&gt;make much sense either:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ pmap 4330&#xD;
+0000000000400000      4K r-x-- java&#xD;
+0000000000600000      4K rw--- java&#xD;
+000000000184c000    132K rw---   [ anon ]&#xD;
+00000000fe000000  36736K rw---   [ anon ]&#xD;
+00000001003e0000 1044608K -----   [ anon ]&#xD;
+...&#xD;
+00007ffe2de90000      8K r-x--   [ anon ]&#xD;
+ffffffffff600000      4K r-x--   [ anon ]&#xD;
+ total          3224668K
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;i.e. over 3GB for a process that we know is only using 80MB. Just counting the &amp;lsquo;&amp;mdash;&amp;ndash;&amp;rsquo; entries gives you nearly all the 3GB. At least that&amp;rsquo;s consistent with the VSZ numbers from &lt;code&gt;ps&lt;/code&gt;, but not very useful for capacity management.&lt;/p&gt;&lt;h3&gt;&lt;a href="#scale-up-processes" class="anchor" name="scale-up-processes"&gt;&lt;/a&gt;Scale up Processes&lt;/h3&gt;
+&lt;p&gt;A good test of how much memory is actually being used by a process is to keep launching more of them until the operating system starts to crumple. For example, to launch 40 identical vanilla processes:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ for f in {8080..8119}; do (java -Xmx32m -Xss256k -jar target/demo-0.0.1-SNAPSHOT.jar --server.port=$f 2&amp;gt;&amp;amp;1 &amp;gt; target/$f.log &amp;amp;); done
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;They are all competing for memory resources so it takes them all a while to start, which is fair enough. Once they all start they serve their home pages quite efficiently (51ms latency over a crappy LAN at 99th percentile). Once they are up and running, stopping and starting one of the processes is relatively quick (a few seconds not a few minutes).&lt;/p&gt;
+&lt;p&gt;The VSZ numbers from &lt;code&gt;ps&lt;/code&gt; are off the scale (as expected). The RSS numbers look high too:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ ps -au&#xD;
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND&#xD;
+dsyer    27429  2.4  2.1 2829092 169948 pts/5  Sl   18:03   0:37 java -Xmx32m -Xss256k -jar target/demo-0.0.1-SNAPSHOT.jar --server.port=8081&#xD;
+dsyer    27431  3.0  2.2 2829092 180956 pts/5  Sl   18:03   0:45 java -Xmx32m -Xss256k -jar target/demo-0.0.1-SNAPSHOT.jar --server.port=8082&#xD;
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;RSS values are still in the range 150-190MB. If all 40 processes were indepenently using this much memory that would account for 6.8GB, which would blow my 8GB laptop out of the water. It runs fine, so most of that RSS value is not really independent of other processes.&lt;/p&gt;
+&lt;p&gt;The Proportional Shared Size (PSS) from &lt;code&gt;smem&lt;/code&gt; might a better estimate we have of actual memory usage, but in fact it is not that different from the RSS values:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ smem&#xD;
+  PID User     Command                         Swap      USS      PSS      RSS&#xD;
+...&#xD;
+27435 dsyer    java -Xmx32m -Xss256k -jar         0   142340   142648   155516 &#xD;
+27449 dsyer    java -Xmx32m -Xss256k -jar         0   142452   142758   155568 &#xD;
+...&#xD;
+27441 dsyer    java -Xmx32m -Xss256k -jar         0   175156   175479   188796 &#xD;
+27451 dsyer    java -Xmx32m -Xss256k -jar         0   175256   175579   188900 &#xD;
+27463 dsyer    java -Xmx32m -Xss256k -jar         0   179592   179915   193224 &#xD;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can hypothesize that maybe the PSS number is still hugely inflated by shared read-only memory (e.g. mapped jar files).&lt;/p&gt;
+&lt;p&gt;The 40 processes pretty much filled up the available memory on my laptop (3.6GB before the apps started), and some paging was happening, but not much. We can turn that into an estimate of the process size: 3.6GB/40 = 90MB. Not far off the JConsole estimate.&lt;/p&gt;&lt;h2&gt;&lt;a href="#do-nothing-plain-java-app" class="anchor" name="do-nothing-plain-java-app"&gt;&lt;/a&gt;Do Nothing Plain Java App&lt;/h2&gt;
+&lt;p&gt;As a useful comparison point, let&amp;rsquo;s make a really basic Java application that stays alive when we run it so we can meaure its memory consumption:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;public class Main throws Exception {&#xD;
+  public static void main (String[] args) {&#xD;
+    System.in.read();&#xD;
+  }&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Results: heap 6MB, non-heap 14MB (Code Cache 4MB, Compressed Class Space 1MB, Metaspace 9MB), 1500 classes. Hardly any classes loaded so no surprise really.&lt;/p&gt;&lt;h2&gt;&lt;a href="#do-nothing-spring-boot-app" class="anchor" name="do-nothing-spring-boot-app"&gt;&lt;/a&gt;Do Nothing Spring Boot App&lt;/h2&gt;
+&lt;p&gt;Now suppose we do the same thing but load a Spring application context as well:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;@SpringBootApplication&#xD;
+public class MainApplication implements ApplicationRunner {&#xD;
+&#xD;
+  @Override&#xD;
+  public void run(ApplicationArguments args) throws Exception {&#xD;
+    System.in.read();&#xD;
+  }&#xD;
+&#xD;
+  public static void main(String[] args) throws Exception {&#xD;
+    SpringApplication.run(MainApplication.class, args);&#xD;
+  }&#xD;
+&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Heap 12MB (but drops to 6MB after a manual GC), non-heap 26MB (Code Cache 7MB, Compressed Class Space 2MB, Metaspace 17MB), 3200 classes. The graph below shows the heap usage from launching the app to the end state. The big drop in the middle is the manual GC, and you can see that after this the app stabilizes at a different saw tooth.&lt;/p&gt;
+&lt;img src="https://raw.githubusercontent.com/dsyer/spring-boot-memory-blog/master/manual-gc.png" width="80%"/&gt;
+&lt;p&gt;Does Spring Boot itself (as opposed to just Spring) add a lot of overhead to this application? For starters, we can test that by removing the &lt;code&gt;@SpringBootApplication&lt;/code&gt; annotation. Doing that means that we load a context but don&amp;rsquo;t do any autoconfiguration. The result is: heap 11MB (drops to 5MB after a manual GC), non-heap 22MB (Code Cache 5MB, Compressed Class Space 2MB, Metaspace 15MB), 2700 classes. The Spring Boot autoconfiguration premium, measured this way, is about 1MB heap and 4MB non-heap.&lt;/p&gt;
+&lt;p&gt;Going a step further, we can create a Spring application context manually without using any Spring Boot code at all. Doing this drops the heap usage to 10MB (drops to 5MB after a manual GC), non-heap to 20MB (Code Cache 5MB, Compressed Class Space 2MB, Metaspace 13MB), 2400 classes. The Spring Boot total premium, measured this way, is less than 2MB heap and about 6MB non-heap memory.&lt;/p&gt;&lt;h2&gt;&lt;a href="#ratpack-groovy-app" class="anchor" name="ratpack-groovy-app"&gt;&lt;/a&gt;Ratpack Groovy App&lt;/h2&gt;
+&lt;p&gt;A simple Ratpack groovy app can be created using &lt;a href="https://github.com/pledbrook/lazybones"&gt;lazybones&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ lazybones create ratpack .&#xD;
+$ ./gradlew build&#xD;
+$ unzip build/distributions/ratpack.zip&#xD;
+$ JAVA_OPTS=&amp;#39;-Xmx32m -Xss256k&amp;#39; ./ratpack/bin/ratpack
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;$ ls -l build/distributions/ratpack/lib/*.jar | awk &amp;#39;{tot+=$5;} END {print tot}&amp;#39;&#xD;
+16277607
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The used heap is pretty low to start with (13MB), grows to 22MB over time. Metaspace is about 34MB. JConsole reports 43MB non-heap usage. There are 31 threads.&lt;/p&gt;&lt;h2&gt;&lt;a href="#ratpack-java-app" class="anchor" name="ratpack-java-app"&gt;&lt;/a&gt;Ratpack Java App&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s a really basic static app:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;import ratpack.server.BaseDir;&#xD;
+import ratpack.server.RatpackServer;&#xD;
+&#xD;
+public class DemoApplication {&#xD;
+&#xD;
+  public static void main(String[] args) throws Exception {&#xD;
+    RatpackServer.start(s -&amp;gt; s&#xD;
+        .serverConfig(c -&amp;gt; c.baseDir(BaseDir.find()))&#xD;
+        .handlers(chain -&amp;gt; chain&#xD;
+            .all(ctx -&amp;gt; ctx.render(&amp;quot;root handler!&amp;quot;))&#xD;
+        )&#xD;
+    );&#xD;
+  }&#xD;
+&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It runs in about 16MB heap, 28MB non-heap as a Spring Boot fat jar. As a regular gradle application it&amp;rsquo;s a bit lighter on heap (the cached jars aren&amp;rsquo;t needed) but uses the same non-heap memory. There are 30 threads. Interestingly there is no object that is bigger than 300KB, whereas our Spring Boot apps with Tomcat generally have 10 or more objects above that level.&lt;/p&gt;&lt;h2&gt;&lt;a href="#variations-on-the-vanilla-app" class="anchor" name="variations-on-the-vanilla-app"&gt;&lt;/a&gt;Variations on the Vanilla App&lt;/h2&gt;
+&lt;p&gt;Running from exploded jar shaves up to 6MB off the heap (the difference is cached jar data in the launcher). Also makes startup a bit faster: less than 5s compared to as much as 7s when memory is constrained with the fat jar.&lt;/p&gt;
+&lt;p&gt;A slimmed down version of the app with no static resources or webjars runs at 23MB heap and 41MB non-heap as exploded archive (starts in less than 3s). The non-heap usage breaks down as Metaspace: 35MB, Compressed Class Space: 4MB, Code Cache: 4MB. Spring &lt;code&gt;ReflectionUtils&lt;/code&gt; jumps to near the top of the memory chart in YourKit with Spring 4.2.3 (2nd only to Tomcat &lt;code&gt;NioEndpoint&lt;/code&gt;). The &lt;code&gt;ReflectionUtils&lt;/code&gt; should shrink under memory pressure but they don&amp;rsquo;t in practice so Spring 4.2.4 &lt;a href="https://jira.spring.io/browse/SPR-13783"&gt;clears the caches&lt;/a&gt; once the context has started, resulting in some memory savings (down to about 20MB heap). &lt;code&gt;DefaultListableBeanFactory&lt;/code&gt; drops down to 3rd place and is almost half the size it was with the resource chain (webjars locator) but it won&amp;rsquo;t shrink any further without removing more features.&lt;/p&gt;
+&lt;p&gt;In turns out that the &lt;code&gt;NioEndpoint&lt;/code&gt; has a 1MB &amp;ldquo;oom parachute&amp;rdquo; that it holds onto until it detects an &lt;code&gt;OutOfMemoryError&lt;/code&gt;. You can customize it to zero and forgo the parachute to save an extra MB of heap, e.g:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;@SpringBootApplication&#xD;
+public class SlimApplication implements EmbeddedServletContainerCustomizer {&#xD;
+&#xD;
+  @Override&#xD;
+  public void customize(ConfigurableEmbeddedServletContainer container) {&#xD;
+    if (container instanceof TomcatEmbeddedServletContainerFactory) {&#xD;
+      TomcatEmbeddedServletContainerFactory tomcat = (TomcatEmbeddedServletContainerFactory) container;&#xD;
+      tomcat.addConnectorCustomizers(connector -&amp;gt; {&#xD;
+        ProtocolHandler handler = connector.getProtocolHandler();&#xD;
+        if (handler instanceof Http11NioProtocol) {&#xD;
+          Http11NioProtocol http = (Http11NioProtocol) handler;&#xD;
+          http.getEndpoint().setOomParachute(0);&#xD;
+        }&#xD;
+      });&#xD;
+    }&#xD;
+  }&#xD;
+&#xD;
+...&#xD;
+&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using Jetty instead of Tomcat makes no difference whatsoever to the overall memory or heap, even though the &lt;code&gt;NioEndpoint&lt;/code&gt; is high on the &amp;ldquo;Biggest objects&amp;rdquo; list in YourKit (takes about 1MB), and there is no corresponding blip for Jetty. It also doesn&amp;rsquo;t start up any quicker.&lt;/p&gt;
+&lt;p&gt;As an example of a &amp;ldquo;real&amp;rdquo; Spring Boot app, Zipkin (Java) runs fine with with &lt;code&gt;-Xmx32m -Xss256k&lt;/code&gt;, at least for short periods. It settles with a heap of about 24MB and non-heap about 55MB.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;spring-cloud-stream&lt;/code&gt; sample sink (with Redis transport) also runs fine with &lt;code&gt;-Xmx32m -Xss256k&lt;/code&gt; and similar memory usage profile (i.e. roughly 80MB total). The actuator endpoints are active but don&amp;rsquo;t do much to the memory profile. Slightly slower startup maybe.&lt;/p&gt;&lt;h2&gt;&lt;a href="#tomcat-container" class="anchor" name="tomcat-container"&gt;&lt;/a&gt;Tomcat Container&lt;/h2&gt;
+&lt;p&gt;Instead of using the emedded container in Spring Boot, what if we deploy a traditional war file to a Tomcat container?&lt;/p&gt;
+&lt;img src="https://raw.githubusercontent.com/dsyer/spring-boot-memory-blog/master/manual-gc-tomcat.png" width="80%"/&gt;
+&lt;p&gt;The container starts and warms up a bit and uses of order 50MB heap, and 40MB non-heap. Then we deploy a war of the vanilla Spring Boot app, and there&amp;rsquo;s a spike in heap usage, which settles down to about 100MB. We do a manual GC and it drops down to below 50MB, and then add some load and it jumps up to about 140MB. A manual GC drops it back down to below 50MB. So we have no reason to believe this app is really using much if any additional heap compared to the container. It uses some when under load, but it can always reclaim it under GC pressure.&lt;/p&gt;
+&lt;p&gt;Metaspace, however tells a different story, it goes up from 14MB to 41MB in the single app under load. Total non-heap usage is reported at 59MB in the final state.&lt;/p&gt;&lt;h3&gt;&lt;a href="#deploy-another-application" class="anchor" name="deploy-another-application"&gt;&lt;/a&gt;Deploy another application&lt;/h3&gt;
+&lt;p&gt;If we add another copy of the same application to the Tomcat container, trough heap consumption goes up a bit (above 50MB) and metaspace is up to 55MB. Under load heap usage jumps to 250MB or so, but always seems to be reclaimable.&lt;/p&gt;
+&lt;p&gt;Then we add some more apps. With six apps deployed the metaspace is up to 115MB and total non-heap to 161MB. This is consistent with what we saw for a single app: each one costs us about 20MB non-heap memory. Heap usage hits 400MB under load, so this doesn&amp;rsquo;t go up proportionally (however it is being managed from above, so maybe that&amp;rsquo;s not surprising). The trough of heap usage is up to about 130MB, so the cumulative effect of adding apps on the heap is visible there (about 15MB per app).&lt;/p&gt;
+&lt;p&gt;When we constrain Tomcat to the same amount of heap that the six apps would have in our vanilla embedded launch (&lt;code&gt;-Xmx192m&lt;/code&gt;) the heap under load is more or less at its limit (190MB), and the trough after a manual GC is 118MB. Non-heap memory is reported as 154MB. The heap trough and non-heap usage is not identical but consistent with the unconstrained Tomcat instance (which actually had a 1GB heap). Compared to the embedded containers the total memory usage, including the full heap, is a bit smaller because some of the non-heap memory is apparently shared between apps (344MB compared to 492MB). For more realistic apps that require more heap themselves the difference will not be proportionally as big (50MB out of 8GB is negligible). Also any app that manages its own thread pool (not uncommon in real life Spring applications) will incur an additional non-heap memory penalty for the threads it needs.&lt;/p&gt;&lt;h2&gt;&lt;a href="#rule-of-thumb-process-sizes" class="anchor" name="rule-of-thumb-process-sizes"&gt;&lt;/a&gt;Rule of Thumb Process Sizes&lt;/h2&gt;
+&lt;p&gt;A very rough estimate for actual memory usage would be the heap size plus 20 times the stack size (for the 20 threads typical in a servlet container), plus a bit, so maybe 40MB per process in our vanilla app. That estimate is a bit low, given the JConsole numbers (50MB plus the heap, or 82MB). We can observe, though, that the non-heap usage in our apps is roughly proportional to the number of classes loaded. Once you correct for the stack size the correlation improves, so a better rule of thumb might be one that is proportional to the number of classes loaded:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;memory = heap + non-heap&#xD;
+&#xD;
+non-heap = threads x stack + classes x 7/1000 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The vanilla app loads about 6000 classes and the do nothing Java main loads about 1500. The estimate is accurate for the vanilla app and the do nothing Java app.&lt;/p&gt;
+&lt;p&gt;Adding Spring Cloud Eureka discovery only loads about another 1500 classes, and uses about 40 threads, so it should use a bit more non-heap memory, but not a lot (and indeed it does use about 70MB with 256KB stacks, where the rule of thumb would predict 63MB).&lt;/p&gt;
+&lt;p&gt;The performance of this model for the apps we measured is shown below:&lt;/p&gt;
+&lt;img src="https://raw.githubusercontent.com/dsyer/spring-boot-memory-blog/master/non-heap-correlation.png" width="80%"/&gt;&lt;h2&gt;&lt;a href="#summary-of-data" class="anchor" name="summary-of-data"&gt;&lt;/a&gt;Summary of Data&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Application &lt;/th&gt;
+      &lt;th&gt;Heap (MB) &lt;/th&gt;
+      &lt;th&gt;Non Heap (MB) &lt;/th&gt;
+      &lt;th&gt;Threads &lt;/th&gt;
+      &lt;th&gt;Classes &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Vanilla &lt;/td&gt;
+      &lt;td&gt;22 &lt;/td&gt;
+      &lt;td&gt;50 &lt;/td&gt;
+      &lt;td&gt;25 &lt;/td&gt;
+      &lt;td&gt;6200&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Plain Java &lt;/td&gt;
+      &lt;td&gt;6 &lt;/td&gt;
+      &lt;td&gt;14 &lt;/td&gt;
+      &lt;td&gt;11 &lt;/td&gt;
+      &lt;td&gt;1500&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Boot &lt;/td&gt;
+      &lt;td&gt;6 &lt;/td&gt;
+      &lt;td&gt;26 &lt;/td&gt;
+      &lt;td&gt;11 &lt;/td&gt;
+      &lt;td&gt;3200&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;No Actuator &lt;/td&gt;
+      &lt;td&gt;5 &lt;/td&gt;
+      &lt;td&gt;22 &lt;/td&gt;
+      &lt;td&gt;11 &lt;/td&gt;
+      &lt;td&gt;2700&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Only &lt;/td&gt;
+      &lt;td&gt;5 &lt;/td&gt;
+      &lt;td&gt;20 &lt;/td&gt;
+      &lt;td&gt;11 &lt;/td&gt;
+      &lt;td&gt;2400&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Eureka Client &lt;/td&gt;
+      &lt;td&gt;80* &lt;/td&gt;
+      &lt;td&gt;70 &lt;/td&gt;
+      &lt;td&gt;40 &lt;/td&gt;
+      &lt;td&gt;7600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ratpack Groovy &lt;/td&gt;
+      &lt;td&gt;22 &lt;/td&gt;
+      &lt;td&gt;43 &lt;/td&gt;
+      &lt;td&gt;24 &lt;/td&gt;
+      &lt;td&gt;5300&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ratpack Java &lt;/td&gt;
+      &lt;td&gt;16 &lt;/td&gt;
+      &lt;td&gt;28 &lt;/td&gt;
+      &lt;td&gt;22 &lt;/td&gt;
+      &lt;td&gt;3000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;* Only the Eureka client has a larger heap: all the others are set&lt;br/&gt;explicitly to &lt;code&gt;-Xmx32m&lt;/code&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#conclusions" class="anchor" name="conclusions"&gt;&lt;/a&gt;Conclusions&lt;/h2&gt;
+&lt;p&gt;The effect Spring Boot on its own has on a Java application is to use a bit more heap and non-heap memory, mostly because of extra classes it has to load. The difference can be quantified as roughly an extra 2MB heap and 12MB non-heap. In a real application that might consume many times as much for actual business purposes this is pretty insignificant. The difference between vanilla Spring and Spring Boot is a few MB total (neither here nor there really). The Spring Boot team have only just started measuring things in this level of detail so we can probably expect optimizations in the future anyway. When we compare memory usage for apps deployed in a single Tomcat container with the same apps deployed as independent processes, not surprisingly the single container packs the apps more densely in memory. The penalty for a standalone process is mainly related to non-heap usage though, which adds up to maybe 30MB per app when the number of apps is much larger than the number of containers (and less otherwise). We wouldn&amp;rsquo;t expect this to increase as apps use more heap, so in most real apps it is not significant. The benefits of deploying an app as an independent process following the &lt;a href="http://twelvefactor.net"&gt;twelve-factor&lt;/a&gt; and Cloud Native principles, outweigh the cost of using a bit more memory in our opinion. As a final note, we observe that the native tools in the operating system are not nearly as good as the ones provided by the JVM, when you want to inspect a process and find out about its memory usage.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring REST Docs 1.0.1.RELEASE</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/12/10/spring-rest-docs-1-0-1-release" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2015-12-10:2319</id>
+    <updated>2015-12-10T10:46:23Z</updated>
+    <content type="html">&lt;p&gt;I&amp;rsquo;m delighted to announce that &lt;a href="https://github.com/spring-projects/spring-restdocs"&gt;Spring REST Docs&lt;/a&gt; 1.0.1.RELEASE is available from Maven Central, JCenter, and our &lt;a href="https://repo.spring.io/release"&gt;release repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This maintenance release includes a &lt;a href="https://github.com/spring-projects/spring-restdocs/issues?q=milestone%3A1.0.1.RELEASE"&gt;number of changes&lt;/a&gt;, including improved support for documenting attributes in XML payloads. An immediate upgrade is recommended for all Spring REST Docs users.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-restdocs"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-restdocs"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-restdocs/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.0.1.RELEASE"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Social Facebook 2.0.3 Released</title>
     <link rel="alternate" href="https://spring.io/blog/2015/12/09/spring-social-facebook-2-0-3-released" />
@@ -824,66 +1127,5 @@ apply plugin: &amp;#39;spring-boot&amp;#39; &#xD;
   &lt;li&gt;and the amazing Oliver Gierke &lt;a href="https://www.youtube.com/watch?v=NVB2AmMRUBI"&gt;gave a talk introducing the latest-and-greatest in Spring Data&lt;/a&gt;, also at Devoxx BE&lt;/li&gt;
   &lt;li&gt;our pal Matti Tahvonen, from Vaadin, has put together &lt;a href="https://www.liferay.com/web/matti/blog/-/blogs/using-spring-data-jpa-with-a-liferay-portlet"&gt;a very cool post on using Spring Boot, Spring Data, etc., with Vaadin and Portlets&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 1.3.0 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/11/16/spring-boot-1-3-0-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2015-11-15:2296</id>
-    <updated>2015-11-16T12:36:28Z</updated>
-    <content type="html">&lt;p&gt;One behalf of the Spring Boot team, and everyone that has contributed, I am pleased to announce that Spring Boot 1.3.0 has been released and is available now from &lt;a href="http://repo.spring.io/release/"&gt;repo.spring.io&lt;/a&gt;, &lt;a href="http://search.maven.org/#search|ga|1|g%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt; and &lt;a href="https://bintray.com/bintray/jcenter/org.springframework.boot%3Aspring-boot/view"&gt;Bintray&lt;/a&gt;. This release adds a significant number of new features and improvements and builds on the latest release of the Spring Framework. For full &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.3-Release-Notes#upgrading-from-spring-boot-12"&gt;upgrade instructions&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.3-Release-Notes#new-and-noteworthy"&gt;&amp;ldquo;new and noteworthy&amp;rdquo;&lt;/a&gt; features please see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.3-Release-Notes"&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Here are some of the highlights of v1.3:&lt;/p&gt;&lt;h2&gt;&lt;a href="#developer-tools" class="anchor" name="developer-tools"&gt;&lt;/a&gt;Developer Tools&lt;/h2&gt;
-&lt;p&gt;A new &lt;code&gt;spring-boot-devtools&lt;/code&gt; module has been added which aims to improve the development-time experience. The module provides:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Sensible property defaults (for example disabling template caches)&lt;/li&gt;
-  &lt;li&gt;Automatic application restarts&lt;/li&gt;
-  &lt;li&gt;LiveReload support&lt;/li&gt;
-  &lt;li&gt;Remote development support (including remote updates and remote debug via an HTTP tunnel).&lt;/li&gt;
-  &lt;li&gt;Persistent HTTP sessions across restarts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you&amp;rsquo;ve got 10 minutes to spare, here&amp;rsquo;s a &lt;a href="https://www.youtube.com/watch?v=A70NMxV13TI"&gt;short introductory video&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#caching-auto-configuration" class="anchor" name="caching-auto-configuration"&gt;&lt;/a&gt;Caching Auto-configuration&lt;/h2&gt;
-&lt;p&gt;We now provide auto configuration for EhCache, Hazelcast, Infinispan, JCache (JSR 107) implementations, Redis and Guava.&lt;/p&gt;
-&lt;p&gt;In addition, simple Map based in-memory caching is also supported&lt;/p&gt;&lt;h2&gt;&lt;a href="#fully-executable-jars-and-service-support" class="anchor" name="fully-executable-jars-and-service-support"&gt;&lt;/a&gt;Fully executable JARs and service support&lt;/h2&gt;
-&lt;p&gt;The Maven and Gradle plugins can now generate fully executable archives for Linux/Unix that can be run by just typing:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;$ ./myapp.jar
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Even better, they work as &lt;code&gt;init.d&lt;/code&gt; or &lt;code&gt;systemd&lt;/code&gt; services. To install as an &lt;code&gt;init.d&lt;/code&gt; service just create a symlink:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;$ sudo link -s /var/myapp/myapp.jar /etc/init.d/myapp
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#color-banners" class="anchor" name="color-banners"&gt;&lt;/a&gt;Color banners&lt;/h2&gt;
-&lt;p&gt;Your &lt;code&gt;banner.txt&lt;/code&gt; files can now include ANSI color codes. You can do crazy things like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/philwebb/media/master/boot13/colorbanner.png" alt="Color Banner" /&gt;&lt;/p&gt;&lt;h2&gt;&lt;a href="#support-for-webservlet-webfilter-and-weblistener-annotations" class="anchor" name="support-for-webservlet-webfilter-and-weblistener-annotations"&gt;&lt;/a&gt;Support for @WebServlet, @WebFilter and @WebListener annotations&lt;/h2&gt;
-&lt;p&gt;When using an embedded servlet container, automatic registration of &lt;code&gt;@WebServlet&lt;/code&gt;, &lt;code&gt;@WebFilter&lt;/code&gt; and &lt;code&gt;@WebListener&lt;/code&gt; annotated classes can now be enabled using &lt;code&gt;@ServletComponentScan&lt;/code&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#additional-auto-configurations" class="anchor" name="additional-auto-configurations"&gt;&lt;/a&gt;Additional auto-configurations&lt;/h2&gt;
-&lt;p&gt;Out-of-the-box auto-configurations are now provided for:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Cassandra&lt;/li&gt;
-  &lt;li&gt;OAuth2&lt;/li&gt;
-  &lt;li&gt;Spring Session&lt;/li&gt;
-  &lt;li&gt;jOOQ&lt;/li&gt;
-  &lt;li&gt;SendGrid&lt;/li&gt;
-  &lt;li&gt;Artemis&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#actuator-metrics" class="anchor" name="actuator-metrics"&gt;&lt;/a&gt;Actuator Metrics&lt;/h2&gt;
-&lt;p&gt;Metrics support has been extended to support export and aggregation. In addition, Java 8 specific &lt;code&gt;GaugeService&lt;/code&gt; and &lt;code&gt;CounterService&lt;/code&gt; implementations are now provided (and used when possible) which offer improved performance.&lt;/p&gt;&lt;h2&gt;&lt;a href="#update-endpoints-and-health-indicators" class="anchor" name="update-endpoints-and-health-indicators"&gt;&lt;/a&gt;Update Endpoints and Health Indicators&lt;/h2&gt;
-&lt;p&gt;We now include &lt;code&gt;/logfile&lt;/code&gt;, &lt;code&gt;/flyway&lt;/code&gt; and &lt;code&gt;/liquibase&lt;/code&gt; actuator endpoints as well as support for Elasticsearch, Email and JMS health indicators.&lt;/p&gt;&lt;h2&gt;&lt;a href="#other-changes" class="anchor" name="other-changes"&gt;&lt;/a&gt;Other changes&lt;/h2&gt;
-&lt;p&gt;There&amp;rsquo;s a whole host of other changes and improvements that are documented in the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.3-Release-Notes"&gt;Release Notes&lt;/a&gt;. You can also find a list of deprecated classes and methods that we plan to remove in the next version.&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;Thanks so much to everyone that has supported Spring Boot. This release alone has seen 128 contributors join the effort. If you&amp;rsquo;re interested in helping out check out the &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=is%3Aopen+is%3Aissue+label%3A%22ideal+for+contribution%22"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask at &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Finally, if you&amp;rsquo;ve yet to see Spring Boot in action, you might want to check out &lt;a href="https://www.youtube.com/watch?v=7cemYpV1fNI"&gt;this Devoxx talk&lt;/a&gt; by &lt;a href="https://spring.io/team/snicoll"&gt;St?phane Nicoll&lt;/a&gt; and &lt;a href="https://spring.io/team/bclozel"&gt;Brian Clozel&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 4.2.3 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/11/16/spring-framework-4-2-3-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>St?phane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2015-11-16:2298</id>
-    <updated>2015-11-16T10:45:03Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team I am pleased to announce that Spring Framework 4.2.3 is now available from repo.spring.io and Maven Central. This third maintenance release in the 4.2 line contains &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10000&amp;version=15296"&gt;over 60 fixes and improvements&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;We strongly recommend an immediate upgrade to 4.2.3 for all 4.x users. This release is the foundation for the upcoming Spring Boot 1.3 GA release coming up &lt;em&gt;very&lt;/em&gt; soon.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://jira.spring.io/browse/SPR"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/htmlsingle/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

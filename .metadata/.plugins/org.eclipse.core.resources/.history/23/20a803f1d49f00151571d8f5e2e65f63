@@ -96,6 +96,74 @@
 
 				</div>
 
+				<!-- <div id="nav"
+					style="display: block; margin-left: -6.1%; padding-right: 6.1%; opacity: 1; height: 1836px; width: 340px; left: 0px; top: 198px;">
+					<div id="sub_navwrap" class="navwrap"></div>
+
+					모바일용 유틸리티 메뉴 2014-01-13 EJ@
+					모바일용 언어부분
+					<div id="utilnavAll" class="mobile">
+						<div class="lang">
+							<a href="http://group.amorepacific.com"
+								onclick="trackClicksEx('모바일|GNB Global')" target="_blank"
+								title="Global - 새창 열림">Global</a> <span>|</span> <a
+								href="http://www.amorepacific.com.cn"
+								onclick="trackClicksEx('모바일|GNB China')" target="_blank"
+								title="China - 새창 열림">China</a>
+							 <span>|</span> 
+            <a href="#nohref"><span>China</span></a>
+						</div>
+
+					</div>
+
+					모바일 뉴스&미디어 부분
+					<div class="mobile">
+						<div class="menu">
+							뉴스&미디어 시작
+							<div class="newsmedia navwrap">
+								<a href="#nohref" class="dep01" style="padding-left: 2%;"><span>뉴스
+										&amp; 미디어</span></a>
+								<div id="dep0206">
+									<ul class="dep02">
+										<li><a
+											href="/content/company/ko-kr/footer/AMOREPACIFIC-NEWS/Group-News.html"
+											onclick="trackClicksEx('GNB 모바일|뉴스 &amp; 미디어|아모레퍼시픽그룹 뉴스');">아모레퍼시픽그룹
+												뉴스</a></li>
+										<li><a
+											href="/content/company/ko-kr/footer/AMOREPACIFIC-NEWS/Brand-News.html"
+											onclick="trackClicksEx('GNB 모바일|뉴스 &amp; 미디어|브랜드 뉴스');">브랜드
+												뉴스</a></li>
+										<li><a
+											href="/content/company/ko-kr/footer/AMOREPACIFIC-NEWS/newsletter.html"
+											onclick="trackClicksEx('GNB 모바일|뉴스 &amp; 미디어|사보');">사보</a></li>
+										<li><a
+											href="/content/company/ko-kr/footer/AMOREPACIFIC-NEWS/Notice.html"
+											onclick="trackClicksEx('GNB 모바일|뉴스 &amp; 미디어|공지사항');">공지사항</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							뉴스&미디어 끝
+							<a href="/content/company/ko-kr/footer/AMOREPACIFIC-NEWS/Group-News.html" target="_self" title="뉴스 & 미디어" onclick="trackClicksEx('모바일|GNB 뉴스 & 미디어')">뉴스 &amp; 미디어</a>
+						</div>
+					</div>
+
+					모바일용 유틸메뉴 부분
+					<div id="utilnavAll" class="mobile">
+						<div class="menu">
+							<a href="http://m.makeupyourlife.co.kr/" target="_blank"
+								title="사회공헌 포털 - 새창 열림"
+								onclick="trackClicksEx('모바일|GNB 사회공헌 포털')">사회공헌 포털</a> <a
+								href="http://www.beautypoint.co.kr/" target="_blank"
+								title="뷰티포인트 - 새창 열림" onclick="trackClicksEx('모바일|GNB 뷰티포인트')"><strong>뷰티포인트</strong></a>
+							<a href="https://recruit.amorepacific.co.kr/" target="_blank"
+								title="인재채용 - 새창 열림" onclick="trackClicksEx('모바일|GNB 인재채용')">인재채용</a>
+						</div>
+					</div>
+					end of 모바일용 유틸리티 메뉴
+				</div> -->
+
+
 
 			</div>
 
@@ -254,7 +322,11 @@
 					</div>
 					<div class="cell">
 						<div class="txt3 parbase main_text">
-						<div class="article">
+
+
+
+
+							<div class="article">
 								<h2>
 									<a href="" onclick="" target="" title="쇼핑몰 자세히 보기">쇼핑몰</a>
 								</h2>
@@ -268,6 +340,10 @@
 						</div>
 					</div>
 				</div>
+
+
+
+
 				<!-- go to top -->
 				<div id="gototop">
 					<a href="" onclick=""><span>맨 위로 가기</span></a>
