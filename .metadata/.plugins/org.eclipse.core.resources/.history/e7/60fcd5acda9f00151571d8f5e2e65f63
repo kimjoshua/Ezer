@@ -104,43 +104,43 @@
 			<div id="contents" class="v1">
 
 				<div id="visualarea">
-					<div id="indexSliser_main" class="indexSlider">
+					<div class="image_slide main_slide">
 
-						<div id="carousel-example-generic" class="carousel slide"
-							data-ride="carousel">
-							<!-- Indicators -->
-							<ol class="carousel-indicators">
-								<li data-target="#carousel-example-generic" data-slide-to="0"
-									class="active"></li>
-								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-							</ol>
 
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner" role="listbox">
-								<div class="item active">
-									<img src="<%=cp%>/img/cbm.jpg" usemap="#maptag1">
-									<map name="maptag1">
-										<area shape="rect" coords="x50,y245,x200,y290" href="/introBrand"
-											title="">
-									</map>
-								</div>
-								<div class="item">
-									<img src="<%=cp%>/img/g_main.jpg" usemap="#maptag2">
-									<map name="maptag2">
-										<area shape="rect" coords="x50,y245,x200,y290" href="/introBrand"
-											title="">
-									</map>
-								</div>
-								<div class="item">
-									<img src="<%=cp%>/img/sn.jpg" usemap="#maptag3">
-									<map name="maptag3">
-										<area shape="rect" coords="x50,y245,x200,y290" href="/cygneWrink"
-											title="">
-									</map>
-								</div>
-							</div>
-							</div>
+						<div id="indexSliser_main" class="indexSlider">
+							<ul class="slides">
+
+								<li
+									style="position: relative; left: 0px; top: 0px; z-index: 4; display: list-item;"><img
+									src="" alt="네번째 이미지"></li>
+
+							</ul>
+							<a href="#nohref" class="btnArrow btnLeft">이전 이미지</a> <a
+								href="#nohref" class="btnArrow btnRight">다음 이미지</a>
+							<ul class="sliderPaging">
+
+								<li><a href="#nohref"
+									onclick="trackClicksEx('Main 1번째 이미지 보기')" class=""><span>1번째
+											이미지 보기</span></a></li>
+
+								<li><a href="#nohref"
+									onclick="trackClicksEx('Main 2번째 이미지 보기')" class=""><span>2번째
+											이미지 보기</span></a></li>
+
+								<li><a href="#nohref"
+									onclick="trackClicksEx('Main 3번째 이미지 보기')" class=""><span>3번째
+											이미지 보기</span></a></li>
+
+								<li><a href="#nohref"
+									onclick="trackClicksEx('Main 4번째 이미지 보기')" class="hover"><span>4번째
+											이미지 보기</span></a></li>
+
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
 				<div id="realcontents">
 					<div class="realcon">
 						<div class="articleWrap">

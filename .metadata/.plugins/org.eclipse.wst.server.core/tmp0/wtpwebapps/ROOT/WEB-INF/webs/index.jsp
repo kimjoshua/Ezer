@@ -80,14 +80,13 @@
 				<div>
 					<ul>
 						<input type="text" class="serchBar">
-						<li class="nobar nopadding"><a
-							href="" target="_blank"
+						<li class="nobar nopadding"><a href="" target="_blank"
 							title="새창 열림" onclick="trackClicksEx('헤더 검색')" class="srcButton"><span>검색</span></a></li>
 					</ul>
 				</div>
 				<div id="utilnavr" class="desktop">
 					<ul class="utility">
-						<li class="text"><a href="/toroad" >오시는길</a></li>
+						<li class="text"><a href="/toroad">오시는길</a></li>
 						<li class="text"><a href="" onclick="" target="_blank"
 							title="새창 열림"><strong>공지사항</strong></a></li>
 						<li class="text nobar"><a href="" target="_blank"
@@ -97,120 +96,51 @@
 
 				</div>
 
-				<!-- <div id="nav"
-					style="display: block; margin-left: -6.1%; padding-right: 6.1%; opacity: 1; height: 1836px; width: 340px; left: 0px; top: 198px;">
-					<div id="sub_navwrap" class="navwrap"></div>
-
-					모바일용 유틸리티 메뉴 2014-01-13 EJ@
-					모바일용 언어부분
-					<div id="utilnavAll" class="mobile">
-						<div class="lang">
-							<a href="http://group.amorepacific.com"
-								onclick="trackClicksEx('모바일|GNB Global')" target="_blank"
-								title="Global - 새창 열림">Global</a> <span>|</span> <a
-								href="http://www.amorepacific.com.cn"
-								onclick="trackClicksEx('모바일|GNB China')" target="_blank"
-								title="China - 새창 열림">China</a>
-							 <span>|</span> 
-            <a href="#nohref"><span>China</span></a>
-						</div>
-
-					</div>
-
-					모바일 뉴스&미디어 부분
-					<div class="mobile">
-						<div class="menu">
-							뉴스&미디어 시작
-							<div class="newsmedia navwrap">
-								<a href="#nohref" class="dep01" style="padding-left: 2%;"><span>뉴스
-										&amp; 미디어</span></a>
-								<div id="dep0206">
-									<ul class="dep02">
-										<li><a
-											href="/content/company/ko-kr/footer/AMOREPACIFIC-NEWS/Group-News.html"
-											onclick="trackClicksEx('GNB 모바일|뉴스 &amp; 미디어|아모레퍼시픽그룹 뉴스');">아모레퍼시픽그룹
-												뉴스</a></li>
-										<li><a
-											href="/content/company/ko-kr/footer/AMOREPACIFIC-NEWS/Brand-News.html"
-											onclick="trackClicksEx('GNB 모바일|뉴스 &amp; 미디어|브랜드 뉴스');">브랜드
-												뉴스</a></li>
-										<li><a
-											href="/content/company/ko-kr/footer/AMOREPACIFIC-NEWS/newsletter.html"
-											onclick="trackClicksEx('GNB 모바일|뉴스 &amp; 미디어|사보');">사보</a></li>
-										<li><a
-											href="/content/company/ko-kr/footer/AMOREPACIFIC-NEWS/Notice.html"
-											onclick="trackClicksEx('GNB 모바일|뉴스 &amp; 미디어|공지사항');">공지사항</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							뉴스&미디어 끝
-							<a href="/content/company/ko-kr/footer/AMOREPACIFIC-NEWS/Group-News.html" target="_self" title="뉴스 & 미디어" onclick="trackClicksEx('모바일|GNB 뉴스 & 미디어')">뉴스 &amp; 미디어</a>
-						</div>
-					</div>
-
-					모바일용 유틸메뉴 부분
-					<div id="utilnavAll" class="mobile">
-						<div class="menu">
-							<a href="http://m.makeupyourlife.co.kr/" target="_blank"
-								title="사회공헌 포털 - 새창 열림"
-								onclick="trackClicksEx('모바일|GNB 사회공헌 포털')">사회공헌 포털</a> <a
-								href="http://www.beautypoint.co.kr/" target="_blank"
-								title="뷰티포인트 - 새창 열림" onclick="trackClicksEx('모바일|GNB 뷰티포인트')"><strong>뷰티포인트</strong></a>
-							<a href="https://recruit.amorepacific.co.kr/" target="_blank"
-								title="인재채용 - 새창 열림" onclick="trackClicksEx('모바일|GNB 인재채용')">인재채용</a>
-						</div>
-					</div>
-					end of 모바일용 유틸리티 메뉴
-				</div> -->
-
-
 
 			</div>
 
 
 
 			<div id="contents" class="v1">
-				
+
 				<div id="visualarea">
-					<div class="image_slide main_slide">
+					<div id="indexSliser_main" class="indexSlider">
 
+						<div id="carousel-example-generic" class="carousel slide"
+							data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0"
+									class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							</ol>
 
-						<div id="indexSliser_main" class="indexSlider">
-							<ul class="slides">
-
-								<li
-									style="position: relative; left: 0px; top: 0px; z-index: 4; display: list-item;"><img
-									src=""
-									alt="네번째 이미지"></li>
-
-							</ul>
-							<a href="#nohref" class="btnArrow btnLeft">이전 이미지</a> <a
-								href="#nohref" class="btnArrow btnRight">다음 이미지</a>
-							<ul class="sliderPaging">
-
-								<li><a href="#nohref"
-									onclick="trackClicksEx('Main 1번째 이미지 보기')" class=""><span>1번째
-											이미지 보기</span></a></li>
-
-								<li><a href="#nohref"
-									onclick="trackClicksEx('Main 2번째 이미지 보기')" class=""><span>2번째
-											이미지 보기</span></a></li>
-
-								<li><a href="#nohref"
-									onclick="trackClicksEx('Main 3번째 이미지 보기')" class=""><span>3번째
-											이미지 보기</span></a></li>
-
-								<li><a href="#nohref"
-									onclick="trackClicksEx('Main 4번째 이미지 보기')" class="hover"><span>4번째
-											이미지 보기</span></a></li>
-
-
-							</ul>
-						</div>
-					</div>
-
-				</div>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="<%=cp%>/img/cbm.jpg" usemap="#maptag1">
+									<map name="maptag1">
+										<area shape="rect" coords="x50,y245,x200,y290" href="/introBrand"
+											title="">
+									</map>
+								</div>
+								<div class="item">
+									<img src="<%=cp%>/img/g_main.jpg" usemap="#maptag2">
+									<map name="maptag2">
+										<area shape="rect" coords="x50,y245,x200,y290" href="/introBrand"
+											title="">
+									</map>
+								</div>
+								<div class="item">
+									<img src="<%=cp%>/img/sn.jpg" usemap="#maptag3">
+									<map name="maptag3">
+										<area shape="rect" coords="x50,y245,x200,y290" href="/cygneWrink"
+											title="">
+									</map>
+								</div>
+							</div>
+							</div>
 				<div id="realcontents">
 					<div class="realcon">
 						<div class="articleWrap">
@@ -222,8 +152,8 @@
 												<a href="/ezerCos" onclick="" title="에제르코스메틱">에제르코스메틱</a>
 											</h2>
 											<div class="text">
-												<a href="/ezerCos" onclick="" title="에제르코스메틱자세히 보기"> 에제르코스메틱의
-													사업부냐, <br> <br>연혁과 CI/BI등을 소개해 드립니다.
+												<a href="/ezerCos" onclick="" title="에제르코스메틱자세히 보기">
+													에제르코스메틱의 사업부냐, <br> <br>연혁과 CI/BI등을 소개해 드립니다.
 												</a>
 											</div>
 											<div class="figure tCenter">
@@ -242,9 +172,9 @@
 												<a href="/introBrand" title="브랜드소개자세히 보기">브랜드소개</a>
 											</h2>
 											<div class="text">
-												<a href="/introBrand" onclick="" title="브랜드소개자세히 보기"> 에제르, 컬러이즈,
-													갤러시다, 티톡시, 나노수, 마고 <br> <br>6개의 브랜드의 컨셉과 제품을 소개해
-													드립니다.
+												<a href="/introBrand" onclick="" title="브랜드소개자세히 보기">
+													에제르, 컬러이즈, 갤러시다, 티톡시, 나노수, 마고 <br> <br>6개의 브랜드의
+													컨셉과 제품을 소개해 드립니다.
 												</a>
 											</div>
 											<div class="figure tCenter">
@@ -293,7 +223,8 @@
 
 							<div class="article">
 								<h2>
-									<a href="/ad" onclick="" title="뉴스  미디어 자세히 보기">뉴스 &amp; 미디어</a>
+									<a href="/ad" onclick="" title="뉴스  미디어 자세히 보기">뉴스 &amp;
+										미디어</a>
 								</h2>
 								<div class="text">
 									<a href="/ad" onclick="" title="뉴스  미디어 자세히 보기"> 에제르코스메틱과 각
@@ -323,11 +254,7 @@
 					</div>
 					<div class="cell">
 						<div class="txt3 parbase main_text">
-
-
-
-
-							<div class="article">
+						<div class="article">
 								<h2>
 									<a href="" onclick="" target="" title="쇼핑몰 자세히 보기">쇼핑몰</a>
 								</h2>
@@ -341,10 +268,6 @@
 						</div>
 					</div>
 				</div>
-
-
-
-
 				<!-- go to top -->
 				<div id="gototop">
 					<a href="" onclick=""><span>맨 위로 가기</span></a>
@@ -382,8 +305,10 @@
 									<a href="/" onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">E-ZER</a>
 								</dd>
 								<dd>
-									<a href=http://"www.color_ex.com"
-										onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">COLOR EZ</a>
+									<a href=http:
+										//"www.color_ex.com"
+										onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">COLOR
+										EZ</a>
 								</dd>
 								<dd>
 									<a href="http://www.galaxia.com"
@@ -423,14 +348,16 @@
 									</ul>
 								</dd>
 								<dd>
-									<a href="/cygneWhite" onclick="trackClicksEx('푸터 Design|디자인 경영')">CYGNE</a>
-								</dd>
-								<dd>
 									<a href="/cygneWhite"
-										onclick="('푸터 Design|디자인 경영')">SEVEN ENOUGH</a>
+										onclick="trackClicksEx('푸터 Design|디자인 경영')">CYGNE</a>
 								</dd>
 								<dd>
-									<a href="/cygneWrink" onclick="trackClicksEx('푸터 Design|디자인 경영')">AMPOULE</a>
+									<a href="/cygneWhite" onclick="('푸터 Design|디자인 경영')">SEVEN
+										ENOUGH</a>
+								</dd>
+								<dd>
+									<a href="/cygneWrink"
+										onclick="trackClicksEx('푸터 Design|디자인 경영')">AMPOULE</a>
 								</dd>
 							</dl>
 						</li>
@@ -520,9 +447,6 @@
 											class="btnFamily"><span>FAMILY SITE</span></a>
 									</div>
 								</dd>
-
-
-
 							</dl>
 
 						</li>

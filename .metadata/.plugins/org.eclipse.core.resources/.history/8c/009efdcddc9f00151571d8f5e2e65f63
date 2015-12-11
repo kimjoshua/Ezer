@@ -46,6 +46,23 @@
     height: 275%;
 	
 }
+carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: black;
+}
+carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 95%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
 
 
 .carousel-indicators li {
@@ -59,23 +76,6 @@
     background-color: rgba(0,0,0,0);
     border: 1px solid grey;
     border-radius: 10px;}
-.carousel-indicators .active {
-    width: 12px;
-    height: 12px;
-    margin: 0;
-    background-color: black;
-}
-.carousel-indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 95%;
-    z-index: 15;
-    width: 60%;
-    padding-left: 0;
-    margin-left: -30%;
-    text-align: center;
-    list-style: none;
-}
 
 html { margin:0; padding:0; font-size:62.5%}
 body { -webkit-text-size-adjust: none; margin:0; padding:0; font-family:'아리따돋움', aritadm, 'Apple Gothic', 'DroidSansFallback', '맑은고딕', 'Malgun Gothic', '나눔고딕', NanumGothic, '돋움', dotum, arial, sans-serif, helvetica; color:#666666;  font-size:13px; font-size:1.3rem; } /* -webkit-text-size-adjust:none; 글자 확대 방지 추가 */
