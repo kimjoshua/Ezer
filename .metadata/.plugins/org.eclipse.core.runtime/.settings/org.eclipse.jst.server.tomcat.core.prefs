@@ -1,3 +1,2 @@
 eclipse.preferences.version=1
-locationorg.eclipse.jst.server.tomcat.runtime.70=C\:/tomcat7
-locationorg.eclipse.jst.server.tomcat.runtime.80=C\:/tomcat_8
+locationorg.eclipse.jst.server.tomcat.runtime.80=/Library/tomcat -8

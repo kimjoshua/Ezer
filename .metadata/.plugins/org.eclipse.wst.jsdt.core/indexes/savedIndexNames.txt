@@ -1,14 +1,9 @@
-INDEX VERSION 1.3+D:\Ezer\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-495880168.index
-3474229274.index
-1559227691.index
-2166076767.index
-988028452.index
-2402599946.index
-2552763341.index
-2613018340.index
-1292898869.index
-3824977832.index
-2065380097.index
-1032235841.index
-1660407988.index
+INDEX VERSION 1.3+/Users/Joshua/Documents/E_zer/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2660770779.index
+132470338.index
+2847611960.index
+3199840123.index
+2224456763.index
+3199840123.index
+3626598837.index
+8432315.index
