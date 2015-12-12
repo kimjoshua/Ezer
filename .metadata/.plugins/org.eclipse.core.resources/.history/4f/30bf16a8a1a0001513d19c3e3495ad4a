@@ -45,6 +45,8 @@
 
 	<div id="wrapper">
 		<h1>Ezer cosmetic</h1>
+
+		<div class="moto v_70th"></div>
 		<div class="inwrap">
 			<div id="header">
 				<div class="logo desktop">
@@ -166,228 +168,33 @@
 
 					</div>
 				</div>
+
+
+
+
 				<div id="snsMenu" style="display: block;">
 					<ul class="iconWrap">
-
+						<li class="desktop"><a href="#nohref"
+							onclick="window.print();trackClicksEx('유틸리티|인쇄');" class="print"><span>현재페이지
+									인쇄</span></a></li>
+						<li><a
+							href="http://www.facebook.com/sharer/sharer.php?u=http://www.amorepacific.com/content/company/ko-kr/group/overview.html"
+							onclick="trackClicksEx('유틸리티|페이스북')" target="_blank"
+							class="facebook" title="새창 열림"><span>현재페이지 페이스북 공유</span></a></li>
+						<li><a
+							href="http://twitter.com/share?url=http://www.amorepacific.com/content/company/ko-kr/group/overview.html"
+							target="_blank" onclick="trackClicksEx('유틸리티|트위터')"
+							class="twitter" title="새창 열림"><span>현재페이지 트위터 공유</span></a></li>
 					</ul>
 				</div>
+
+
+
+
 				<div id="realcontents">
 
-					<div class="realcon" style="z-index: 4; margin-top: 45px;">
-
-						<div class="sulwhasooBg bgOverlay"
-							style="height: 2697px; width: 1541.5px; left: 52%; margin-left: -770.5px;"></div>
-						<script type="text/javascript" src="<%=cp%>/js/gridder.js"></script>
-						<div class="brandCont" style="z-index: 4; padding-top: 20px;">
-
-							<div id="allbrand" class="gridder gridder2">
-								<div class="parbase brand_box par2">
-									<h3 class="proTitle">
-										<img
-											src="/content/dam/company/ko-kr/images/contents/brand0201.jpg"
-											alt="personal care">
-									</h3>
-
-									<div class="gridderList sulwhasooColor imactive">
-										<!-- 배경에 따라서 colorgreen class가 변경 됨 -->
-										<div class="sulwhasoo parbase brand">
-
-
-											<a id="sulwhasoo" href="#nohref"
-												onclick="trackClicksEx('설화수', true)" class="gridderThumb">
-												<img
-												src="/content/dam/company/global/images/brands/1.costmetic_logo_2.sulwhasoo.png"
-												alt="설화수"> <span class="overlay">설화수<br>
-													알아보기
-											</span>
-											</a>
-											<!-- end of 로고 -->
-											<!-- gridderContent -->
-											<div class="gridderContent" style="display: none;">
-												<div class="tab">
-													<!-- tab1 내용 -->
-													<strong class="tabTitle "> <label>설화수</label>
-
-													</strong>
-													<div class="cont" style="display: block;">
-														<div class="layout2cell">
-															<!-- 브랜드 대표 이미지 -->
-															<div class="cell01 productImg">
-																<img
-																	src="/content/dam/company/ko-kr/images/contents/sulwhasoo.jpg"
-																	alt="설화수 대표제품 이미지">
-															</div>
-															<!-- end of 브랜드 대표 이미지 -->
-															<!-- 브랜드 정보 -->
-															<div class="cell02">
-																<div class="layout2cell">
-																	<p class="title">아시아의 지혜를 담은 홀리스틱 뷰티를 선사하는 설화수</p>
-																	<div class="cell">
-																		<p>수 천 년 동안 이어져 내려 온 아시아의 지혜가 응축된 “한방”을 바탕으로 전설적인
-																			한방 약용 식물들을 최신의 현대 피부 과학으로 재창조하여 겉으로 드러난 문제 뿐 아니라 근본
-																			원인까지 총체적으로 케어하는 궁극의 피부 솔루션을 제공하고 몸과 마음의 균형을 찾아주는 진정한
-																			아름다움, 홀리스틱 뷰티를 선사합니다.</p>
-																	</div>
-																	<div class="cell">
-																		<p></p>
-																	</div>
-																</div>
-																<!-- end of 브랜드 정보 -->
-																<div class="btnArea">
-
-																	<a
-																		href="http://www.sulwhasoo.com/kr/ko?source=http://group.amorepacific.com/content/company/ko-kr/our-brand.html"
-																		onclick="trackClicksEx('설화수 브랜드사이트 가기', true)"
-																		class="btn" target="_blank" title="새창 열림"> <span
-																		class="bltArrow"><span class="alternative">설화수</span>
-																			브랜드사이트 가기</span>
-																	</a>
-
-																</div>
-																<!--  end of 버튼 -->
-																<!-- 소셜 바로가기 -->
-																<!-- 쇼핑몰 삭제 cafe 추가 2014-01-14 -->
-																<div class="iconWrap">
-
-																	<a href="https://www.facebook.com/sulwhasoo.kr"
-																		onclick="trackClicksEx('설화수 페이스북', true)"
-																		class="facebookBrand" target="_blank" title="새창 열림"><span>설화수
-																			페이스북</span></a> <a
-																		href="http://www.youtube.com/user/sulwhasookorea"
-																		onclick="trackClicksEx('설화수 유튜브', true)"
-																		class="youtube" target="_blank" title="새창 열림"><span>설화수
-																			Youtube</span></a>
-
-																</div>
-
-
-
-															</div>
-														</div>
-													</div>
-													<!-- end of tab1 내용 -->
-													<!-- tab2 내용 -->
-
-												</div>
-												<!-- end of tab2 내용 -->
-											</div>
-										</div>
-
-									</div>
-									<div class="gridderShow" style="float: left; display: block;">
-										<div class="content">
-											<div class="tab">
-												<!-- tab1 내용 -->
-												<strong class="tabTitle "> <label>설화수</label>
-
-												</strong>
-												<div class="cont" style="display: block;">
-													<div class="layout2cell">
-														<!-- 브랜드 대표 이미지 -->
-														<div class="cell01 productImg">
-															<img
-																src="/content/dam/company/ko-kr/images/contents/sulwhasoo.jpg"
-																alt="설화수 대표제품 이미지">
-														</div>
-														<!-- end of 브랜드 대표 이미지 -->
-														<!-- 브랜드 정보 -->
-														<div class="cell02">
-															<div class="layout2cell">
-																<p class="title">아시아의 지혜를 담은 홀리스틱 뷰티를 선사하는 설화수</p>
-																<div class="cell">
-																	<p>수 천 년 동안 이어져 내려 온 아시아의 지혜가 응축된 “한방”을 바탕으로 전설적인
-																		한방 약용 식물들을 최신의 현대 피부 과학으로 재창조하여 겉으로 드러난 문제 뿐 아니라 근본
-																		원인까지 총체적으로 케어하는 궁극의 피부 솔루션을 제공하고 몸과 마음의 균형을 찾아주는 진정한
-																		아름다움, 홀리스틱 뷰티를 선사합니다.</p>
-																</div>
-																<div class="cell">
-																	<p></p>
-																</div>
-															</div>
-															<!-- end of 브랜드 정보 -->
-															<div class="btnArea">
-
-																<a
-																	href="http://www.sulwhasoo.com/kr/ko?source=http://group.amorepacific.com/content/company/ko-kr/our-brand.html"
-																	onclick="trackClicksEx('설화수 브랜드사이트 가기', true)"
-																	class="btn" target="_blank" title="새창 열림"> <span
-																	class="bltArrow"><span class="alternative">설화수</span>
-																		브랜드사이트 가기</span>
-																</a>
-
-															</div>
-															<!--  end of 버튼 -->
-															<!-- 소셜 바로가기 -->
-															<!-- 쇼핑몰 삭제 cafe 추가 2014-01-14 -->
-															<div class="iconWrap">
-
-																<a href="https://www.facebook.com/sulwhasoo.kr"
-																	onclick="trackClicksEx('설화수 페이스북', true)"
-																	class="facebookBrand" target="_blank" title="새창 열림"><span>설화수
-																		페이스북</span></a> <a
-																	href="http://www.youtube.com/user/sulwhasookorea"
-																	onclick="trackClicksEx('설화수 유튜브', true)"
-																	class="youtube" target="_blank" title="새창 열림"><span>설화수
-																		Youtube</span></a>
-
-															</div>
-
-
-
-														</div>
-													</div>
-												</div>
-												<!-- end of tab1 내용 -->
-												<!-- tab2 내용 -->
-
-											</div>
-											<!-- end of tab2 내용 -->
-										</div>
-										<a href="#nohref" class="gridderClose">닫기</a>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-
-				<script type="text/javascript">
-
-$(document).ready(function(){
-    $('.gridder').Gridder();
-    initTabs();
-});
-
-function initTabs(){
-    if(!$(".tab .tabTitle").length){
-        return;
-    };
-    $(".cont").hide();
-    $(".tab .tabTitle:nth-child(1) a").addClass("active");
-    $(".tab").find(".cont:eq(0)").show();
-
-    $(".tab .tabTitle a").live("click", function(e){
-        e.preventDefault();
-        $(this).parents(".tab").find(".tabTitle a").removeClass("active");
-        $(this).addClass("active");
-
-        $(this).parents(".tab").find(".cont").hide();
-        $(this).parents(".tabTitle").next().show();
-    });
-};
-
-</script>
-
-
-
-
-				<!-- <div id="realcontents">
-
-					<div class="realcon"> -->
-
-				<!-- <div class="bs-example" data-example-id="simple-thumbnails">
+					<div class="realcon">
+						<!-- <div class="bs-example" data-example-id="simple-thumbnails">
 							<div class="row">
 								<div class="col-xs-6 col-md-4">
 									<a href="#" class="thumbnail"> <img
@@ -460,9 +267,9 @@ function initTabs(){
 							</div>
 						</div> -->
 
-				<!-- </div>
+					</div>
 
-				</div> -->
+				</div>
 
 
 				<!-- go to top -->
@@ -663,6 +470,7 @@ function initTabs(){
 
 		</div>
 		<div class="footerline"></div>
+	</div>
 	</div>
 </body>
 </html>
