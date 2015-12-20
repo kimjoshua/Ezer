@@ -2,11 +2,11 @@
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item value="14" key="DIALOG_Y_ORIGIN"/>
-		<item value="-226" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_X_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="767" key="dialogHeight"/>
-		<item value="1440" key="dialogWidth"/>
+		<item value="563" key="dialogHeight"/>
+		<item value="900" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
@@ -17,9 +17,9 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.jst.jsp.ui.internal.wizard.NewJSPWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.wst.jsdt.ui.NewJSWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.wst.web.ui"/>
+			<item value="org.eclipse.wst.jsdt.ui.java"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">

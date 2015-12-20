@@ -76,6 +76,17 @@
     text-align: center;
     list-style: none;
 }
+.intro_ezer, .intro_ezer1, .intro_ezer2, .intro_ezer4, .intro_ezer5, .intro_ezer6{
+	display:none
+}
+.ezer_intro,.intro_ezer4.intro_ezer5.intro_ezer6{
+	display:block;
+	background-image: url('/img/intro_brand_ezer.png');
+}
+.ezer_intro:hover{
+	image: url('/img/intro_hover_ezer.png')
+}
+
 
 html { margin:0; padding:0; font-size:62.5%}
 body { -webkit-text-size-adjust: none; margin:0; padding:0; font-family:'아리따돋움', aritadm, 'Apple Gothic', 'DroidSansFallback', '맑은고딕', 'Malgun Gothic', '나눔고딕', NanumGothic, '돋움', dotum, arial, sans-serif, helvetica; color:#666666;  font-size:13px; font-size:1.3rem; } /* -webkit-text-size-adjust:none; 글자 확대 방지 추가 */

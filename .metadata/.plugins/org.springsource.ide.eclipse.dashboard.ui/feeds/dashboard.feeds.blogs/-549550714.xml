@@ -5,7 +5,177 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-12-11T21:55:32Z</updated>
+  <updated>2015-12-18T19:01:07Z</updated>
+  <entry>
+    <title>Spring IO Platform 2.0.1.RELEASE</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/12/18/spring-io-platform-2-0-1-release" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2015-12-18:2329</id>
+    <updated>2015-12-18T19:01:07Z</updated>
+    <content type="html">&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Spring IO Platform&lt;/a&gt; 2.0.1.RELEASE is now available from both &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3Aio.spring.platform"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;This maintenance release upgrades the versions of a number of the projects in the Platform to pick up their latest maintenance releases:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reactor 2.0.7.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Batch 3.0.6.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Boot 1.3.1.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Connectors 1.2.1.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Framework 4.2.4.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Data Gosling SR2A&lt;/li&gt;
+  &lt;li&gt;Spring Integration 4.2.4.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Integration Kafka 1.2.1.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring REST Docs 1.0.1.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Social 1.1.4.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Social Facebook 2.0.3.RELEASE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The versions of many third-party dependencies have also been updated.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/2.0.1.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring IO Platform 1.1.5.RELEASE</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/12/18/spring-io-platform-1-1-5-release" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2015-12-18:2327</id>
+    <updated>2015-12-18T19:00:51Z</updated>
+    <content type="html">&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Spring IO Platform&lt;/a&gt; 1.1.5.RELEASE is now available from both &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3Aio.spring.platform"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;This maintenance release upgrades the versions of a number of the projects in the Platform to pick up their latest maintenance releases:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Batch 3.0.6.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Boot 1.2.8.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Framework 4.1.9.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Integration 4.1.8.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Security 3.2.9.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Security OAuth 2.0.8.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Social 1.1.4.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Social Facebook 2.0.3.RELEASE&lt;/li&gt;
+  &lt;li&gt;Spring Web Services 2.2.3.RELEASE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The versions of many third-party dependencies have also been updated.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/1.1.5.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Data release train Gosling SR2 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/12/18/spring-data-release-train-gosling-sr2-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Oliver Gierke</name>
+    </author>
+    <id>tag:spring.io,2015-12-18:2326</id>
+    <updated>2015-12-18T18:24:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the Spring Data team I&amp;rsquo;d like to announce the availability of the second service release of the Spring Data Gosling release train. The release ships &lt;a href="https://jira.spring.io/issues/?filter=15342"&gt;45 issues fixed&lt;/a&gt; and contains an important bugfix for an issue in Spring Data JPA&amp;rsquo;s method metadata detection. Thus it&amp;rsquo;s a recommended upgrade for all Gosling users and also users of previous release trains.&lt;/p&gt;
+&lt;p&gt;The release is be included in the &lt;a href="https://spring.io/blog/2015/12/18/spring-boot-1-3-1-and-1-2-8-available-now"&gt;just released Spring Boot 1.3.1 release&lt;/a&gt; which should make the upgrade a non-issue. If you&amp;rsquo;re using the BOM, make sure you upgrade to &lt;code&gt;Gosling-SR2A&lt;/code&gt; (note the trailing A). A tiny glitch during the release forced us into that slightly weird version number.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the list of modules involved:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Data Commons 1.11.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/1.11.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.11.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.11.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.11.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data JPA 1.9.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/1.9.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.9.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.9.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.9.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data MongoDB 1.8.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-mongodb/1.8.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.8.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.8.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.8.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Redis 1.6.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-redis/1.6.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.6.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.6.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.6.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data REST 2.4.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-rest-webmvc/2.4.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.4.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.4.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.4.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Solr 1.5.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-solr/1.5.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.5.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.5.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.5.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data KeyValue 1.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-keyvalue/1.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/1.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/1.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/1.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Gemfire 1.7.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-gemfire/1.7.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.7.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.7.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.7.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Elasticsearch 1.3.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/1.3.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.3.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.3.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.3.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Neo4j 3.4.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-neo4j/3.4.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.4.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.4.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.4.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Cassandra 1.3.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-cassandra/1.3.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.3.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.3.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.3.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Couchbase 1.4.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/1.4.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.4.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.4.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.4.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Boot 1.3.1 and 1.2.8 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/12/18/spring-boot-1-3-1-and-1-2-8-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Stéphane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2015-12-18:2328</id>
+    <updated>2015-12-18T14:25:20Z</updated>
+    <content type="html">&lt;p&gt;Spring Boot 1.2.8 and 1.3.1 have been released and are available now from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;If you haven&amp;rsquo;t tried Spring Boot 1.3 yet, now may be the time to do so: 1.3.1 is a maintenance release that brings &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.3.1+is%3Aclosed"&gt;126 fixes and improvements&lt;/a&gt;, almost half of those being pull requests. Thanks again to our amazing contributors!&lt;/p&gt;
+&lt;p&gt;Spring Boot 1.2.8 is a maintenance release with &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.2.8+is%3Aclosed"&gt;a selection of fixes and improvements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As we have fixed a &lt;a href="https://github.com/spring-projects/spring-boot/issues/4763"&gt;security vulnerability&lt;/a&gt;, we highly recommend an immediate upgrade for all Spring Boot users.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Framework 3.2.16 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/12/17/spring-framework-3-2-16-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Stéphane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2015-12-17:2325</id>
+    <updated>2015-12-17T14:15:05Z</updated>
+    <content type="html">&lt;p&gt;After &lt;a href="https://spring.io/blog/2015/12/17/spring-framework-4-2-4-4-1-9-released"&gt;4.2.4 and 4.1.9 earlier today&lt;/a&gt;, it is my pleasure to announce that Spring Framework &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10000&amp;version=15402"&gt;3.2.16 is now available&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://jira.spring.io/browse/SPR"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/htmlsingle/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Framework 4.2.4 &amp; 4.1.9 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/12/17/spring-framework-4-2-4-4-1-9-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Juergen Hoeller</name>
+    </author>
+    <id>tag:spring.io,2015-12-15:2322</id>
+    <updated>2015-12-17T10:00:00Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
+&lt;p&gt;It is my pleasure to announce that Spring Framework &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10000&amp;version=15353"&gt;4.2.4&lt;/a&gt; and &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10000&amp;version=15349"&gt;4.1.9&lt;/a&gt; are available from &lt;a href="https://repo.spring.io/"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/"&gt;Maven Central&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;4.2.4 addresses a few regressions in the 4.2.x line and includes many fixes and enhancements, with no immediate issues remaining. &lt;b&gt;4.2.4 is a recommended upgrade for all 4.x users now.&lt;/b&gt; Please note that the 4.2.x line moves into maintenance mode at this point, with a low-volume &lt;a href="https://jira.spring.io/browse/SPR/fixforversion/15439"&gt;4.2.5 maintenance release&lt;/a&gt; scheduled for mid February.&lt;/p&gt;
+&lt;p&gt;4.1.9 is designed as the last release in the 4.1.x line, backporting applicable bug fixes as well as selected recent enhancements from 4.2.3 / 4.2.4. &lt;b&gt;Note that this is the ultimate 4.1.x release: Your next upgrade step beyond 4.1.9 is the above-mentioned 4.2.5 in February, even for compatibility issues and security vulnerabilities.&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;In the meantime, development towards 4.3 has started already, soon to be found in our master branch. We are aiming for a &lt;b&gt;4.3 release candidate in early April&lt;/b&gt; and a &lt;b&gt;4.3 GA release in June&lt;/b&gt;. So if you happen to be interested in the latest developments there, check out &lt;a href="https://jira.spring.io/browse/SPR/fixforversion/15350"&gt;4.3 RC1 issues&lt;/a&gt; on JIRA and 4.3 build snapshots as they become available&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Cheers,&lt;br/&gt;Juergen&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - December 15th, 2015</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/12/16/this-week-in-spring-december-15th-2015" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2015-12-16:2324</id>
+    <updated>2015-12-16T00:21:08Z</updated>
+    <content type="html">&lt;p&gt;Wow! It&amp;rsquo;s December 15th, friends; many of us on this planet will &lt;em&gt;soon&lt;/em&gt; celebrate a new year! Hopefully, you&amp;rsquo;ve done a better job than I have of getting all my new year&amp;rsquo;s resolutions finished in time for 2016! If you haven&amp;rsquo;t, at least catching up on the latest and greatest in the Pivotal community won&amp;rsquo;t be insurmountable! Let&amp;rsquo;s see what&amp;rsquo;s happened this week..&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Greg Turnquist&amp;rsquo;s epic blog series on using &lt;a href="https://spring.io/blog/2015/12/15/check-out-our-new-tutorial-react-js-and-spring-data-rest"&gt;Spring with React.js is now available online as a tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Batch lead Michael Minella just announced &lt;a href="https://spring.io/blog/2015/12/11/spring-batch-3-0-6-release-is-now-available"&gt;Spring Batch 3.0.6 which contains lots of great contributions and bug fixes from the community&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;the good Dr. David Syer put together a &lt;em&gt;very&lt;/em&gt; &lt;a href="https://spring.io/blog/2015/12/10/spring-boot-memory-performance"&gt;good look at Spring Boot&amp;rsquo;s memory characteristics in various configurations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring RestDocs &lt;a href="https://spring.io/blog/2015/12/10/spring-rest-docs-1-0-1-release"&gt;lead Andy Wilkinson just announced Spring Rest Docs 1.0.1&lt;/a&gt; which is maintenance release that includes a number of changes, including improved support for documenting attributes in XML payloads. An immediate&lt;/li&gt;
+  &lt;li&gt;Spring Social lead Craig Walls &lt;a href="https://spring.io/blog/2015/12/09/spring-social-facebook-2-0-3-released"&gt;has been hard at work adapting Spring Social to a recent breaking change&lt;/a&gt; in Facebook&amp;rsquo;s Graph API which prevented connections and sign-in from working with Spring Social Facebook. In addition, the API binding has been adjusted to target Graph API v2.5.&lt;/li&gt;
+  &lt;li&gt;Duncan Brown wrote a great look at &lt;a href="https://dzone.com/articles/do-not-publish-migrating-spring-data-neo4j-3x-to-4"&gt;how to migrate Spring Data Neo4J 3.0 projects to the new 4.0 line&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I &lt;em&gt;think&lt;/em&gt; this Chinese-language &lt;a href="http://www.jianshu.com/p/a35b25f4c1ec"&gt;post introduces how to use Spring Boot&lt;/a&gt;, in which case - enjoy!&lt;/li&gt;
+  &lt;li&gt;Couchbase&amp;rsquo;s Simon Baslé put together a nice post on using Spring Data Couchbase and the various things it supports, &lt;a href="http://blog.couchbase.com/2015/december/couchbase-spring-cache"&gt;including the &lt;code&gt;Cache&lt;/code&gt; abstraction and Spring Data repositories&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;the &lt;em&gt;AppMite&lt;/em&gt; blog has a neat introduction to standing up &lt;a href="http://appmite.com/spring-with-backbone-marionette-hello-world/"&gt;a simple Spring Boot application to serve as the backend for a Backbone + Marionette-based JavaScript client&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Marko Švaljek has put together a very cool post on handling stream &lt;a href="http://msvaljek.blogspot.com/2015/12/stream-processing-with-spring-kafka_44.html"&gt;processing with Spring Boot, Kafka, and more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Duy Hai Doan, an Apache Cassandra evangelist at DataStax, put together a very &lt;a href="https://academy.datastax.com/demos/getting-started-killrchat-example-data-model-messaging"&gt;cool post on a sample application, &lt;em&gt;KillrChat&lt;/em&gt;, based on Spring Boot, Cassandra, and more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Want a &lt;a href="https://www.youtube.com/watch?v=3xrRIesGneg"&gt;quick introduction to using Spring Boot and AOP&lt;/a&gt;?&lt;/li&gt;
+  &lt;li&gt;Christoph Strobl&amp;rsquo;s talk from SpringOne2GX 2015, &lt;a href="http://www.infoq.com/presentations/spring-boot-search"&gt;&lt;em&gt;Boot Your Search with Spring&lt;/em&gt;&lt;/a&gt;, is now available online.&lt;/li&gt;
+  &lt;li&gt;Learn about &lt;a href="http://toedter.com/2015/12/13/creating-colorful-banners-for-spring-boot-applications/"&gt;Spring Boot 1.3&amp;rsquo;s new support for colored banners&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Recently, a friend of the community, &lt;a href="https://twitter.com/craigburke1"&gt;Craig Burke&lt;/a&gt;, made an &lt;a href="https://github.com/spring-projects/spring-boot/pull/4647"&gt;&lt;em&gt;epic&lt;/em&gt; pull-request&lt;/a&gt; after Spring Boot 1.3 debuted the aforementioned support for color banner ASCII art: a &lt;code&gt;Banner&lt;/code&gt; implementation that &lt;em&gt;also&lt;/em&gt; knows to look for &lt;code&gt;banner.jpg&lt;/code&gt;, not just &lt;code&gt;banner.txt&lt;/code&gt;! Seizing upon this, I created a simple Boot-based CLI and &lt;a href="http://bootiful-banners.cfapps.io/banners"&gt;a Cloud Foundry web service&lt;/a&gt; whose &lt;a href="http://github.com/joshlong/bootiful-banners"&gt;code are available online&lt;/a&gt; - thanks Craig!&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Check out our new tutorial -&gt; React.js and Spring Data REST</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/12/15/check-out-our-new-tutorial-react-js-and-spring-data-rest" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Greg Turnquist</name>
+    </author>
+    <id>tag:spring.io,2015-12-15:2323</id>
+    <updated>2015-12-15T18:07:29Z</updated>
+    <content type="html">&lt;p&gt;Greetings Spring Community,&lt;/p&gt;
+&lt;p&gt;I hope you enjoyed my blog series on React.js + Spring Data REST. In that series, you got to build up a rich web app with hypermedia controls, conditional operations, messaging, and security. &lt;/p&gt;
+&lt;p&gt;To make things even better, that series has been bundled up and converted into a tutorial: &lt;a href="https://spring.io/guides/tutorials/react-and-spring-data-rest/"&gt;https://spring.io/guides/tutorials/react-and-spring-data-rest/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Some key updates made along the way:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;require.js has been replaced with webpack as the JavaScript module builder/loader of choice&lt;/li&gt;
+  &lt;li&gt;The code is upgraded to ES6. This means that some of JavaScript&amp;rsquo;s newest features like classes, arrow functions, and more are being used.&lt;/li&gt;
+  &lt;li&gt;bower has been replaced by npm as the package manager of choice&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hopefully, this tutorial will give you new ideas about building frontend/backend apps in the future based on the Spring portfolio.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Batch 3.0.6.RELEASE is now available</title>
     <link rel="alternate" href="https://spring.io/blog/2015/12/11/spring-batch-3-0-6-release-is-now-available" />
@@ -705,416 +875,5 @@ class WorkaroundRestTemplateCustomizer implements UserInfoRestTemplateCustomizer
 &lt;p&gt;Detailed new and noteworthy notes can be found here: &lt;a href="http://docs.spring.io/sts/nan/v372/NewAndNoteworthy.html"&gt;STS 3.7.2 New &amp;amp; Noteworthy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;STS 3.7.3 is scheduled to ship in early March 2016.&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>News for Spring Data JDBC Extensions Project</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/11/25/news-for-spring-data-jdbc-extensions-project" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Thomas Risberg</name>
-    </author>
-    <id>tag:spring.io,2015-11-25:2309</id>
-    <updated>2015-11-25T15:16:00Z</updated>
-    <content type="html">&lt;p&gt;We are pleased to announce the 1.2 release of the Spring Data JDBC Extensions project. This release updates the Querydsl dependency to 3.6.9 and adds an option to retrieve &lt;code&gt;SearchResults&lt;/code&gt; using the &lt;code&gt;QueryDslTemplate&lt;/code&gt;. See &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/1.2.1.RELEASE/changelog.txt"&gt;changelog for 1.2.1.RELEASE&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;We are also pleased to announce the first milestone of the 2.0 version of the Spring Data JDBC Extensions project. The big changes for this release are:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;change to building with Java 7 or later&lt;/li&gt;
-  &lt;li&gt;upgrading the Oracle JDBC to version 12.1.0.2&lt;/li&gt;
-  &lt;li&gt;updating any dependencies to follow Spring IO Platform 2.0 including Spring Framework 4.2&lt;/li&gt;
-  &lt;li&gt;removing the Querydsl SQL support in this version (see below)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The upgrade to use the Oracle JDBC driver version 12.1.0.2 allows us to change our code to support deprecations and new features available in this version. You can still use older database versions compatible with this driver including Oracle Database 12c R1, 11g R2 and 11g R1.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/2.0.0.M1/changelog.txt"&gt;changelog for 2.0.0.M1&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#querydsl-support" class="anchor" name="querydsl-support"&gt;&lt;/a&gt;Querydsl support&lt;/h2&gt;
-&lt;p&gt;The Querydsl project has been undergoing some changes for their 4.0 version with a change of Maven group id, package names and also some API changes. This means that as of Querydsl version 4.0.0 the existing Spring Data JDBC Extension code that integrates with Querydsl no longer works.&lt;/p&gt;
-&lt;p&gt;We don&amp;rsquo;t plan to port our Querydsl SQL support to the new Querydsl version 4.0 or later. Instead we encourage users developing new projects to use the Querydsl SQL APIs directly and to use the integration with Spring that is available in the Querydsl project&amp;rsquo;s &lt;code&gt;querydsl-sql-spring&lt;/code&gt; sub-project. This means that we are removing the Querydsl SQL support from the new Spring Data JDBC Extensions 2.x version.&lt;/p&gt;
-&lt;p&gt;For the 1.x version of Spring Data JDBC Extensions we will continue to use the latest available version of the Querydsl 3.x release series. We are also marking the Querydsl SQL support as deprecated to indicate that it will not be available in version 2.0 of Spring Data JDBC Extensions.&lt;/p&gt;
-&lt;p&gt;For more project specific information please see the &lt;a href="http://projects.spring.io/spring-data-jdbc-ext/"&gt;project page&lt;/a&gt;.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Social 1.1.4 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/11/25/spring-social-1-1-4-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Craig Walls</name>
-    </author>
-    <id>tag:spring.io,2015-11-25:2308</id>
-    <updated>2015-11-25T14:27:53Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m pleased to announce the availability of Spring Social 1.1.4.RELEASE. This includes the Spring Social Core, Web, Security, and Config modules.&lt;/p&gt;
-&lt;p&gt;This is a maintenance release, addressing a handful of bugs and introducing a few minor improvements (many of which were submitted as pull requests from our wonderful open-source community&amp;hellip;thanks!). View the &lt;a href="https://raw.githubusercontent.com/spring-projects/spring-social/master/src/dist/changelog.txt"&gt;changelog&lt;/a&gt; for full details.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://spring.io/projects/spring-social"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-social/docs/1.1.4.RELEASE/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-social/docs/1.1.4.RELEASE/apidocs/"&gt;JavaDoc&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Migrating Spring Cloud Apps from Spring Boot 1.2 to 1.3</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/11/25/migrating-spring-cloud-apps-from-spring-boot-1-2-to-1-3" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Dave Syer</name>
-    </author>
-    <id>tag:spring.io,2015-11-25:2307</id>
-    <updated>2015-11-25T12:18:00Z</updated>
-    <content type="html">&lt;p&gt;There are some interesting new features in &lt;a href="http://projects.spring.io/spring-boot/"&gt;Spring Boot&lt;/a&gt; 1.3 that are now available in Spring Cloud in the Brixton release train. The Angel release train of &lt;a href="http://projects.spring.io/spring-cloud/"&gt;Spring Cloud&lt;/a&gt; is partly incompatible with Spring Boot 1.3, so when you upgrade there are some important things to be aware of. This article helps you navigate the changes and update any existing apps to use the new features. It should also be helpful generally when trying to adopt new versions of Spring projects into existing codebases.&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;TIP: You can use &lt;code&gt;mvn dependency:tree&lt;/code&gt; or &lt;code&gt;gradle dependencies&lt;/code&gt; to list the dependencies in your project and check the versions.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;h2&gt;&lt;a href="#dependency-management" class="anchor" name="dependency-management"&gt;&lt;/a&gt;Dependency Management&lt;/h2&gt;
-&lt;p&gt;If you are using the older versions of Spring Boot, you probably have something like this in your Maven POM:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;parent&amp;gt;&#xD;
-  &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
-  &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
-  &amp;lt;version&amp;gt;1.2.7.RELEASE&amp;lt;/version&amp;gt;&#xD;
-  &amp;lt;relativePath /&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;&#xD;
-&amp;lt;/parent&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;or&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
-  &amp;lt;dependencies&amp;gt;&#xD;
-    &amp;lt;dependency&amp;gt;&#xD;
-      &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
-      &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
-      &amp;lt;version&amp;gt;1.2.7.RELEASE&amp;lt;/version&amp;gt;&#xD;
-      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
-      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
-    &amp;lt;/dependency&amp;gt;&#xD;
-  &amp;lt;/dependencies&amp;gt;&#xD;
-&amp;lt;/dependencyManagement&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;or, if you are using Gradle,&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;buildscript {&#xD;
-	ext {&#xD;
-		springBootVersion = &amp;#39;1.2.7.RELEASE&amp;#39;&#xD;
-	}&#xD;
-	dependencies {&#xD;
-		classpath(&amp;quot;org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}&amp;quot;)&#xD;
-	}&#xD;
-}&#xD;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To upgrade to Spring Boot 1.3.0 you would change the &amp;lsquo;1.2.7&amp;rsquo; above to &amp;lsquo;1.3.0&amp;rsquo;. So far so simple.&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;TIP: to see a &amp;ldquo;typical&amp;rdquo; Maven POM with the most recent version of Spring Boot you can &lt;code&gt;curl start.spring.io/pom.xml&lt;/code&gt;. To add Spring Cloud you can append &lt;code&gt;-d style=cloud-config-client&lt;/code&gt;. The Spring Boot version can be changed by adding &lt;code&gt;-d bootVersion=1.3.1.BUILD-SNAPSHOT&lt;/code&gt; (for instance). To do the same for Gradle use &lt;code&gt;build.gradle&lt;/code&gt; instead of &lt;code&gt;pom.xml&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;h2&gt;&lt;a href="#using-spring-cloud-with-spring-boot" class="anchor" name="using-spring-cloud-with-spring-boot"&gt;&lt;/a&gt;Using Spring Cloud with Spring Boot&lt;/h2&gt;
-&lt;p&gt;Since Spring Cloud builds on top of Spring Boot it can be confusing and difficult to find a combination that works together. In what follows we describe a few scenerios of upgrades and show what you can expect to be able to achieve with dependency management. &lt;/p&gt;&lt;h3&gt;&lt;a href="#the-big-upgrade" class="anchor" name="the-big-upgrade"&gt;&lt;/a&gt;The Big Upgrade&lt;/h3&gt;
-&lt;p&gt;In general the biggest change will be when you upgrade (Spring Boot 1.2 to 1.3, or Spring Cloud Angel to Brixton). If you downloaded a project from the &lt;a href="https://start.spring.io"&gt;Spring Initializr&lt;/a&gt; then it will be using the Spring Boot parent POM:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;parent&amp;gt;&#xD;
-  &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
-  &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
-  &amp;lt;version&amp;gt;1.2.7.RELEASE&amp;lt;/version&amp;gt;&#xD;
-  &amp;lt;relativePath/&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;&#xD;
-&amp;lt;/parent&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;and a Spring Cloud BOM in the &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; section:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
-  &amp;lt;dependencies&amp;gt;&#xD;
-    &amp;lt;dependency&amp;gt;&#xD;
-      &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-      &amp;lt;artifactId&amp;gt;spring-cloud-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
-      &amp;lt;version&amp;gt;Angel.SR4&amp;lt;/version&amp;gt;&#xD;
-      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
-      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
-    &amp;lt;/dependency&amp;gt;&#xD;
-  &amp;lt;/dependencies&amp;gt;&#xD;
-&amp;lt;/dependencyManagement&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In Gradle you would see something like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;buildscript {&#xD;
-    ext {&#xD;
-        springBootVersion = &amp;#39;1.2.7.RELEASE&amp;#39;&#xD;
-    }&#xD;
-    repositories {&#xD;
-        mavenCentral()&#xD;
-    }&#xD;
-    dependencies {&#xD;
-        classpath(&amp;quot;org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}&amp;quot;) &#xD;
-    }&#xD;
-}&#xD;
-dependencyManagement {&#xD;
-  imports { &#xD;
-    mavenBom &amp;quot;org.springframework.cloud:spring-cloud-starter-parent:Angel.SR4&amp;quot; &#xD;
-  }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Simply updating the Spring Boot version in either case isn&amp;rsquo;t going to work because the Spring Cloud Angel BOM has old versions of Spring Boot and Spring (amongst other things). Thus we really need to upgrade both Spring Boot and Spring Cloud. For example in Maven:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;parent&amp;gt;&#xD;
-  &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
-  &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
-  &amp;lt;version&amp;gt;1.3.0.RELEASE&amp;lt;/version&amp;gt;&#xD;
-  &amp;lt;relativePath/&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;&#xD;
-&amp;lt;/parent&amp;gt;&#xD;
-&amp;lt;dependencyManagement&amp;gt;&#xD;
-  &amp;lt;dependencies&amp;gt;&#xD;
-    &amp;lt;dependency&amp;gt;&#xD;
-      &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-      &amp;lt;artifactId&amp;gt;spring-cloud-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
-      &amp;lt;version&amp;gt;Brixton.M3&amp;lt;/version&amp;gt;&#xD;
-      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
-      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
-    &amp;lt;/dependency&amp;gt;&#xD;
-  &amp;lt;/dependencies&amp;gt;&#xD;
-&amp;lt;/dependencyManagement&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;and in Gradle:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;buildscript {&#xD;
-    ext {&#xD;
-        springBootVersion = &amp;#39;1.3.0.RELEASE&amp;#39;&#xD;
-    }&#xD;
-    repositories {&#xD;
-        mavenCentral()&#xD;
-    }&#xD;
-    dependencies {&#xD;
-        classpath(&amp;quot;org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}&amp;quot;) &#xD;
-    }&#xD;
-}&#xD;
-dependencyManagement {&#xD;
-  imports { &#xD;
-    mavenBom &amp;quot;org.springframework.cloud:spring-cloud-starter-parent:Brixton.M3&amp;quot; &#xD;
-  }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;NOTE: Brixton.M2 and all earlier releases of Spring Cloud are &lt;em&gt;not&lt;/em&gt; compatible with Spring Boot 1.3.0.RELEASE. You need at least Brixton.M3.&lt;/p&gt;&lt;h2&gt;&lt;a href="#upgrading-spring-boot-beyond-1-3-0" class="anchor" name="upgrading-spring-boot-beyond-1-3-0"&gt;&lt;/a&gt;Upgrading Spring Boot Beyond 1.3.0&lt;/h2&gt;
-&lt;p&gt;Suppose you want to use Spring Boot snapshots, or upgrade to 1.3.1 when it is released, but Spring Cloud doesn&amp;rsquo;t have a version that explicitly depends on the version of Boot you want.&lt;/p&gt;
-&lt;p&gt;In Maven, remember that if you use one of the off the shelf parent POMs they contain &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; and will take precedence. With that in mind, if you use those parent POMs, be sure to use the parent with the closest dependency set to what you need (the Boot one in this scenario).&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;parent&amp;gt;&#xD;
-  &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
-  &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
-  &amp;lt;version&amp;gt;1.3.1.BUILD-SNAPSHOT&amp;lt;/version&amp;gt;&#xD;
-  &amp;lt;relativePath/&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;&#xD;
-&amp;lt;/parent&amp;gt;&#xD;
-&amp;lt;dependencyManagement&amp;gt;&#xD;
-  &amp;lt;dependencies&amp;gt;&#xD;
-    &amp;lt;dependency&amp;gt;&#xD;
-      &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-      &amp;lt;artifactId&amp;gt;spring-cloud-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
-      &amp;lt;version&amp;gt;Brixton.M3&amp;lt;/version&amp;gt;&#xD;
-      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
-      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
-    &amp;lt;/dependency&amp;gt;&#xD;
-  &amp;lt;/dependencies&amp;gt;&#xD;
-&amp;lt;/dependencyManagement&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In Gradle things are in principle simpler because there is no concept of a &amp;ldquo;parent&amp;rdquo;. In practice the Spring Boot plugin cannot be applied with a different version than the dependency management unless you also manually apply the dependency management plugin as well. So you have to do a little dance in the &lt;code&gt;build.gradle&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;buildscript {&#xD;
-    ext {&#xD;
-        springBootVersion = &amp;#39;1.3.0.RELEASE&amp;#39;&#xD;
-    }&#xD;
-    repositories {&#xD;
-        mavenCentral()&#xD;
-    }&#xD;
-    dependencies {&#xD;
-        classpath &amp;quot;io.spring.gradle:dependency-management-plugin:0.5.3.RELEASE&amp;quot;&#xD;
-        classpath(&amp;quot;org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}&amp;quot;) &#xD;
-    }&#xD;
-}&#xD;
-&#xD;
-apply plugin: &amp;quot;io.spring.dependency-management&amp;quot;&#xD;
-...&#xD;
-&#xD;
-dependencyManagement {&#xD;
-  imports { &#xD;
-    mavenBom &amp;quot;org.springframework.cloud:spring-cloud-starter-parent:Brixton.M3&amp;quot; &#xD;
-    mavenBom &amp;quot;org.springframework.bootspring-boot-starter-parent:1.3.1.BUILD-SNAPSHOT&amp;quot; &#xD;
-  }&#xD;
-}&#xD;
-&#xD;
-apply plugin: &amp;#39;spring-boot&amp;#39; &#xD;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The rule is you have to a) import the dependency management plugin manually and &lt;em&gt;before&lt;/em&gt; the Spring Boot one, b) declare the &lt;code&gt;dependencyManagement&lt;/code&gt; &lt;em&gt;before&lt;/em&gt; applying the Spring Boot plugin. Once you do that you can list dependencies in the &lt;code&gt;dependencyManagement&lt;/code&gt; declaration and the &lt;em&gt;last&lt;/em&gt; one wins (the opposite to Maven).&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE: This sensitivity to the order of the declarations is a &amp;ldquo;feature&amp;rdquo; of the current version of the tooling. It might be different in future versions. See &lt;a href="https://github.com/spring-gradle-plugins/dependency-management-plugin/issues/66"&gt;this issue in the Gradle tooling&lt;/a&gt; for more details.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;h2&gt;&lt;a href="#using-maven-with-a-custom-parent" class="anchor" name="using-maven-with-a-custom-parent"&gt;&lt;/a&gt;Using Maven with a Custom Parent&lt;/h2&gt;
-&lt;p&gt;If you don&amp;rsquo;t use the off the shelf parent POMs you have the freedom yo use one that does &lt;em&gt;not&lt;/em&gt; contain &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt;, and this makes things easier to control. In this case you need to put both Spring Boot and Spring Cloud in the &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; and the order is significant: the first one wins (last one for Gradle). For example, to use Spring Boot 1.3.1.BUILD-SNAPSHOT and Spring Cloud Brixton.M3 in Maven:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
-  &amp;lt;dependencies&amp;gt;&#xD;
-    &amp;lt;dependency&amp;gt;&#xD;
-      &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
-      &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
-      &amp;lt;version&amp;gt;1.3.1.BUILD-SNAPSHOT&amp;lt;/version&amp;gt;&#xD;
-      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
-      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
-    &amp;lt;/dependency&amp;gt;&#xD;
-    &amp;lt;dependency&amp;gt;&#xD;
-      &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-      &amp;lt;artifactId&amp;gt;spring-cloud-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
-      &amp;lt;version&amp;gt;Brixton.M3&amp;lt;/version&amp;gt;&#xD;
-      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
-      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
-    &amp;lt;/dependency&amp;gt;&#xD;
-  &amp;lt;/dependencies&amp;gt;&#xD;
-&amp;lt;/dependencyManagement&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#order-of-the-boms" class="anchor" name="order-of-the-boms"&gt;&lt;/a&gt;Order of the BOMs&lt;/h2&gt;
-&lt;p&gt;Note that in both Maven and Gradle the order of the BOMs is significant: the one that is declared first generally wins in Maven (last one in Gradle) if there is a conflict at the top level (explicitly declared dependencies). A big difference with Maven is that the parent is special: if it contains &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; it always wins.&lt;/p&gt;
-&lt;p&gt;To understand if a particular dependency version will resolve in the way you need is complicated. It depends on the order of the BOMs, &lt;em&gt;and&lt;/em&gt; the depth in the transitive dependency tree that your dependency is declared. For instance, the Spring Boot BOM declares an explicit (level 1) dependency management for &lt;code&gt;spring-core&lt;/code&gt; but not on any other Spring Framework jars (those are brought in via a reference to the Spring Framework BOM). The rule is that the first time it is declared wins, but the whole tree is included (including all BOMs), searching from the top, level by level.&lt;/p&gt;
-&lt;p&gt;NOTE: Gradle does not have this &amp;ldquo;last one wins&amp;rdquo; rule without the Spring Boot (or Spring Dependency Management) Plugin. To do the same thing with a &amp;ldquo;native&amp;rdquo; Gradle build often requires careful and tedious work manually fixing transitive dependency versions.&lt;/p&gt;&lt;h2&gt;&lt;a href="#further-manipulating-dependency-versions" class="anchor" name="further-manipulating-dependency-versions"&gt;&lt;/a&gt;Further Manipulating Dependency Versions&lt;/h2&gt;
-&lt;p&gt;If you want to bump the version of a dependency beyond what is specified in the Spring Boot and Spring Cloud BOMs, things can get complicated. Broadly speaking there are 2 options: properties and additional BOMs. The first (properties) works with the off the shelf parent POMs, and the other doesn&amp;rsquo;t. The second (more BOMs) only works if there &lt;em&gt;is&lt;/em&gt; a BOM available for the dependency you are interested in, and only if the transitive dependencies don&amp;rsquo;t conflict with your requirements. All of the Spring Cloud projects have their own BOM, for instance, as does Spring Framework, so that&amp;rsquo;s a start. &lt;/p&gt;&lt;h3&gt;&lt;a href="#properties" class="anchor" name="properties"&gt;&lt;/a&gt;Properties&lt;/h3&gt;
-&lt;p&gt;The Spring Boot parent POM (and the Spring Cloud one if you use that since it inherits from the Boot one) has all of its dependency versions extracted into &lt;code&gt;&amp;lt;properties/&amp;gt;&lt;/code&gt;. So you can often just change the property value. Example in Maven:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;parent&amp;gt;&#xD;
-  &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
-  &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
-  &amp;lt;version&amp;gt;1.3.0.RELEASE&amp;lt;/version&amp;gt;&#xD;
-  &amp;lt;relativePath/&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;&#xD;
-&amp;lt;/parent&amp;gt;&#xD;
-&amp;lt;properties&amp;gt;&#xD;
-  &amp;lt;spring.version&amp;gt;4.2.4.BUILD-SNAPSHOT&amp;lt;/spring.version&amp;gt;&#xD;
-&amp;lt;/properties&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;There corresponding feature in Gradle is an &lt;code&gt;ext&lt;/code&gt; property, e.g.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;ext[&amp;#39;spring.version&amp;#39;] = &amp;#39;4.2.4.BUILD-SNAPSHOT&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#additional-boms" class="anchor" name="additional-boms"&gt;&lt;/a&gt;Additional BOMs&lt;/h3&gt;
-&lt;p&gt;The Spring Framework has its own BOM, so we can use that to manage the Spring versions instead. In Maven with a custom parent (containing no &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
-  &amp;lt;dependencies&amp;gt;&#xD;
-    &amp;lt;dependency&amp;gt;&#xD;
-      &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;&#xD;
-      &amp;lt;artifactId&amp;gt;spring-framework-bom&amp;lt;/artifactId&amp;gt;&#xD;
-      &amp;lt;version&amp;gt;4.2.4.BUILD-SNAPSHOT&amp;lt;/version&amp;gt;&#xD;
-      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
-      &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
-    &amp;lt;/dependency&amp;gt;&#xD;
-  &amp;lt;/dependencies&amp;gt;&#xD;
-&amp;lt;/dependencyManagement&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE: this example actually will &lt;em&gt;not&lt;/em&gt; work with the Spring Boot parent POM (unless it happens to have the same &lt;code&gt;&amp;lt;spring.version/&amp;gt;&lt;/code&gt;) because the Spring Framework version is fixed already by the parent. To use the Spring Boot parent with a Spring Framwork snapshot it is better to use the properties approach (above).&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In Gradle it is simpler (because there is no parent to set conflicting versions):&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;dependencyManagement {&#xD;
-	imports { &#xD;
-      mavenBom &amp;quot;org.springframework:spring-framework-bom:4.2.4.BUILD-SNAPSHOT&amp;quot; &#xD;
-      mavenBom &amp;quot;org.springframework.boot:spring-boot-starter-parent:1.3.0.RELEASE&amp;quot; &#xD;
-	}&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#conclusion" class="anchor" name="conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Dependency management is hard, but hopefully we have softened the blow by outlining a few common scenarios when upgrading bits of Spring Boot and Spring Cloud. There are some slightly different behaviours depending on whether you choose Maven or Gradle, but at least if you choose Gradle and use the Spring Boot plugin the differences are minimized. At the end of the day, Spring projects have different release schedules, so there can always be conflicts, but they will generally always be moving towards convergence, so if you wait long enough things will equalize. Umbrella projects like Spring Cloud, Spring Boot and the Spring IO Platform also help to smooth out the bumps: if you can use one of those to manage all your dependencies things get a lot simpler.&lt;/p&gt;
-&lt;p&gt;The sample apps in the Spring Guides have all been updated to Spring Boot 1.3 now, even if that means they depend on a milestone of Spring Cloud (this only applies to the Zuul proxy sample). Many do not need Spring Cloud any more. If you need a GA version of Spring Cloud you need to stay with Spring Boot 1.2 right now. The samples for that combination can be lifted from git history.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - November 23, 2015</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/11/24/this-week-in-spring-november-23-2015" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2015-11-24:2305</id>
-    <updated>2015-11-24T11:00:00Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installation of &lt;em&gt;This Week in Spring&lt;/em&gt;! Here in the US it&amp;rsquo;s the week of Thanksgiving, where - hopefully - we take a moment to note the many things for which we&amp;rsquo;re thankful. I&amp;rsquo;m sure I speak for the whole team here at Pivotal when I say: we&amp;rsquo;re thankful for you, dear community. Thank you.&lt;/p&gt;
-&lt;p&gt;And so, as usual, we&amp;rsquo;ve got a lot to get to it. All the better, in fact, for the lazy hours after turkey! &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Dr. Mark Pollack has just announced the release &lt;a href="http://spring.io/blog/2015/11/19/spring-xd-1-3-ga-and-flo-for-spring-xd-1-0-ga-released"&gt;of Spring XD 1.3 GA and Spring Flo for Spring XD 1.0&lt;/a&gt;. This is a &lt;em&gt;huge&lt;/em&gt; release! Spring XD 1.3.0 supports job composition DSLs, Spring Flo for Spring XD, an improved Admin UI, Spark 1.3.1, updates to the Spring Data and Spring for Hadoop distributions, a Cassandra Sink and &lt;em&gt;much&lt;/em&gt; more! It is also the last in the line before Spring XD completes its journey to the archhitecture already partially laid out in Spring Cloud Stream and Spring Cloud Dataflow! This is an exciting evolution of the technology!&lt;/li&gt;
-  &lt;li&gt;Spring Security and Spring Session lead &lt;a href="http://spring.io/blog/2015/11/17/spring-session-1-1-0-m1-released"&gt;Rob Winch has just announced Spring Session 1.1.0.M1&lt;/a&gt; complete with a lot of new features: searching HTTP sessions by username, &lt;code&gt;HttpSessionListener&lt;/code&gt; support, customized &lt;code&gt;Cookie&lt;/code&gt; creation, overriding the default &lt;code&gt;RedisSerializer&lt;/code&gt;, and Hazelcast configuration and support.&lt;/li&gt;
-  &lt;li&gt;the amazing Andy Wilkinson just &lt;a href="http://spring.io/blog/2015/11/18/spring-io-platform-2-0-0-release"&gt;announced the Spring IO Platform 2.0.0.RELEASE&lt;/a&gt;! The Spring IO platform is a great way to mange your dependencies, in the same way that the Spring Boot dependency management section does, but with an eye towards supporting a) longer terms of stability and b) supporting &lt;em&gt;all&lt;/em&gt; Spring projects, not just those supported by Spring Boot. It&amp;rsquo;s a &lt;em&gt;wonderful&lt;/em&gt; solution for managing applications.&lt;/li&gt;
-  &lt;li&gt;Spring Statemachine lead Janne Valkealahti has &lt;a href="http://spring.io/blog/2015/11/20/spring-statemachine-1-0-1-released"&gt;just announced 1.0.1&lt;/a&gt; which includes a new &lt;code&gt;@EnableStateMachine&lt;/code&gt; annotation, updates to 4.2.2, and several fixes.&lt;/li&gt;
-  &lt;li&gt;friend to the Pivotal community Dan Vega talks about &lt;a href="http://therealdanvega.com/blog/2015/11/17/spring-boot-introduction-course"&gt;his just released Udemy course on using Spring Boot&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Mattias Severson&amp;rsquo;s post explains how to use the Gradle Spring Boot plugin to ensure that a project a project - &lt;a href="http://www.jayway.com/2015/11/23/reusing-spring-boots-dependency-management/"&gt;that doesn&amp;rsquo;t otherwise use or depend on Spring Boot - gets the same versions as if it did&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This slide deck &lt;a href="https://speakerdeck.com/toedter/cool-web-apps-with-spring-boot-angularjs-and-typescript"&gt;&lt;em&gt;Cool Web Apps with Spring Boot, AngularJS &amp;amp; TypeScript&lt;/em&gt; by Kai Toedter seemed pretty interesting!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;the Stormpath Java developer evangelist &lt;a href="https://www.youtube.com/watch?v=5Cs6GahGSjE"&gt;Micah Silverman just blogged about their new Stormpath Spring Boot auto-configuration&lt;/a&gt;. &lt;a href="http://www.slideshare.net/stormpath/stormpath-101-spring-boot-spring-security"&gt;The slides are available online, as well&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://activiti.org"&gt;Activiti&lt;/a&gt; ninja Joram Barrez blogged about the &lt;a href="http://www.jorambarrez.be/blog/category/spring-2/"&gt;recent addition of the Activiti auto-configuration&lt;/a&gt; to the &lt;a href="http://start.spring.io"&gt;Spring Initializr&lt;/a&gt;, complete with a cool demo!&lt;/li&gt;
-  &lt;li&gt;Dan also did a nice video about one of the features &lt;a href="https://www.youtube.com/watch?v=JAOsHylYj9o&amp;feature=youtu.be&amp;a"&gt;in Spring Boot 1.3 that&amp;rsquo;s sweeping the nation: the color ASCII art banners&lt;/a&gt;!&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Statemachine 1.0.1 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/11/20/spring-statemachine-1-0-1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Janne Valkealahti</name>
-    </author>
-    <id>tag:spring.io,2015-11-20:2304</id>
-    <updated>2015-11-20T17:38:41Z</updated>
-    <content type="html">&lt;p&gt;We’re pleased to announce a first maintenance release of &lt;a href="http://projects.spring.io/spring-statemachine"&gt;Spring Statemachine 1.0.1&lt;/a&gt;. Artifacts are available either from &lt;a href="http://repo1.maven.org/maven2/org/springframework/statemachine/"&gt;Maven Central&lt;/a&gt; or from &lt;a href="http://repo.spring.io/libs-release/org/springframework/statemachine/"&gt;Spring Repository&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Changes in version 1.0.1 (2015-11-18)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;autoStart via @EnableStateMachineFactory doesn&amp;rsquo;t work [#113]&lt;/li&gt;
-  &lt;li&gt;Update to framework 4.2.2 [#115]&lt;/li&gt;
-  &lt;li&gt;Association with @EnableStateMachine and @WithStateMachine [#116]&lt;/li&gt;
-  &lt;li&gt;EnableStateMachineFactory fails when there are 2 state machine configurations [#117]&lt;/li&gt;
-  &lt;li&gt;PersistStateMachineHandler returning event outcome [#118]&lt;/li&gt;
-  &lt;li&gt;NPE with missing configurer [#119]&lt;/li&gt;
-  &lt;li&gt;Context events not working with StateMachineBuilder [#120]&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring XD 1.3 GA and Flo for Spring XD 1.0 GA released</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/11/19/spring-xd-1-3-ga-and-flo-for-spring-xd-1-0-ga-released" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Mark Pollack</name>
-    </author>
-    <id>tag:spring.io,2015-11-19:2303</id>
-    <updated>2015-11-19T23:20:00Z</updated>
-    <content type="html">&lt;p&gt;Today we are pleased to announce the general availability of Spring XD 1.3 and Flo for Spring XD 1.0.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring XD 1.3 GA: &lt;a href="http://repo.spring.io/libs-milestone/org/springframework/xd/spring-xd/1.3.0.RELEASE/spring-xd-1.3.0.RELEASE-dist.zip"&gt;zip&lt;/a&gt;, &lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.RELEASE/reference/html/#osx-homebrew-installation"&gt;brew&lt;/a&gt; and &lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.RELEASE/reference/html/#redhatcentos-installation"&gt;rpm&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Flo for Spring XD 1.0 GA: &lt;a href="https://network.pivotal.io/products/p-spring-flo/"&gt;zip&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In addition to bug fixes we have also added several new features in the 1.3 release line&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.RELEASE/reference/html/#composed-jobs"&gt;Job Composition DSL&lt;/a&gt; allows for the creation of a complex graph of job executions.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://blog.pivotal.io/big-data-pivotal/features/the-new-flo-for-spring-xd"&gt;Flo for Spring XD&lt;/a&gt; designer supports creating &lt;a href="http://docs.pivotal.io/spring-flo/building-composed-jobs.html"&gt;composed jobs&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Admin UI supports execution history of composed jobs.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.RELEASE/reference/html/#cassandra"&gt;Cassandra Sink&lt;/a&gt; and &lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.RELEASE/reference/html/#header-enricher"&gt;Header Enricher Processor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://docs.spring.io/spring-xd/docs/1.3.0.RELEASE/reference/html/#gpfdist"&gt;Gpfdist sink&lt;/a&gt; now supports update operations and full range of control file options&lt;/li&gt;
-  &lt;li&gt;Spark 1.3.1 Support&lt;/li&gt;
-  &lt;li&gt;A timeout value for flushing writes to HDFS in order to ensure data is persisted on the HDFS DataNode’s disks.&lt;/li&gt;
-  &lt;li&gt;General dependency upgrades, Spring Data Gosling, SI 4.2, and Boot 1.2&lt;/li&gt;
-  &lt;li&gt;Hadoop distribution version updates to Apache Hadoop 2.7.1 and Hortonworks Data Platform 2.2. Pivotal Hadoop 2.1, 3.0 and Cloudera Hadoop 5.3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The next release line introduces a major redesign to the underlying architecture and breaking up Spring XD into several independent projects. Building upon Spring Boot and Spring Cloud capabilities, Spring XD is actively being redesigned as &lt;a href="http://cloud.spring.io/spring-cloud-dataflow/"&gt;Spring Cloud Data Flow&lt;/a&gt; - a cloud native programming and operating model for composable message-driven microservices. More details can be found in the blog posts: &lt;a href="http://blog.pivotal.io/pivotal-cloud-foundry/products/introducing-spring-cloud-data-flow"&gt;Introducing Spring Cloud Data Flow&lt;/a&gt; and &lt;a href="http://blog.pivotal.io/pivotal-perspectives/features/a-quick-look-at-spring-cloud-data-flow"&gt;A Quick Look At Spring Cloud Data Flow&lt;/a&gt;. InfoQ also summarizes the changes in the article &lt;a href="http://www.infoq.com/news/2015/09/spring-cloud-data-flow"&gt;SpringXD being Re-architected and Re-branded to Spring Cloud Data Flow&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Feedback is very important, so please get in touch with questions and comments via&lt;br/&gt;* &lt;a href="http://stackoverflow.com/questions/tagged/spring-xd"&gt;StackOverflow&lt;/a&gt; &lt;code&gt;spring-xd&lt;/code&gt; tag&lt;br/&gt;* &lt;a href="https://jira.spring.io/browse/XD/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel"&gt;Spring JIRA&lt;/a&gt; or &lt;a href="https://github.com/spring-projects/spring-xd/issues"&gt;GitHub Issues&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring IO Platform 2.0.0.RELEASE</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/11/18/spring-io-platform-2-0-0-release" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2015-11-18:2302</id>
-    <updated>2015-11-18T11:35:00Z</updated>
-    <content type="html">&lt;p&gt;Spring IO Platform 2.0.0.RELEASE is now available from the &lt;a href="https://repo.spring.io/release"&gt;Spring release repository&lt;/a&gt; and Maven Central.&lt;/p&gt;
-&lt;p&gt;Additions:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring REST Docs 1.0&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Major upgrades:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Reactor 2.0&lt;/li&gt;
-  &lt;li&gt;Spring Security 4.0&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Minor upgrades:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring AMQP 1.5&lt;/li&gt;
-  &lt;li&gt;Spring Boot 1.3&lt;/li&gt;
-  &lt;li&gt;Spring Cloud Connectors 1.2&lt;/li&gt;
-  &lt;li&gt;Spring Data Gosling&lt;/li&gt;
-  &lt;li&gt;Spring Framework 4.2&lt;/li&gt;
-  &lt;li&gt;Spring HATEOAS 0.19&lt;/li&gt;
-  &lt;li&gt;Spring Integration 4.2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A number of other Spring projects and their dependencies have also been updated to their latest maintenance releases.&lt;/p&gt;
-&lt;p&gt;Please note that a number of dependencies that were previously part of the Platform have been removed or replaced in this release. Please refer to &lt;a href="http://docs.spring.io/platform/docs/2.0.0.RELEASE/reference/htmlsingle/#upgrading-dependency-management"&gt;the documentation&lt;/a&gt; for further details.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/2.0.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Session 1.1.0.M1 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/11/17/spring-session-1-1-0-m1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Rob Winch</name>
-    </author>
-    <id>tag:spring.io,2015-11-17:2301</id>
-    <updated>2015-11-17T20:50:57Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the community, I&amp;rsquo;m pleased to announce the release of Spring Session 1.1.0.M1. &lt;a href="https://repo.spring.io/milestone/org/springframework/session/spring-session-data-redis/1.1.0.M1/"&gt;The release&lt;/a&gt; can be found in the &lt;a href="https://github.com/spring-projects/spring-framework/wiki/Spring-repository-FAQ#what-repositories-are-available"&gt;Spring Milestone Repository&lt;/a&gt; (&lt;a href="https://repo.spring.io/milestone/)"&gt;https://repo.spring.io/milestone/)&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains lots of fixes and new features. You can find a complete list in the &lt;a href="https://github.com/spring-projects/spring-session/issues?utf8=%E2%9C%93&amp;q=milestone%3A%221.1.0+M1%22"&gt;changelog&lt;/a&gt;. The highlights have been included below:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Support for &lt;a href="http://docs.spring.io/spring-session/docs/1.1.0.M1/reference/html5/guides/findbyusername.html"&gt;search for session by username&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Support &lt;a href="http://docs.spring.io/spring-session/docs/1.1.0.M1/reference/html5/guides/custom-cookie.html"&gt;Customize Cookie Creation&lt;/a&gt;. Thanks to everyone who provided PRs and feedback for this feature!&lt;/li&gt;
-  &lt;li&gt;Add &lt;a href="http://docs.spring.io/spring-session/docs/1.1.0.M1/reference/html5/#httpsession-httpsessionlistener"&gt;HttpSessionListener&lt;/a&gt; support&lt;/li&gt;
-  &lt;li&gt;Allow &lt;a href="https://github.com/spring-projects/spring-session/issues/283"&gt;override default RedisSerializer&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Added comprehensive &lt;a href="http://docs.spring.io/spring-session/docs/1.1.0.M1/reference/html5/guides/hazelcast-spring.html"&gt;Hazelcast and configuration support&lt;/a&gt;. Thanks &lt;a href="https://twitter.com/_mark_a"&gt;@_mark_a&lt;/a&gt; and &lt;a href="https://twitter.com/tommyludwig"&gt;@tommyludwig&lt;/a&gt;!&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-session/issues/271"&gt;Performance improvements&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Allow scoping the session in Redis using &lt;a href="http://docs.spring.io/spring-session/docs/1.1.0.M1/reference/html5/#api-redisoperationssessionrepository-config"&gt;redisNamespace&lt;/a&gt;. Thanks &lt;a href="https://github.com/fstegmann"&gt;fstegmann&lt;/a&gt;!&lt;/li&gt;
-  &lt;li&gt;Add &lt;a href="https://github.com/spring-projects/spring-session/issues/272"&gt;ExpiringSession.setLastAccessedTime(long)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-session/"&gt;Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-session/docs/1.1.0.M1/reference/html5/"&gt;Documentation&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-session/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-session"&gt;Help&lt;/a&gt; &lt;/p&gt;</content>
   </entry>
 </feed>
