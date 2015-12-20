@@ -4934,3 +4934,11 @@ java.io.InvalidClassException: org.eclipse.m2e.core.internal.project.registry.Ba
 2015-12-20 12:49:46,790 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Joshua/Documents/E_zer/ROOT/src/main/resources
 2015-12-20 12:49:46,791 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2015-12-20 12:49:46,792 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Joshua/Documents/E_zer/ROOT/src/test/resources
+2015-12-20 12:53:11,931 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-20 12:53:11,936 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Joshua/Documents/E_zer/ROOT/src/main/resources
+2015-12-20 12:53:11,941 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-20 12:53:11,942 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Joshua/Documents/E_zer/ROOT/src/test/resources
+2015-12-20 12:53:31,509 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-20 12:53:31,510 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Joshua/Documents/E_zer/ROOT/src/main/resources
+2015-12-20 12:53:31,512 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-20 12:53:31,513 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Joshua/Documents/E_zer/ROOT/src/test/resources
