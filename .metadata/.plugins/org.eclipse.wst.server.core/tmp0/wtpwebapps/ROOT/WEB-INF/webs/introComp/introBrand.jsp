@@ -27,7 +27,7 @@
 <!-- Custom CSS -->
 <link href="<%=cp%>/css/ezer.css" rel="stylesheet">
 <!-- Fonts -->
-<script src="//code.jquery.com/jquery-1.11.3.min.js">
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
 	integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
@@ -201,20 +201,20 @@ function initTabs(){
 						<div class="bs-example" data-example-id="simple-thumbnails">
 							<div class="row">
 								<div class="col-xs-6 col-md-4 ">
-									<a href="#" class="thumbnail "> <img class="ezer_intro"
-										src="<%=cp%>/img/intro_brand_ezer.png"
+									<a href="#" class="thumbnail "> <img class="intro_ezer"
+										src="<%=cp%>/img/intro_ezer_main.png"
 										data-holder-rendered="true"display:block;">
 									</a>
 								</div>
 								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img class="ezer_intro"
-										src="<%=cp%>/img/intro_brand_ezer.png"
+									<a href="#" class="thumbnail "> <img class="intro_coloris"
+										src="<%=cp%>/img/intro_coloris_main.png"
 										data-holder-rendered="true"display:block;">
 									</a>
 								</div>
 								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img class="ezer_intro"
-										src="<%=cp%>/img/intro_brand_ezer.png"
+									<a href="#" class="thumbnail "> <img class="intro_galaxia"
+										src="<%=cp%>/img/intro_galaxia_main.png"
 										data-holder-rendered="true"display:block;">
 									</a>
 								</div>
@@ -222,33 +222,37 @@ function initTabs(){
 							</div>
 							<div class="row">
 								<div class="col-xs-12 col-md-3 intro_ezer">
-									<img src="<%=cp%>/img/intro_ezer.jpg">
+									<img class="intro_margot_main"
+										src="<%=cp%>/img/intro_ezer.jpg">
 								</div>
 								<div class="col-xs-12 col-md-3 intro_ezer1">
-									<img src="<%=cp%>/img/intro_ezer.jpg">
+									<img class="intro_nanobuble"
+										src="<%=cp%>/img/intro_ezer.jpg">
 								</div>
 								<div class="col-xs-12 col-md-3 intro_ezer2">
-									<img src="<%=cp%>/img/intro_ezer.jpg">
+									<img class="intro_teatoxy"
+										src="<%=cp%>/img/intro_ezer.jpg">
 								</div>
 
 
 							</div>
 							<div class="row">
 								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img class="ezer_intro4"
-										src="<%=cp%>/img/intro_brand_ezer.png"
+									<a href="#" class="thumbnail "> <img
+										class="intro_margot_main" src="<%=cp%>/img/intro_margot_main.png"
 										data-holder-rendered="true"display:block;">
 									</a>
 								</div>
 								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img class="ezer_intro5"
-										src="<%=cp%>/img/intro_brand_ezer.png"
+									<a href="#" class="thumbnail "> <img
+										class="intro_nanobuble"
+										src="<%=cp%>/img/intro_nanobuble_main.png"
 										data-holder-rendered="true"display:block;">
 									</a>
 								</div>
 								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img class="ezer_intro6"
-										src="<%=cp%>/img/intro_brand_ezer.png"
+									<a href="#" class="thumbnail "> <img class="intro_teatoxy"
+										src="<%=cp%>/img/intro_teatoxy_main.png"
 										data-holder-rendered="true"display:block;">
 									</a>
 								</div>

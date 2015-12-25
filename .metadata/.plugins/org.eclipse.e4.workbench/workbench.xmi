@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;ezer.js&quot; tooltip=&quot;ROOT/WebContent/js/ezer.js&quot;>&#xA;&lt;persistable path=&quot;/ROOT/WebContent/js/ezer.js&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;jquery.js&quot; tooltip=&quot;ROOT/WebContent/js/jquery.js&quot;>&#xA;&lt;persistable path=&quot;/ROOT/WebContent/js/jquery.js&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;ezer.css&quot; tooltip=&quot;ROOT/WebContent/css/ezer.css&quot;>&#xA;&lt;persistable path=&quot;/ROOT/WebContent/css/ezer.css&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;introBrand.jsp&quot; tooltip=&quot;ROOT/WebContent/WEB-INF/webs/introComp/introBrand.jsp&quot;>&#xA;&lt;persistable path=&quot;/ROOT/WebContent/WEB-INF/webs/introComp/introBrand.jsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;index1.jsp&quot; tooltip=&quot;ROOT/WebContent/WEB-INF/webs/index1.jsp&quot;>&#xA;&lt;persistable path=&quot;/ROOT/WebContent/WEB-INF/webs/index1.jsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;index.jsp&quot; tooltip=&quot;ROOT/WebContent/WEB-INF/webs/index.jsp&quot;>&#xA;&lt;persistable path=&quot;/ROOT/WebContent/WEB-INF/webs/index.jsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.wst.server.ui.editor.input.factory&quot; id=&quot;org.eclipse.wst.server.ui.editor&quot; name=&quot;Tomcat v8.0 Server at localhost&quot; tooltip=&quot;Tomcat v8.0 Server at localhost&quot;>&#xA;&lt;persistable server-id=&quot;Tomcat v8.0 Server at localhost&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;toroad.jsp&quot; tooltip=&quot;ROOT/WebContent/WEB-INF/webs/introComp/toroad.jsp&quot;>&#xA;&lt;persistable path=&quot;/ROOT/WebContent/WEB-INF/webs/introComp/toroad.jsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;toroad.txt&quot; tooltip=&quot;ROOT/WebContent/WEB-INF/webs/introComp/toroad.txt&quot;>&#xA;&lt;persistable path=&quot;/ROOT/WebContent/WEB-INF/webs/introComp/toroad.txt&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;index.jsp&quot; tooltip=&quot;I:\Dropbox\project\EzerMain\ROOT\WEB-INF\webs\index.jsp&quot;>&#xA;&lt;persistable uri=&quot;file:/I:/Dropbox/project/EzerMain/ROOT/WEB-INF/webs/index.jsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LrunSIMp.java&quot; tooltip=&quot;ROOT/src/com/ezer_g/www/service/LrunSIMp.java&quot;>&#xA;&lt;persistable path=&quot;/ROOT/src/com/ezer_g/www/service/LrunSIMp.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Lrunservice.java&quot; tooltip=&quot;ROOT/src/com/ezer_g/www/service/Lrunservice.java&quot;>&#xA;&lt;persistable path=&quot;/ROOT/src/com/ezer_g/www/service/Lrunservice.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ezerWebcon.java&quot; tooltip=&quot;I:\Dropbox\project\EzerMain\ROOT\src\com\ezer_g\www\web\ezerWebcon.java&quot;>&#xA;&lt;persistable uri=&quot;file:/I:/Dropbox/project/EzerMain/ROOT/src/com/ezer_g/www/web/ezerWebcon.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ezerWebcon.java&quot; tooltip=&quot;ROOT/src/com/ezer_g/www/web/ezerWebcon.java&quot;>&#xA;&lt;persistable path=&quot;/ROOT/src/com/ezer_g/www/web/ezerWebcon.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;E-main/pom.xml&quot;>&#xA;&lt;persistable path=&quot;/E-main/pom.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_wBBcMZ8XEeWLTohJpUB7wg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_wBBcMp8XEeWLTohJpUB7wg" label="%trimmedwindow.label.eclipseSDK" x="1781" y="101" width="1920" height="1080">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_wBBcMZ8XEeWLTohJpUB7wg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_wBBcMp8XEeWLTohJpUB7wg" label="%trimmedwindow.label.eclipseSDK" x="1781" y="101" width="1920" height="1057">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workingSets/>"/>
@@ -11,6 +11,7 @@
     <persistedState key="isRestored" value="true"/>
     <persistedState key="show_in_time" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;show_in_time/>"/>
     <tags>topLevel</tags>
+    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_wBBcMp8XEeWLTohJpUB7wg" selectedElement="_wBBcM58XEeWLTohJpUB7wg" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_wBBcM58XEeWLTohJpUB7wg" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_wBBcNJ8XEeWLTohJpUB7wg">
         <children xsi:type="advanced:Perspective" xmi:id="_wBBcNJ8XEeWLTohJpUB7wg" elementId="com.springsource.sts.ide.perspective" selectedElement="_wBBcNZ8XEeWLTohJpUB7wg" label="Spring" iconURI="platform:/plugin/org.springframework.ide.eclipse.ui/icons/full/obj16/spring_perspective.gif">
@@ -324,9 +325,8 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_wBBdsZ8XEeWLTohJpUB7wg" elementId="org.eclipse.ui.editorss" selectedElement="_dHRVEKbEEeWFou-ujL8ByA">
-      <children xsi:type="basic:PartSashContainer" xmi:id="_dHRVEKbEEeWFou-ujL8ByA" selectedElement="_wBBdsp8XEeWLTohJpUB7wg" horizontal="true">
-        <children xsi:type="basic:PartStack" xmi:id="_wBBdsp8XEeWLTohJpUB7wg" elementId="PartStack@6abd8a99" containerData="4648" selectedElement="_WGqg8KChEeWpJq14u7iTvA">
-          <tags>active</tags>
+      <children xsi:type="basic:PartSashContainer" xmi:id="_dHRVEKbEEeWFou-ujL8ByA" selectedElement="_dHRVEabEEeWFou-ujL8ByA" horizontal="true">
+        <children xsi:type="basic:PartStack" xmi:id="_wBBdsp8XEeWLTohJpUB7wg" elementId="PartStack@6abd8a99" containerData="4854" selectedElement="_WGqg8KChEeWpJq14u7iTvA">
           <children xsi:type="basic:Part" xmi:id="_wBBds58XEeWLTohJpUB7wg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ezerWebcon.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
             <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ezerWebcon.java&quot; partName=&quot;ezerWebcon.java&quot; title=&quot;ezerWebcon.java&quot; tooltip=&quot;ROOT/src/com/ezer_g/www/web/ezerWebcon.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ROOT/src/com/ezer_g/www/web/ezerWebcon.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;753&quot; selectionTopPixel=&quot;195&quot;/>&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
@@ -356,15 +356,14 @@
             <tags>removeOnHide</tags>
           </children>
           <children xsi:type="basic:Part" xmi:id="_WGqg8KChEeWpJq14u7iTvA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="introBrand.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;introBrand.jsp&quot; partName=&quot;introBrand.jsp&quot; title=&quot;introBrand.jsp&quot; tooltip=&quot;ROOT/WebContent/WEB-INF/webs/introComp/introBrand.jsp&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ROOT/WebContent/WEB-INF/webs/introComp/introBrand.jsp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;8581&quot; selectionTopPixel=&quot;3765&quot;/>&#xA;&lt;/editor>"/>
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;introBrand.jsp&quot; partName=&quot;introBrand.jsp&quot; title=&quot;introBrand.jsp&quot; tooltip=&quot;ROOT/WebContent/WEB-INF/webs/introComp/introBrand.jsp&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ROOT/WebContent/WEB-INF/webs/introComp/introBrand.jsp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;213&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;6832&quot; selectionTopPixel=&quot;2924&quot;/>&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
             <tags>removeOnHide</tags>
-            <tags>active</tags>
-            <tags>activeOnClose</tags>
           </children>
         </children>
-        <children xsi:type="basic:PartStack" xmi:id="_dHRVEabEEeWFou-ujL8ByA" elementId="PartStack@19e9880d" containerData="5352" selectedElement="_v4mGEKbEEeWFou-ujL8ByA">
+        <children xsi:type="basic:PartStack" xmi:id="_dHRVEabEEeWFou-ujL8ByA" elementId="PartStack@19e9880d" containerData="5146" selectedElement="_v4mGEKbEEeWFou-ujL8ByA">
+          <tags>active</tags>
           <children xsi:type="basic:Part" xmi:id="_cyKnwKbEEeWFou-ujL8ByA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ezer.css" iconURI="platform:/plugin/org.eclipse.wst.css.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
             <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;ezer.css&quot; partName=&quot;ezer.css&quot; title=&quot;ezer.css&quot; tooltip=&quot;ROOT/WebContent/css/ezer.css&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ROOT/WebContent/css/ezer.css&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;42&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2461&quot; selectionTopPixel=&quot;1080&quot;/>&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
@@ -372,10 +371,12 @@
             <tags>removeOnHide</tags>
           </children>
           <children xsi:type="basic:Part" xmi:id="_v4mGEKbEEeWFou-ujL8ByA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ezer.js" iconURI="platform:/plugin/org.eclipse.wst.jsdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;ezer.js&quot; partName=&quot;ezer.js&quot; title=&quot;ezer.js&quot; tooltip=&quot;ROOT/WebContent/js/ezer.js&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ROOT/WebContent/js/ezer.js&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;330&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;ezer.js&quot; partName=&quot;ezer.js&quot; title=&quot;ezer.js&quot; tooltip=&quot;ROOT/WebContent/js/ezer.js&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ROOT/WebContent/js/ezer.js&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;343&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.wst.jsdt.ui.CompilationUnitEditor</tags>
             <tags>removeOnHide</tags>
+            <tags>active</tags>
+            <tags>activeOnClose</tags>
           </children>
         </children>
       </children>
@@ -589,7 +590,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_wBCDXp8XEeWLTohJpUB7wg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_G-66sKbAEeWFou-ujL8ByA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_wBD40Z8XEeWLTohJpUB7wg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_2wC1AKq0EeWzg4idPrakQg" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_wBD40Z8XEeWLTohJpUB7wg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_wBCDa58XEeWLTohJpUB7wg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -607,7 +608,7 @@
       <children xsi:type="menu:ToolBar" xmi:id="_wBCDpZ8XEeWLTohJpUB7wg" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_wBCDq58XEeWLTohJpUB7wg" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
+      <children xsi:type="menu:ToolBar" xmi:id="_wBCDq58XEeWLTohJpUB7wg" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_wBCDs58XEeWLTohJpUB7wg" elementId="org.eclipse.wst.server.ui.internal.webbrowser.actionSet">
@@ -622,7 +623,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_wBCDuZ8XEeWLTohJpUB7wg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_G--lEKbAEeWFou-ujL8ByA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_wBDT6J8XEeWLTohJpUB7wg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_2wEqMaq0EeWzg4idPrakQg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_wBDT6J8XEeWLTohJpUB7wg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_wBCDxZ8XEeWLTohJpUB7wg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1197,7 +1198,7 @@
     <bindings xmi:id="_3pZ0pqCdEeW66tz_pKUwyA" keySequence="ALT+COMMAND+X O" command="_wBDSjp8XEeWLTohJpUB7wg">
       <tags>platform:cocoa</tags>
     </bindings>
-    <bindings xmi:id="_GeMzQabAEeWFou-ujL8ByA" keySequence="COMMAND+CTRL+F" command="_wBD6Sp8XEeWLTohJpUB7wg"/>
+    <bindings xmi:id="_2RXU8aq0EeWzg4idPrakQg" keySequence="COMMAND+CTRL+F" command="_wBD6Sp8XEeWLTohJpUB7wg"/>
   </bindingTables>
   <bindingTables xmi:id="_wBCFD58XEeWLTohJpUB7wg" elementId="org.eclipse.tm.terminal.EditContext" bindingContext="_wBCGGJ8XEeWLTohJpUB7wg">
     <bindings xmi:id="_wBCFEJ8XEeWLTohJpUB7wg" keySequence="SHIFT+INSERT" command="_wBDT358XEeWLTohJpUB7wg"/>
@@ -1495,7 +1496,7 @@
     <bindings xmi:id="_3pFrkKCdEeW66tz_pKUwyA" keySequence="COMMAND+1" command="_wBD6RJ8XEeWLTohJpUB7wg"/>
   </bindingTables>
   <bindingTables xmi:id="_wBCF658XEeWLTohJpUB7wg" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_wBCGIp8XEeWLTohJpUB7wg">
-    <bindings xmi:id="_GeOBYKbAEeWFou-ujL8ByA" keySequence="M1+W" command="_wBD6TJ8XEeWLTohJpUB7wg"/>
+    <bindings xmi:id="_2RX8AKq0EeWzg4idPrakQg" keySequence="M1+W" command="_wBD6TJ8XEeWLTohJpUB7wg"/>
   </bindingTables>
   <rootContext xmi:id="_wBCF7J8XEeWLTohJpUB7wg" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_wBCF7Z8XEeWLTohJpUB7wg" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="In Windows" description="A window is open">
