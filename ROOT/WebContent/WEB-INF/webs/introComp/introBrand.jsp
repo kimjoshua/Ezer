@@ -38,15 +38,13 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<script src="<%=cp%>/js/ezer.js"></script>
 </head>
 <body id="main" style="background-color: rgb(255, 255, 255);">
 
 
 	<div id="wrapper">
 		<h1>Ezer cosmetic</h1>
-
-		<div class="moto v_70th"></div>
 		<div class="inwrap">
 			<div id="header">
 				<div class="logo desktop">
@@ -170,23 +168,28 @@
 				</div>
 
 
+				<script type="text/javascript">
 
 
-				<div id="snsMenu" style="display: block;">
-					<ul class="iconWrap">
-						<li class="desktop"><a href="#nohref"
-							onclick="window.print();trackClicksEx('유틸리티|인쇄');" class="print"><span>현재페이지
-									인쇄</span></a></li>
-						<li><a
-							href="http://www.facebook.com/sharer/sharer.php?u=http://www.amorepacific.com/content/company/ko-kr/group/overview.html"
-							onclick="trackClicksEx('유틸리티|페이스북')" target="_blank"
-							class="facebook" title="새창 열림"><span>현재페이지 페이스북 공유</span></a></li>
-						<li><a
-							href="http://twitter.com/share?url=http://www.amorepacific.com/content/company/ko-kr/group/overview.html"
-							target="_blank" onclick="trackClicksEx('유틸리티|트위터')"
-							class="twitter" title="새창 열림"><span>현재페이지 트위터 공유</span></a></li>
-					</ul>
-				</div>
+function initTabs(){
+    if(!$(".tab .tabTitle").length){
+        return;
+    };
+    $(".cont").hide();
+    $(".tab .tabTitle:nth-child(1) a").addClass("active");
+    $(".tab").find(".cont:eq(0)").show();
+
+    $(".tab .tabTitle a").live("click", function(e){
+        e.preventDefault();
+        $(this).parents(".tab").find(".tabTitle a").removeClass("active");
+        $(this).addClass("active");
+
+        $(this).parents(".tab").find(".cont").hide();
+        $(this).parents(".tabTitle").next().show();
+    });
+};
+
+</script>
 
 
 
@@ -194,64 +197,63 @@
 				<div id="realcontents">
 
 					<div class="realcon">
+
 						<div class="bs-example" data-example-id="simple-thumbnails">
 							<div class="row">
-								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail"> <img
-										data-src="holder.js/100%x180" alt="100%x180"
-										src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUxODAzNGM4NzggdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTE4MDM0Yzg3OCI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
-										data-holder-rendered="true"
-										style="height: 200px; width: 100%; display: block;">
+								<div class="col-xs-6 col-md-4 ">
+									<a href="#" class="thumbnail "> <img class="intro_ezer"
+										src="<%=cp%>/img/intro_ezer_main.png"
+										data-holder-rendered="true"display:block;">
 									</a>
 								</div>
 								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail"> <img
-										data-src="holder.js/100%x180" alt="100%x180"
-										src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUxODAzNGJiMTkgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTE4MDM0YmIxOSI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
-										data-holder-rendered="true"
-										style="height: 200px; width: 100%; display: block;">
+									<a href="#" class="thumbnail "> <img class="intro_coloris"
+										src="<%=cp%>/img/intro_coloris_main.png"
+										data-holder-rendered="true"display:block;">
 									</a>
 								</div>
 								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail"> <img
-										data-src="holder.js/100%x180" alt="100%x180"
-										src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUxODAzNGRjNzQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTE4MDM0ZGM3NCI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
-										data-holder-rendered="true"
-										style="height: 200px; width: 100%; display: block;">
+									<a href="#" class="thumbnail "> <img class="intro_galaxia"
+										src="<%=cp%>/img/intro_galaxia_main.png"
+										data-holder-rendered="true"display:block;">
 									</a>
 								</div>
 
 							</div>
 							<div class="row">
-								<div class="col-xs-12 col-md-3">1</div>
-								<div class="col-xs-12 col-md-3">2</div>
-								<div class="col-xs-12 col-md-3">3</div>
+								<div class="col-xs-12 col-md-3 intro_ezer">
+									<img class="intro_margot_main"
+										src="<%=cp%>/img/intro_ezer.jpg">
+								</div>
+								<div class="col-xs-12 col-md-3 intro_ezer1">
+									<img class="intro_nanobuble"
+										src="<%=cp%>/img/intro_ezer.jpg">
+								</div>
+								<div class="col-xs-12 col-md-3 intro_ezer2">
+									<img class="intro_teatoxy"
+										src="<%=cp%>/img/intro_ezer.jpg">
+								</div>
 
 
 							</div>
 							<div class="row">
 								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail"> <img
-										data-src="holder.js/100%x180" alt="100%x180"
-										src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUxODAzNGM4NzggdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTE4MDM0Yzg3OCI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
-										data-holder-rendered="true"
-										style="height: 200px; width: 100%; display: block;">
+									<a href="#" class="thumbnail "> <img
+										class="intro_margot_main" src="<%=cp%>/img/intro_margot_main.png"
+										data-holder-rendered="true"display:block;">
 									</a>
 								</div>
 								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail"> <img
-										data-src="holder.js/100%x180" alt="100%x180"
-										src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUxODAzNGJiMTkgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTE4MDM0YmIxOSI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
-										data-holder-rendered="true"
-										style="height: 200px; width: 100%; display: block;">
+									<a href="#" class="thumbnail "> <img
+										class="intro_nanobuble"
+										src="<%=cp%>/img/intro_nanobuble_main.png"
+										data-holder-rendered="true"display:block;">
 									</a>
 								</div>
 								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail"> <img
-										data-src="holder.js/100%x180" alt="100%x180"
-										src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUxODAzNGRjNzQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTE4MDM0ZGM3NCI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
-										data-holder-rendered="true"
-										style="height: 200px; width: 100%; display: block;">
+									<a href="#" class="thumbnail "> <img class="intro_teatoxy"
+										src="<%=cp%>/img/intro_teatoxy_main.png"
+										data-holder-rendered="true"display:block;">
 									</a>
 								</div>
 
@@ -259,9 +261,15 @@
 							</div>
 
 							<div class="row">
-								<div class="col-xs-12 col-md-3">1</div>
-								<div class="col-xs-12 col-md-3">2</div>
-								<div class="col-xs-12 col-md-3">3</div>
+								<div class="col-xs-12 col-md-3 intro_ezer4">
+									<img src="<%=cp%>/img/intro_ezer.jpg">
+								</div>
+								<div class="col-xs-12 col-md-3 intro_ezer5">
+									<img src="<%=cp%>/img/intro_ezer.jpg">
+								</div>
+								<div class="col-xs-12 col-md-3 intro_ezer6">
+									<img src="<%=cp%>/img/intro_ezer.jpg">
+								</div>
 
 
 							</div>
@@ -470,7 +478,6 @@
 
 		</div>
 		<div class="footerline"></div>
-	</div>
 	</div>
 </body>
 </html>

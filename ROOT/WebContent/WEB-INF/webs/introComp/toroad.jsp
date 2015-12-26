@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
            "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -17,7 +14,10 @@
                 </script>
 
 		<script type="text/javascript"
-			src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=755e3cb5ad7856b9a3ef50983579e260"></script>
+			src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=10d217d22e05e88c77d0014f83395b5c"></script>
+
+			
+
 		<link
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 			rel="stylesheet"
