@@ -22,14 +22,14 @@
 &lt;/ol&gt;
 &lt;ul&gt;
   &lt;li&gt;Spring framework lead Juergen Hoeller has announced that &lt;a href="http://spring.io/blog/2015/12/17/spring-framework-4-2-4-4-1-9-released"&gt;Spring Framework 4.2.4 and 4.1.9 have been released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring framework contributor Stéphane Nicoll has &lt;a href="http://spring.io/blog/2015/12/17/spring-framework-3-2-16-available-now"&gt;just announced that Spring Framework 3.2.16 is now available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Boot contributor Stéphane Nicoll &lt;em&gt;also&lt;/em&gt; announced &lt;a href="http://spring.io/blog/2015/12/18/spring-boot-1-3-1-and-1-2-8-available-now"&gt;that Spring Boot 1.3.1 and 1.2.8 are now available, as well&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring framework contributor St?phane Nicoll has &lt;a href="http://spring.io/blog/2015/12/17/spring-framework-3-2-16-available-now"&gt;just announced that Spring Framework 3.2.16 is now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Boot contributor St?phane Nicoll &lt;em&gt;also&lt;/em&gt; announced &lt;a href="http://spring.io/blog/2015/12/18/spring-boot-1-3-1-and-1-2-8-available-now"&gt;that Spring Boot 1.3.1 and 1.2.8 are now available, as well&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Spring Data lead Oliver Gierke has just announced &lt;a href="http://spring.io/blog/2015/12/18/spring-data-release-train-gosling-sr2-released"&gt;that Spring Data relese train Gosling SR2 is now available, as well&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Spring IO Platform lead Andy Wilkinson has just announced &lt;a href="http://spring.io/blog/2015/12/18/spring-io-platform-1-1-5-release"&gt;1.1.5&lt;/a&gt; and &lt;a href="http://spring.io/blog/2015/12/18/spring-io-platform-2-0-1-release"&gt;2.0.1&lt;/a&gt; are now available&lt;/li&gt;
   &lt;li&gt;Do you want build multitenancy into your system? Consider using &lt;a href="https://stormpath.com/blog/idsite-multi-tenancy/"&gt;the Stormpath Identity provider which features a very powerful Spring Boot auto-configuration&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;our pal Biju Kunjummen is back at it again, this time with a post on &lt;a href="http://www.javacodegeeks.com/2015/12/spring-cloud-rest-client-netflix-ribbon-basics.html"&gt;using Spring Cloud&amp;rsquo;s auto-configured &lt;code&gt;RestTemplate&lt;/code&gt; with Ribbon&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;this week, Pivotal announced the acquisition &lt;a href="https://blog.pivotal.io/pivotal-cloud-foundry/news/pivotal-acquires-cloudcredo"&gt;of longtime Cloud Foundry partner Cloud Credo&lt;/a&gt;: welcome aboard!&lt;/li&gt;
-  &lt;li&gt;this post by Nedim Šabić has a nice look at various approaches to &lt;a href="http://rabbitstack.github.io/cloud/microservices/spring/a-pragmatic-approach-to-migration-from-monolithic-to-microservices/"&gt;implementing microservices using Spring Cloud and Go&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;this post by Nedim ?abi? has a nice look at various approaches to &lt;a href="http://rabbitstack.github.io/cloud/microservices/spring/a-pragmatic-approach-to-migration-from-monolithic-to-microservices/"&gt;implementing microservices using Spring Cloud and Go&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Voxxed has an interesting post by Holger Steinhauer &lt;a href="https://www.voxxed.com/blog/2015/12/10729/"&gt;that introduces a simple Spring Boot application&lt;/a&gt; that leverages Spring MVC, Spring Data, JPA, operationalize it using the Spring Boot actuator, add a template, and so much more.&lt;/li&gt;
 &lt;/ul&gt;</content>
   </entry>
@@ -149,7 +149,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/12/18/spring-boot-1-3-1-and-1-2-8-available-now" />
     <category term="releases" label="Releases" />
     <author>
-      <name>Stéphane Nicoll</name>
+      <name>St?phane Nicoll</name>
     </author>
     <id>tag:spring.io,2015-12-18:2328</id>
     <updated>2015-12-18T14:25:20Z</updated>
@@ -164,7 +164,7 @@
     <link rel="alternate" href="https://spring.io/blog/2015/12/17/spring-framework-3-2-16-available-now" />
     <category term="releases" label="Releases" />
     <author>
-      <name>Stéphane Nicoll</name>
+      <name>St?phane Nicoll</name>
     </author>
     <id>tag:spring.io,2015-12-17:2325</id>
     <updated>2015-12-17T14:15:05Z</updated>
@@ -205,9 +205,9 @@
   &lt;li&gt;Spring Social lead Craig Walls &lt;a href="https://spring.io/blog/2015/12/09/spring-social-facebook-2-0-3-released"&gt;has been hard at work adapting Spring Social to a recent breaking change&lt;/a&gt; in Facebook&amp;rsquo;s Graph API which prevented connections and sign-in from working with Spring Social Facebook. In addition, the API binding has been adjusted to target Graph API v2.5.&lt;/li&gt;
   &lt;li&gt;Duncan Brown wrote a great look at &lt;a href="https://dzone.com/articles/do-not-publish-migrating-spring-data-neo4j-3x-to-4"&gt;how to migrate Spring Data Neo4J 3.0 projects to the new 4.0 line&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;I &lt;em&gt;think&lt;/em&gt; this Chinese-language &lt;a href="http://www.jianshu.com/p/a35b25f4c1ec"&gt;post introduces how to use Spring Boot&lt;/a&gt;, in which case - enjoy!&lt;/li&gt;
-  &lt;li&gt;Couchbase&amp;rsquo;s Simon Baslé put together a nice post on using Spring Data Couchbase and the various things it supports, &lt;a href="http://blog.couchbase.com/2015/december/couchbase-spring-cache"&gt;including the &lt;code&gt;Cache&lt;/code&gt; abstraction and Spring Data repositories&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Couchbase&amp;rsquo;s Simon Basl? put together a nice post on using Spring Data Couchbase and the various things it supports, &lt;a href="http://blog.couchbase.com/2015/december/couchbase-spring-cache"&gt;including the &lt;code&gt;Cache&lt;/code&gt; abstraction and Spring Data repositories&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;the &lt;em&gt;AppMite&lt;/em&gt; blog has a neat introduction to standing up &lt;a href="http://appmite.com/spring-with-backbone-marionette-hello-world/"&gt;a simple Spring Boot application to serve as the backend for a Backbone + Marionette-based JavaScript client&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Marko Švaljek has put together a very cool post on handling stream &lt;a href="http://msvaljek.blogspot.com/2015/12/stream-processing-with-spring-kafka_44.html"&gt;processing with Spring Boot, Kafka, and more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Marko ?valjek has put together a very cool post on handling stream &lt;a href="http://msvaljek.blogspot.com/2015/12/stream-processing-with-spring-kafka_44.html"&gt;processing with Spring Boot, Kafka, and more&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Duy Hai Doan, an Apache Cassandra evangelist at DataStax, put together a very &lt;a href="https://academy.datastax.com/demos/getting-started-killrchat-example-data-model-messaging"&gt;cool post on a sample application, &lt;em&gt;KillrChat&lt;/em&gt;, based on Spring Boot, Cassandra, and more&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Want a &lt;a href="https://www.youtube.com/watch?v=3xrRIesGneg"&gt;quick introduction to using Spring Boot and AOP&lt;/a&gt;?&lt;/li&gt;
   &lt;li&gt;Christoph Strobl&amp;rsquo;s talk from SpringOne2GX 2015, &lt;a href="http://www.infoq.com/presentations/spring-boot-search"&gt;&lt;em&gt;Boot Your Search with Spring&lt;/em&gt;&lt;/a&gt;, is now available online.&lt;/li&gt;
@@ -328,7 +328,7 @@ USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND&#xD;
 dsyer     4330  2.4  2.1 2829092 169948 pts/5  Sl   18:03   0:37 java -Xmx32m -Xss256k -jar target/demo-0.0.1-SNAPSHOT.jar&#xD;
 ...
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;RSS (Resident Set Size) values are in the range 150-190MB according to &lt;code&gt;ps&lt;/code&gt;. There is a tool called &lt;code&gt;smem&lt;/code&gt; that is supposed to give a more sanitized view, and to accurately reflect non-shared memory, but the values there (for instance of PSS) aren&amp;rsquo;t that different. Interestingly the PSS values for a non-JVM process are usually ​*significantly*​ lower than RSS, whereas for a JVM they are comparable. The JVM is very jealous of its memory.&lt;/p&gt;
+&lt;p&gt;RSS (Resident Set Size) values are in the range 150-190MB according to &lt;code&gt;ps&lt;/code&gt;. There is a tool called &lt;code&gt;smem&lt;/code&gt; that is supposed to give a more sanitized view, and to accurately reflect non-shared memory, but the values there (for instance of PSS) aren&amp;rsquo;t that different. Interestingly the PSS values for a non-JVM process are usually ?*significantly*? lower than RSS, whereas for a JVM they are comparable. The JVM is very jealous of its memory.&lt;/p&gt;
 &lt;p&gt;A lower level tool is &lt;code&gt;pmap&lt;/code&gt;, where we can look at the memory&lt;br/&gt;allocations assigned to a process. Numbers from &lt;code&gt;pmap&lt;/code&gt; don&amp;rsquo;t seem to&lt;br/&gt;make much sense either:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="prettyprint"&gt;$ pmap 4330&#xD;
 0000000000400000      4K r-x-- java&#xD;
@@ -585,7 +585,7 @@ non-heap = threads x stack + classes x 7/1000
   &lt;li&gt;Spring Framework lead Juergen Hoeller &lt;a href="https://spring.io/blog/2015/12/03/spring-framework-5-0-roadmap-update"&gt;has revisited the Spring 5.0 roadmap in light of the recent 6 month delay for JDK 9&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Spring RestDocs lead, Spring IO Platform lead, and Spring Boot ninja Andy Wilkinson &lt;a href="https://spring.io/blog/2015/12/03/gradle-dependency-management-plugin-0-5-4-released"&gt;has just announced that the Gradle dependency management plugin 0.5.4.RELEASE is now available&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Spring Cloud and Cloud Foundry ninja Scott Frederick has just &lt;a href="https://spring.io/blog/2015/12/02/spring-cloud-connectors-1-2-1-released"&gt;announced that the Spring Cloud Connectors 1.2.1 are now available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Simon Baslé and Laurent Doguin&amp;rsquo;s presentation &lt;a href="http://www.infoq.com/presentations/rxjava-spring-boot"&gt;on using RxJava with Spring Boot is now available on InfoQ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Simon Basl? and Laurent Doguin&amp;rsquo;s presentation &lt;a href="http://www.infoq.com/presentations/rxjava-spring-boot"&gt;on using RxJava with Spring Boot is now available on InfoQ&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;our pal Petri Kainulainen is at it again, this time with a &lt;a href="http://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-adding-custom-methods-into-all-repositories"&gt;post on adding custom methods into &lt;em&gt;all&lt;/em&gt; Spring Data repositories&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;I really enjoyed Biju Kunjummen&amp;rsquo;s blog on &lt;a href="http://www.java-allandsundry.com/2015/12/spring-cloud-rest-client-with-netflix.html"&gt;using the Spring Cloud auto-configured &lt;code&gt;RestTemplate&lt;/code&gt; with Netflix Ribbon&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;..as well as on &lt;a href="http://www.java-allandsundry.com/2015/11/spring-cloud-support-for-hystrix.html"&gt;using Spring Cloud&amp;rsquo;s support for Hystrix&lt;/a&gt;&lt;/li&gt;
@@ -627,7 +627,7 @@ non-heap = threads x stack + classes x 7/1000
     </author>
     <id>tag:spring.io,2015-12-02:2315</id>
     <updated>2015-12-02T21:29:01Z</updated>
-    <content type="html">&lt;p&gt;I’m pleased to announce the availability of Spring Cloud Connectors 1.2.1. This is a maintenance release with a few new features and a few bug fixes. &lt;/p&gt;
+    <content type="html">&lt;p&gt;I��m pleased to announce the availability of Spring Cloud Connectors 1.2.1. This is a maintenance release with a few new features and a few bug fixes. &lt;/p&gt;
 &lt;p&gt;Here are the highlights:&lt;/p&gt;&lt;h1&gt;&lt;a href="#heroku-connector" class="anchor" name="heroku-connector"&gt;&lt;/a&gt;Heroku Connector&lt;/h1&gt;&lt;h2&gt;&lt;a href="#relational-databases" class="anchor" name="relational-databases"&gt;&lt;/a&gt;Relational Databases&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;The Heroku cloud connector now recognizes the &lt;code&gt;DATABASE_URL&lt;/code&gt; environment variable when detecting &lt;a href="https://devcenter.heroku.com/articles/heroku-postgresql#create-a-new-database"&gt;PostgreSQL database&lt;/a&gt;.&lt;/li&gt;

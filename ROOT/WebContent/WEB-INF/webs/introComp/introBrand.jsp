@@ -200,36 +200,36 @@ function initTabs(){
 
 						<div class="bs-example" data-example-id="simple-thumbnails">
 							<div class="row">
-								<div class="col-xs-6 col-md-4 ">
-									<a href="#" class="thumbnail "> <img class="intro_ezer"
+								<div class="col-xs-6 col-md-4 intro">
+									<img class="intro_ezer"
 										src="<%=cp%>/img/intro_ezer_main.png"
 										data-holder-rendered="true"display:block;">
-									</a>
+								
 								</div>
-								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img class="intro_coloris"
+								<div class="col-xs-6 col-md-4 intro">
+									 <img class="intro_coloris"
 										src="<%=cp%>/img/intro_coloris_main.png"
 										data-holder-rendered="true"display:block;">
-									</a>
+									
 								</div>
-								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img class="intro_galaxia"
+								<div class="col-xs-6 col-md-4 intro">
+									<img class="intro_galaxia"
 										src="<%=cp%>/img/intro_galaxia_main.png"
 										data-holder-rendered="true"display:block;">
-									</a>
+									
 								</div>
 
 							</div>
 							<div class="row">
-								<div class="col-xs-12 col-md-3 intro_ezer">
+								<div class="col-xs-12 col-md-3 intro_ezer_detail detail">
 									<img class="intro_margot_main"
 										src="<%=cp%>/img/intro_ezer.jpg">
 								</div>
-								<div class="col-xs-12 col-md-3 intro_ezer1">
+								<div class="col-xs-12 col-md-3 intro_coloris_detail detail">
 									<img class="intro_nanobuble"
 										src="<%=cp%>/img/intro_ezer.jpg">
 								</div>
-								<div class="col-xs-12 col-md-3 intro_ezer2">
+								<div class="col-xs-12 col-md-3 intro_galaxia_detail detail">
 									<img class="intro_teatoxy"
 										src="<%=cp%>/img/intro_ezer.jpg">
 								</div>
@@ -237,37 +237,37 @@ function initTabs(){
 
 							</div>
 							<div class="row">
-								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img
-										class="intro_margot_main" src="<%=cp%>/img/intro_margot_main.png"
+								<div class="col-xs-6 col-md-4 intro">
+									 <img
+										class="intro_margot" src="<%=cp%>/img/intro_margot_main.png"
 										data-holder-rendered="true"display:block;">
-									</a>
+								
 								</div>
-								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img
+								<div class="col-xs-6 col-md-4 intro">
+									 <img
 										class="intro_nanobuble"
 										src="<%=cp%>/img/intro_nanobuble_main.png"
 										data-holder-rendered="true"display:block;">
-									</a>
+									
 								</div>
-								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img class="intro_teatoxy"
+								<div class="col-xs-6 col-md-4 intro">
+									<img class="intro_teatoxy"
 										src="<%=cp%>/img/intro_teatoxy_main.png"
 										data-holder-rendered="true"display:block;">
-									</a>
+									
 								</div>
 
 
 							</div>
 
-							<div class="row">
-								<div class="col-xs-12 col-md-3 intro_ezer4">
+							<div class="row ">
+								<div class="col-xs-12 col-md-3 intro_margot_detail detail">
 									<img src="<%=cp%>/img/intro_ezer.jpg">
 								</div>
-								<div class="col-xs-12 col-md-3 intro_ezer5">
+								<div class="col-xs-12 col-md-3 intro_nanobuble_detail detail">
 									<img src="<%=cp%>/img/intro_ezer.jpg">
 								</div>
-								<div class="col-xs-12 col-md-3 intro_ezer6">
+								<div class="col-xs-12 col-md-3 intro_teatoxy_detail detail">
 									<img src="<%=cp%>/img/intro_ezer.jpg">
 								</div>
 
