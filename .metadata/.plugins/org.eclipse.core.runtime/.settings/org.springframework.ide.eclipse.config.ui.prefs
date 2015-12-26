@@ -1,0 +1,7 @@
+//com.springsource.config.ui.prefs.activePageIndex\:/ROOT/WebContent/WEB-INF/mainprocess.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ROOT/WebContent/WEB-INF/mybatis/mybatisConf.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ROOT/WebContent/WEB-INF/webmain/webprocess.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ROOT1/WebContent/WEB-INF/mybatis/mybatisConf.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/lruntrade/WebContent/WEB-INF/mybatis/mybatisConf.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+com.springsource.config.ui.prefs.activePageIndex=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+eclipse.preferences.version=1

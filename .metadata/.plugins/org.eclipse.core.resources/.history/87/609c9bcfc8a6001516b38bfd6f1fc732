@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+
+$(function(){
+	$('.ezer_intro').hover(function(){
+		$(this).find(a).css("img","");
+	}).click(function(){
+		alert('d');
+	});
+});
