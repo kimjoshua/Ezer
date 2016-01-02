@@ -1,3 +1,0 @@
-#Tomcat publish data
-#Sat Dec 26 19:46:51 KST 2015
-org.eclipse.jst.jee.server\:/binary\:/Users/Joshua/.m2/repository/org/springframework/spring-web/3.2.7.RELEASE/spring-web-3.2.7.RELEASE.jar=WEB-INF/lib/spring-web-3.2.7.RELEASE.jar

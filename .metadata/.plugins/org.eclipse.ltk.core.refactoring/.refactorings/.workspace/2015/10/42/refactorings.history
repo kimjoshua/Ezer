@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Servers/VMware vFabric tc Server Developer Edition v2.9-config&apos;" deleteContents="false" description="Delete resource &apos;Servers/VMware vFabric tc Server Developer Edition v2.9-config&apos;" element1="/Servers/VMware vFabric tc Server Developer Edition v2.9-config" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1445005905502"/>&#x0A;<refactoring comment="Delete resource &apos;Servers&apos;" deleteContents="true" description="Delete resource &apos;Servers&apos;" element1="/Servers" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1445005949835"/>
-</session>
