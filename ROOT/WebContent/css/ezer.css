@@ -79,6 +79,9 @@
 .detail{
 	display:none
 }
+ul>li{
+	float:left;
+}
 .ezer_intro,.intro_ezer4.intro_ezer5.intro_ezer6{
 	display:block;
 	background-image: url('/img/intro_brand_ezer.png');
@@ -87,9 +90,25 @@
 	image: url('/img/intro_hover_ezer.png')
 }
 
+.detail_row{
+	width:205%;
+}
 
+@media (min-width: 1200px) and (max-width: 1199)
+	.detail_row {
+    width: 70%;
+
+
+ }
+@media (min-width: 1200px)
+.detail_row {
+    width: 50%;
+}
+.col-lg-6 {
+    width: 50%;}
 html { margin:0; padding:0; font-size:62.5%}
-body { -webkit-text-size-adjust: none; margin:0; padding:0; font-family:'아리따돋움', aritadm, 'Apple Gothic', 'DroidSansFallback', '맑은고딕', 'Malgun Gothic', '나눔고딕', NanumGothic, '돋움', dotum, arial, sans-serif, helvetica; color:#666666;  font-size:13px; font-size:1.3rem; } /* -webkit-text-size-adjust:none; 글자 확대 방지 추가 */
+body { -webkit-text-size-adjust: none; margin:0; padding:0; 
+/* font-family:'아리따돋움', aritadm, 'Apple Gothic', 'DroidSansFallback', '맑은고딕', 'Malgun Gothic', '나눔고딕', NanumGothic, '돋움', dotum, arial, sans-serif, helvetica;  */color:#666666;  font-size:13px; font-size:1.3rem; } /* -webkit-text-size-adjust:none; 글자 확대 방지 추가 */
 body, html { overflow-x:hidden; }
 h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-family:aritadm,'돋움',dotum,helvetica,applegothic; color:#333333; }
 h1 { font-size:30px; font-size:3.0rem; color:#000000; text-align:center; width:1px; height:1px; overflow:hidden; position:absolute; top:-100px; }

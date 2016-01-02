@@ -10,9 +10,10 @@ $(function() {
 			toggle1:null,
 			toggle2:null
 	}
-	$('div.intro').find('img').hover(function() {
+	$('.intro >img').filter(':first').hover(function() {
 		data.toggle1=className;
 		className = $(this).attr('class');
+		console.log("className "+" :"+className)
 		this.src = '/img/' + className + '_hover.png';
 		
 	}, function() {
@@ -20,6 +21,7 @@ $(function() {
 
 	}).on('click',function(e) {
 		var toggleImg=$(this).attr('class');
+		console.log("toggleImg "+" :"+toggleImg)
 		
 		
 		if(data.toggle1 !=null){
