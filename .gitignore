@@ -1,1 +1,3 @@
-.metadata/
+.metadata
+Server/
+ROOT/target
