@@ -94,16 +94,43 @@ ul>li{
 	width:205%;
 }
 
-@media (min-width: 1200px) and (max-width: 1199)
+@media (min-width: 1200px) and (max-width: 1199){
 	.detail_row {
     width: 70%;
 
 
  }
-@media (min-width: 1200px)
+
+ }
+@media (min-width: 1200px){
 .detail_row {
     width: 50%;
 }
+tale{
+	position: relative;
+    width: 360%;
+}
+.tale2{
+    right: 36%;
+    position: relative;
+    width: 360%;
+}
+.tale3{
+    position: relative;
+    right: 243%;
+    width: 360%;
+}
+ .histimg{
+    position: relative;
+    width: 94%;
+    left: 18%;
+}
+}
+@media (min-width: 200px) and (max-width: 979px) { 
+    .histimg{ position: relative;
+    width: 107%;
+    left: 4%;
+    }}
 .col-lg-6 {
     width: 50%;}
 html { margin:0; padding:0; font-size:62.5%}
@@ -209,7 +236,7 @@ input[type=checkbox], input[type=radio], span.text { vertical-align:middle; }
 .iconWrap .close:hover, .iconWrap .close:focus { background-position:-270px 0; }
 .iconWrap .download:hover, .iconWrap .download:focus { background-position:0 -292px; }
 .iconWrap .tag:hover, .iconWrap .tag:focus { background-position:0 -248px; }
-	/*  아이콘 + 텍스트 */
+	/* /*  아이콘 + 텍스트 */
 	.iconTextWrap { position:relative; line-height:1; }
 	.iconTextWrap a { display:inline-block; background-image:url(../../../content/dam/company/global/images/common/icon_sprite_retina.png); background-repeat:no-repeat; background-size:600px 1000px; }
 	.iconTextWrap .balloon { padding:2px 0 2px 14px; background-position:0 -530px; }
@@ -224,17 +251,17 @@ input[type=checkbox], input[type=radio], span.text { vertical-align:middle; }
 	.iconTextWrap .pin:hover, .iconTextWrap .pin:focus { background-position:0 -186px; }
 
 .ie8 .iconWrap a {  background-image:url(../../../content/dam/company/global/images/common/icon_sprite.png); }
-.ie8 .iconTextWrap a { background-image:url(../../../content/dam/company/global/images/common/icon_sprite.png); }
+.ie8 .iconTextWrap a { background-image:url(../../../content/dam/company/global/images/common/icon_sprite.png); } */
 /*  end of 아이콘 모음 */
-
+/* 
 .icon_new_blue {display:inline-block; background:url(../../../content/dam/company/global/images/common/icon_blue.png) 0 5px no-repeat; background-size:9px 10px; padding-left:14px; }
 
-ol.numberList { list-style-type:decimal; } /* 숫자 동그라미 있는 리스트, 개인정보 취급방침에 사용 */
+ol.numberList { list-style-type:decimal; } 숫자 동그라미 있는 리스트, 개인정보 취급방침에 사용
 .dotList li, p.dotList { background:url(../../../content/dam/company/global/images/common/bu_dot.png) 0 8px no-repeat; padding-left:7px;  }
 .dotList li.hover { background:url(../../../content/dam/company/global/images/common/bu_dot_blue.png) 0 8px no-repeat; color:#005699; }
 .arrowList li { background:url(../../../content/dam/company/global/images/common/bu_arrowBlue.png) 0 16px no-repeat; padding:9px 0 0 18px; line-height:1.5em; font-size:15px; font-size:1.5rem; color:#333333;  }
 .arrowList li:first-child { padding-top:0; background-position:0 6px; }
-
+ */
 /* 콘텐츠 왼쪽 세로 텝 */
 .vTabWrap { position:relative; margin-bottom:39px; width:100%; min-height:207px; }
 .vTabWrap:after { content:''; clear:both; }
@@ -288,10 +315,7 @@ a.btnDownload span.text { background: url(../../../content/dam/company/global/im
 a.btnDownload span.text {()display:block; ()position:absolute; ()top:7px; ()right:0; }
 a.btnDownload.noLine { border-top:0; }
 a.btnDownload.active span { color:#005699; }
-a.btnDownload.active span.text { background: url(../../../content/dam/company/global/images/common/icon_down_on_retina.png) right center no-repeat; background-size:39px 14px; }
 
-.ie8 a.btnDownload span.text { background-image: url(../../../content/dam/company/global/images/common/icon_down.png); }
-.ie8 a.btnDownload.active span.text { background-image: url(../../../content/dam/company/global/images/common/icon_down_on.png); }
 
 /* 좌우 이동 화살표 버튼 정의 */
 .btnArrow a { background:#ffffff url(../../../content/dam/company/global/images/common/btn_arrow_retina.png) no-repeat; background-size:88px 119.5px; border:1px solid #e4e4e4;  display:inline-block; width:33px; height:33px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; overflow:hidden; }
@@ -530,14 +554,17 @@ h3.lineBottomBlack { padding-bottom:10px; }
 	#skipnavi a:focus , #skipnavi p a:hover , #skipnavi p a:active { color:#ffffff !important; width:100%; height:auto; padding:10px 0; background:#0c4da2; z-index:1000; font-size:12px; font-size:1.2rem; }
 	#skipnavi a:hover { text-decoration:underline; }
 
-	/*.moto { height:28px; line-height:28px; text-align:center; background:#dfdfdf url(../../../content/dam/company/global/images/common/moto_bg.png) center top repeat-y; }*/
-	.moto { height:28px; line-height:28px; text-align:center; background:#dfdfdf url(../../../content/dam/company/global/images/common/colorbar-01.png) center top repeat-y; }
-	.moto span { width:196px; height:16px; line-height:16px; display:inline-block; margin-top:6px; font-family:aritadl; font-size:16px; color:#ffffff; text-align:center; letter-spacing:2px } /* ej : img to text */
+	
+	
 	.inwrap { max-width:1180px; position:relative; margin:auto; }
 	#header { position:relative; margin:0 auto; }
 		#header .logo { text-align:center; padding:42px 0 45px 0; height:24px; position:relative; }
 		#header .logo a { width:314px; height:24px; display:block; position:relative; margin:0 auto; }
-		#header .logo a img { width:100%; ;height:275%}
+		#header .logo a img {     width: 63%;
+    height: 283%;
+    top: -235%;
+    position: absolute;
+    left: 20%;}
 	#utilnav { position:absolute; left:0; top:53px; }
 		.utility { margin-left:-10px; }
 		#utilnav .utility li a { font-size:14px; font-family:aritasm; }
@@ -558,7 +585,7 @@ h3.lineBottomBlack { padding-bottom:10px; }
 	#utilnavr { position:absolute; top:50%; right:0; }
 		#utilnavr .utility li a { vertical-align:middle; font-family:aritadm; }
 		.utility li img { vertical-align:middle; }
-		.utility li.text { font-size:12px; font-size:1.2rem; background:url(../../../content/dam/company/global/images/common/text_bar.png) right 6px no-repeat; padding-top:3px; }
+	
 		.utility li.text a { font-size:12px; font-size:1.2rem; }
 		.srcBox { text-align:right; margin:5px 0 0 0; display:none; }
 		.srcBox input[type=text],
@@ -870,9 +897,7 @@ h3.lineBottomBlack { padding-bottom:10px; }
 		.quickmenu .blt-phone { display:inline-block; height:18px; background:url(../../../content/dam/company/global/images/common/icon_sprite_retina.png) 0 -563px no-repeat; background-size:600px 1000px; padding-left:18px; margin-bottom:1.4em;  color:#333333; }
 		.quickmenu .blt-phone:hover, .quickmenu .blt-phone:focus, .quickmenu .blt-phone.active { background-position:0 -582px; }
 		.quickmenu .blt-phone.active { color:#005699; }
-		
-		.quickmenu .logout { position:relative; left:30px; background:url(../../../content/dam/company/global/images/common/icon_sprite_retina.png) -2px -612px no-repeat; background-size:600px 1000px; padding:2px 0 0 17px; color:#333333; } 
-		.quickmenu .logout:hover,
+	
 		.quickmenu .logout:focus { background-position:-2px -632px; }
 		.ie8 .quickmenu li.bar .blt-balloon { background:url(../../../content/dam/company/global/images/common/icon_sprite.png) 0 -528px no-repeat; }
 		.ie8 .quickmenu li.bar .blt-balloon:hover { background-position:0 -546px; }
@@ -910,14 +935,6 @@ h3.lineBottomBlack { padding-bottom:10px; }
 .btnDownload_new:hover {text-decoration:none !important;}
 .btnDownload_new .icon_down {display:inline-block;background: url(../../../content/dam/company/global/images/common/icon_down.png) 0 0 no-repeat; background-size:100%; width:35px; height:14px }
 
-
-/* IR 뉴스 */
-#irNewsTble { /*margin-top:15px;*/ margin-bottom:0 }
-#irNewsTble + .accordion { border-top:0 !important; }
-
-/* 판매원 찾기 */
-#CounselorFindTble { /*margin-top:15px;*/ margin-bottom:0 }
-#CounselorFindTble + .accordion { border-top:0 !important; }
 
 
 .border_dotte {border-bottom:1px dotted #acacac;}
@@ -2655,6 +2672,11 @@ textarea.refresh { height:220px; }
 	
 	/* 동반성장 */
 	.winwin .layout3cell .cell { width:100%; float:none; }
+}
+
+@media  (min-width:1023px) {
+	.moto { height:20px; line-height:15px; }
+	
 }
 /* 768 부터 1023 까지 */
 @media all and (max-width:1023px) {
