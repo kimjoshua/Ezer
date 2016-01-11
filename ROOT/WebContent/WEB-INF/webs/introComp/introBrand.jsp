@@ -8,15 +8,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
-<title>Color Ez - 컬러테라피 아카데미 스</title>
-<link rel="shortcut icon" href="<%=cp%>/imag/withtest.png" />
-
-
-<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Color Ez - 컬러테라피 아카데미 스</title>
+<link rel="shortcut icon" href="<%=cp%>/imag/withtest.png" />
 
 <title>Business Casual - Start Bootstrap Theme</title>
 <link
@@ -166,446 +163,354 @@
 
 					</div>
 				</div>
-
-
-				<script type="text/javascript">
-
-
-function initTabs(){
-    if(!$(".tab .tabTitle").length){
-        return;
-    };
-    $(".cont").hide();
-    $(".tab .tabTitle:nth-child(1) a").addClass("active");
-    $(".tab").find(".cont:eq(0)").show();
-
-    $(".tab .tabTitle a").live("click", function(e){
-        e.preventDefault();
-        $(this).parents(".tab").find(".tabTitle a").removeClass("active");
-        $(this).addClass("active");
-
-        $(this).parents(".tab").find(".cont").hide();
-        $(this).parents(".tabTitle").next().show();
-    });
-};
-
-</script>
-
-
-
-
 				<div id="realcontents">
-
-					<div class="realcon">
-
-<<<<<<< HEAD
-						<div class="bs-example" data-example-id="simple-thumbnails">
-							<div class="row">
-								<div class="col-xs-6 col-md-4 ">
-									<a href="#" class="thumbnail "> <img class="intro_ezer"
-										src="<%=cp%>/img/intro_ezer_main.png"
-										data-holder-rendered="true"display:block;">
-									</a>
-								</div>
-								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img class="intro_coloris"
-										src="<%=cp%>/img/intro_coloris_main.png"
-										data-holder-rendered="true"display:block;">
-									</a>
-								</div>
-								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img class="intro_galaxia"
-										src="<%=cp%>/img/intro_galaxia_main.png"
-										data-holder-rendered="true"display:block;">
-									</a>
-=======
+					<div class="bs-example" data-example-id="simple-thumbnails">
 						<div class="row">
 							<div class="col-sm-6 col-md-4">
 								<div class="thumbnail intro">
 									<img class="intro_ezer" src="<%=cp%>/img/intro_ezer_main.png"
-										data-holder-rendered="true"display:block;">
-										
-									<div class="row detail_row">
-										<div class="intro_ezer_detail detail ">
-											<div class="col-lg-6"">
-												<img class="intro_ezer" src="<%=cp%>/img/intro_ezer.jpg">
-											</div>
-											<div class="col-lg-6"">
-												<h3>Thumbnail label</h3>
-												<p>Cras justo odio, dapibus ac facilisis in, egestas
-													eget quam. Donec id elit non mi porta gravida at eget
-													metus. Nullam id dolor id nibh ultricies vehicula ut id
-													elit.</p>
-												<p>
-													<a href="#" class="btn btn-primary" role="button">Button</a>
-													<a href="#" class="btn btn-default" role="button">Button</a>
-												</p>
-											</div>
+										data-holder-rendered="true"display:block;>
 
-										</div>
-										</dir>
-									</div>
 								</div>
-								<div class="col-sm-6 col-md-4">
-									<div class="thumbnail intro">
-										<img class="intro_coloris"
-											src="<%=cp%>/img/intro_coloris_main.png"
-											data-holder-rendered="true"display:block;">
-										<div class="intro_coloris_detail detail ">
-											<img class="intro_coloris"
-												src="<%=cp%>/img/intro_coloris.jpg">
+								<div class="row detail_row">
+									<div class="intro_ezer_detail detail ">
+										<div class="col-lg-6">
+											<img class="intro_ezer" src="<%=cp%>/img/intro_ezer.jpg">
 										</div>
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-4">
-									<div class="thumbnail">
-										<img data-src="holder.js/100%x200" alt="100%x200"
-											src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUxZmQzYWNjMzQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTFmZDNhY2MzNCI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+"
-											data-holder-rendered="true"
-											style="height: 200px; width: 100%; display: block;">
-										<!-- <div class="caption">
+										<div class="col-lg-6">
 											<h3>Thumbnail label</h3>
-											<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-												quam. Donec id elit non mi porta gravida at eget metus.
-												Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-											<p>
-												<a href="#" class="btn btn-primary" role="button">Button</a>
-												<a href="#" class="btn btn-default" role="button">Button</a>
-											</p>
-										</div> -->
-									</div>
->>>>>>> 8ac7dc74cdd7590926bc08f06ada4344fcc9f4cd
-								</div>
-							</div>
-<<<<<<< HEAD
-							<div class="row">
-								<div class="col-xs-12 col-md-3 intro_ezer">
-									<img class="intro_margot_main"
-										src="<%=cp%>/img/intro_ezer.jpg">
-								</div>
-								<div class="col-xs-12 col-md-3 intro_ezer1">
-									<img class="intro_nanobuble"
-										src="<%=cp%>/img/intro_ezer.jpg">
-								</div>
-								<div class="col-xs-12 col-md-3 intro_ezer2">
-									<img class="intro_teatoxy"
-										src="<%=cp%>/img/intro_ezer.jpg">
-								</div>
 
-
-							</div>
-							<div class="row">
-								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img
-										class="intro_margot_main" src="<%=cp%>/img/intro_margot_main.png"
-										data-holder-rendered="true"display:block;">
-									</a>
-								</div>
-								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img
-										class="intro_nanobuble"
-										src="<%=cp%>/img/intro_nanobuble_main.png"
-										data-holder-rendered="true"display:block;">
-									</a>
-								</div>
-								<div class="col-xs-6 col-md-4">
-									<a href="#" class="thumbnail "> <img class="intro_teatoxy"
-										src="<%=cp%>/img/intro_teatoxy_main.png"
-										data-holder-rendered="true"display:block;">
-									</a>
-								</div>
-=======
-
-
->>>>>>> 8ac7dc74cdd7590926bc08f06ada4344fcc9f4cd
-
-
-							<div class="bs-example" data-example-id="simple-thumbnails">
-
-
-
-
-								<div class="row">
-
-									<div class="col-xs-6 col-md-4 intro"></div>
-									<div class="col-xs-6 col-md-4 intro">
-										<img class="intro_galaxia"
-											src="<%=cp%>/img/intro_galaxia_main.png"
-											data-holder-rendered="true"display:block;">
-
-									</div>
-
-<<<<<<< HEAD
-							<div class="row">
-								<div class="col-xs-12 col-md-3 intro_ezer4">
-									<img src="<%=cp%>/img/intro_ezer.jpg">
-								</div>
-								<div class="col-xs-12 col-md-3 intro_ezer5">
-									<img src="<%=cp%>/img/intro_ezer.jpg">
-								</div>
-								<div class="col-xs-12 col-md-3 intro_ezer6">
-									<img src="<%=cp%>/img/intro_ezer.jpg">
-=======
-								</div>
-								<div class="row">
-									<div class="col-xs-12 col-md-3 intro_ezer_detail detail">
-										<img class="intro_margot_main"
-											src="<%=cp%>/img/intro_ezer.jpg">
-									</div>
-									<div class="col-xs-12 col-md-3 intro_coloris_detail detail">
-										<img class="intro_nanobuble" src="<%=cp%>/img/intro_ezer.jpg">
-									</div>
-									<div class="col-xs-12 col-md-3 intro_galaxia_detail detail">
-										<img class="intro_teatoxy" src="<%=cp%>/img/intro_ezer.jpg">
-									</div>
-
-
->>>>>>> 8ac7dc74cdd7590926bc08f06ada4344fcc9f4cd
-								</div>
-								<div class="row">
-									<div class="col-xs-6 col-md-4 intro">
-										<img class="intro_margot"
-											src="<%=cp%>/img/intro_margot_main.png"
-											data-holder-rendered="true"display:block;">
-
-									</div>
-									<div class="col-xs-6 col-md-4 intro">
-										<img class="intro_nanobuble"
-											src="<%=cp%>/img/intro_nanobuble_main.png"
-											data-holder-rendered="true"display:block;">
-
-									</div>
-									<div class="col-xs-6 col-md-4 intro">
-										<img class="intro_teatoxy"
-											src="<%=cp%>/img/intro_teatoxy_main.png"
-											data-holder-rendered="true"display:block;">
-
-									</div>
-
-
-								</div>
-
-								<div class="row ">
-									<div class="col-xs-12 col-md-3 intro_margot_detail detail">
-										<img src="<%=cp%>/img/intro_ezer.jpg">
-									</div>
-									<div class="col-xs-12 col-md-3 intro_nanobuble_detail detail">
-										<img src="<%=cp%>/img/intro_ezer.jpg">
-									</div>
-									<div class="col-xs-12 col-md-3 intro_teatoxy_detail detail">
-										<img src="<%=cp%>/img/intro_ezer.jpg">
-									</div>
-
-
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-
-					<!-- go to top -->
-					<div id="gototop">
-						<a href="" onclick=""><span>맨 위로 가기</span></a>
-					</div>
-					<!-- end of go to top -->
-					<!-- Bottom Quick Menu -->
-					<div id="quicknav">
-						<ul class="quickmenu mobileVary">
-							<li class="first">
-								<dl>
-									<dt>COMPANY</dt>
-									<dd>
-										<a href="/introMain" onclick="">회사소개</a>
-									</dd>
-									<dd>
-										<a href="/serviceB" onclick="trackClicksEx('푸터 AP WAY')">사업분야</a>
-										<ul>
-											<li>BEUATY</li>
-											<li>HEALTH</li>
-										</ul>
-									</dd>
-									<dd>
-										<a href="/history" onclick="trackClicksEx('푸터 창업자이야기')">연혁</a>
-									</dd>
-									<dd>
-										<a href="/sysbol"
-											onclick="trackClicksEx('푸터 CI/BI|Corporate Identity')">CI/BI</a>
-									</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>BRAND</dt>
-									<dd>
-										<a href="/" onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">E-ZER</a>
-									</dd>
-									<dd>
-										<a href="http://www.color_ex.com" onclick="location.hrf='">COLOR
-											EZ</a>
-									</dd>
-									<dd>
-										<a href="http://www.galaxia.com"
-											onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">GALAXIA</a>
-									</dd>
-									<dd>
-										<a href="http://www.teatox"
-											onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">TEATOX</a>
-									</dd>
-									<dd>
-										<a href="http://www.hybridnano.com"
-											onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">HYBRID NANO</a>
-									</dd>
-									<dd>
-										<a href="http://www.margot.com"
-											onclick="trackClicksEx('푸터 브랜드|전체 브랜드')">MARGOT</a>
-									</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>PRODUCT</dt>
-									<dd>
-										<a href="/biogins" onclick="trackClicksEx('푸터 연구개발|연구개발')">BIO
-											GIN</a>
-										<ul>
-											<li><a href="">SKIN CARE </a></li>
-											<li><a href="">HAIR CARE</a></li>
-										</ul>
-									</dd>
-									<dd>
-										<a href="/bioselemix"
-											onclick="trackClicksEx('푸터 Supply Chain Management|생산물류사업장(SCM)')">BIOSELEMIX</a>
-										<ul>
-											<li><a href="/ato">ATO</a></li>
-											<li><a href="/acn">ACN</a></li>
-										</ul>
-									</dd>
-									<dd>
-										<a href="/cygne" onclick="trackClicksEx('푸터 Design|디자인 경영')">CYGNE</a>
-									</dd>
-									<dd>
-										<a href="/sevenEnough"
-											onclick="trackClicksEx('푸터 Design|디자인 경영')">SEVEN ENOUGH</a>
-									</dd>
-									<dd>
-										<a href="/ampoule" onclick="trackClicksEx('푸터 Design|디자인 경영')">AMPOULE</a>
-									</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>NEWS &amp; EVENT</dt>
-									<dd>
-										<a href="/ad" onclick="trackClicksEx('푸터 현황')">AD</a>
-									</dd>
-									<dd>
-										<a href="/news" onclick="trackClicksEx('푸터 고객|고객을 위한 활동')">NEWS</a>
-									</dd>
-									<dd>
-										<a href="/media" onclick="trackClicksEx('푸터 환경|환경을 위한 활동')">MEDIA</a>
-									</dd>
-									<dd>
-										<a href="/event"
-											onclick="trackClicksEx('푸터 임직원과 파트너|임직원과 파트너를 위한 활동')">EVENT</a>
-									</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>CS CENTER</dt>
-									<dd>
-										<a href="/notice" onclick="trackClicksEx('푸터 IR 스케줄')">NOTICE</a>
-									</dd>
-									<dd>
-										<a href="faq" onclick="trackClicksEx('푸터 기업지배구조|CEO 메시지')">FAQ</a>
-									</dd>
-									<dd>
-										<a href="/qa"
-											onclick="trackClicksEx('푸터 뉴스 &amp; 공시|아모레퍼시픽 공시정보')">Q
-											&amp; A</a>
-									</dd>
-								</dl>
-							</li>
-							<li class="bar">
-								<dl>
-									<dd class="desktop">
-										<a href="service" class="blt-balloon fcLblack"
-											onclick="trackClicksEx('푸터 매장찾기')"><strong>서비스이용약관</strong></a>
-									</dd>
-									<dd class="desktop">
-										<a href="personal" class="blt-balloon fcLblack"
-											onclick="trackClicksEx('푸터 매장찾기')"><strong>개인정보취급방침</strong></a>
-									</dd>
-									<dd class="desktop">
-										<a href="change" class="blt-balloon fcLblack"
-											onclick="trackClicksEx('푸터 매장찾기')"><strong>교환및
-												환불규정</strong></a>
-									</dd>
-									<dd class="desktop">
-										<a href="costom" class="blt-balloon fcLblack"
-											onclick="trackClicksEx('푸터 매장찾기')"><strong>소비자
-												상담실</strong></a>
-									</dd>
-									<dd class="desktop">
-										<a href="map" class="blt-balloon fcLblack"
-											onclick="trackClicksEx('푸터 매장찾기')"><strong>찾아오시는
-												길</strong></a>
-									</dd>
-									<dd class="mobile store fDepth">
-										<a href="#nohref" onclick="trackClicksEx('푸터 매장찾기')"
-											class="blt-balloon toggleTrigger"><strong>서비스이용약관</strong></a>
-									</dd>
-									<dd class="mobile store fDepth">
-										<a href="#nohref" onclick="trackClicksEx('푸터 매장찾기')"
-											class="blt-balloon toggleTrigger"><strong>개인정보
-												취급방침</strong></a>
-									</dd>
-									<dd class="mobile store fDepth">
-										<a href="#nohref" onclick="trackClicksEx('푸터 매장찾기')"
-											class="blt-balloon toggleTrigger"><strong>교환 및
-												환불</strong></a>
-									</dd>
-									<dd class="mobile store fDepth">
-										<a href="#nohref" onclick="trackClicksEx('푸터 매장찾기')"
-											class="blt-balloon toggleTrigger"><strong>소비자
-												상담실</strong></a>
-									</dd>
-									<dd class="mobile store fDepth">
-										<a href="#nohref" onclick="trackClicksEx('푸터 매장찾기')"
-											class="blt-balloon toggleTrigger"><strong>찾아오시는
-												길</strong></a>
-									</dd>
-									<dd>
-										<div class="familysite">
-											<a href="" onclick="trackClicksEx('푸터 관련 사이트')"
-												class="btnFamily"><span>FAMILY SITE</span></a>
+											<p>Cras justo odio, dapibus ac facilisis in, egestas +
+												eget quam. Donec id elit non mi porta gravida at eget +
+												metus. Nullam id dolor id nibh ultricies vehicula ut id +
+												elit.</p>
 										</div>
-									</dd>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4">
+								<div class="thumbnail intro">
+									<img class="intro_coloris"
+										src="<%=cp%>/img/intro_coloris_main.png"
+										data-holder-rendered="true"display:block;>
+								</div>
+								<div class="row detail_row">
+									<div class="intro_coloris_detail detail ">
+										<div class="col-lg-6">
+											<img class="intro_ezer" src="<%=cp%>/img/intro_coloris.jpg">
+										</div>
+										<div class="col-lg-6">
+											<h3>Thumbnail label</h3>
+
+											<p>Cras justo odio, dapibus ac facilisis in, egestas +
+												eget quam. Donec id elit non mi porta gravida at eget +
+												metus. Nullam id dolor id nibh ultricies vehicula ut id +
+												elit.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4">
+								<div class="thumbnail intro">
+									<img class="intro_galaxia"
+										src="<%=cp%>/img/intro_galaxia_main.png"
+										data-holder-rendered="true"display:block;>
+								</div>
+								<div class="row detail_row">
+									<div class="intro_galaxia_detail detail ">
+										<div class="col-lg-6">
+											<img class="galaxia_ezer" src="<%=cp%>/img/intro_galaxia.jpg">
+										</div>
+										<div class="col-lg-6">
+											<h3>Thumbnail label</h3>
+
+											<p>Cras justo odio, dapibus ac facilisis in, egestas +
+												eget quam. Donec id elit non mi porta gravida at eget +
+												metus. Nullam id dolor id nibh ultricies vehicula ut id +
+												elit.</p>
+										</div>
+									</div>
+								</div>
+							</div>
 
 
-
-								</dl>
-
-							</li>
-						</ul>
-					</div>
-					<!-- end of Bottom Quick Menu -->
-				</div>
-				<div id="footer">
-					<div class="footer mobileVary">
-						<div class="copyright">
-							<span>© (주) 에제르코스메틱 대표 : 정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동,
-								보아스빌딩) | 사업자번호 :221-81-29582 <img src="" alt="">
-							</span>
 						</div>
+						<!-- row end -->
+						<div class="row">
+							<div class="col-sm-6 col-md-4">
+								<div class="thumbnail intro">
+									<img class="intro_margot" src="<%=cp%>/img/intro_margot_main.png"
+										data-holder-rendered="true"display:block;>
 
+								</div>
+								<div class="row detail_row">
+									<div class="intro_margot_detail detail ">
+										<div class="col-lg-6">
+											<img class="intro_margot" src="<%=cp%>/img/intro_margot.jpg">
+										</div>
+										<div class="col-lg-6">
+											<h3>Thumbnail label</h3>
+
+											<p>Cras justo odio, dapibus ac facilisis in, egestas +
+												eget quam. Donec id elit non mi porta gravida at eget +
+												metus. Nullam id dolor id nibh ultricies vehicula ut id +
+												elit.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4">
+								<div class="thumbnail intro">
+									<img class="intro_nanobuble"
+										src="<%=cp%>/img/intro_nanobuble_main.png"
+										data-holder-rendered="true"display:block;>
+								</div>
+								<div class="row detail_row">
+									<div class="intro_nanobuble_detail detail ">
+										<div class="col-lg-6">
+											<img class="intro_nanobuble" src="<%=cp%>/img/intro_nanobuble.jpg">
+										</div>
+										<div class="col-lg-6">
+											<h3>Thumbnail label</h3>
+
+											<p>Cras justo odio, dapibus ac facilisis in, egestas +
+												eget quam. Donec id elit non mi porta gravida at eget +
+												metus. Nullam id dolor id nibh ultricies vehicula ut id +
+												elit.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4">
+								<div class="thumbnail intro">
+									<img class="intro_teatoxy"
+										src="<%=cp%>/img/intro_teatoxy_main.png"
+										data-holder-rendered="true"display:block;>
+								</div>
+								<div class="row detail_row">
+									<div class="intro_teatoxy_detail detail ">
+										<div class="col-lg-6">
+											<img class="teatoxy_ezer" src="<%=cp%>/img/intro_teatoxy.jpg">
+										</div>
+										<div class="col-lg-6">
+											<h3>Thumbnail label</h3>
+
+											<p>Cras justo odio, dapibus ac facilisis in, egestas +
+												eget quam. Donec id elit non mi porta gravida at eget +
+												metus. Nullam id dolor id nibh ultricies vehicula ut id +
+												elit.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+						<!-- row end -->
 					</div>
-				</div>
+					<!-- bs-example end -->
 
+				</div>
+				<!-- realcontents End -->
+
+				<!-- go to top -->
+				<div id="gototop">
+					<a href="" onclick=""><span>맨 위로 가기</span></a>
+				</div>
+				<!-- end of go to top -->
+				<!-- Bottom Quick Menu -->
+				<div id="quicknav">
+					<ul class="quickmenu mobileVary">
+						<li class="first">
+							<dl>
+								<dt>COMPANY</dt>
+								<dd>
+									<a href="/introMain" onclick="">회사소개</a>
+								</dd>
+								<dd>
+									<a href="/serviceB" onclick="trackClicksEx('푸터 AP WAY')">사업분야</a>
+									<ul>
+										<li>BEUATY</li>
+										<li>HEALTH</li>
+									</ul>
+								</dd>
+								<dd>
+									<a href="/history" onclick="trackClicksEx('푸터 창업자이야기')">연혁</a>
+								</dd>
+								<dd>
+									<a href="/sysbol"
+										onclick="trackClicksEx('푸터 CI/BI|Corporate Identity')">CI/BI</a>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>BRAND</dt>
+								<dd>
+									<a href="/" onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">E-ZER</a>
+								</dd>
+								<dd>
+									<a href="http://www.color_ex.com" onclick="location.hrf='">COLOR
+										EZ</a>
+								</dd>
+								<dd>
+									<a href="http://www.galaxia.com"
+										onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">GALAXIA</a>
+								</dd>
+								<dd>
+									<a href="http://www.teatox"
+										onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">TEATOX</a>
+								</dd>
+								<dd>
+									<a href="http://www.hybridnano.com"
+										onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">HYBRID NANO</a>
+								</dd>
+								<dd>
+									<a href="http://www.margot.com"
+										onclick="trackClicksEx('푸터 브랜드|전체 브랜드')">MARGOT</a>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>PRODUCT</dt>
+								<dd>
+									<a href="/biogins" onclick="trackClicksEx('푸터 연구개발|연구개발')">BIO
+										GIN</a>
+									<ul>
+										<li><a href="">SKIN CARE </a></li>
+										<li><a href="">HAIR CARE</a></li>
+									</ul>
+								</dd>
+								<dd>
+									<a href="/bioselemix"
+										onclick="trackClicksEx('푸터 Supply Chain Management|생산물류사업장(SCM)')">BIOSELEMIX</a>
+									<ul>
+										<li><a href="/ato">ATO</a></li>
+										<li><a href="/acn">ACN</a></li>
+									</ul>
+								</dd>
+								<dd>
+									<a href="/cygne" onclick="trackClicksEx('푸터 Design|디자인 경영')">CYGNE</a>
+								</dd>
+								<dd>
+									<a href="/sevenEnough"
+										onclick="trackClicksEx('푸터 Design|디자인 경영')">SEVEN ENOUGH</a>
+								</dd>
+								<dd>
+									<a href="/ampoule" onclick="trackClicksEx('푸터 Design|디자인 경영')">AMPOULE</a>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>NEWS &amp; EVENT</dt>
+								<dd>
+									<a href="/ad" onclick="trackClicksEx('푸터 현황')">AD</a>
+								</dd>
+								<dd>
+									<a href="/news" onclick="trackClicksEx('푸터 고객|고객을 위한 활동')">NEWS</a>
+								</dd>
+								<dd>
+									<a href="/media" onclick="trackClicksEx('푸터 환경|환경을 위한 활동')">MEDIA</a>
+								</dd>
+								<dd>
+									<a href="/event"
+										onclick="trackClicksEx('푸터 임직원과 파트너|임직원과 파트너를 위한 활동')">EVENT</a>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>CS CENTER</dt>
+								<dd>
+									<a href="/notice" onclick="trackClicksEx('푸터 IR 스케줄')">NOTICE</a>
+								</dd>
+								<dd>
+									<a href="faq" onclick="trackClicksEx('푸터 기업지배구조|CEO 메시지')">FAQ</a>
+								</dd>
+								<dd>
+									<a href="/qa"
+										onclick="trackClicksEx('푸터 뉴스 &amp; 공시|아모레퍼시픽 공시정보')">Q
+										&amp; A</a>
+								</dd>
+							</dl>
+						</li>
+						<li class="bar">
+							<dl>
+								<dd class="desktop">
+									<a href="service" class="blt-balloon fcLblack"
+										onclick="trackClicksEx('푸터 매장찾기')"><strong>서비스이용약관</strong></a>
+								</dd>
+								<dd class="desktop">
+									<a href="personal" class="blt-balloon fcLblack"
+										onclick="trackClicksEx('푸터 매장찾기')"><strong>개인정보취급방침</strong></a>
+								</dd>
+								<dd class="desktop">
+									<a href="change" class="blt-balloon fcLblack"
+										onclick="trackClicksEx('푸터 매장찾기')"><strong>교환및
+											환불규정</strong></a>
+								</dd>
+								<dd class="desktop">
+									<a href="costom" class="blt-balloon fcLblack"
+										onclick="trackClicksEx('푸터 매장찾기')"><strong>소비자
+											상담실</strong></a>
+								</dd>
+								<dd class="desktop">
+									<a href="map" class="blt-balloon fcLblack"
+										onclick="trackClicksEx('푸터 매장찾기')"><strong>찾아오시는
+											길</strong></a>
+								</dd>
+								<dd class="mobile store fDepth">
+									<a href="#nohref" onclick="trackClicksEx('푸터 매장찾기')"
+										class="blt-balloon toggleTrigger"><strong>서비스이용약관</strong></a>
+								</dd>
+								<dd class="mobile store fDepth">
+									<a href="#nohref" onclick="trackClicksEx('푸터 매장찾기')"
+										class="blt-balloon toggleTrigger"><strong>개인정보
+											취급방침</strong></a>
+								</dd>
+								<dd class="mobile store fDepth">
+									<a href="#nohref" onclick="trackClicksEx('푸터 매장찾기')"
+										class="blt-balloon toggleTrigger"><strong>교환 및 환불</strong></a>
+								</dd>
+								<dd class="mobile store fDepth">
+									<a href="#nohref" onclick="trackClicksEx('푸터 매장찾기')"
+										class="blt-balloon toggleTrigger"><strong>소비자 상담실</strong></a>
+								</dd>
+								<dd class="mobile store fDepth">
+									<a href="#nohref" onclick="trackClicksEx('푸터 매장찾기')"
+										class="blt-balloon toggleTrigger"><strong>찾아오시는 길</strong></a>
+								</dd>
+								<dd>
+									<div class="familysite">
+										<a href="" onclick="trackClicksEx('푸터 관련 사이트')"
+											class="btnFamily"><span>FAMILY SITE</span></a>
+									</div>
+								</dd>
+
+
+
+							</dl>
+
+						</li>
+					</ul>
+				</div>
+				<!-- end of Bottom Quick Menu -->
 			</div>
-			<div class="footerline"></div>
+			<div id="footer">
+				<div class="footer mobileVary">
+					<div class="copyright">
+						<span>© (주) 에제르코스메틱 대표 : 정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동,
+							보아스빌딩) | 사업자번호 :221-81-29582 <img src="" alt="">
+						</span>
+					</div>
+
+				</div>
+			</div>
+
 		</div>
+		<div class="footerline"></div>
+	</div>
 </body>
 </html>

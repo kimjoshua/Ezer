@@ -2,17 +2,6 @@
  * 
  */
 
-<<<<<<< HEAD
-$(function(){
-	$('.thumbnail').mouseover(function(){
-		var className= $(this).find('img').attr('class')
-		$('.'+className).hover(function(){
-		this.src='/img/'+className+'_hover.png';
-		},function(){
-			this.src='/img/'+className+'_main.png';
-		});
-	});
-=======
 $(function() {
 
 	var className = "";
@@ -21,7 +10,7 @@ $(function() {
 			toggle1:null,
 			toggle2:null
 	}
-	$('.intro >img').filter(':first').hover(function() {
+	$('.intro >img').hover(function() {
 		data.toggle1=className;
 		className = $(this).attr('class');
 		console.log("className "+" :"+className)
@@ -49,17 +38,16 @@ $(function() {
 		
 		data.toggle1=toggleImg
 	})
->>>>>>> 8ac7dc74cdd7590926bc08f06ada4344fcc9f4cd
 	
-	$('.ezer_intro').hover(function(){
-        this.src = '/img/intro_hover_ezer.png';
-    }, function () {
-		this.src = '/img/intro_brand_ezer.png';
-    }).click(function(){
-    	$('.intro_ezer').toggle('slow',function(){
-    		
-    	})
-    	$(this).src("img","img/intro_brand_ezer.png")
-    	
-    });
+//	$('.ezer_intro').hover(function(){
+//        this.src = '/img/intro_hover_ezer.png';
+//    }, function () {
+//		this.src = '/img/intro_brand_ezer.png';
+//    }).click(function(){
+//    	$('.intro_ezer').toggle('slow',function(){
+//    		
+//    	})
+//    	$(this).src("img","img/intro_brand_ezer.png")
+//    	
+//    });
 });
