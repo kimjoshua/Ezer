@@ -79,14 +79,6 @@
 					<a href="http://search.amorepacific.com" class="srcButton" onclick="trackClicksEx('모바일|헤더 검색')" target="_blank"><span>검색
 							상자 열기</span></a>
 				</div>
-
-
-
-
-
-
-
-
 				<div id="nav">
 					<div id="sub_navwrap" class="navwrap">
 
@@ -128,23 +120,15 @@
 
 						</div>
 
-
-						<!-- <a href="#nohref" onclick="javascript:trackClicksEx('GNB 브랜드');return false;" class="dep01" >브랜드</a> -->
 						<a href="" onclick="javascript:return false;" class="dep01" style="padding-left: 2%; background: none;">브랜드</a>
-
 
 						<div id="dep0202" style="display: none;">
 							<ul class="dep02">
 
-
 								<li></li>
 
-
-								<li>&lt;</li>
-
-
+								<li></li>
 							</ul>
-
 						</div>
 
 
@@ -417,7 +401,10 @@
 
 				<div id="realcontents">
 
-					<div class="realcon"></div>
+					<div class="realcon">
+					<img class="histimg" src="/img/hist.jpg" alt="  ">
+					
+					</div>
 
 				</div>
 

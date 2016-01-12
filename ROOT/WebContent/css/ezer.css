@@ -106,7 +106,7 @@ ul>li{
 .detail_row {
     width: 50%;
 }
-tale{
+.tale{
 	position: relative;
     width: 360%;
 }
@@ -122,9 +122,10 @@ tale{
 }
  .histimg{
     position: relative;
-    width: 94%;
-    left: 18%;
+    width: 68%;
+    left: 21%;
 }
+
 }
 @media (min-width: 200px) and (max-width: 979px) { 
     .histimg{ position: relative;
@@ -641,7 +642,7 @@ h3.lineBottomBlack { padding-bottom:10px; }
 
 		#main #nav.hidden { overflow:hidden; }
 		#main .navwrap { position:relative; /*width:202px;*/ /*width:192px;*/ /*width:142px;*/ width:162px; text-align:center; height:auto; padding-top:14px; padding-bottom:20px; }
-		#main .navwrap a.dep01 { padding:0 15px; display:block; color:#fff; text-align:right; text-decoration:none; font-size:22px; font-family:aritadm; font-weight:bold; }
+		/* #main .navwrap a.dep01 { padding:0 15px; display:block; color:#fff; text-align:right; text-decoration:none; font-size:22px; font-family:aritadm; font-weight:bold; } */
 		.ie8 #main .navwrap a.dep01 {font-size:19px}
 
 		@media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -923,7 +924,7 @@ h3.lineBottomBlack { padding-bottom:10px; }
 		.ie8 .btnFamily:hover span, .btnFamily:focus span { background-image:url(../../../content/dam/company/global/images/common/blt_arrow_blue.png); }
 
 	/*.footerline { height:15px; background:#dfdfdf url(../../../content/dam/company/global/images/common/moto_bg.png) center top no-repeat; }*/
-	.footerline { height:15px; background:#dfdfdf url(../../../content/dam/company/global/images/common/colorbar-01.png) center top no-repeat; }
+	.footerline { height:15px; background:#dfdfdf url(../motofoot.png) center top no-repeat; }
 
 /*직무윤리*/
 .downloadList2 { border-top:1px #cccccc solid; border-bottom:1px #cccccc solid; padding:8px 0; padding-left: 10px; overflow:auto }
@@ -2675,8 +2676,11 @@ textarea.refresh { height:220px; }
 }
 
 @media  (min-width:1023px) {
-	.moto { height:20px; line-height:15px; }
-	
+	.moto { 
+	height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background: #dfdfdf url(../moto.png) center top repeat-y;}
 }
 /* 768 부터 1023 까지 */
 @media all and (max-width:1023px) {

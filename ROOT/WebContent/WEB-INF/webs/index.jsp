@@ -95,7 +95,8 @@
 				<div id="indexSliser_main" class="indexSlider">
 
 					<div id="carousel-example-generic" class="carousel slide"
-						data-ride="carousel">
+						data-ride="carousel"
+						style="position: relative; padding-bottom: 11%; padding-top: 6%;">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
 							<li data-target="#carousel-example-generic" data-slide-to="0"
@@ -103,6 +104,10 @@
 							<li data-target="#carousel-example-generic" data-slide-to="1"
 								class="active"></li>
 							<li data-target="#carousel-example-generic" data-slide-to="2"
+								class=""></li>
+							<li data-target="#carousel-example-generic" data-slide-to="4"
+								class=""></li>
+							<li data-target="#carousel-example-generic" data-slide-to="5"
 								class=""></li>
 						</ol>
 
@@ -125,6 +130,20 @@
 							<div class="item">
 								<img src="/img/sn.jpg" usemap="#maptag3">
 								<map name="maptag3">
+									<area shape="rect" coords="x50,y245,x200,y290"
+										href="/cygneWrink" title="">
+								</map>
+							</div>
+							<div class="item">
+								<img src="/img/sn.png" alter="해상도 낮">
+								<map name="maptag4">
+									<area shape="rect" coords="x50,y245,x200,y290"
+										href="/cygneWrink" title="">
+								</map>
+							</div>
+							<div class="item">
+								<img src="/img/cbm.png" alter="해상도 높임">
+								<map name="maptag5">
 									<area shape="rect" coords="x50,y245,x200,y290"
 										href="/cygneWrink" title="">
 								</map>
@@ -457,10 +476,10 @@
 				</div>
 
 			</div>
-			<div class="footerline"></div>
+			
 		</div>
 
-	</div>
+	</div><div class="footerline"></div>
 </div>
 </body>
 </html>
