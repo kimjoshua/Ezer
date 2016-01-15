@@ -37,9 +37,9 @@
     <![endif]-->
 <script src="<%=cp%>/js/ezer.js"></script>
 </head>
-<body  style="background-color: rgb(255, 255, 255);">
+<body style="background-color: rgb(255, 255, 255);">
 
-<div id="wrapper">
+	<div id="wrapper">
 		<h1>Ezer</h1>
 		<div id="skipnavi"></div>
 		<div class="moto"></div>
@@ -48,10 +48,12 @@
 
 			<div id="header">
 				<div class="logo desktop">
-					<a href="/" title="홈페이지로 이동"><img id="deskLogo" src="/img/logo.png" alt="  "></a>
+					<a href="/" title="홈페이지로 이동"><img id="deskLogo"
+						src="/img/logo.png" alt="  "></a>
 				</div>
 				<div class="logo mobile">
-					<a href="/" title="홈페이지로 이동"><img id="deskLogo" src="/img/logo.png" alt="  "></a>
+					<a href="/" title="홈페이지로 이동"><img id="deskLogo"
+						src="/img/logo.png" alt="  "></a>
 				</div>
 
 				<div id="utilnav">
@@ -61,114 +63,167 @@
 				</div>
 				<div id="utilnavr" class="desktop">
 					<ul class="utility">
-						<li class="desktop"><a href="" title="새창 열림" id="english" onclick="trackClicksEx('헤더 Global') "><span>이벤트</span></a></li>
-						<li class="nobar desktop bar"><a href="" title="새창 열림" id="chinese" onclick=""><span>쇼핑몰</span></a></li>
-						<li class="desktop bar"><a href="" title="새창 열림" id="english" onclick="trackClicksEx('헤더 Global') "><span>블로그</span></a></li>
-						<li class="nobar desktop bar"><a href="" title="새창 열림" id="chinese" onclick="trackClicksEx('헤더 China')"><span>sns</span></a></li>
+						<li class="desktop"><a href="" title="새창 열림" id="english"
+							onclick="trackClicksEx('헤더 Global') "><span>이벤트</span></a></li>
+						<li class="nobar desktop bar"><a href="" title="새창 열림"
+							id="chinese" onclick=""><span>쇼핑몰</span></a></li>
+						<li class="desktop bar"><a href="" title="새창 열림" id="english"
+							onclick="trackClicksEx('헤더 Global') "><span>블로그</span></a></li>
+						<li class="nobar desktop bar"><a href="" title="새창 열림"
+							id="chinese" onclick="trackClicksEx('헤더 China')"><span>sns</span></a></li>
 
-						<li class="nobar mobile"><a href="#nohref" onclick="trackClicksEx('헤더 모바일 메뉴')" id="mobileNav" data-status="close"><img src="" width="22" height="16" onclick="" alt="모바일 메뉴 열기" class="close" style="display: block;">
-								<img src="" width="22" height="16" onclick="" alt="모바일 메뉴 닫기" class="open" style="display: none;"> </a></li>
+						<li class="nobar mobile"><a href="#nohref"
+							onclick="trackClicksEx('헤더 모바일 메뉴')" id="mobileNav"
+							data-status="close"><img src="" width="22" height="16"
+								onclick="" alt="모바일 메뉴 열기" class="close" style="display: block;">
+								<img src="" width="22" height="16" onclick="" alt="모바일 메뉴 닫기"
+								class="open" style="display: none;"> </a></li>
 					</ul>
 
 				</div>
 				<!-- 모바일용 검색 상자 -->
 				<div id="srcBoxBtn" style="display: none;">
 
-					<a href="http://search.amorepacific.com" class="srcButton" onclick="trackClicksEx('모바일|헤더 검색')" target="_blank"><span>검색
+					<a href="http://search.amorepacific.com" class="srcButton"
+						onclick="trackClicksEx('모바일|헤더 검색')" target="_blank"><span>검색
 							상자 열기</span></a>
 				</div>
 				<div id="nav">
 					<div id="sub_navwrap" class="navwrap">
+<nav>
+				<ul>
+					<li>
+						<a href="" onclick="javascript:return false;" class="dep01 "
+							id="fisrtMenu" background:none;">기업</a>
+						<ul class="fallback">
+							<div id="dep0202" background-color: rgb(244, 239, 247);">
+							<ul class="dep02">
+							<li><a href="#">Sub-Link 1</a></li>
+							<li><a href="#">Sub-Link 2</a></li>
+							<li><a href="#">Sub-Link 3</a></li>
+							<li><a href="#">Sub-Link 4</a></li>
+							</ul>
+							</div>
+							
+						</ul>
+					</li>
+					<li>
+						<a href="#">브랜드</a>
+						<ul class="fallback">
+							<li><a href="#">Sub-Link 1</a></li>
+							<li><a href="#">Sub-Link 2</a></li>
+							<li><a href="#">Sub-Link 3</a></li>
+							<li><a href="#">Sub-Link 4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">이노베이션</a>
+						<ul class="fallback">
+							<li><a href="#">Sub-Link 1</a></li>
+							<li><a href="#">Sub-Link 2</a></li>
+							<li><a href="#">Sub-Link 3</a></li>
+							<li><a href="#">Sub-Link 4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">지속가능경영</a>
+						<ul class="fallback">
+							<li><a href="#">Sub-Link 1</a></li>
+							<li><a href="#">Sub-Link 2</a></li>
+							<li><a href="#">Sub-Link 3</a></li>
+							<li><a href="#">Sub-Link 4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">투자정보</a>
+						<ul class="fallback">
+							<li><a href="#">Sub-Link 1</a></li>
+							<li><a href="#">Sub-Link 2</a></li>
+							<li><a href="#">Sub-Link 3</a></li>
+							<li><a href="#">Sub-Link 4</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+			</nav>
+			
+			
+			<style>
+			
+			nav {background:#FFF;float:left;}
+nav ul {text-align:center;}
+nav ul li {float:left;display:inline;}
+nav ul li:hover {background:#E6E6E6;}
+nav ul li a {display:block;padding:15px 25px;color:#444;}
+nav ul li ul {position:absolute;width:110px;background:#FFF;}
+nav ul li ul li {margin:0;padding:0;width:110px;}
+nav ul li ul li a {display:block;padding:15px 10px;color:#444;}
+nav ul li ul li:hover a {background:#F7F7F7;}
+nav ul li ul.fallback {display:none;}
+nav ul li:hover ul.fallback {display:block;}</style>
+					<!-- 	<a href="" onclick="javascript:return false;" class="dep01 "
+							id="fisrtMenu" background:none;">기업</a>
 
-						<a href="" onclick="javascript:return false;" class="dep01 active fix" id="fisrtMenu" style="padding-left: 2%; color: rgb(249, 182, 87); background: none;">기업</a>
+
+						<div class="dep011"
+							style="display: none; background-color: rgb(254, 248, 239);">
+							<ul class="dep02">
+
+								<li></li>
+
+							</ul>
+
+						</div>
+
+						<a href="#nohref" onclick="javascript:return false;"
+							class="dep02 active fix"
+							style="padding-left: 2%; color: rgb(152, 94, 162); background: none;">브랜드</a>
+
+						<div class="dep021" style="display: none;">
+							<ul class="dep0202">
+
+								<li></li>
+
+								<li></li>
+							</ul>
+						</div>
 
 
-						<div id="dep0201" style="display: none; background-color: rgb(254, 248, 239);">
+						<a href="#nohref" onclick="javascript:trackClicksEx('GNB 이노베이션');return false;" class="dep01" >이노베이션</a>
+						<a href="" onclick="javascript:return false;" class="dep03"
+							style="padding-left: 2%; background: none;">이노베이션</a>
+
+
+						<div class="dep031"
+							style="display: none; background-color: rgb(254, 245, 247);">
 							<ul class="dep02">
 
 
-								<li></li>
+								<li>
 
-
-								<li></li>
-
-
-								<li></li>
-
-
-								<li></li>
-
-
-								<li></li>
-
-
-								<li></li>
+							
+								</li>
 
 
 								<li>
+
 									<ul class="dep03">
 
 										<li></li>
 
 										<li></li>
+
 
 									</ul>
 								</li>
 							</ul>
 
 						</div>
-
-						<a href="" onclick="javascript:return false;" class="dep01" style="padding-left: 2%; background: none;">브랜드</a>
-
-						<div id="dep0202" style="display: none;">
-							<ul class="dep02">
-
-								<li></li>
-
-								<li></li>
-							</ul>
-						</div>
+						<a href="" onclick="javascript:return false;" class="dep04"
+							style="padding-left: 2%; background: none;">지속가능경영</a>
 
 
-						<!-- <a href="#nohref" onclick="javascript:trackClicksEx('GNB 이노베이션');return false;" class="dep01" >이노베이션</a> -->
-						<a href="" onclick="javascript:return false;" class="dep01" style="padding-left: 2%; background: none;">이노베이션</a>
-
-
-						<div id="dep0203" style="display: none; background-color: rgb(254, 245, 247);">
-							<ul class="dep02">
-
-
-								<li>
-
-									<ul class="dep03">
-
-										<li></li>
-
-										<li></li>
-
-
-									</ul>
-								</li>
-
-
-								<li>
-
-									<ul class="dep03">
-
-										<li></li>
-
-										<li></li>
-
-
-									</ul>
-								</li>
-							</ul>
-
-						</div>
-						<a href="" onclick="javascript:return false;" class="dep01" style="padding-left: 2%; background: none;">지속가능경영</a>
-
-
-						<div id="dep0204" style="display: none;">
+						<div class="dep041" style="display: none;">
 							<ul class="dep02">
 
 
@@ -209,9 +264,10 @@
 
 						</div>
 
-						<a href="" onclick="javascript:return false;" class="dep01" style="padding-left: 2%; background: none;">투자자정보</a>
+						<a href="" onclick="javascript:return false;" class="dep05"
+							style="padding-left: 2%; background: none;">투자자정보</a>
 
-						<div id="dep0205" style="display: none;">
+						<div class="dep051" style="display: none;">
 							<ul class="dep02">
 
 
@@ -223,7 +279,7 @@
 								</li>
 							</ul>
 
-						</div>
+						</div> -->
 
 					</div>
 					<!-- 모바일용 유틸리티 메뉴 2014-01-13 EJ@ -->
@@ -239,9 +295,12 @@
 										&amp; 미디어</span></a>
 								<div id="dep0206">
 									<ul class="utility">
-										<li class="text"><a href="" onclick="" target="_blank" title="새창 열림">오시는길</a></li>
-										<li class="text"><a href="" onclick="" target="_blank" title="새창 열림"><strong>공지사항</strong></a></li>
-										<li class="text nobar"><a href="" target="_blank" title="새창 열림" onclick="">고객센터</a></li>
+										<li class="text"><a href="" onclick="" target="_blank"
+											title="새창 열림">오시는길</a></li>
+										<li class="text"><a href="" onclick="" target="_blank"
+											title="새창 열림"><strong>공지사항</strong></a></li>
+										<li class="text nobar"><a href="" target="_blank"
+											title="새창 열림" onclick="">고객센터</a></li>
 
 									</ul>
 
@@ -256,8 +315,13 @@
 					<div id="utilnavAll" class="mobile">
 
 						<div class="menu">
-							<a href="http://m.makeupyourlife.co.kr/" target="_blank" title="사회공헌 포털 - 새창 열림" onclick="trackClicksEx('모바일|GNB 사회공헌 포털')">사회공헌 포털</a> <a href="http://www.beautypoint.co.kr/" target="_blank" title="뷰티포인트 - 새창 열림" onclick="trackClicksEx('모바일|GNB 뷰티포인트')"><strong>뷰티포인트</strong></a>
-							<a href="https://recruit.amorepacific.co.kr/" target="_blank" title="인재채용 - 새창 열림" onclick="trackClicksEx('모바일|GNB 인재채용')">인재채용</a>
+							<a href="http://m.makeupyourlife.co.kr/" target="_blank"
+								title="사회공헌 포털 - 새창 열림"
+								onclick="trackClicksEx('모바일|GNB 사회공헌 포털')">사회공헌 포털</a> <a
+								href="http://www.beautypoint.co.kr/" target="_blank"
+								title="뷰티포인트 - 새창 열림" onclick="trackClicksEx('모바일|GNB 뷰티포인트')"><strong>뷰티포인트</strong></a>
+							<a href="https://recruit.amorepacific.co.kr/" target="_blank"
+								title="인재채용 - 새창 열림" onclick="trackClicksEx('모바일|GNB 인재채용')">인재채용</a>
 						</div>
 					</div>
 					<!-- end of 모바일용 유틸리티 메뉴 -->
@@ -395,17 +459,27 @@
 
 					</div>
 				</div>
-				<div id="realcontents">
-					<div class="brandCont">
+				<div id="pagetitle">
 
+
+        <h2>전체 브랜드</h2>
+
+		<p>당신을 더 아름답게 하는 이름이 있습니다.</p>
+
+ 
+    </div>
+				
+				<div id="realcontents" style="padding-top:0">
+					<div class="brandCont">
+<!-- 
 						<div id="allbrand" class="gridder gridder2">
 							<div class="parbase brand_box par2">
 								<div class="gridderList sulwhasooColor  imactive">
-									<!-- 배경에 따라서 colorgreen class가 변경 됨 -->
+									배경에 따라서 colorgreen class가 변경 됨
 									<div class="sulwhasoo parbase brand"></div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 					</div>
 

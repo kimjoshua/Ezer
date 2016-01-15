@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%-- 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> --%>
+<%
+	String cp = request.getContextPath();
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -20,6 +25,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
 	integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
 	crossorigin="anonymous"></script>
+	<script src="<%=cp%>/js/ezer.js"></script>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -34,7 +40,7 @@
 <div id="wrapper">
 	<h1>Ezer cosmetic</h1>
 
-	<div class="moto v_70th"></div>
+	<div class="moto"></div>
 	<div class="inwrap">
 		<div id="header">
 			<div class="logo desktop">
@@ -64,7 +70,7 @@
 							<img src="" width="22" height="16" onclick="" alt="모바일 메뉴 닫기"
 							class="open" style="display: none;"> </a></li>
 				</ul>
-			</div>
+			</div> 
 			<div>
 				<ul>
 					<input type="text" class="serchBar">
@@ -72,6 +78,8 @@
 						title="새창 열림" onclick="trackClicksEx('헤더 검색')" class="srcButton"><span>검색</span></a></li>
 				</ul>
 			</div>
+			
+			
 			<div id="utilnavr" class="desktop">
 				<ul class="utility">
 					<li class="text"><a href="/toroad">오시는길</a></li>
@@ -96,7 +104,7 @@
 
 					<div id="carousel-example-generic" class="carousel slide"
 						data-ride="carousel"
-						style="position: relative; padding-bottom: 11%; padding-top: 6%;">
+						style="position: relative; padding-bottom: 5%; padding-top: 6%;">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
 							<li data-target="#carousel-example-generic" data-slide-to="0"
@@ -105,10 +113,7 @@
 								class="active"></li>
 							<li data-target="#carousel-example-generic" data-slide-to="2"
 								class=""></li>
-							<li data-target="#carousel-example-generic" data-slide-to="4"
-								class=""></li>
-							<li data-target="#carousel-example-generic" data-slide-to="5"
-								class=""></li>
+						
 						</ol>
 
 						<!-- Wrapper for slides -->
@@ -130,20 +135,6 @@
 							<div class="item">
 								<img src="/img/sn.jpg" usemap="#maptag3">
 								<map name="maptag3">
-									<area shape="rect" coords="x50,y245,x200,y290"
-										href="/cygneWrink" title="">
-								</map>
-							</div>
-							<div class="item">
-								<img src="/img/sn.png" alter="해상도 낮">
-								<map name="maptag4">
-									<area shape="rect" coords="x50,y245,x200,y290"
-										href="/cygneWrink" title="">
-								</map>
-							</div>
-							<div class="item">
-								<img src="/img/cbm.png" alter="해상도 높임">
-								<map name="maptag5">
 									<area shape="rect" coords="x50,y245,x200,y290"
 										href="/cygneWrink" title="">
 								</map>

@@ -4,6 +4,7 @@
 
 $(function() {
 
+	
 	var className = "";
 
 	var data={
@@ -38,16 +39,28 @@ $(function() {
 		
 		data.toggle1=toggleImg
 	})
+var navClass = "";
+var classN1=""
+	$('.navwrap a').mouseover(function(){
+		navClass=$(this).attr('class');
 	
-//	$('.ezer_intro').hover(function(){
-//        this.src = '/img/intro_hover_ezer.png';
-//    }, function () {
-//		this.src = '/img/intro_brand_ezer.png';
-//    }).click(function(){
-//    	$('.intro_ezer').toggle('slow',function(){
-//    		
-//    	})
-//    	$(this).src("img","img/intro_brand_ezer.png")
-//    	
-//    });
+		classN=navClass.substring(0,5)+"1";
+		classN1=navClass.substring(0,5)+"02";
+		console.log(classN)
+		$('.'+classN).removeClass('hover')		
+		viewSub=$(this).find('.'+classN).addClass('hover')
+		$('.'+classN).css("display","block")
+	});
+	
+	$('.'+classN1).mouseout(function(){
+		
+		navClass=$(this).attr('class');
+		
+		classN=navClass.substring(0,5)+"1";
+		console.log(classN)
+
+	
+		$('.'+classN).css("display","none")
+	})
+	
 });

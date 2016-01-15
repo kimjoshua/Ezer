@@ -399,7 +399,7 @@
 				</div>
 
 
-				<div id="realcontents">
+				<div id="realcontents" >
 
 					<div class="realcon">
 					<img class="histimg" src="/img/hist.jpg" alt="  ">

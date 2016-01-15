@@ -122,8 +122,8 @@ ul>li{
 }
  .histimg{
     position: relative;
-    width: 68%;
-    left: 21%;
+	width: 100%;
+    left: 0%;
 }
 
 }
@@ -559,7 +559,7 @@ h3.lineBottomBlack { padding-bottom:10px; }
 	
 	.inwrap { max-width:1180px; position:relative; margin:auto; }
 	#header { position:relative; margin:0 auto; }
-		#header .logo { text-align:center; padding:42px 0 45px 0; height:24px; position:relative; }
+		#header .logo { text-align:center; padding:69px 0 45px 0; height:24px; position:relative; }
 		#header .logo a { width:314px; height:24px; display:block; position:relative; margin:0 auto; }
 		#header .logo a img {     width: 63%;
     height: 283%;
@@ -598,16 +598,22 @@ h3.lineBottomBlack { padding-bottom:10px; }
 		.srcButton.toggle { background-position:-21px top; }
 		.srcButton.toggle:hover { background-position:-21px -21px; }
 		.srcButton span { width:1px; height:1px; overflow:hidden; position:absolute;  visibility:hidden; }
-
+nav ul.fallback {display:none;}
+nav a ul li:hover ul.fallback {display:block;}
 	#nav { z-index:11; }
 		.navwrap { position:relative; text-align:center; height:45px; z-index:11; }
 			.navwrap a { font-weight:bold; text-align:left; }
 			.navwrap a:hover/* , .navwrap a:focus */, .navwrap a.hover  { text-decoration:underline; }
-			.navwrap a.dep01 { padding:0 15px 25px 15px; font-family:aritadsb,'아리따돋움', aritadm, 'Apple Gothic', 'DroidSansFallback', '맑은고딕', 'Malgun Gothic', '나눔고딕', NanumGothic, '돋움', dotum, arial, sans-serif, helvetica; font-size:20px; color:#000000; }
-			/* .navwrap a.dep01:hover, .navwrap a.dep01:focus, .navwrap a.dep01.hover { background:url(../../../content/dam/company/global/images/common/sub_navi_arrow.png) 50% 50% no-repeat; } */
-			.navwrap a.dep01:hover, .navwrap a.dep01.hover { background:url(../../../content/dam/company/global/images/common/sub_navi_arrow.png) 50% 50% no-repeat; }
-			.navwrap a.dep01.active {/* background:none; */ }
-			.navwrap a.dep01.active:hover, .navwrap a.dep01.active:focus { /*background:url(../../../content/dam/company/global/images/common/sub_navi_arrow.png) 50% 50% no-repeat;*/ }
+			.navwrap a.dep01 { padding:0 15px 25px 15px; font-size:20px; color:#000000; }
+			.navwrap a.dep02 { padding:0 15px 25px 15px; font-size:20px; color:#000000; }
+			.navwrap a.dep03 { padding:0 15px 25px 15px; font-size:20px; color:#000000; }
+			.navwrap a.dep04 { padding:0 15px 25px 15px; font-size:20px; color:#000000; }
+			.navwrap a.dep05 { padding:0 15px 25px 15px; font-size:20px; color:#000000; }
+			.navwrap a.dep01:hover, .navwrap a.dep01:focus, .navwrap a.dep01.hover { background:url(./img/sub_navi_arrow.png) 50% 50% no-repeat; } 
+			.navwrap a.dep02:hover,.navwrap a.dep02:focus, .navwrap a.dep02.hover { background:url(./img/sub_navi_arrow.png) 50% 50% no-repeat; } 
+			.navwrap a.dep01:hover, .navwrap a.dep01.hover { background:url(../img/sub_navi_arrow.png) 50% 50% no-repeat; }
+			.navwrap a.dep01.active {background:none;  }
+			.navwrap a.dep01.active:hover, .navwrap a.dep01.active:focus { background:url(/img/sub_navi_arrow.png) 50% 50% no-repeat;}
 			.navwrap a.active { color:#005699; }
 			.navwrap div { background-color:#efefef; position:absolute; width:100%; height:240px; top:25px; display:none; }
 			.navwrap div p { display:none; }
@@ -620,7 +626,7 @@ h3.lineBottomBlack { padding-bottom:10px; }
 			.navwrap div ul.dep03 li a:link { font-weight:normal; }
 			.ie8 .navwrap div ul.dep03 li a { font-weight:normal; }
 			.navwrap div a.btnClose { width:34px; height:34px; display:block; position:absolute; top:0; right:0; }
-			.navwrap div a.btnClose span { width:14px; height:14px; display:block; text-indent:-9999px; overflow:hidden; position:relative; margin:10px auto; background:url(../../../content/dam/company/global/images/common/icon_x.png) left top no-repeat; }
+			.navwrap div a.btnClose span { width:14px; height:14px; display:block; text-indent:-9999px; overflow:hidden; position:relative; margin:10px auto; background:url(../img/icon_x.png) left top no-repeat; }
 			.navwrap a.nohover { cursor:default; text-decoration:none; }
 
 			/* Main 1depth font-color changes along with Key Visual Images' Rolling  */
@@ -849,7 +855,7 @@ h3.lineBottomBlack { padding-bottom:10px; }
 			#main #visualarea .visualbtnarea .visualbtn li a span { width:1px; height:1px; overflow:hidden; position:absolute; }
 			#main #visualarea .visualbtnarea .visualbtn:after { content:''; display:block; clear:both; }
 			/* end of Main Only */
-		#realcontents { padding-top:8px; }
+		#realcontents { padding-top:10%; }
 			#realcontents #lnb { margin-bottom:30px; }
 			#realcontents #lnb .lnb div.txtBox { padding-top: 24px; }
 			#realcontents #lnb .lnb div.txtBox p { font-size:14px; font-size:1.4rem; line-height:1.5em; padding-top:8px; }
