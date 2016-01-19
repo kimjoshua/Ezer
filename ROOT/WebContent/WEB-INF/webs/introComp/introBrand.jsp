@@ -108,7 +108,9 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">브랜드</a>
+							<a href="#nohref" onclick="javascript:return false;"
+							class="dep02 active fix"
+							style="padding-left: 2%; color: rgb(152, 94, 162); background: none;">브랜드</a>
 						<ul class="fallback">
 							<li><a href="#">Sub-Link 1</a></li>
 							<li><a href="#">Sub-Link 2</a></li>
@@ -117,7 +119,19 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">이노베이션</a>
+						<a href="" onclick="javascript:return false;" class="dep03"
+							style="padding-left: 2%; background: none;">제품</a>
+
+						<ul class="fallback">
+							<li><a href="#">Sub-Link 1</a></li>
+							<li><a href="#">Sub-Link 2</a></li>
+							<li><a href="#">Sub-Link 3</a></li>
+							<li><a href="#">Sub-Link 4</a></li>
+						</ul>
+					</li>
+				<li style="width:141px;  ">
+							<a href="" onclick="javascript:return false;" class="dep04"
+							style="padding-left: 1%; background: none;">news&event</a>
 						<ul class="fallback">
 							<li><a href="#">Sub-Link 1</a></li>
 							<li><a href="#">Sub-Link 2</a></li>
@@ -126,16 +140,8 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">지속가능경영</a>
-						<ul class="fallback">
-							<li><a href="#">Sub-Link 1</a></li>
-							<li><a href="#">Sub-Link 2</a></li>
-							<li><a href="#">Sub-Link 3</a></li>
-							<li><a href="#">Sub-Link 4</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">투자정보</a>
+						<a href="" onclick="javascript:return false;" class="dep05"
+							style="padding-left: 2%; background: none;">CS 센터</a>
 						<ul class="fallback">
 							<li><a href="#">Sub-Link 1</a></li>
 							<li><a href="#">Sub-Link 2</a></li>
@@ -150,136 +156,23 @@
 			
 			<style>
 			
-			nav {background:#FFF;float:left;}
+			nav {background: #FFF;
+    position: relative;
+    align-content: center;
+    left: 24%;
+    width: 100%;}
 nav ul {text-align:center;}
-nav ul li {float:left;display:inline;}
+nav ul li {float:left;display:inline;     height: 35px;
+    width: 100px;}
 nav ul li:hover {background:#E6E6E6;}
 nav ul li a {display:block;padding:15px 25px;color:#444;}
 nav ul li ul {position:absolute;width:110px;background:#FFF;}
-nav ul li ul li {margin:0;padding:0;width:110px;}
+nav ul li ul li {margin-left: 13px;padding:0;width:110px;}
 nav ul li ul li a {display:block;padding:15px 10px;color:#444;}
 nav ul li ul li:hover a {background:#F7F7F7;}
 nav ul li ul.fallback {display:none;}
 nav ul li:hover ul.fallback {display:block;}</style>
-					<!-- 	<a href="" onclick="javascript:return false;" class="dep01 "
-							id="fisrtMenu" background:none;">기업</a>
-
-
-						<div class="dep011"
-							style="display: none; background-color: rgb(254, 248, 239);">
-							<ul class="dep02">
-
-								<li></li>
-
-							</ul>
-
-						</div>
-
-						<a href="#nohref" onclick="javascript:return false;"
-							class="dep02 active fix"
-							style="padding-left: 2%; color: rgb(152, 94, 162); background: none;">브랜드</a>
-
-						<div class="dep021" style="display: none;">
-							<ul class="dep0202">
-
-								<li></li>
-
-								<li></li>
-							</ul>
-						</div>
-
-
-						<a href="#nohref" onclick="javascript:trackClicksEx('GNB 이노베이션');return false;" class="dep01" >이노베이션</a>
-						<a href="" onclick="javascript:return false;" class="dep03"
-							style="padding-left: 2%; background: none;">이노베이션</a>
-
-
-						<div class="dep031"
-							style="display: none; background-color: rgb(254, 245, 247);">
-							<ul class="dep02">
-
-
-								<li>
-
-							
-								</li>
-
-
-								<li>
-
-									<ul class="dep03">
-
-										<li></li>
-
-										<li></li>
-
-
-									</ul>
-								</li>
-							</ul>
-
-						</div>
-						<a href="" onclick="javascript:return false;" class="dep04"
-							style="padding-left: 2%; background: none;">지속가능경영</a>
-
-
-						<div class="dep041" style="display: none;">
-							<ul class="dep02">
-
-
-								<li></li>
-
-
-								<li>
-
-									<ul class="dep03">
-
-										<li></li>
-
-										<li></li>
-
-
-									</ul>
-								</li>
-
-
-								<li>
-									<ul class="dep03">
-
-										<li></li>
-
-										<li></li>
-
-
-									</ul>
-								</li>
-
-
-
-
-
-
-
-							</ul>
-
-						</div>
-
-						<a href="" onclick="javascript:return false;" class="dep05"
-							style="padding-left: 2%; background: none;">투자자정보</a>
-
-						<div class="dep051" style="display: none;">
-							<ul class="dep02">
-
-
-								<li></li>
-								<li>
-									<ul class="dep03">
-
-									</ul>
-								</li>
-							</ul>
-
-						</div> -->
+				
 
 					</div>
 					<!-- 모바일용 유틸리티 메뉴 2014-01-13 EJ@ -->
@@ -328,7 +221,7 @@ nav ul li:hover ul.fallback {display:block;}</style>
 				</div>
 
 
-				<script type="text/javascript">
+		<!-- 		<script type="text/javascript">
     function gnbChange() {
 
 		 	if($(".navwrap > a.active").index() == 0){
@@ -364,7 +257,7 @@ nav ul li:hover ul.fallback {display:block;}</style>
     });
 
 
-</script>
+</script> -->
 			</div>
 
 			<style>

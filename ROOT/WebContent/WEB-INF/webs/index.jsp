@@ -9,9 +9,10 @@
 <html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
-<title>Color Ez - 컬러테라피 아카데미 스</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Color Ez - 컬러테라피 아카데미 스</title>
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -25,7 +26,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
 	integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
 	crossorigin="anonymous"></script>
-	<script src="<%=cp%>/js/ezer.js"></script>
+<script src="<%=cp%>/js/ezer.js"></script>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -70,7 +71,7 @@
 							<img src="" width="22" height="16" onclick="" alt="모바일 메뉴 닫기"
 							class="open" style="display: none;"> </a></li>
 				</ul>
-			</div> 
+			</div>
 			<div>
 				<ul>
 					<input type="text" class="serchBar">
@@ -78,8 +79,8 @@
 						title="새창 열림" onclick="trackClicksEx('헤더 검색')" class="srcButton"><span>검색</span></a></li>
 				</ul>
 			</div>
-			
-			
+
+
 			<div id="utilnavr" class="desktop">
 				<ul class="utility">
 					<li class="text"><a href="/toroad">오시는길</a></li>
@@ -113,7 +114,7 @@
 								class="active"></li>
 							<li data-target="#carousel-example-generic" data-slide-to="2"
 								class=""></li>
-						
+
 						</ol>
 
 						<!-- Wrapper for slides -->
@@ -153,7 +154,7 @@
 												</h2>
 												<div class="text">
 													<a href="/ezerCos" onclick="" title="에제르코스메틱자세히 보기">
-														에제르코스메틱의 사업부냐, <br> <br>연혁과 CI/BI등을 소개해 드립니다.
+														에제르코스메틱의 사업분야, <br> <br>연혁과 CI/BI등을 소개해 드립니다.
 													</a>
 												</div>
 												<div class="figure tCenter">
@@ -283,18 +284,17 @@
 										<a href="/introMain" onclick="">회사소개</a>
 									</dd>
 									<dd>
-										<a href="/serviceB" onclick="trackClicksEx('푸터 AP WAY')">사업분야</a>
+										<a href="/serviceB" >사업분야</a>
 										<ul>
 											<li>BEUATY</li>
 											<li>HEALTH</li>
 										</ul>
 									</dd>
 									<dd>
-										<a href="/history" onclick="trackClicksEx('푸터 창업자이야기')">연혁</a>
+										<a href="/history" >연혁</a>
 									</dd>
 									<dd>
-										<a href="/sysbol"
-											onclick="trackClicksEx('푸터 CI/BI|Corporate Identity')">CI/BI</a>
+										<a href="/sysbol">CI/BI</a>
 									</dd>
 								</dl>
 							</li>
@@ -302,27 +302,22 @@
 								<dl>
 									<dt>BRAND</dt>
 									<dd>
-										<a href="/" onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">E-ZER</a>
+										<a href="/" >E-ZER</a>
 									</dd>
 									<dd>
-										<a href="http:" "www.color_ex.com"=""
-											onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">COLOR EZ</a>
+										<a href="http://www.color_ex.com">COLOR EZ</a>
 									</dd>
 									<dd>
-										<a href="http://www.galaxia.com"
-											onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">GALAXIA</a>
+										<a href="http://www.galaxia.com">GALAXIA</a>
 									</dd>
 									<dd>
-										<a href="http://www.teatox"
-											onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">TEATOX</a>
+										<a href="http://www.teatox"">TEATOX</a>
 									</dd>
 									<dd>
-										<a href="http://www.hybridnano.com"
-											onclick="trackClicksEx('푸터 브랜드|글로벌 챔피언 브랜드')">HYBRID NANO</a>
+										<a href="http://www.hybridnano.com">HYBRID NANO</a>
 									</dd>
 									<dd>
-										<a href="http://www.margot.com"
-											onclick="trackClicksEx('푸터 브랜드|전체 브랜드')">MARGOT</a>
+										<a href="http://www.margot.com">MARGOT</a>
 									</dd>
 								</dl>
 							</li>
@@ -330,7 +325,7 @@
 								<dl>
 									<dt>PRODUCT</dt>
 									<dd>
-										<a href="/bioskin" onclick="trackClicksEx('푸터 연구개발|연구개발')">BIO
+										<a href="/bioskin" >BIO
 											GIN</a>
 										<ul>
 											<li><a href="/bioskin">SKIN CARE </a></li>
@@ -338,24 +333,21 @@
 										</ul>
 									</dd>
 									<dd>
-										<a href="/bioatox"
-											onclick="trackClicksEx('푸터 Supply Chain Management|생산물류사업장(SCM)')">BIOSELEMIX</a>
+										<a href="/bioatox">BIOSELEMIX</a>
 										<ul>
 											<li><a href="/bioatox">ATO</a></li>
 											<li><a href="/bioacn">ACN</a></li>
 										</ul>
 									</dd>
 									<dd>
-										<a href="/cygneWhite"
-											onclick="trackClicksEx('푸터 Design|디자인 경영')">CYGNE</a>
+										<a href="/cygneWhite">CYGNE</a>
 									</dd>
 									<dd>
-										<a href="/cygneWhite" onclick="('푸터 Design|디자인 경영')">SEVEN
+										<a href="/cygneWhite">SEVEN
 											ENOUGH</a>
 									</dd>
 									<dd>
-										<a href="/cygneWrink"
-											onclick="trackClicksEx('푸터 Design|디자인 경영')">AMPOULE</a>
+										<a href="/cygneWrink"">AMPOULE</a>
 									</dd>
 								</dl>
 							</li>
@@ -363,13 +355,13 @@
 								<dl>
 									<dt>NEWS &amp; EVENT</dt>
 									<dd>
-										<a href="/ad" onclick="trackClicksEx('푸터 현황')">AD</a>
+										<a href="/ad" >AD</a>
 									</dd>
 									<dd>
-										<a href="/news" onclick="trackClicksEx('푸터 고객|고객을 위한 활동')">NEWS</a>
+										<a href="/news" >NEWS</a>
 									</dd>
 									<dd>
-										<a href="/media" onclick="trackClicksEx('푸터 환경|환경을 위한 활동')">MEDIA</a>
+										<a href="/media" >MEDIA</a>
 									</dd>
 									<dd>
 										<a href="/event"
@@ -395,27 +387,14 @@
 							</li>
 							<li class="bar">
 								<dl>
-									<dd class="desktop">
-										<a href="/service" class="blt-balloon fcLblack"
-											onclick="trackClicksEx('푸터 매장찾기')"><strong>서비스이용약관</strong></a>
-									</dd>
-									<dd class="desktop">
-										<a href="/personal" class="blt-balloon fcLblack"
-											onclick="trackClicksEx('푸터 매장찾기')"><strong>개인정보취급방침</strong></a>
-									</dd>
-									<dd class="desktop">
-										<a href="/change" class="blt-balloon fcLblack"
-											onclick="trackClicksEx('푸터 매장찾기')"><strong>교환및
-												환불규정</strong></a>
-									</dd>
+
 									<dd class="desktop">
 										<a href="/costom" class="blt-balloon fcLblack"
 											onclick="trackClicksEx('푸터 매장찾기')"><strong>소비자
 												상담실</strong></a>
 									</dd>
 									<dd class="desktop">
-										<a href="/toroad" class="blt-balloon fcLblack"
-											onclick="trackClicksEx('푸터 매장찾기')"><strong>찾아오시는
+										<a href="/toroad" class="blt-balloon fcLblack"><strong>찾아오시는
 												길</strong></a>
 									</dd>
 									<dd class="/mobile store fDepth">
@@ -427,25 +406,16 @@
 											class="blt-balloon toggleTrigger"><strong>개인정보
 												취급방침</strong></a>
 									</dd>
+
+
 									<dd class="mobile store fDepth">
-										<a href="/change" onclick="trackClicksEx('푸터 매장찾기')"
-											class="blt-balloon toggleTrigger"><strong>교환 및
-												환불</strong></a>
-									</dd>
-									<dd class="mobile store fDepth">
-										<a href="/costom" onclick="trackClicksEx('푸터 매장찾기')"
-											class="blt-balloon toggleTrigger"><strong>소비자
-												상담실</strong></a>
-									</dd>
-									<dd class="mobile store fDepth">
-										<a href="toroad" onclick="trackClicksEx('푸터 매장찾기')"
-											class="blt-balloon toggleTrigger"><strong>찾아오시는
+										<a href="/toroad" class="blt-balloon toggleTrigger"><strong>찾아오시는
 												길</strong></a>
 									</dd>
 									<dd>
 										<div class="familysite">
-											<a href="/site" onclick="trackClicksEx('푸터 관련 사이트')"
-												class="btnFamily"><span>FAMILY SITE</span></a>
+											<a href="/site" class="btnFamily"><span>FAMILY
+													SITE</span></a>
 										</div>
 									</dd>
 								</dl>
@@ -457,7 +427,7 @@
 				</div>
 				<div id="footer">
 					<div class="footer mobileVary">
-						<div class="copyright">
+						<div class="copyright center">
 							<span>© (주) 에제르코스메틱 대표 : 정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동,
 								보아스빌딩) | 사업자번호 :221-81-29582 <img src="" alt="">
 							</span>
@@ -467,10 +437,11 @@
 				</div>
 
 			</div>
-			
+
 		</div>
 
-	</div><div class="footerline"></div>
+	</div>
+	<div class="footerline"></div>
 </div>
 </body>
 </html>
