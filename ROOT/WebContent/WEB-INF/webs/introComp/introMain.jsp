@@ -40,7 +40,7 @@
     <![endif]-->
 
 </head>
-<body id="main" style="background-color: rgb(255, 255, 255);">
+<body id="" style="background-color: rgb(255, 255, 255);">
 
 
 	<div id="wrapper">
@@ -106,31 +106,6 @@
 			</div>
 
 			<div id="contents">
-				<script>
-					$(function() {
-						$("#directMenu .depth3 ul li").last().css(
-								"border-bottom", "1px solid #cccccc");
-						$("#directMenu .depth2 ul li").last().css(
-								"border-bottom", "1px solid #cccccc");
-						$('.depth2').click(
-								function() {
-									$('.depth2 ul').toggle(
-											'slow',
-											function() {
-												$('.depth2 a').find('span')
-														.text("메뉴 목록 닫기")
-														.addClass('on');
-											});
-								})
-
-						$('.hover').hover(function() {
-							$('.dep2').css("display", "block");
-						})
-
-					});
-				</script>
-
-
 
 				<!-- 바로가기 메뉴 -->
 				<div id="directMenu" class="desktop">
@@ -172,31 +147,61 @@
 
 
 
-				<div id="snsMenu" style="display: block;">
-					<ul class="iconWrap">
-						<li class="desktop"><a href="#nohref"
-							onclick="window.print();trackClicksEx('유틸리티|인쇄');" class="print"><span>현재페이지
-									인쇄</span></a></li>
-						<li><a
-							href="http://www.facebook.com/sharer/sharer.php?u=http://www.amorepacific.com/content/company/ko-kr/group/overview.html"
-							onclick="trackClicksEx('유틸리티|페이스북')" target="_blank"
-							class="facebook" title="새창 열림"><span>현재페이지 페이스북 공유</span></a></li>
-						<li><a
-							href="http://twitter.com/share?url=http://www.amorepacific.com/content/company/ko-kr/group/overview.html"
-							target="_blank" onclick="trackClicksEx('유틸리티|트위터')"
-							class="twitter" title="새창 열림"><span>현재페이지 트위터 공유</span></a></li>
-					</ul>
-				</div>
-
-
-
-
 				<div id="realcontents">
 
 					<div class="realcon">
 
 						<div>
-							<img alt="" src="<%=cp%>/img/images.jpg">
+
+							<h2 style="text-align: left; padding-top: 2%;">
+
+								<span><strong> [에제르코스메틱 회사소개] </strong></span>
+							</h2>
+							</p>
+							<h3>
+								<strong> 자연과 사람을 생각하는 회사 </strong>
+							</h3>
+
+
+							<p>(주)에제르 코스메틱은 가장 안전 하고 뛰어난 제품과 함께 ‘만족’이라는 선물을 드리기 위해 끊임없이
+								노력 하고 있습니다.</p>
+							<p>아름다움을 품은 피부를 위해 다년간 현장에서 반영된 경험과 전문지식을 바탕으로 오롯이 정진 하겠습니다.
+							</p>
+							<p>함께 해주시는 분들에게 최적의 제품과 더불어 우리몸의 내적 요인과 심리적인 요인까지 아우르는 total
+								beauty system 으로 피부를 넘어 삶 자체에 기분 좋은 변화를 약속드리는 것이 저희의 사명이며, 이를
+								바탕으로 (주)에제르코스메틱만의 새로운 이야기를 만들어가고 있습니다.</p>
+							<h3> [에제르코스메틱 사업분야-beauty] </h3>
+
+							<p>
+								<span> (주)에제르코스메틱의 beauty 사업은 생기 넘치는 아름다운 피부로의 변화를 위해 <strong>최적의
+										제품을 가장 안전하게 생산하는 것</strong>을 목표로 하고 있으며 이를 위해 거짓 없이 정진 하고 있습니다.
+								</span>
+							</p>
+							<p>수년간의 연구 끝에 천연 화장품 브랜드 BIO Gin으로 출발한 화장품 사업은 이후 누구에게나 안전한
+								화장품 CYGNE , 가장 높은 품질의 오일 브랜드 GALAXIA등을 성공적으로 런칭하면서 일반 소비자들 뿐 아니라
+								병의원 스파등의 전문가들 사이에서 더욱 인정 받아왔습니다. 특히 기존에 경험해 볼 수 없었던 컬러를 기반으로 한
+								브랜드 Color EZ의 성공을 바탕으로 현재 업계 최고 수준의 화장품 회사로 성장하게 되었습니다.</p>
+							<p>앞으로도 최상의 원료와 제조법을 기반으로 인간과 환경 모두가 이로운 방법을 통해 모두의 눈부시고 당당한
+								피부의 주역이 될 수 있도록 노력하겠습니다.</p>
+
+						<h3> [에제르코스메틱 사업분야-healthy]</h3>
+							<p>
+								(주)에제르코스메틱의 healthy사업은 아름다움을 넘어선 매혹적인 피부는 우리 몸의 건강에서 비롯된다는 것에
+								기안하여 <strong>매혹적인 피부를 결정하는 다양한 요소를 몸 안에서부터 케어하는 것</strong> 을 목표로
+								피부 근원부터 건강해 지는 방법에 대해 끊임없이 연구 하고 있습니다.
+							</p>
+							<p>우리몸 안의 내적요인에 대한 관심은 매일 변하는 피부 컨디션에 빠르고 효율적으로 대응하기위한 가장 현명한
+								방법 중 하나입니다.</p>
+							<p>우리는 개인별 맞춤 티 서비스를 통해 한잔의 차로 화사해진 피부톤과 피부 노폐물 배출을 위한
+								TEATOXY 브랜드를 출시하였고 세계 유일의 원천기술을 적용해 피부 노화의 주범인 활성 산소를 효과적으로 제거하기
+								위한 단 하나의 수소수 HYBRID NANOBUBBLES H를 출시함으로써 차별화된 고기능 프리미엄 제품으로
+								고객에게 새로운 가치를 제공 하고 있습니다.</p>
+							<p>고객에게 가장 필요한 가치로 신뢰를 드려 아름다움이 깃든 건강한 생활 창조에 이바지할 것을 약속드립니다.
+							</p>
+
+
+
+
 						</div>
 					</div>
 
