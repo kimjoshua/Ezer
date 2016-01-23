@@ -37,109 +37,61 @@
 
 </head>
 
+<body>
+	<div id="wrapper">
 
+		<h1>Ezer cosmetic</h1>
+		<div class="moto"></div>
+		<div class="inwrap">
+			<%@ include file="template/nav.jsp"%>
+			<div id="contents" class="v1">
+				<div id="visualarea">
 
-<div id="wrapper">
-	<h1>Ezer cosmetic</h1>
+					<div id="indexSliser_main" class="indexSlider">
 
-	<div class="moto"></div>
-	<div class="inwrap">
-		<div id="header">
-			<div class="logo desktop">
-				<a href="/" onclick="" title="홈페이지로 이동"><img id="deskLogo"
-					src="/img/logo.png" alt="  "></a>
-			</div>
-			<div class="logo mobile">
-				<a href="/" onclick="" title="홈페이지로 이동"><img src="/img/logo.png"
-					alt=" "></a>
-			</div>
+						<div id="carousel-example-generic" class="carousel slide"
+							data-ride="carousel"
+							style="position: relative; padding-bottom: 3%; padding-top: 6%;">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0"
+									class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"
+									class=""></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"
+									class=""></li>
 
-			<div id="utilnav">
-				<ul class="utility ">
-					<li class="desktop"><a href="" title="새창 열림" id="" onclick=" "><span>이벤트</span>
-					</a></li>
-					<li class="nobar desktop bar"><a href="" title="새창 열림" id=""
-						onclick=""><span>쇼핑몰</span> </a></li>
-					<li class="desktop bar"><a href="" title="새창 열림" id=""><span>블로그</span></a></li>
-					<li class="nobar desktop bar"><a href="" title="새창 열림"><span>sns</span></a></li>
+							</ol>
 
-					<li class="nobar mobile"><a href="#nohref" id="mobileNav"
-						data-status="close"><img src="" width="22" height="16"
-							onclick="" alt="모바일 메뉴 열기" class="close" style="display: block;">
-							<img src="" width="22" height="16" onclick="" alt="모바일 메뉴 닫기"
-							class="open" style="display: none;"> </a></li>
-				</ul>
-			</div>
-			<div>
-				<ul>
-					<input type="text" class="serchBar">
-					<li class="nobar nopadding"><a href="" target="_blank"
-						title="새창 열림" class="srcButton"><span>검색</span></a></li>
-				</ul>
-			</div>
-
-
-			<div id="utilnavr" class="desktop">
-				<ul class="utility">
-					<li class="text"><a href="/toroad">오시는길</a></li>
-					<li class="text"><a href="" onclick="" target="_blank"
-						title="새창 열림"><strong>공지사항</strong></a></li>
-					<li class="text nobar"><a href="" target="_blank"
-						title="새창 열림" onclick="">고객센터</a></li>
-
-				</ul>
-
-			</div>
-
-
-		</div>
-
-
-
-		<div id="contents" class="v1">
-
-			<div id="visualarea">
-				<div id="indexSliser_main" class="indexSlider">
-
-					<div id="carousel-example-generic" class="carousel slide"
-						data-ride="carousel"
-						style="position: relative; padding-bottom: 3%; padding-top: 6%;">
-						<!-- Indicators -->
-						<ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0"
-								class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1"
-								class=""></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2"
-								class=""></li>
-
-						</ol>
-
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<img src="/img/cbm.jpg" usemap="#maptag1">
-								<map name="maptag1">
-									<area shape="rect" coords="x50,y245,x200,y290"
-										href="/introBrand" title="">
-								</map>
-							</div>
-							<div class="item">
-								<img src="/img/g_main.jpg" usemap="#maptag2">
-								<map name="maptag2">
-									<area shape="rect" coords="x50,y245,x200,y290"
-										href="/introBrand" title="">
-								</map>
-							</div>
-							<div class="item">
-								<img src="/img/sn.jpg" usemap="#maptag3">
-								<map name="maptag3">
-									<area shape="rect" coords="x50,y245,x200,y290"
-										href="/cygneWrink" title="">
-								</map>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="/img/cbm.jpg" usemap="#maptag1">
+									<map name="maptag1">
+										<area shape="rect" coords="x50,y245,x200,y290"
+											href="/introBrand" title="">
+									</map>
+								</div>
+								<div class="item">
+									<img src="/img/g_main.jpg" usemap="#maptag2">
+									<map name="maptag2">
+										<area shape="rect" coords="x50,y245,x200,y290"
+											href="/introBrand" title="">
+									</map>
+								</div>
+								<div class="item">
+									<img src="/img/sn.jpg" usemap="#maptag3">
+									<map name="maptag3">
+										<area shape="rect" coords="x50,y245,x200,y290"
+											href="/cygneWrink" title="">
+									</map>
+								</div>
 							</div>
 						</div>
 					</div>
+
+
+
 					<div id="realcontents">
 						<div class="realcon">
 							<div class="articleWrap">
@@ -187,10 +139,6 @@
 									</div>
 									<div class="cell">
 										<div class="parbase image img3">
-
-
-
-
 											<div class="article">
 												<h3>
 													<a href="/bioacn" onclick="" title="제품 소개 자세히 보기">제품 소개</a>
@@ -213,12 +161,13 @@
 							</div>
 						</div>
 					</div>
+
+
+
+
 					<div class="layout3cell">
 						<div class="cell">
 							<div class="txt1 parbase main_text">
-
-
-
 
 								<div class="article">
 									<h3>
@@ -267,176 +216,9 @@
 							</div>
 						</div>
 					</div>
-					<!-- go to top -->
-					<div id="gototop">
-						<a href="" onclick=""><span>맨 위로 가기</span></a>
-					</div>
-					<!-- end of go to top -->
-					<!-- Bottom Quick Menu -->
-					<div id="quicknav">
-						<ul class="footernav"
-							style="border-bottom: 1px #e2e2e2 solid; height: 65px; padding: 2%;">
-							<li>
-								<dl>
-									<dt>COMPANY</dt>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>BRAND</dt>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>PRODUCT</dt>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>NEWS &amp; EVENT</dt>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>CS CENTER</dt>
-								</dl>
-							</li>
-
-						</ul>
-						<ul class="quickmenu mobileVary">
-							<li class="first">
-								<dl>
-
-									<dd>
-										<a href="/introMain" onclick="">회사소개</a>
-									</dd>
-									<dd>
-										<a href="/serviceB">사업분야</a>
-										<ul>
-											<li>BEUATY</li>
-											<li>HEALTH</li>
-										</ul>
-									</dd>
-									<dd>
-										<a href="/history">연혁</a>
-									</dd>
-									<dd>
-										<a href="/sysbol">CI/BI</a>
-									</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-
-									<dd>
-										<a href="/">E-ZER</a>
-									</dd>
-									<dd>
-										<a href="http://www.color_ex.com">COLOR EZ</a>
-									</dd>
-									<dd>
-										<a href="http://www.galaxia.com">GALAXIA</a>
-									</dd>
-									<dd>
-										<a href="http://www.teatox"">TEATOX</a>
-									</dd>
-									<dd>
-										<a href="http://www.hybridnano.com">HYBRID NANO</a>
-									</dd>
-									<dd>
-										<a href="http://www.margot.com">MARGOT</a>
-									</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-
-									<dd>
-										<a href="/bioskin">BIO GIN</a>
-										<ul>
-											<li><a href="/bioskin">SKIN CARE </a></li>
-											<li><a href="/biocare">HAIR CARE</a></li>
-										</ul>
-									</dd>
-									<dd>
-										<a href="/bioatox">BIOSELEMIX</a>
-										<ul>
-											<li><a href="/bioatox">ATO</a></li>
-											<li><a href="/bioacn">ACN</a></li>
-										</ul>
-									</dd>
-									<dd>
-										<a href="/cygneWhite">CYGNE</a>
-									</dd>
-									<dd>
-										<a href="/cygneWhite">SEVEN ENOUGH</a>
-									</dd>
-									<dd>
-										<a href="/cygneWrink"">AMPOULE</a>
-									</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-
-									<dd>
-										<a href="/ad">AD</a>
-									</dd>
-									<dd>
-										<a href="/news">NEWS</a>
-									</dd>
-									<dd>
-										<a href="/media">MEDIA</a>
-									</dd>
-									<dd>
-										<a href="/event"
-											onclick="trackClicksEx('푸터 임직원과 파트너|임직원과 파트너를 위한 활동')">EVENT</a>
-									</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-
-									<dd>
-										<a href="/notice" onclick="trackClicksEx('푸터 IR 스케줄')">NOTICE</a>
-									</dd>
-									<dd>
-										<a href="faq" onclick="trackClicksEx('푸터 기업지배구조|CEO 메시지')">FAQ</a>
-									</dd>
-									<dd>
-										<a href="/qa"
-											onclick="trackClicksEx('푸터 뉴스 &amp; 공시|아모레퍼시픽 공시정보')">Q
-											&amp; A</a>
-									</dd>
 
 
-									<dd class="desktop">
-										<a href="/costom" class="blt-balloon fcLblack"
-											onclick="trackClicksEx('푸터 매장찾기')"><strong>소비자
-												상담실</strong></a>
-									</dd>
-									<dd class="desktop">
-										<a href="/toroad" class="blt-balloon fcLblack"><strong>찾아오시는
-												길</strong></a>
-									</dd>
-									<dd class="mobile store fDepth">
-										<a href="/toroad" class="blt-balloon toggleTrigger"><strong>찾아오시는
-												길</strong></a>
-									</dd>
-									<!-- <dd>
-										<div class="familysite">
-											<a href="/site" class="btnFamily"><span>FAMILY
-													SITE</span></a>
-										</div>
-									</dd> -->
-
-
-								</dl>
-							</li>
-							<li class="bar"></li>
-						</ul>
-					</div>
-					<!-- end of Bottom Quick Menu -->
+					<%@ include file="template/footer.jsp"%>
 				</div>
 				<div id="footer">
 					<div class="footer mobileVary">
@@ -452,13 +234,15 @@
 
 					</div>
 				</div>
-
 			</div>
-
 		</div>
 
 	</div>
+	</div>
 	<div class="footerline"></div>
-</div>
+
+	</div>
+	</div>
+
 </body>
 </html>

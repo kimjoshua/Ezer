@@ -45,30 +45,56 @@
 		<div class="inwrap">
 			<%@ include file="../template/nav.jsp"%>
 			<div id="contents" class="v1">
-				<div id="visualarea">
-						<div id="realcontents">
-						<div class="realcon">
-							
-						</div>
-					</div>
-					<%@ include file="../template/footer.jsp"%>
-				</div>
-				<div id="footer">
-					<div class="footer mobileVary">
-						<div></div>
-						<div class="copyright center">
-							<span style="position: relative; right: 12%;"> ©E-ZER
-								COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-								style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 :
-								정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
-								src="" alt="">
-							</span>
-						</div>
 
+				<div id="visualarea">
+					<div id="realcontents">
+						<div class="realcon">
+							<div style="position: relative; padding: 1% 1% 1% 6%;">
+								<span>CI</span>
+								<div class="symbole">
+									<dl>
+										<dd>에제르코스메틱 로고는</dd>
+									</dl>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="ciLogo" align="middle">
+							<img alt="에제를 코스메틱 CI로고" src="<%=cp%>/img/intro_ezer_main.png">
+						</div>
+													<div style="position: relative; padding: 1% 1% 1% 6%;">
+								<span>BI</span>
+								<div class="symbole">
+									<dl>
+										<dd>에제르코스메틱 로고는</dd>
+									</dl>
+								</div>
+
+							</div>
+						<div>
+						
+						</div>
 					</div>
+				</div>
+				<%@ include file="../template/footer.jsp"%>
+			</div>
+			<div id="footer">
+				<div class="footer mobileVary">
+					<div></div>
+					<div class="copyright center">
+						<span style="position: relative; right: 12%;"> ©E-ZER
+							COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
+							style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 :
+							정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
+							src="" alt="">
+						</span>
+					</div>
+
 				</div>
 			</div>
 		</div>
+	</div>
 
 	</div>
 	</div>

@@ -94,9 +94,9 @@ public class ezerWebcon {
 	public String serviceH() {
 		return "/introComp/serviceH";
 	}
-	@RequestMapping("sysbol")
-	public String sysbol() {
-		return "/introComp/sysbol";
+	@RequestMapping("symbole")
+	public String symbole() {
+		return "/introComp/symbole";
 	}
 	@RequestMapping("history")
 	public String history() {
@@ -143,9 +143,9 @@ public class ezerWebcon {
 		return "/newEvent/news";
 	}
 	
-	@RequestMapping("fqa")
-	public String fqa() {
-		return "/cs/fqa";
+	@RequestMapping("faq")
+	public String faq() {
+		return "/cs/faq";
 	}
 	@RequestMapping("notice")
 	public String notice() {
