@@ -155,7 +155,34 @@ ul>li {
 		position: relative;
 	}
 }
+.service{
+	    position: relative;
+    width: 95%;
+    height: 92%;
+    padding: 3% 5% 5% 2%;
+    left: 4%;
+	}
+	.serviceImg{
+	    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.serviceContents{
+	    position: relative;
+    left: 6%;
+}
 
+.introBG{
+	    position: relative;
+    padding: 2% 3% 3% 2%;
+}
+.introBGImg{
+	    position: relative;
+    padding-top: 2%;
+}
+.introProduct{
+	    width: 100%;
+}
 @media ( min-width : 200px) and (max-width: 1200px) {
 	.histimg {
 		position: relative;
@@ -170,6 +197,10 @@ ul>li {
 		float: inherit;
 		right: 7%;
 	}
+	
+	}
+	
+	
 }
 
 .footernav>li {

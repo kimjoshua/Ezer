@@ -445,8 +445,6 @@ nav ul li:hover ul.fallback {display:block;}</style>
 									</div>
 								</div>
 							</div>
-
-
 						</div>
 						<!-- row end -->
 						<div class="row">

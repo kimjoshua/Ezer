@@ -70,16 +70,7 @@
 												<div class="caption">
 													<h3>Thumbnail label</h3>
 												</div>
-												<div>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												</div>
+
 											</div>
 										</div>
 										<div class="col-sm-4 col-md-3">
