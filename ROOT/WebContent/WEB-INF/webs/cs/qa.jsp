@@ -46,9 +46,64 @@
 			<%@ include file="../template/nav.jsp"%>
 			<div id="contents" class="v1">
 				<div id="visualarea">
-						<div id="realcontents">
+					<div id="realcontents">
 						<div class="realcon">
-							
+							<div id="pagetitle">
+								<div class="row">
+									<div class="col-sm-8 col-md-7 introBG">
+										<span> 질문과 답변</span>
+									</div>
+								</div>
+							</div>
+
+							<div>
+
+								<span> 자주 묻는 질문은 확인 하셨나요?<br> 고객상담전에 <strong>자주
+										묻는 질문</strong>에서 원하시는 정보를 먼저 확인하세요
+								</span>
+								<button>자주 묻는 질문 확인하기</button>
+							</div>
+
+							<div>
+
+								<form>
+									<table>
+
+										<tr>
+											<td>구분</td>
+											<td><input type="radio" name="categ"> 홈페이지</td>
+											<td><input type="radio" name="categ"> 화장품</td>
+											<td><input type="radio" name="categ"> 생활용품</td>
+											<td><input type="radio" name="categ"> 음료</td>
+											<td><input type="radio" name="categ"> 미용상품</td>
+											<td><input type="radio" name="categ"> IR</td>
+										</tr>
+										<tr>
+											<td>제목</td>
+											<td><input type="text" name="title"></td>
+										</tr>
+										<tr>
+											<td>첨부파일</td>
+											<td><input type="file" name="attachFile"></td>
+										</tr>
+										<tr>
+										<td>내용</td>
+										<td>
+										<span> * 글자수는 최대 400000 Byte까지 등록 가능합니다</span>
+										<div></div>
+										
+										
+										<textarea rows="" cols="" name="contents"></textarea>
+										</td>
+										</tr>
+									</table>
+
+		<input type="submit" value="문의 하기">
+								</form>
+
+							</div>
+
+
 						</div>
 					</div>
 					<%@ include file="../template/footer.jsp"%>

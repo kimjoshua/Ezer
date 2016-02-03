@@ -48,6 +48,13 @@
 				<div id="visualarea">
 					<div id="realcontents">
 						<div class="realcon">
+							<div id="pagetitle">
+								<div class="row">
+									<div class="col-sm-8 col-md-7 introBG">
+										<span> 뉴스</span>
+									</div>
+								</div>
+							</div>
 							<div class="newsTable">
 								<table>
 									<thead style="border-top: 0.2em solid grey;">
@@ -57,7 +64,7 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr	>
+										<tr>
 											<td>2016.02.01</td>
 											<td>나의 이야기를 들어 보세요</td>
 										</tr>

@@ -46,34 +46,46 @@
 			<%@ include file="../template/nav.jsp"%>
 			<div id="contents" class="v1">
 				<div id="visualarea">
-						<div id="realcontents">
+					<div id="realcontents">
 						<div class="realcon">
-							<div class="faqSerch">
-								<input type="text">
-							 </div>
-							 <div class="faqCateg">
-							 
-							 <input type="text" disabled>
-							 <input type="text" disabled>
-							 <input type="text" disabled>
-							 <input type="text" disabled>
-							 <input type="text" disabled>
-							 <input type="text" disabled>
-							 <input type="text" disabled>
-							 <input type="text" disabled>
-							 </div>
-							<div>
-							<table>
-								<thead>
-									<tr>
-										<th>번호</th>
-										<th>제목/답변</th>
-										<th>종류</th>
-									</tr>
-								</thead>
-								<tbody></tbody>
+							<div id="pagetitle">
+								<div class="row">
+									<div class="col-sm-8 col-md-7 introBG">
+										<span> 자주 묻는 질문</span>
+									</div>
+								</div>
+								<div class="faqSerch">
+									<form>
+										<input class="faqSerchBar" type="text" name="faqSerchClick">
+										<button type="button" class="btn btn-default serchBtn"
+											aria-label="Left Align">
+											<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+										</button>
+									</form>
 
-							</table>
+								</div>
+								<div class="faqCateg">
+
+									<input type="text" disabled> <input type="text"
+										disabled> <input type="text" disabled> <input
+										type="text" disabled> <input type="text" disabled>
+									<input type="text" disabled> <input type="text"
+										disabled> <input type="text" disabled>
+								</div>
+							</div>
+
+							<div>
+								<table>
+									<thead>
+										<tr>
+											<th>번호</th>
+											<th>제목/답변</th>
+											<th>종류</th>
+										</tr>
+									</thead>
+									<tbody></tbody>
+
+								</table>
 							</div>
 						</div>
 					</div>

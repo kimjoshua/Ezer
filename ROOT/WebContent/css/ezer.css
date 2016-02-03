@@ -197,7 +197,7 @@ table tr{
 .introProduct{
 	    width: 100%;
 }
-@media ( min-width : 200px) and (max-width: 1200px) {
+@media ( min-width : 200px) and (max-width: 1024px) {
 	.histimg {
 		position: relative;
 		width: 107%;
@@ -369,6 +369,10 @@ caption {
 /* 입력폼, 버튼 공통 */
 fieldset {
 	border: 0;
+}
+
+.footernav > li {
+	width:17%
 }
 
 select {
@@ -3089,7 +3093,30 @@ nav a ul li:hover ul.fallback {
 	font-size: 12px;
 	color: #999999;
 }
+.serchBtn{
+	    position: relative;
+    z-index: 20;
+    left: 74%;
+    top: -9px;
+    border-style: none;
+}
+.faqSerch{
 
+    padding-bottom: 8%;
+    align-content: center;
+    position: relative;
+    left: 20%;
+        width: 73%;
+}
+.faqSerchBar{
+	border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    position: absolute;
+    width: 80%;
+    border-bottom: 1px solid black;
+ 
+}
 .quickmenu dt {
 	font-size: 14px;
 	color: #333333;
@@ -3103,7 +3130,7 @@ nav a ul li:hover ul.fallback {
 
 .quickmenu li {
 	float: left;
-	width: 195px;
+	width: 160px;
 }
 
 .quickmenu li dl {

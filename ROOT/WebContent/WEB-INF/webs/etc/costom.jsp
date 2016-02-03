@@ -46,9 +46,36 @@
 			<%@ include file="../template/nav.jsp"%>
 			<div id="contents" class="v1">
 				<div id="visualarea">
-						<div id="realcontents">
+					<div id="realcontents">
 						<div class="realcon">
+							<div id="pagetitle">
+								<div class="row">
+									<div class="col-sm-8 col-md-7 introBG">
+										<span> 소비자 상담실</span>
+									</div>
+								</div>
+							</div>
+
+							<div>
 							
+								사이트
+							</div>
+							
+							<div>
+								<span> 상담 전용 전화는 수신자 부담으로 운영되고 있습니다. 주말 및 공유일은 휴무 입니다. </span>
+								<span> 상답접수는 24시간 가능하며, 접수된 상담은 상담가능 시간에 답변 드리도록 하겠습니다. </span>
+							</div>
+							
+							<div>
+							<div>
+							<span>찾으시는 내용이 없으신가요? 궁금하신 점이나 불편하신 점이 있으시면 고객상담을 통해 남겨 주세요</span>
+							
+							</div>
+							<div>
+									<button> 고객상담하기</button>
+									<button>나의 상담목록 확인 <- 로그인을 안하는데 이건왜?</button>
+								</div>
+							</div>
 						</div>
 					</div>
 					<%@ include file="../template/footer.jsp"%>

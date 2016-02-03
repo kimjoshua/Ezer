@@ -46,31 +46,54 @@
 			<%@ include file="../template/nav.jsp"%>
 			<div id="contents" class="v1">
 				<div id="visualarea">
-						<div id="realcontents">
+					<div id="realcontents">
 						<div class="realcon">
-							
-						</div>
-					</div>
-					<%@ include file="../template/footer.jsp"%>
-				</div>
-				<div id="footer">
-					<div class="footer mobileVary">
-						<div></div>
-						<div class="copyright center">
-							<span style="position: relative; right: 12%;"> ©E-ZER
-								COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-								style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 :
-								정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
-								src="" alt="">
-							</span>
-						</div>
+							<div id="pagetitle">
+								<div class="row">
+									<div class="col-sm-8 col-md-7 introBG">
+										<span> 소비자 상담실</span>
+									</div>
+								</div>
+							</div>
+							<div class="newsTable">
+								<table>
+									<thead style="border-top: 0.2em solid grey;">
+										<tr style="text-align: center;">
+											<th style="text-align: center; width: 20%;">등록</th>
+											<th style="text-align: c;">제목</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2016.02.01</td>
+											<td>나의 이야기를 들어 보세요</td>
+										</tr>
 
+									</tbody>
+								</table>
+								</
+							</div>
+						</div>
+						<%@ include file="../template/footer.jsp"%>
+					</div>
+					<div id="footer">
+						<div class="footer mobileVary">
+							<div></div>
+							<div class="copyright center">
+								<span style="position: relative; right: 12%;"> ©E-ZER
+									COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
+									style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 :
+									정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
+									src="" alt="">
+								</span>
+							</div>
+
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-	</div>
+		</div>
 	</div>
 	<div class="footerline"></div>
 

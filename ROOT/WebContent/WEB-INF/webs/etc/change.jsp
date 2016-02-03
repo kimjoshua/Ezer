@@ -46,8 +46,99 @@
 			<%@ include file="../template/nav.jsp"%>
 			<div id="contents" class="v1">
 				<div id="visualarea">
-						<div id="realcontents">
+					<div id="realcontents">
 						<div class="realcon">
+							<div id="pagetitle">
+								<div class="row">
+									<div class="col-sm-8 col-md-7 introBG">
+										<span> 교환 및 환불 규정</span>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<table>
+									<thead>
+										<tr>
+											<th colspan="2">클레임 유형</th>
+											<th>클레임 요인</th>
+											<th>사용량 기준</th>
+											<th>처리 방법</th>
+											<th>품질 보증 기간</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="2">제품</td>
+											<td>내용물</td>
+											<td>2</td>
+											<td rowspan="2">사용량기준</td>
+											<td rowspan="2">처리기준</td>
+											<td rowspan="3">품질 보증기간</td>
+										</tr>
+										<tr>
+											<td>포장제</td>
+											<td>ㅁㄴㅇㄻㄴㅇㄹ</td>
+											
+										
+										</tr>
+										<tr>
+											<td>피부/ 신체이상</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>3</td>
+								
+										</tr>
+										<tr>
+											<td>기호불만</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>4</td>
+										</tr>
+										<tr>
+											<td>정상품 교환</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>4</td>
+										</tr>
+										<tr>
+											<td>정상품 환불</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>4</td>
+										</tr>
+										<tr>
+											<td>선물</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>4</td>
+										</tr>
+										<tr>
+											<td>고객과실</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>4</td>
+										</tr>
+
+									</tbody>
+
+								</table>
+							</div>
+							
+							<div>
+								<span> 주1) 판매처에 따라 교환, 환불 규정은 다를 수 있습니다. </span>
+							</div>
 							
 						</div>
 					</div>
