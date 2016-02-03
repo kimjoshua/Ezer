@@ -111,7 +111,21 @@ ul>li {
 .detail_row {
 	width: 205%;
 }
+.newsTable{
+	position: relative;
+    padding: 3% 2% 2% 2%;
+}
 
+table> thead>tr >th {text-align:center}
+ table td {
+	left: 3%;
+    position: relative;
+}
+table tr{
+	border-bottom: 1px solid grey;
+    border-top: 1px solid gray;
+    height: 42px;
+}
 @media ( min-width : 1200px) and (max-width: 1199) {
 	.detail_row {
 		width: 70%;

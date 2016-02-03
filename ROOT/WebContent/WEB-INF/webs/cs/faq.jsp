@@ -48,7 +48,33 @@
 				<div id="visualarea">
 						<div id="realcontents">
 						<div class="realcon">
-							
+							<div class="faqSerch">
+								<input type="text">
+							 </div>
+							 <div class="faqCateg">
+							 
+							 <input type="text" disabled>
+							 <input type="text" disabled>
+							 <input type="text" disabled>
+							 <input type="text" disabled>
+							 <input type="text" disabled>
+							 <input type="text" disabled>
+							 <input type="text" disabled>
+							 <input type="text" disabled>
+							 </div>
+							<div>
+							<table>
+								<thead>
+									<tr>
+										<th>번호</th>
+										<th>제목/답변</th>
+										<th>종류</th>
+									</tr>
+								</thead>
+								<tbody></tbody>
+
+							</table>
+							</div>
 						</div>
 					</div>
 					<%@ include file="../template/footer.jsp"%>

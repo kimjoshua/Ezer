@@ -128,19 +128,19 @@ public class ezerWebcon {
 	}
 	@RequestMapping("ad")
 	public String ad() {
-		return "/newEvent/ad";
+		return "/newsEvent/ad";
 	}
 	@RequestMapping("event")
 	public String event() {
-		return "/newEvent/event";
+		return "/newsEvent/event";
 	}
 	@RequestMapping("media")
 	public String media() {
-		return "/newEvent/media";
+		return "/newsEvent/media";
 	}
 	@RequestMapping("news")
 	public String news() {
-		return "/newEvent/news";
+		return "/newsEvent/news";
 	}
 	
 	@RequestMapping("faq")

@@ -65,19 +65,19 @@
 					<a href="/">E-ZER</a>
 				</dd>
 				<dd>
-					<a href="javascript=void(0)">COLOR EZ</a>
+					<a href="javascript:void(0)">COLOR EZ</a>
 				</dd>
 				<dd>
-					<a href="javascript=void(0">GALAXIA</a>
+					<a href="javascript:void(0)">GALAXIA</a>
 				</dd>
 				<dd>
-					<a href="javascript=void(0"">TEATOX</a>
+					<a href="javascript:void(0)">TEATOX</a>
 				</dd>
 				<dd>
-					<a href="javascript=void(0">HYBRID NANO</a>
+					<a href="javascript:void(0)">HYBRID NANO</a>
 				</dd>
 				<dd>
-					<a href="javascript=void(0">MARGOT</a>
+					<a href="javascript:void(0)">MARGOT</a>
 				</dd>
 			</dl>
 		</li>
