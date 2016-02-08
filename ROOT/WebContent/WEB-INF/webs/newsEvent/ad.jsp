@@ -48,8 +48,12 @@
 				<div id="visualarea">
 						<div id="realcontents">
 						<div class="realcon">
+					<div>
+						<iframe src='http://serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=F336CF43FA583ED2C3AE977D5A4B782B3374&outKey=V12827e043b203b30f8f55508428f425ce66ce7bab33afd2c687a5508428f425ce66c&controlBarMovable=true&jsCallable=true&isAutoPlay=true&skinName=tvcast_white' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='544' HEIGHT='306' allowfullscreen></iframe>
+					</div>
+	
+	
 					
-							
 						</div>
 					</div>
 					<%@ include file="../template/footer.jsp"%>
@@ -79,4 +83,4 @@
 	</div>
 
 </body>
-</html>
+</html>	

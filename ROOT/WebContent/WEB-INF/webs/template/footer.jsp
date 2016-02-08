@@ -57,8 +57,8 @@
 					<dd>
 						<a href="/serviceB">사업분야</a>
 						<ul>
-							<li>BEUATY</li>
-							<li>HEALTH</li>
+							<li><a href="/serviceB">BEAUTY</a></li>
+							<li><a href="/serviceH">HEALTH</a></li>
 						</ul>
 					</dd>
 					<dd>
@@ -105,18 +105,22 @@
 					<dd>
 						<a href="/bioatox">BIOSELEMIX</a>
 						<ul>
-							<li><a href="/bioatox">ATO</a></li>
+							<li><a href="/bioato">ATO</a></li>
 							<li><a href="/bioacn">ACN</a></li>
 						</ul>
 					</dd>
 					<dd>
-						<a href="/cygneWhite">CYGNE</a>
+						<a href="/cygneBright">CYGNE</a>
+						<ul>
+							<li><a href="/cygneBright">cygneBright</a></li>
+							<li><a href="/cygneWrink">cygneWrink</a></li>
+						</ul>
 					</dd>
 					<dd>
-						<a href="/cygneWhite">SEVEN ENOUGH</a>
+						<a href="/seven">SEVEN ENOUGH</a>
 					</dd>
 					<dd>
-						<a href="/cygneWrink"">AMPOULE</a>
+						<a href="/amp">AMPOULE</a>
 					</dd>
 				</dl>
 			</li>
@@ -157,35 +161,33 @@
 		</ul>
 	</div>
 	<div class="col-md-2" style="height: 100%;">
-		<ul class=""style="padding-top: 11%;">
+		<ul class="" style="padding-top: 11%;">
 			<li class="bar desktop" style="height: 172%; padding-bottom: 140%;">
 
-				<dd class="desktop">
+				<!-- <dd class="desktop">
 					<a href="/costom" class="blt-balloon fcLblack" onclick=""><strong>소비자
 							상담실</strong></a>
-				</dd>
-				<dd class="desktop">
+				</dd> -->
+				<dd class="desktop" style="padding-left: 16%; width: 100px;">
 					<a href="/toroad" class="blt-balloon fcLblack"><strong>찾아오시는
 							길</strong></a>
-				</dd>
-				<dd class="desktop">
+				</dd> <!-- 	<dd class="desktop">
 					<a href="/change" class="blt-balloon fcLblack"><strong>교환 및 환불 규정</strong></a>
-				</dd>
-				
+				</dd> -->
+
 			</li>
 			<li class="mobile">
-			<dd class="mobile store fDepth">
+				<!-- 	<dd class="mobile store fDepth">
 					<a href="/costom" class="blt-balloon toggleTrigger"><strong>소비자
 							상담실</strong></a>
-				</dd>
+				</dd> -->
 				<dd class="mobile store fDepth">
 					<a href="/toroad" class="blt-balloon toggleTrigger"><strong>찾아오시는
 							길</strong></a>
-				</dd>
-				<dd class="mobile store fDepth">
+				</dd> <!-- 	<dd class="mobile store fDepth">
 					<a href="/change" class="blt-balloon toggleTrigger"><strong>교환 및 환불 규정</strong></a>
-				</dd>
-				</li>
+				</dd> -->
+			</li>
 		</ul>
 
 	</div>

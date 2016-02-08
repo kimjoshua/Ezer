@@ -3,12 +3,16 @@ package com.ezer_g.www.web;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -106,9 +110,9 @@ public class ezerWebcon {
 	public String bioacn() {
 		return "/product/bioacn";
 	}
-	@RequestMapping("bioatox")
+	@RequestMapping("bioato")
 	public String bioatox() {
-		return "/product/bioatox";
+		return "/product/bioato";
 	}
 	@RequestMapping("biocare")
 	public String biocare() {
@@ -118,13 +122,21 @@ public class ezerWebcon {
 	public String bioskin() {
 		return "/product/bioskin";
 	}
-	@RequestMapping("cygneWhite")
+	@RequestMapping("/cygneBright")
 	public String cygneWhite() {
-		return "/product/cygneWhite";
+		return "/product/cygneBright";
 	}
-	@RequestMapping("cygneWrink")
+	@RequestMapping("/cygneWrink")
 	public String cygneWrink() {
 		return "/product/cygneWrink";
+	}
+	@RequestMapping("/amp")
+	public String amp() {
+		return "/product/amp";
+	}
+	@RequestMapping("/seven")
+	public String seven() {
+		return "/product/seven";
 	}
 	@RequestMapping("ad")
 	public String ad() {
@@ -148,6 +160,15 @@ public class ezerWebcon {
 		return "/cs/faq";
 	}
 	@RequestMapping("notice")
+	public void list(HttpServletRequest req, HttpServletResponse rs,
+            ModelMap model) throws JSONException, IOException {
+ 
+        JSONArray noticeLIst = new JSONArray();
+  
+
+        rs.setContentType("application/x-json; charset=UTF-8");
+        rs.getWriter().print(noticeLIst);
+    }
 	public String notice() {
 		return "/cs/notice";
 	}

@@ -1,8 +1,7 @@
 
-
 $(function() {
 
-	
+
 	var className = "";
 
 	var data={
@@ -60,5 +59,20 @@ var classN1=""
 	
 		$('.'+classN).css("display","none")
 	})
+	
+	$.get('/notice', {
+        "noticeList" : noticeLIst
+    }, function(data) {
+    	
+    	console.log(data)
+        if (data == parseInt(data)) {
+            console.log("sdf");
+            alert("akw");
+            anseresul = answer;
+        } else {
+            
+        }
+
+    });
 	
 });
