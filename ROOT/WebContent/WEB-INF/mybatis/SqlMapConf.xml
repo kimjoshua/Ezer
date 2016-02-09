@@ -3,8 +3,7 @@
 <configuration>
 <mappers>
 
-<mapper resource="com/ezer_g/www/mapper/adminLog.xml"/>
-<mapper resource="com/ezer_g/www/mapper/member.xml"/>
+<mapper resource="com/ezer_g/www/mapper/ezer_notice.xml"/>
 
 </mappers>
 </configuration>

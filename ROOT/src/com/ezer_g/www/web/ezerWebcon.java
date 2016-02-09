@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,13 +21,16 @@ import com.ezer_g.www.dto.LrtmemDto;
 import com.ezer_g.www.dto.LtadminDt;
 import com.ezer_g.www.loghash.Hash;
 import com.ezer_g.www.service.Lrunservice;
+import com.ezer_g.www.service.Ezer_Notice_Service_IMp;
 
 @Controller
 public class ezerWebcon {
-	private Lrunservice service;
+	
+	private Ezer_Notice_Service_IMp se;
 
-	public void setService(Lrunservice service) {
-		this.service = service;
+
+	public void setService(Ezer_Notice_Service_IMp se) {
+		this.se = se;
 	}
 
 	@RequestMapping("/")
@@ -45,36 +49,6 @@ public class ezerWebcon {
 	 * @RequestMapping("memberIn") public ModelAndView join() {
 	 * System.out.println("ddd"); return new ModelAndView("/join/memberIn"); }
 	 */
-	
-	@RequestMapping("login")
-	public ModelAndView adminLogin(HttpServletRequest req,
-			HttpServletResponse rs, LtadminDt vo, Model model)
-			throws UnsupportedEncodingException {
-		Hash hs = new Hash();
-		String id = req.getParameter("id");
-		String pwd = req.getParameter("pwd");
-		System.out.println(id + pwd);
-		byte pbCipher[] = new byte[32];
-		hs.SHA256_Encrpyt(req.getParameter("pwd").getBytes("UTF-8"),
-				pwd.length(), pbCipher);
-		String hashpwdresult = "";
-		for (int i = 0; i < 32; i++) {
-			hashpwdresult += Integer.toHexString(0xff & pbCipher[i]);
-		}
-		vo.setId(id);
-		vo.setPwd(hashpwdresult);
-		System.out.println(vo.getPwd());
-
-		HashMap<String, String> result = service
-				.loging(vo);
-		if (result != null) {
-			req.getSession().setAttribute("userInfo", result);
-			return new ModelAndView("/view/ap", "userInfo", result);
-		} else {
-			return new ModelAndView("/Ladmintrade/adminPage", "userInfo", null);
-		}
-
-	}
 	
 
 	@RequestMapping("introMain")
@@ -159,19 +133,55 @@ public class ezerWebcon {
 	public String faq() {
 		return "/cs/faq";
 	}
-	@RequestMapping("notice")
-	public void list(HttpServletRequest req, HttpServletResponse rs,
-            ModelMap model) throws JSONException, IOException {
- 
-        JSONArray noticeLIst = new JSONArray();
-  
+	
+	
+/*
+	@RequestMapping("login")
+	public ModelAndView adminLogin(HttpServletRequest req,
+			HttpServletResponse rs, LtadminDt vo, Model model)
+			throws UnsupportedEncodingException {
+		Hash hs = new Hash();
+		String id = req.getParameter("id");
+		String pwd = req.getParameter("pwd");
+		System.out.println(id + pwd);
+		byte pbCipher[] = new byte[32];
+		hs.SHA256_Encrpyt(req.getParameter("pwd").getBytes("UTF-8"),
+				pwd.length(), pbCipher);
+		String hashpwdresult = "";
+		for (int i = 0; i < 32; i++) {
+			hashpwdresult += Integer.toHexString(0xff & pbCipher[i]);
+		}
+		vo.setId(id);
+		vo.setPwd(hashpwdresult);
+		System.out.println(vo.getPwd());
 
-        rs.setContentType("application/x-json; charset=UTF-8");
-        rs.getWriter().print(noticeLIst);
+		HashMap<String, String> result = se
+				.loging(vo);
+		if (result != null) {
+			req.getSession().setAttribute("userInfo", result);
+			return new ModelAndView("/view/ap", "userInfo", result);
+		} else {
+			return new ModelAndView("/Ladmintrade/adminPage", "userInfo", null);
+		}
+
+	}*/
+	
+	@RequestMapping("/notice")
+	public ModelAndView list(HttpServletRequest req, HttpServletResponse rs,
+            ModelMap model) throws JSONException, IOException {
+		
+		HashMap<String, String> result = se.noticeLIst();
+		
+		System.out.println(result+"sdf");
+		
+		
+		
+	
+        return new ModelAndView("/cs/notice");
     }
-	public String notice() {
+/*	public String notice() {
 		return "/cs/notice";
-	}
+	}*/
 	@RequestMapping("qa")
 	public String qa() {
 		return "/cs/qa";

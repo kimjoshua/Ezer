@@ -3,7 +3,7 @@ package com.ezer_g.www.service;
 import java.util.HashMap;
 
 import com.ezer_g.www.dao.LrtMember;
-import com.ezer_g.www.dao.LtadminDa;
+import com.ezer_g.www.dao.Dao_Ezer_notice;
 import com.ezer_g.www.dto.LrtmemDto;
 import com.ezer_g.www.dto.LtadminDt;
 
@@ -12,11 +12,11 @@ public class LrunSIMp  implements Lrunservice {
 	
 	 /*Dao를 */
 	private LrtMember Lmem;
-	private LtadminDa lad;
+	private Dao_Ezer_notice den;
 	
 	
-	public void setLad(LtadminDa lad) {
-		this.lad = lad;
+	public void setDen(Dao_Ezer_notice den) {
+		this.den = den;
 	}
 	public void setLmem(LrtMember lmem) {
 		Lmem = lmem;

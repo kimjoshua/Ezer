@@ -71,7 +71,8 @@
 
 									</tbody>
 								</table>
-								</
+
+								</script>
 							</div>
 						</div>
 						<%@ include file="../template/footer.jsp"%>

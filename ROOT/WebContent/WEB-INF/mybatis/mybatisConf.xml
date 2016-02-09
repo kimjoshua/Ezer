@@ -8,27 +8,25 @@
 	<bean id="internalResourceViewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:prefix="/WEB-INF/webs/" p:suffix=".jsp">
-		
+
 	</bean>
-	 <!-- 웹컨트   -->
-	<bean id="lruntradeWebcont" class="com.ezer_g.www.web.ezerWebcon">
-		<property name="service" ref="lrunSIMp"></property>
+	<!-- 웹컨트 -->
+	<!-- <bean id="lruntradeWebcont" class="com.ezer_g.www.web.ezerWebcon"> 
+		<property name="service" ref="lrunSIMp"></property> </bean> -->
+	<bean id="ezerWebcont" class="com.ezer_g.www.web.ezerWebcon">
+		<property name="service" ref="ezer_Notice_Service_IMp"></property>
 	</bean>
- <!-- dao임플   -->
-	<bean id="lrtMemImp" class="com.ezer_g.www.dao.LrtMemImp">
+
+	<!-- dao임플 -->
+
+	<bean id="dao_Dao_Ezer_notice_imp" class="com.ezer_g.www.dao.Dao_Ezer_notice_imp">
 		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
-	</bean>
-	<bean id="ltadminImp" class="com.ezer_g.www.dao.LtadminImp">
-		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
-	</bean>
- <!-- 서비스 임플  -->
-	<bean id="lrunSIMp" class="com.ezer_g.www.service.LrunSIMp">
-		<property name="lmem" ref="lrtMemImp"></property>
-		<property name="lad" ref="ltadminImp"></property>
-	</bean>
+	</bean>  
 
-
-
+	<!-- 서비스 임플 -->
+	<bean id="ezer_Notice_Service_IMp" class="com.ezer_g.www.service.Ezer_Notice_Service_IMp">
+		<property name="den" ref="dao_Dao_Ezer_notice_imp"></property>
+	</bean>
 
 </beans>
 
