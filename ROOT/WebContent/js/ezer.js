@@ -38,31 +38,12 @@ $(function() {
 	 */
 
 
-	$.get('/notice', function(model) {
-		
-		console.log(model)
-		
-		if (data == parseInt(data)) {
-			console.log("sdf");
-			alert("akw");
-			anseresul = answer;
-		} else {
-			
-		}
-	}, function(data){
-		console.log(data)
-		console.log(ajax.responseText);
-	});
 	$.get('/noticeList', function(data) {
 		
-		console.log(data[0])
+		console.log(data.noticeList)
 	
 	});
-	$.get('/noticeList1', function(data) {
-		
-		console.log(data)
-		
-	});
+
 	
 
 /*

@@ -37,7 +37,7 @@ public class ezerDataCont {
 		JSONArray jar = new JSONArray();
 		JSONObject obj;
 		obj = new JSONObject();
-		obj.put("result",	se.noticeLIst(commonInout));
+		obj.put("noticeList",	se.noticeLIst(commonInout));
 
 		rs.setContentType("application/x-json; charset=UTF-8");
 		rs.getWriter().print(obj);
