@@ -505,18 +505,18 @@ input[type=checkbox], input[type=radio], span.text {
 #srcBoxBtn, #srcBoxWrap, #utilnavAll {
 	display: none;
 } /* 상단 모바일 용 검색 상자 - 기본 숨김 */
-.btn.download {
+/* .btn.download {
 	background: url(../img/icon_down_on_retina.png) right center no-repeat;
 	background-size: 39px 14px;
 	padding-right: 50px;
-}
+} */
 
-.bltArrow {
+/* .bltArrow {
 	background: url(../img/blt_arrow_blue_retina.png) right 1px no-repeat;
 	background-size: 5px 10px;
 	padding-right: 14px;
 }
-
+ */
 .btnLink {
 	text-decoration: underline;
 	color: #005699;
@@ -527,10 +527,10 @@ input[type=checkbox], input[type=radio], span.text {
 	padding-right: 10px;
 }
 
-.btnType02 .bltArrow {
+/* .btnType02 .bltArrow {
 	background: url(../img/blt_arrow_white_retina.png) right 1px no-repeat;
 	background-size: 5px 10px;
-}
+} */
 
 .btnMap {
 	background: url(../img/icon_sprite_retina.png) -3px -795px no-repeat;

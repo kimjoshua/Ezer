@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%-- 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> --%>
 <%
 	String cp = request.getContextPath();
 %>
+<%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -60,14 +60,17 @@
 									<thead style="border-top: 0.2em solid grey;">
 										<tr style="text-align: center;">
 											<th style="text-align: center; width: 20%;">등록</th>
-											<th style="text-align: c;">제목</th>
+											<th style="text-align: center">제목</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>2016.02.01</td>
-											<td>나의 이야기를 들어 보세요</td>
-										</tr>
+										<c:forEach items="${result.notice}" var="notice">
+											<tr>
+												<td>${notice.notice_no }</td>
+												<td><a href="/noticeDetail?noticeNo=${notice.notice_no }">${notice.notice_title }</a></td>
+											
+											</tr>
+										</c:forEach>
 
 									</tbody>
 								</table>

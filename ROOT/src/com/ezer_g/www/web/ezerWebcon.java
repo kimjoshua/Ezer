@@ -20,6 +20,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.ezer_g.www.dto.LrtmemDto;
 import com.ezer_g.www.dto.LtadminDt;
 import com.ezer_g.www.loghash.Hash;
+import com.ezer_g.www.model.CommonInout;
 import com.ezer_g.www.service.Lrunservice;
 import com.ezer_g.www.service.Ezer_Notice_Service_IMp;
 
@@ -166,20 +167,37 @@ public class ezerWebcon {
 
 	}*/
 	
-	@RequestMapping("/notice")
+/*	@RequestMapping(value="/notice")
 	public ModelAndView list(HttpServletRequest req, HttpServletResponse rs,
-            ModelMap model) throws JSONException, IOException {
+            ModelMap model,CommonInout commonInout) throws JSONException, IOException {
 		
-		HashMap<String, String> result = se.noticeLIst();
+		HashMap<String, Object> result = se.noticeLIst(commonInout);
+		System.out.println(result+"webcont");
+        return new ModelAndView("/cs/notice","result",result);
+
+    }*/
+	/*@RequestMapping(value="/noticeList", produces = "application/json; charset=utf-8",method = RequestMethod.GET)
+	public @ResponseBody Object noticeList(CommonInout commonInout, HttpServletRequest request,
+			HttpServletResponse reesponse) throws Throwable {
+		System.out.println("sdfsdf");
+		HashMap<String, Object> result = se.noticeLIst(commonInout);
+		System.out.println(result+"webcont");
+				
+		return result;
+	}
+	@RequestMapping(value="/noticeList1")
+	public HashMap<String, Object> adminLogin(HttpServletRequest req,CommonInout commonInout,
+			HttpServletResponse rs, LtadminDt vo, Model model)
+			throws UnsupportedEncodingException {
+		System.out.println("sdfsdf");
+		HashMap<String, Object> result = se.noticeLIst(commonInout);
+		System.out.println(result+"webcont");
+				
+		return result;
 		
-		System.out.println(result+"sdf");
-		
-		
-		
-	
-        return new ModelAndView("/cs/notice");
-    }
-/*	public String notice() {
+	}*/
+/*	@RequestMapping(value="/notice")
+	public String notice() {
 		return "/cs/notice";
 	}*/
 	@RequestMapping("qa")

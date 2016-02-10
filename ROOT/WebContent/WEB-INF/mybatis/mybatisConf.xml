@@ -16,6 +16,9 @@
 	<bean id="ezerWebcont" class="com.ezer_g.www.web.ezerWebcon">
 		<property name="service" ref="ezer_Notice_Service_IMp"></property>
 	</bean>
+	<bean id="ezerDataCont" class="com.ezer_g.www.web.ezerDataCont">
+		<property name="service" ref="ezer_Notice_Service_IMp"></property>
+	</bean>
 
 	<!-- dao임플 -->
 

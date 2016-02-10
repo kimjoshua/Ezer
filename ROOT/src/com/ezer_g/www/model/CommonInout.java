@@ -10,6 +10,5 @@ import lombok.ToString;
 public class CommonInout extends AbstratModel {
 
 	
-	
 	private String notice_title=null;
 }
