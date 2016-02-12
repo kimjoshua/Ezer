@@ -16,35 +16,35 @@
 			<li>
 				<dl>
 					<dt class="desktop">
-						<a href="">COMPANY</a>
+						<a href="/introMain">COMPANY</a>
 					</dt>
 				</dl>
 			</li>
 			<li>
 				<dl>
 					<dt class="desktop">
-						<a href="">BRAND</a>
+						<a href="/introBrand">BRAND</a>
 					</dt>
 				</dl>
 			</li>
 			<li>
 				<dl>
 					<dt class="desktop">
-						<a href="">PRODUCT</a>
+						<a href="/introBrand">PRODUCT</a>
 					</dt>
 				</dl>
 			</li>
 			<li>
 				<dl>
 					<dt class="desktop">
-						<a href="">NEWS &amp; EVENT</a>
+						<a href="/event">NEWS &amp; EVENT</a>
 					</dt>
 				</dl>
 			</li>
 			<li>
 				<dl>
 					<dt class="desktop">
-						<a href="">CS CENTER</a>
+						<a href="/notice">CS CENTER</a>
 					</dt>
 				</dl>
 			</li>
@@ -67,7 +67,7 @@
 						<a href="/history">연혁</a>
 					</dd>
 					<dd>
-						<a href="/symbole">CI/BI</a>
+						<a href="/symbole">CI /  BI</a>
 					</dd>
 				</dl>
 			</li>
@@ -168,16 +168,14 @@
 							상담실</strong></a>
 				</dd> -->
 				<dd class="desktop" style="padding-left: 16%; width: 127px;">
-					<a href="/toroad" class="blt-balloon fcLblack"> <span
-						class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-
+					<a href="/toroad" class="blt-balloon"> <span	class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
 
 						찾아오시는 길
 					</a>
 				</dd>
-				<dd class="desktop" style="padding-left: 16%; width: 100px;">
+				<dd class="desktop" style="padding-left: 16%;width: 122px;">
 					<a href="javascript:void(0)"
-						class="blt-balloon fcLblack noticeSiete">FAMILY SITE</a>
+						class="noticeSiete"> <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 패밀리 사이트</a>
 				</dd> <!-- 	<dd class="desktop">
 					<a href="/change" class="blt-balloon fcLblack"><strong>교환 및 환불 규정</strong></a>
 				</dd> -->
@@ -193,8 +191,7 @@
 							길</strong></a>
 				</dd>
 				<dd class="mobile store fDepth">
-					<a href="javascript:void(0)" class="blt-balloon toggleTrigger"><strong>FAMILY
-							SITE</strong></a>
+					<a href="javascript:void(0)" class="blt-balloon toggleTrigger"><strong>  <span class="glyphicon glyphicon-heart" aria-hidden="true"> 패밀리 사이트</strong></a>
 				</dd> <!-- 	<dd class="mobile store fDepth">
 					<a href="/change" class="blt-balloon toggleTrigger"><strong>교환 및 환불 규정</strong></a>
 				</dd> -->
@@ -209,7 +206,7 @@
 		<div class="copyright center">
 			<span style="position: relative; right: 12%;"> ©E-ZER
 				COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-				style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 : 정경모
+				style="left: 10%; position: relative;">(주) 에제르코스메틱 대표 : 정경모
 				| 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
 				src="" alt="">
 			</span>

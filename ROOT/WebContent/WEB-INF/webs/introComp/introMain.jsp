@@ -75,7 +75,6 @@
 				</div>
 			</div>
 			<%@ include file="../template/footer.jsp"%>
-
 		</div>
 		<div class="footerline"></div>
 	</div>

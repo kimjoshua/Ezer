@@ -39,15 +39,15 @@
 
 <body>
 	<div id="wrapper">
-
 		<h1>Ezer cosmetic</h1>
 		<div class="moto"></div>
 		<div class="inwrap">
 			<%@ include file="../template/nav.jsp"%>
 			<div id="contents" class="v1">
 				<div id="visualarea">
-					<div id="realcontents"></div>
-
+					<div id="realcontents">
+					
+					</div>
 				</div>
 			</div>
 			<%@ include file="../template/footer.jsp"%>

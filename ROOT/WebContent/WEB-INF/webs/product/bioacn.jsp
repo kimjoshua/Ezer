@@ -129,8 +129,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="">
-												<img class=" introProduct"
-													src="/img/acncream.jpg"
+												<img class=" introProduct" src="/img/acncream.jpg"
 													data-holder-rendered="true" display:block;="">
 												<div class="caption">
 													<span>ACN크림</span>
@@ -185,6 +184,7 @@
 
 				</div>
 			</div>
+
 			<%@ include file="../template/footer.jsp"%>
 
 		</div>

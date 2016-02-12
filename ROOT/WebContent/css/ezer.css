@@ -2,48 +2,65 @@
 
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
 
+body {
+ font-family: 'Arial', verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
 html {
 	font-family: 'Arial', verdana, sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%
 }
-/* @font-face {
-	font-family:'aritadm';
-	src: url('clientlibs/fonts/AritaDotumMedium.eot');
-	src: local(※), url('clientlibs/fonts/AritaDotumMedium.eot?#iefix') format('embedded-opentype'),
-		 url('clientlibs/fonts/AritaDotumMedium.woff') format('woff'),
-		 url('clientlibs/fonts/AritaDotumMedium.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+a {
+	text-decoration: none;
+	color: #808080!important;
 }
-@font-face {
-	font-family:'aritadl';
-	src: url('clientlibs/fonts/AritaDotumLight.eot');
-	src: local(※), url('clientlibs/fonts/AritaDotumLight.eot?#iefix') format('embedded-opentype'),
-		 url('clientlibs/fonts/AritaDotumLight.woff') format('woff'),
-		 url('clientlibs/fonts/AritaDotumLight.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+ .nav ul{
+        padding: 0;
+        list-style: none;
+  
+    }
+    .nav ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 12px;
+        text-align: left;
+    }
+   .nav  ul li a{
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    .dropdown li a{
+        width: 200%;
+    }
+    .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: transparent; 
 }
-@font-face {
-	font-family:'aritasm';
-	src: url('clientlibs/fonts/AritaSansMedium.eot');
-	src: local(※), url('clientlibs/fonts/AritaSansMedium.eot?#iefix') format('embedded-opentype'),
-		 url('clientlibs/fonts/AritaSansMedium.woff') format('woff'),
-		 url('clientlibs/fonts/AritaSansMedium.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family:'aritadsb';
-	src: url('clientlibs/fonts/AritaDotumSemiBold.eot');
-	src: local(※), url('clientlibs/fonts/AritaDotumSemiBold.eot?#iefix') format('embedded-opentype'),
-		 url('clientlibs/fonts/AritaDotumSemiBold.woff') format('woff'),
-		 url('clientlibs/fonts/AritaDotumSemiBold.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
- */
+   .nav  ul li a:hover{
+        color: #fff;
+        text-decoration: underline;
+    }
+   .nav  ul li ul.dropdown{
+        min-width: 125px; /* Set width of the dropdown */
+
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    .nav ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    .nav ul li ul.dropdown li{
+        display: block;
+    }
 #serch {
 	border-top: 0;
 	border-left: 0;
@@ -65,7 +82,11 @@ html {
 	height: 16px;
 	position: relative;
 }
-
+.utility li {
+	float: left;
+	
+	    padding: 0 4px 0 14px;
+}
 .carousel-indicators li {
 	display: inline-block;
 	width: 10px;
@@ -239,6 +260,11 @@ ul>li {
     left: 2%;
     position: relative;
 }
+.brandmainRow{
+	    padding-top: 4%;
+    left: 2%;
+    position: relative;
+}
 .ezer_intro, .intro_ezer4.intro_ezer5.intro_ezer6 {
 	display: block;
 	background-image: url('/img/intro_brand_ezer.png');
@@ -300,24 +326,34 @@ table tr {
 	}
 	.tale {
 		position: relative;
-		width: 360%;
+		 width: 839Px;
+    height: 200px;
 	}
 	.tale2 {
 		right: 36%;
 		position: relative;
-		width: 360%;
+ width: 820px;
+    height: 200px;
+		
 	}
 	.tale3 {
-		position: relative;
-		right: 243%;
-		width: 360%;
+	    position: relative;
+    right: 243%;
+    width: 770px;
+    height: 200px;
 	}
 	.histimg {
-		position: relative;
-		width: 100%;
-		left: 8%;
+position: relative;
+    width: 78%;
+    left: 11%;
+    padding-top: 4%;
+    
 	}
-
+.address{
+	    position: relative;
+    padding-left: 2%;
+    padding-top: 5%;
+}
 	.footernav {
 		border-bottom: 1px #e2e2e2 solid;
 		height: 57px;
@@ -384,7 +420,14 @@ table tr {
 		float: inherit;
 		right: 7%;
 	}
-
+.nav ul li {
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+    width: 50%;
+    left: 9%;background-color: #eee;
+}
 }
 
 }
@@ -392,6 +435,13 @@ table tr {
 	padding: 0 68px 0 29px;
 	position: relative;
 	right: 2%;
+}
+.article h3 {
+	font-size: 1.4em;
+	text-align: center;
+	margin-bottom: 18px;
+	padding-bottom: 15px;
+	border-bottom: 1px #e2e2e2 solid;
 }
 
 .col-lg-6 {
@@ -408,7 +458,7 @@ body {
 	-webkit-text-size-adjust: none;
 	margin: 0;
 	padding: 0;
-	/* font-family:'아리따돋움', aritadm, 'Apple Gothic', 'DroidSansFallback', '맑은고딕', 'Malgun Gothic', '나눔고딕', NanumGothic, '돋움', dotum, arial, sans-serif, helvetica;  */
+	font-family: 'Arial', verdana, sans-serif;
 	color: #666666;
 	font-size: 13px;
 	font-size: 1.3rem;
@@ -442,14 +492,7 @@ h2 {
 	margin-bottom: 20px;
 }
 
-.article h3 {
-	font-size: 2.2rem;
-	text-align: center;
-	margin-bottom: 18px;
-	padding-bottom: 15px;
-	border-bottom: 1px #e2e2e2 solid;
-}
-
+.
 h3 {
 	font-size: 18px;
 	font-size: 1.8rem;
@@ -497,10 +540,7 @@ p {
 	padding: 0;
 }
 
-a {
-	text-decoration: none;
-	color: #333333;
-}
+
 
 a:hover {
 	text-decoration: underline;
@@ -1948,11 +1988,7 @@ h3.lineBottomBlack {
 	display: block;
 }
 
-.utility li {
-	float: left;
-	background: url() right 50% no-repeat;
-	padding: 0 14px 0 10px;
-}
+
 
 .serchBar {
 	border-top: 0;
@@ -3436,7 +3472,6 @@ nav a ul li:hover ul.fallback {
 	left: 0;
 	top: 15px;
 	padding-left: 35px;
-	font-family: arial;
 }
 
 .footer .copyright span {
@@ -10645,7 +10680,7 @@ textarea.refresh {
 		width: 95% !important;
 		height: 30px;
 		line-height: 30px;
-	}
+	}/* 
 	#srcBoxWrap input[type=text]:focus {
 		background-color: #efefef;
 		font-style: normal;
@@ -10666,8 +10701,8 @@ textarea.refresh {
 	#srcBoxWrap .srcButton:focus, #srcBoxWrap .srcButton:hover {
 		background-position: 0 -29px;
 	}
-	/* end of 모바일 메뉴 내 검색 상자 */
-	/* 모바일 메뉴 내 유틸 메뉴 */
+	end of 모바일 메뉴 내 검색 상자
+	모바일 메뉴 내 유틸 메뉴
 	#utilnavAll {
 		margin-top: 0;
 		margin-left: 0;
@@ -10691,7 +10726,7 @@ textarea.refresh {
 		margin-bottom: 45px;
 		padding-left: 4%;
 	}
-	/*#utilnavAll .lang a { font-size:22px; font-family:aritadm; text-decoration:none; } modify doo 2014-10-23*/
+	#utilnavAll .lang a { font-size:22px; font-family:aritadm; text-decoration:none; } modify doo 2014-10-23
 	#utilnavAll .lang a {
 		font-size: 22px;
 		font-family: aritadm;
@@ -10699,7 +10734,7 @@ textarea.refresh {
 	#utilnavAll .lang a:hover {
 		text-decoration: underline !important;
 	}
-	/*#utilnavAll .lang a:first-child { text-indent:2%; }*/
+	#utilnavAll .lang a:first-child { text-indent:2%; }
 	#utilnavAll .lang a.hover {
 		font-weight: bold;
 	}
@@ -10765,8 +10800,8 @@ textarea.refresh {
 		{
 		background-image: url(../img/mobile_link.png);
 	}
-	/* end of 모바일 메뉴 내 유틸 메뉴 */
-	/* MAIN 재정의 */
+	end of 모바일 메뉴 내 유틸 메뉴
+	MAIN 재정의
 	#main #nav {
 		z-index: 111;
 		position: absolute;
@@ -10803,7 +10838,7 @@ textarea.refresh {
 		margin-top: 0;
 		font-weight: normal;
 	}
-	/* #main .navwrap a.dep01:focus, */
+	#main .navwrap a.dep01:focus,
 	#main .navwrap a.dep01:hover, #main .navwrap a.dep01.hover {
 		color: #005599;
 		background: #e5e5e5 url(../img/mobile_navi_minus.png) 94% 50% no-repeat;
@@ -10876,7 +10911,7 @@ textarea.refresh {
 	.ie8 #main .navwrap div ul.dep03 li a {
 		background-image: none;
 	}
-	/* 메인 2뎁스 3뎁스 모바일로 원복 */
+	메인 2뎁스 3뎁스 모바일로 원복
 	#main #nav .navwrap div#dep0204 .dep02>li:nth-child(1) {
 		margin-bottom: 0
 	}
@@ -10959,17 +10994,17 @@ textarea.refresh {
 		position: relative;
 		top: 0;
 		left: 0;
-	} /* 투자자정보 재무정보 */
+	} 투자자정보 재무정보
 	#main #nav .navwrap div#dep0206 .dep02 li:nth-child(6) {
 		position: relative;
 		top: 0;
 		left: 0;
-	} /* 투자자정보 재무정보 */
+	} 투자자정보 재무정보
 	#main #nav .navwrap div#dep0206 .dep02 li:nth-child(7) {
 		position: relative;
 		top: 0;
 		left: 0;
-	} /* 투자자정보 재무정보 */
+	} 투자자정보 재무정보
 	#main #nav .navwrap div .mainNavText {
 		display: none;
 	}
@@ -11047,7 +11082,7 @@ textarea.refresh {
 		height: auto;
 	}
 
-	/* end of 메인 2뎁스 3뎁스 모바일로 원복 */
+	end of 메인 2뎁스 3뎁스 모바일로 원복
 	#main #srcBoxBtn {
 		position: absolute;
 		top: 40px;
@@ -11131,9 +11166,9 @@ textarea.refresh {
 		display: block;
 		margin-bottom: 30px;
 	}
-	/* end of MAIN 재정의 */
+	end of MAIN 재정의
 
-	/* end of Mobile Navi */
+	end of Mobile Navi
 	.inwrap {
 		padding-right: 33px;
 		padding-left: 33px;
@@ -11206,15 +11241,15 @@ textarea.refresh {
 	.has4depth {
 		width: auto;
 		left: 0;
-	} /* 4뎁스가 있을 경우 추가 클래스 */
+	} 4뎁스가 있을 경우 추가 클래스
 	.footer .copyright {
 		padding-left: 0;
 	}
 	.footer .familysite {
 		right: 0;
 	}
-	/*.layout2cell .cell01 { width:100%; }*/
-	/*.layout2cell .cell02 { width:100%; }*/
+	.layout2cell .cell01 { width:100%; }
+	.layout2cell .cell02 { width:100%; }
 	.layout2cell .cell01 .lnb ul {
 		overflow: hidden
 	}
@@ -11227,20 +11262,20 @@ textarea.refresh {
 	.layout4cell .cell {
 		width: 33.3333%;
 	}
-	/*.layout4cell .cell01 { width:100%; }*/
-	/*.layout4cell .cell03 { width:100%; }*/
+	.layout4cell .cell01 { width:100%; }
+	.layout4cell .cell03 { width:100%; }
 	.layout5cell .cell {
 		width: 50%;
 	}
-	/* main only */
+	main only
 	#nav {
 		display: none;
-	} /* 네비 구현 전까지 임시로 막아둠 */
+	} 네비 구현 전까지 임시로 막아둠
 	#main .layout2cell .cell .article .text {
 		width: 80%;
 	}
-	/* end of main only */
-	/* 개인정보취급방침 lnb */
+	end of main only
+	개인정보취급방침 lnb
 	.lnb ul.leagalMenu li {
 		width: 50%;
 		padding: 10px 0;
@@ -11249,7 +11284,7 @@ textarea.refresh {
 		height: 100%;
 	}
 
-	/* 간격  관련 */
+	간격  관련
 	.mb45 {
 		margin-bottom: 30px !important;
 		margin-bottom: 3rem !important;
@@ -11263,7 +11298,7 @@ textarea.refresh {
 		margin-bottom: 7rem !important;
 	}
 
-	/* 뉴스 상세 관련 */
+	뉴스 상세 관련
 	.aside {
 		padding-left: 26px;
 		margin-top: 20px;
@@ -11287,12 +11322,12 @@ textarea.refresh {
 	.boardCon .layout2cell .cell02 {
 		padding: 0px;
 	}
-	/* end of 뉴스 상세 관련 */
+	end of 뉴스 상세 관련
 	.ifrWrap .ifrBox.stock {
 		padding-bottom: 100%;
 	}
 
-	/*  브랜드 */
+	 브랜드
 	.linkWrap {
 		margin-bottom: 20px;
 	}
@@ -11300,9 +11335,9 @@ textarea.refresh {
 		width: 80%;
 		margin: 2% auto;
 	}
-	/*  end of 브랜드 */
+	 end of 브랜드
 
-	/* 레이아웃 관련 */
+	레이아웃 관련
 	.layoutTable .cell, .layoutTable .cell01, .layoutTable .cell02 {
 		display: block;
 	}
@@ -11328,7 +11363,7 @@ textarea.refresh {
 		width: 66.6667%;
 	}
 
-	/* 이노베이션 관련 */
+	이노베이션 관련
 	.categoryList .caption {
 		position: static;
 	}
@@ -11382,7 +11417,7 @@ textarea.refresh {
 		margin-bottom: 5px;
 	}
 
-	/* 이노베이션 전문가제안 */
+	이노베이션 전문가제안
 	.innoCon .idea {
 		background-position: center top;
 		padding: 70px 0 10px 0;
@@ -11398,9 +11433,9 @@ textarea.refresh {
 		text-align: center;
 		vertical-align: top;
 	}
-	/* end of 이노베이션 전문가제안 */
+	end of 이노베이션 전문가제안
 
-	/* 재무재표 */
+	재무재표
 	.vTabWrap dl.hover dd {
 		width: 80.7%;
 	}
@@ -11408,28 +11443,28 @@ textarea.refresh {
 		width: 100%;
 	}
 
-	/* 아모레퍼시픽 지속가능경영 */
+	아모레퍼시픽 지속가능경영
 	.aboutVisionBox .layout4cell .cell {
 		width: 25%;
 	}
-	/* 아모레퍼시픽 지속가능경영 */
+	아모레퍼시픽 지속가능경영
 
-	/* 아모레퍼시픽 지속가능경영 */
+	아모레퍼시픽 지속가능경영
 	.environmentEcoproduceBox .innerWrap ul {
 		min-height: 100px;
 	}
-	/* end of 아모레퍼시픽 지속가능경영 */
+	end of 아모레퍼시픽 지속가능경영
 	.employeesWorkspaceBox {
 		min-height: 130px
 	}
 
-	/* 지속가능한 구매 */
+	지속가능한 구매
 	.customersSafeproductBox .wrap {
 		padding: 5% 5% 0 5%;
 	}
-	/* end of 지속가능한 구매 */
+	end of 지속가능한 구매
 
-	/* 상세 검색 */
+	상세 검색
 	.srcResult .layout4cell .cell01 .realFavWord {
 		width: 100%;
 		left: 0%;
@@ -11439,15 +11474,15 @@ textarea.refresh {
 		width: auto;
 		height: auto;
 	}
-	/* end of 상세 검색 */
+	end of 상세 검색
 
-	/* 검색 */
+	검색
 	input.search {
 		width: 210px;
 	}
-	/* end of 검색 */
+	end of 검색
 
-	/* 지속가능경영 : 지속가능제품 상단 1:2 이미지 예외처리 */
+	지속가능경영 : 지속가능제품 상단 1:2 이미지 예외처리
 	.customerSustainproduct .cell01 {
 		width: 33.3333%;
 		float: left;
@@ -11456,9 +11491,9 @@ textarea.refresh {
 		width: 66.6667%;
 		float: left;
 	}
-	/* end of 지속가능경영 : 지속가능제품 1:2 이미지 예외처리 */
+	end of 지속가능경영 : 지속가능제품 1:2 이미지 예외처리
 
-	/* footer 브랜드 찾기 */
+	footer 브랜드 찾기
 	.selectList.layout4cell .cell {
 		width: 24.96%;
 	}
@@ -11468,9 +11503,9 @@ textarea.refresh {
 		margin-bottom: 10px;
 		height: 30px;
 	}
-	/* end of 상세 검색 */
+	end of 상세 검색
 
-	/* 방문판매 */
+	방문판매
 	.dtdsalesWrap .borderBox {
 		padding: 47px 20px 37px 20px;
 	}
@@ -11492,9 +11527,9 @@ textarea.refresh {
 	.dtdsalesWrap .layerMap ul {
 		margin-left: 20px;
 	}
-	/* end of 방문판매 */
+	end of 방문판매
 
-	/* 고객상담 */
+	고객상담
 	.customerGuide li div.title {
 		width: 20%;
 	}
@@ -11511,17 +11546,17 @@ textarea.refresh {
 	.customLink .layout2cell .cell02 {
 		margin-bottom: 20px;
 	}
-	/* end of 고객상담 */
+	end of 고객상담
 
-	/* faq */
+	faq
 	.faqList li a.tab {
 		line-height: 17px;
 		padding-top: 10px;
 		min-height: 40px;
 	}
-	/* end of faq */
+	end of faq
 
-	/* 사이트맵 */
+	사이트맵
 	#siteMap .cell {
 		width: 50%;
 	}
@@ -11530,9 +11565,9 @@ textarea.refresh {
 		top: auto;
 		left: 0
 	}
-	/* end of 사이트맵 */
+	end of 사이트맵
 
-	/* 패밀리 사이트 */
+	패밀리 사이트
 	#familySite .layout4cell .cell03  h3 {
 		margin-right: 0;
 	}
@@ -11542,18 +11577,18 @@ textarea.refresh {
 	#familySite .brandListWrap .cell {
 		width: 24.5%;
 	}
-	/* end of 패밀리 사이트 */
+	end of 패밀리 사이트
 
-	/* 쓰기 폼 */
+	쓰기 폼
 	.formWrite .inputWrap.tel span input[type=text] {
 		width: 79%;
 	}
 	.formWrite .innerWrap dd .tel input[type=text] {
 		width: 25%;
 	}
-	/* end of 쓰기 폼 */
+	end of 쓰기 폼
 
-	/* ir 뉴스 */
+	ir 뉴스
 	.irNewsTitle {
 		min-height: 155px;
 	}
@@ -11563,9 +11598,9 @@ textarea.refresh {
 	.irNewsTitle p span {
 		display: inline;
 	}
-	/* end of ir 뉴스 */
+	end of ir 뉴스
 
-	/* 홍보영상*/
+	홍보영상
 	.videoList .listGroup {
 		margin-left: 70px;
 		height: 148px;
@@ -11586,9 +11621,9 @@ textarea.refresh {
 		width: 116px;
 		height: 56px;
 	}
-	/* end of 홍보영상*/
+	end of 홍보영상
 
-	/* 연혁*/
+	연혁
 	.lineBoard .hisList {
 		padding-top: 20px;
 	}
@@ -11607,18 +11642,18 @@ textarea.refresh {
 	.hisList .info {
 		top: 0;
 	}
-	/* end of 연혁 */
+	end of 연혁
 
-	/* 파일첨부 */
+	파일첨부
 	.fileList select {
 		width: 99.5%;
 	}
 	.safari .fileText {
 		border-left: 0;
 	}
-	/* end of 파일첨부 */
+	end of 파일첨부
 
-	/* 로그인 */
+	로그인
 	.loginWrap {
 		width: 100%;
 	}
@@ -11626,22 +11661,22 @@ textarea.refresh {
 		min-height: 110px;
 	}
 
-	/* News Media 게시판 리스트 */
+	News Media 게시판 리스트
 	.boardList p.tit {
 		height: 55px;
 		overflow: hidden;
 	}
-	/* end of News Media 게시판 리스트 */
+	end of News Media 게시판 리스트
 	.sustainability .productImg img {
 		margin: 0 auto;
 		width: 80%;
 	}
-	/* 퀵메뉴 */
+	퀵메뉴
 	.quickmenu li {
 		width: 33.333%;
 	}
 
-	/* 오류페이지 */
+	오류페이지
 	#errorWrap .accordion .grayBox li p span {
 		display: inline;
 	}
@@ -11660,7 +11695,7 @@ textarea.refresh {
 	}
 }
 
-/* 768 부터 1023 까지 */
+768 부터 1023 까지
 @media all and (max-width:1023px) {
 	.safari #main #nav .navwrap #dep0204 .dep02 li {
 		position: relative !important;
@@ -11724,13 +11759,13 @@ textarea.refresh {
 	}
 }
 
-/* iPad 768 세로형 특화 */
+iPad 768 세로형 특화
 @media all and (width:768px) and (orientation:portrait) {
 	.moto {
 		height: 15px;
 		line-height: 15px;
 	}
-	/* iframe RWD */
+	iframe RWD
 	.ifrWrap .ifrBox.stock {
 		padding-bottom: 220%;
 	}
@@ -11747,7 +11782,7 @@ textarea.refresh {
 		margin-top: -2.9em;
 	}
 
-	/* 방문판매 */
+	방문판매
 	.dtdsalesWrap .borderBox .select2Cell span, .dtdsalesWrap .borderBox .search2Cell span
 		{
 		min-width: 43px;
@@ -11757,7 +11792,7 @@ textarea.refresh {
 		padding: 0 7px 0 7px;
 	}
 
-	/* faq */
+	faq
 	.faqList .num {
 		text-align: center;
 		width: 15%;
@@ -11792,7 +11827,7 @@ textarea.refresh {
 	.iconWrap .print {
 		display: none !important;
 	}
-	/* 메인 네비게이션 아이패드 예외 (지속가능경영)*/
+	메인 네비게이션 아이패드 예외 (지속가능경영)
 	#main #nav .navwrap div#dep0204 .dep02>li:nth-child(1) {
 		margin-top: 10px;
 	}
@@ -11815,7 +11850,7 @@ textarea.refresh {
 	}
 }
 
-/* 768 부터 : 재무제표에서 사용하는 해딩겸 텝버튼 처리 - 예외 처리 */
+768 부터 : 재무제표에서 사용하는 해딩겸 텝버튼 처리 - 예외 처리
 @media all and (min-width:767px) {
 	.financeSheet.mobileVary .hTabWrap {
 		margin: 0;
@@ -11836,7 +11871,7 @@ textarea.refresh {
 	}
 }
 
-/* 320 부터 767까지 */
+320 부터 767까지
 @media all and (max-width:767px) {
 	.layout2cell .cell01 .lnb li {
 		height: 55px;
@@ -11853,14 +11888,14 @@ textarea.refresh {
 		padding-left: 5%;
 	}
 
-	/* 간격 */
+	간격
 	.mb70 {
 		margin-bottom: 50px !important;
 	}
 	.mb40, .mb50 {
 		margin-bottom: 30px !important;
 	}
-	/* 상단 제목 */
+	상단 제목
 	#pagetitle {
 		padding-top: 5px;
 		padding-bottom: 15px;
@@ -11882,7 +11917,7 @@ textarea.refresh {
 		padding-top: 0;
 	}
 
-	/* 메인 */
+	메인
 	#main .articleWrap {
 		margin-left: 0;
 	}
@@ -11910,7 +11945,7 @@ textarea.refresh {
 		width: 100%;
 	}
 
-	/* indexSlider */
+	indexSlider
 	.indexSlider a.btnArrow {
 		width: 37px;
 		height: 39px;
@@ -11936,7 +11971,7 @@ textarea.refresh {
 		background-position: 0 -139px;
 	}
 
-	/* 개인정보취급방침 lnb */
+	개인정보취급방침 lnb
 	.lnb ul.leagalMenu li {
 		clear: both;
 		width: 100%;
@@ -11948,7 +11983,7 @@ textarea.refresh {
 		line-height: 1em;
 	}
 
-	/* 테이블 레이아웃 */
+	테이블 레이아웃
 	.layoutTable .cell, .layoutTable .cell01, .layoutTable .cell02,
 		.has4depth .layoutTable .cell, .has4depth .layoutTable .cell01,
 		.has4depth .layoutTable .cell02, .has4depth .lineBoard .layout2cell .cell,
@@ -11962,9 +11997,9 @@ textarea.refresh {
 		border-left: 0;
 		margin-bottom: 20px;
 	}
-	/* end of 테이블 레이아웃 관련 */
+	end of 테이블 레이아웃 관련
 
-	/* 아이콘 모음 */
+	아이콘 모음
 	#snsMenu {
 		height: 45px;
 	}
@@ -12104,7 +12139,7 @@ textarea.refresh {
 		background-position: 0 -434px;
 	}
 
-	/*  아이콘 + 텍스트 */
+	 아이콘 + 텍스트
 	.iconTextWrap {
 		position: relative;
 	}
@@ -12255,7 +12290,7 @@ textarea.refresh {
 		top: -48px;
 		left: 50%;
 		margin-left: -65px;
-	} /* 2014-03-04 je */
+	} 2014-03-04 je
 	.btnFamily {
 		padding: 0 25px;
 		height: 29px;
@@ -12298,9 +12333,9 @@ textarea.refresh {
 		position: static;
 		bottom: 0
 	}
-	/*
+	
 	.layout4cell .cell { width:49.7%; }
-	*/
+	
 	#main .layout3cell .cell {
 		clear: both;
 	}
@@ -12324,7 +12359,7 @@ textarea.refresh {
 		margin: 10px auto 15px auto;
 	}
 
-	/* iframe RWD */
+	iframe RWD
 	.ifrWrap .ifrBox.stock {
 		padding-bottom: 280%;
 	}
@@ -12332,7 +12367,7 @@ textarea.refresh {
 		padding: 0;
 	}
 
-	/* 검색 */
+	검색
 	.new_wraps {
 		height: auto
 	}
@@ -12404,9 +12439,9 @@ textarea.refresh {
 	.searchArea .selectWrap.select-3 span:last-child {
 		padding-left: 6px;
 	}
-	/*.searchArea .selectWrap.select-3 span { width:41.333%; }
+	.searchArea .selectWrap.select-3 span { width:41.333%; }
 	.searchArea .selectWrap.select-3 span:first-child { width:33.3333%; }
-	.searchArea .selectWrap.select-3 span:last-child { width:25.3333%; padding-left:6px; }*/
+	.searchArea .selectWrap.select-3 span:last-child { width:25.3333%; padding-left:6px; }
 	.searchAreaCenter select, .searchAreaCenter input {
 		margin-bottom: 5px;
 		height: 24px;
@@ -12462,9 +12497,9 @@ textarea.refresh {
 		top: 0px;
 		margin-bottom: 10px;
 	}
-	/* end of 검색 */
+	end of 검색
 
-	/* 게시판 관련 */
+	게시판 관련
 	.listView .tit {
 		margin-bottom: 10px;
 		padding-right: 0px;
@@ -12548,17 +12583,17 @@ textarea.refresh {
 	.board.mobileVary .btnDownload span.title {
 		padding-left: 0;
 	}
-	/* end of 게시판 관련 */
+	end of 게시판 관련
 
-	/* News Media 게시판 리스트 */
+	News Media 게시판 리스트
 	.boardList p.tit {
 		height: 75px;
 		overflow: hidden;
 		-webkit-line-clamp: 4;
 	}
-	/* end of News Media 게시판 리스트 */
+	end of News Media 게시판 리스트
 
-	/* 뉴스 상세 */
+	뉴스 상세
 	.w94per {
 		width: auto;
 	}
@@ -12580,9 +12615,9 @@ textarea.refresh {
 	.boardCon .layout2cell, .boardCon .layout3cell {
 		margin-left: 0;
 	}
-	/* end of 뉴스 상세 */
+	end of 뉴스 상세
 
-	/* 홍보영상 */
+	홍보영상
 	.video {
 		margin-bottom: 20px;
 	}
@@ -12620,9 +12655,9 @@ textarea.refresh {
 	.videoText {
 		margin-left: 0px;
 	}
-	/* end of 홍보영상 */
+	end of 홍보영상
 
-	/*  브랜드 */
+	 브랜드
 	.brandCont .proTitle, .brandCont .gridderList {
 		width: 47.423%;
 	}
@@ -12660,9 +12695,9 @@ textarea.refresh {
 	.iphone .gridderShow {
 		width: 87.2077%;
 	}
-	/*  end of 브랜드 */
+	 end of 브랜드
 
-	/*  실적 관련 */
+	 실적 관련
 	.downCorpList li .txt {
 		padding-left: 70px;
 	}
@@ -12678,21 +12713,21 @@ textarea.refresh {
 		height: 44px;
 		line-height: 44px;
 	}
-	/* end of  IR 실적 관련 */
+	end of  IR 실적 관련
 
-	/* IR 뉴스 관련 */
+	IR 뉴스 관련
 	.irNewsTitleWrap .layout2cell .irNewsTitle {
 		margin-bottom: 20px;
 	}
-	/* IR 뉴스 관련 */
+	IR 뉴스 관련
 
-	/* 페이징 관련 */
+	페이징 관련
 	.page .num span {
 		display: inline-block !important;
 	}
-	/* end of 페이징 관련 */
+	end of 페이징 관련
 
-	/*  IR 실적 관련 */
+	 IR 실적 관련
 	.downCorpList .downCorpListWrap {
 		float: none;
 		width: 100%;
@@ -12705,9 +12740,9 @@ textarea.refresh {
 		font-size: 25px;
 		font-size: 2.5rem;
 	}
-	/* end of  IR 실적 관련 */
+	end of  IR 실적 관련
 
-	/* end of 경영정보 */
+	end of 경영정보
 	.shareholdersDisplay {
 		margin-left: 0;
 	}
@@ -12722,9 +12757,9 @@ textarea.refresh {
 		margin-bottom: 20px;
 	}
 
-	/* end of 경영정보 */
+	end of 경영정보
 
-	/* 경영정보 이사회구성 */
+	경영정보 이사회구성
 	.directList {
 		padding-left: 36%;
 		position: relative;
@@ -12752,18 +12787,18 @@ textarea.refresh {
 		margin-bottom: 20px;
 		min-height: 100%;
 	}
-	/*  end of경영정보 이사회구성 */
+	 end of경영정보 이사회구성
 
-	/* 연혁 관련 */
+	연혁 관련
 	.hisList {
 		padding: 30px 0 0 0;
 	}
 	.hisList .infoWrap {
 		padding-right: 0;
 	}
-	/* end of 연혁 관련 */
+	end of 연혁 관련
 
-	/* 이미지 + 텍스트 리스트 */
+	이미지 + 텍스트 리스트
 	.listPhoto {
 		padding-bottom: 20px;
 	}
@@ -12772,7 +12807,7 @@ textarea.refresh {
 		margin-left: 0;
 	}
 
-	/* 아모레퍼시픽웨이 */
+	아모레퍼시픽웨이
 	.wayWrap h4 {
 		margin-top: 50px;
 	}
@@ -12796,9 +12831,9 @@ textarea.refresh {
 	.wrapperCell .layout3cell .cell>div {
 		margin-left: 30px;
 	}
-	/* end of 아모레퍼시픽웨이 */
+	end of 아모레퍼시픽웨이
 
-	/* 버튼 */
+	버튼
 	.btnArea.fRight {
 		float: none;
 	}
@@ -12809,7 +12844,7 @@ textarea.refresh {
 		margin-bottom: 10px;
 	}
 
-	/* 쓰기 폼 */
+	쓰기 폼
 	.formWrite .innerWrap dt, .formWrite .innerWrap dd {
 		display: block;
 		width: 90%;
@@ -12848,7 +12883,7 @@ textarea.refresh {
 		margin-bottom: 0;
 	}
 
-	/* 첨부파일 */
+	첨부파일
 	.fileWrap {
 		margin-right: 0;
 	}
@@ -12876,7 +12911,7 @@ textarea.refresh {
 	.fileList .select {
 		width: 100%;
 	}
-	/* end of 첨부파일 */
+	end of 첨부파일
 	.yearArea .titArea h3 {
 		display: none;
 	}
@@ -12949,7 +12984,7 @@ textarea.refresh {
 		color: #005599;
 	}
 
-	/* 재무재표 */
+	재무재표
 	.financeSheet.mobileVary .hTabWrap {
 		margin: 0;
 		padding: 0;
@@ -12996,9 +13031,9 @@ textarea.refresh {
 		width: 100%;
 		max-width: 100%;
 	}
-	/* end of 재무지표 */
+	end of 재무지표
 
-	/* 이노베이션 */
+	이노베이션
 	.process {
 		margin-left: 0px;
 	}
@@ -13044,15 +13079,15 @@ textarea.refresh {
 		padding: 75px 20px 0 0;
 		background-position: center top;
 	}
-	/* end of 이노베이션 */
+	end of 이노베이션
 
-	/* 지속가능 */
+	지속가능
 	.w80per {
 		width: 90%;
-	} /* 726px/766px */
+	} 726px/766px
 	.w60per {
 		width: 90%;
-	} /* 726px/766px */
+	} 726px/766px
 	.aboutVisionBox .cell dl {
 		border-left-width: 0;
 	}
@@ -13062,9 +13097,9 @@ textarea.refresh {
 	.aboutVisionBox .cell dl {
 		padding: 0 50px 20px 50px !important;
 	}
-	/* end of 지속가능 */
+	end of 지속가능
 
-	/* 아모레퍼시픽 지속가능경영 */
+	아모레퍼시픽 지속가능경영
 	.ethicsCpWillexpression {
 		display: block;
 	}
@@ -13088,7 +13123,7 @@ textarea.refresh {
 	.ethicsCpWillexpression h3 {
 		margin-bottom: 20px;
 	}
-	/* end of 아모레퍼시픽 지속가능경영 */
+	end of 아모레퍼시픽 지속가능경영
 	.employeesWorkspaceBox {
 		min-height: 100%;
 		padding-bottom: 30px;
@@ -13099,9 +13134,9 @@ textarea.refresh {
 	.winwin .wrap {
 		padding-left: 65px;
 	}
-	/* end of 아모레퍼시픽 지속가능경영 */
+	end of 아모레퍼시픽 지속가능경영
 
-	/* 글로벌 경영 */
+	글로벌 경영
 	.mapWrap {
 		margin-left: 0;
 		margin-bottom: 20px;
@@ -13109,9 +13144,9 @@ textarea.refresh {
 	.mapInfo {
 		margin-left: 0;
 	}
-	/* end of 글로벌 경영 */
+	end of 글로벌 경영
 
-	/* 상세 검색 */
+	상세 검색
 	.srcBoxWrap {
 		margin: 0;
 		padding-left: 0;
@@ -13127,9 +13162,9 @@ textarea.refresh {
 		display: table-cell;
 	}
 
-	/* end of 상세 검색 */
+	end of 상세 검색
 
-	/* 지속가능경영 지속가능 제품 */
+	지속가능경영 지속가능 제품
 	.dataSalesLsit .bottomCenter {
 		display: block;
 		margin-top: 15px;
@@ -13141,9 +13176,9 @@ textarea.refresh {
 	.customerSustainproduct .cell02 {
 		width: 100%;
 	}
-	/* end of 지속가능경영 : 지속가능제품 상단 1:2 이미지 예외처리 */
+	end of 지속가능경영 : 지속가능제품 상단 1:2 이미지 예외처리
 
-	/* 이노베이션 전문가제안 */
+	이노베이션 전문가제안
 	.innoCon .idea {
 		background-position: 0 0;
 		padding: 0 20px 0 75px;
@@ -13159,9 +13194,9 @@ textarea.refresh {
 		text-align: left;
 		vertical-align: middle;
 	}
-	/* end of 이노베이션 전문가제안 */
+	end of 이노베이션 전문가제안
 
-	/* footer 브랜드 찾기 */
+	footer 브랜드 찾기
 	.storeList .infoText {
 		display: block;
 	}
@@ -13183,7 +13218,7 @@ textarea.refresh {
 		padding: 10px 10px 0 10px;
 		margin-bottom: 20px;
 	}
-	/* end of footer 브랜드 찾기*/
+	end of footer 브랜드 찾기
 	.new_tabs {
 		float: none;
 		margin-left: 0
@@ -13216,7 +13251,7 @@ textarea.refresh {
 		padding-top: 10px !important;
 	}
 
-	/* 검색어 찾기 */
+	검색어 찾기
 	.searchBox .borderBox {
 		padding-left: 10%;
 		padding-right: 10%;
@@ -13253,9 +13288,9 @@ textarea.refresh {
 		position: relative;
 		top: 0px;
 	}
-	/* end of 검색어 찾기 */
+	end of 검색어 찾기
 
-	/* 방문판매 */
+	방문판매
 	.dtdsalesWrap {
 		border: 0;
 	}
@@ -13284,9 +13319,9 @@ textarea.refresh {
 	.dtdsalesWrap .layerMap ul {
 		margin-left: 0px;
 	}
-	/*  end of 방문판매 */
+	 end of 방문판매
 
-	/*고객상담*/
+	고객상담
 	.customProgress li {
 		float: left;
 		width: 50%;
@@ -13338,9 +13373,9 @@ textarea.refresh {
 	.customLink .layout2cell .cell02 {
 		margin-bottom: 20px;
 	}
-	/*  end of 고객상담 */
+	 end of 고객상담
 
-	/* faq */
+	faq
 	.faqList .hTabWrap li a.tab {
 		display: none;
 	}
@@ -13378,7 +13413,7 @@ textarea.refresh {
 		display: none
 	}
 
-	/* 패밀리 사이트 */
+	패밀리 사이트
 	#familySite .layout4cell .cell03 h3 {
 		margin-right: 0;
 	}
@@ -13388,9 +13423,9 @@ textarea.refresh {
 	#familySite .brands .back {
 		clear: both;
 	}
-	/* end of 패밀리 사이트 */
+	end of 패밀리 사이트
 
-	/* 표 */
+	표
 	.tableWrap {
 		overflow-x: auto;
 		margin-bottom: 50px;
@@ -13403,7 +13438,7 @@ textarea.refresh {
 		margin-bottom: 0 !important;
 	}
 
-	/* 로그인 */
+	로그인
 	.loginWrap .loginText {
 		font-size: 18px;
 		font-size: 1.8rem;
@@ -13439,22 +13474,22 @@ textarea.refresh {
 	.loginWrap .loginGuide dl {
 		margin: 0 0 20px 0;
 	}
-	/* end of 로그인 */
+	end of 로그인
 
-	/* 페이징 */
+	페이징
 	.pageWrap {
 		display: none;
 	}
 	.pageMobile {
 		display: block;
 	}
-	/* end of 페이징 */
+	end of 페이징
 	.gridderShow .btnArea .pw58 {
 		padding: 0 20px 0 20px;
 		margin-right: 0;
 	}
 
-	/* 오류페이지 */
+	오류페이지
 	#errorWrap .errorList2 li {
 		width: 100%;
 		float: none;
@@ -13480,23 +13515,23 @@ textarea.refresh {
 	#errorWrap .accordion .grayBox p.info {
 		padding-top: 30px;
 	}
-} /* end of 320 부터 767까지 */
+} end of 320 부터 767까지
 
-/* 690~660 */
+690~660
 @media all and (max-width:690px) and (min-width:660px) {
-	/* 첨부파일 */
+	첨부파일
 	.formWrite .innerWrap .fileText input[type=text] {
 		width: 77% !important;
 	}
-	/* end of 첨부파일 */
+	end of 첨부파일
 }
-/* 640~600 */
+640~600
 @media all and (max-width:640px) and (min-width:600px) {
-	/* 첨부파일 */
+	첨부파일
 	.formWrite .innerWrap .fileText input[type=text] {
 		width: 75% !important;
 	}
-	/* end of 첨부파일 */
+	end of 첨부파일
 	.formWrite .innerWrap dd .email select {
 		width: 30.2%;
 	}
@@ -13504,13 +13539,13 @@ textarea.refresh {
 		width: 95%;
 	}
 }
-/* 598~580 */
+598~580
 @media all and (max-width:598px) and (min-width:580px) {
-	/* 첨부파일 */
+	첨부파일
 	.formWrite .innerWrap .fileText input[type=text] {
 		width: 73% !important;
 	}
-	/* end of 첨부파일 */
+	end of 첨부파일
 	.formWrite .innerWrap dd .email input[type=text] {
 		width: 24.2%;
 	}
@@ -13520,14 +13555,14 @@ textarea.refresh {
 }
 
 @media all and (max-width:480px) {
-	/* 레이아웃 */
-	/*.wrapperCell .layout4cell .cell { overflow:hidden; }*/
-	/* iframe RWD */
+	레이아웃
+	.wrapperCell .layout4cell .cell { overflow:hidden; }
+	iframe RWD
 	.ifrWrap .ifrBox.stock {
 		padding-bottom: 380%;
 	}
 
-	/* title */
+	title
 	.titArea h3 {
 		float: left;
 	}
@@ -13535,7 +13570,7 @@ textarea.refresh {
 		float: none;
 	}
 
-	/* 사이트맵 */
+	사이트맵
 	#siteMap .cell {
 		width: 100%;
 	}
@@ -13543,15 +13578,15 @@ textarea.refresh {
 		position: relative;
 		top: auto;
 	}
-	/* end of 사이트맵 */
+	end of 사이트맵
 
-	/* 패밀리사이트 */
+	패밀리사이트
 	#familySite .layout4cell .cell:first-child ul, #familySite .layout4cell .cell01 ul
 		{
 		margin-left: 0;
 	}
-	/* end of 패밀리 사이트 */
-	/* 쓰기 폼 */
+	end of 패밀리 사이트
+	쓰기 폼
 	.formWrite .innerWrap dd textarea {
 		width: 94.5%;
 	}
@@ -13562,16 +13597,16 @@ textarea.refresh {
 		width: auto;
 	}
 
-	/* 첨부파일 */
+	첨부파일
 	.fileText div.relative a.btn {
 		right: 3px;
 	}
 	.formWrite .innerWrap .fileText input[type=text] {
 		width: 60% !important;
 	}
-	/* end of 첨부파일 */
+	end of 첨부파일
 
-	/* 검색 */
+	검색
 	.searchAreaCenter .searchWrap.search-3 input[type=text] {
 		width: 50%;
 		margin: 0;
@@ -13581,7 +13616,7 @@ textarea.refresh {
 		width: 47%;
 	}
 
-	/* 다운로드 파일 형식 : text + Download + icon */
+	다운로드 파일 형식 : text + Download + icon
 	.board.mobileVary .btnDownload {
 		width: 98%;
 	}
@@ -13607,14 +13642,14 @@ textarea.refresh {
 		padding-left: 0px;
 	}
 
-	/* 지속가능경영 보고서 */
+	지속가능경영 보고서
 	.dataSalesLsit .topCenter {
 		font-size: 15px;
 		font-size: 1.5rem;
 		top: 3%;
 	}
 
-	/* faq */
+	faq
 	.customLink {
 		background: #f8f8f8;
 		padding: 30px 30px 20px 30px;
@@ -13624,7 +13659,7 @@ textarea.refresh {
 		margin-bottom: 10px;
 	}
 
-	/* 로그인 */
+	로그인
 	.loginWrap .btnJoin {
 		position: static;
 		right: 0;
@@ -13657,7 +13692,7 @@ textarea.refresh {
 }
 
 @media all and (max-width:460px) {
-	/*  실적 관련 */
+	 실적 관련
 	.downCorpList li .txt {
 		padding-left: 70px;
 	}
@@ -13672,33 +13707,33 @@ textarea.refresh {
 		height: 44px;
 		line-height: 44px;
 	}
-	/* end of  IR 실적 관련 */
+	end of  IR 실적 관련
 
-	/* 첨부파일 */
+	첨부파일
 	.formWrite .innerWrap .fileText input[type=text] {
 		width: 60% !important;
 	}
-	/* end of 첨부파일 */
+	end of 첨부파일
 
-	/* 홍보영상 */
+	홍보영상
 	.videoList .listGroup {
 		width: 130px;
 	}
-	/* end of 홍보영상 */
+	end of 홍보영상
 
-	/* 브랜드 */
+	브랜드
 	.gridderList .gridderThumb:hover .overlay {
 		font-size: 13px;
 		font-size: 1.3rem;
 		padding-bottom: 15px;
 	}
-	/* end of 브랜드*/
+	end of 브랜드
 	#main .articleWrap .layout3cell .cell .article h2, #main .articleWrap .layout3cell .cell .article div
 		{
 		width: 80%;
 	}
 
-	/* 아모레퍼시픽그룹 이사회구성 */
+	아모레퍼시픽그룹 이사회구성
 	.management .apgroup p {
 		width: 83% !important;
 		padding: 0 20px 0 20px;
@@ -13709,9 +13744,9 @@ textarea.refresh {
 		padding-left: 0;
 		padding-right: 10%;
 	}
-	/* end of 아모레퍼시픽그룹 이사회구성 */
+	end of 아모레퍼시픽그룹 이사회구성
 
-	/* faq */
+	faq
 	.faqList .num {
 		text-align: center;
 		width: 15%;
@@ -13729,33 +13764,33 @@ textarea.refresh {
 }
 
 @media all and (max-width:400px) {
-	/* 첨부파일 */
+	첨부파일
 	.formWrite .innerWrap .fileText input[type=text] {
 		width: 60% !important;
 	}
-	/* end of 첨부파일 */
+	end of 첨부파일
 
-	/*  아모레퍼시픽그룹 이사회구성 */
+	 아모레퍼시픽그룹 이사회구성
 	.management .apgroup p {
 		padding-right: 0;
 		width: 60%;
 		margin: 0 auto;
 	}
-	/* end of  아모레퍼시픽그룹 이사회구성 */
+	end of  아모레퍼시픽그룹 이사회구성
 
-	/* 쓰기 폼 */
+	쓰기 폼
 	.formWrite .innerWrap dd .email input[type=text] {
 		width: 24.5%;
 	}
 	.formWrite .innerWrap dd textarea {
 		width: 95%;
 	}
-	/* end of 쓰기 폼 */
+	end of 쓰기 폼
 }
 
-/* Android 계열의 대부분의 모바일폰 (삼성 포함) 특화 */
+Android 계열의 대부분의 모바일폰 (삼성 포함) 특화
 @media all and (max-width:360px) {
-	/* 아모레퍼시픽 지속가능경영 */
+	아모레퍼시픽 지속가능경영
 	.environmentEcoproduceBox {
 		padding-bottom: 30px;
 	}
@@ -13766,7 +13801,7 @@ textarea.refresh {
 		min-height: 100%;
 		margin-bottom: 20px;
 	}
-	/* end of 아모레퍼시픽 지속가능경영 */
+	end of 아모레퍼시픽 지속가능경영
 	#lnb .lnb ul li {
 		height: 40px;
 		line-height: 40px;
@@ -13783,7 +13818,7 @@ textarea.refresh {
 		height: auto;
 	}
 
-	/* 패밀리 사이트 */
+	패밀리 사이트
 	#familySite .layout4cell  ul {
 		margin-left: 0;
 	}
@@ -13800,32 +13835,32 @@ textarea.refresh {
 	#familySite .brandListWrap .cell {
 		width: 50%;
 	}
-	/* end of 패밀리 사이트 */
+	end of 패밀리 사이트
 
-	/* 기업윤리 */
+	기업윤리
 	.photoList h4.fs20 {
 		font-size: 18px;
 		font-size: 1.8rem;
 	}
 
-	/* 쓰기 폼 */
+	쓰기 폼
 	.formWrite .innerWrap .fileText input[type=text] {
 		width: 58% !important;
 	}
 	.formWrite .innerWrap dd .email input[type=text] {
 		width: 24.2%;
 	}
-	/* end of 쓰기 폼 */
+	end of 쓰기 폼
 }
 
-/* iOS 계열의 iPhone 특화 */
+iOS 계열의 iPhone 특화
 @media all and (max-width:320px) {
-	/*   IR 영업보고서 관련 */
+	  IR 영업보고서 관련
 	.dataSalesLsitGroup .tit {
 		font-size: 15px;
 		font-size: 1.5rem;
 	}
-	/* end of  IR 영업보고서 관련 */
+	end of  IR 영업보고서 관련
 	.ifrWrap .ifrBox.stock {
 		padding-bottom: 480%;
 	}
@@ -13841,7 +13876,7 @@ textarea.refresh {
 		height: 40px;
 	}
 
-	/* 쓰기 폼 */
+	쓰기 폼
 	.formWrite .innerWrap dd .email input[type=text] {
 		width: 22.4%;
 	}
@@ -13851,13 +13886,13 @@ textarea.refresh {
 	.formWrite .innerWrap .fileText input[type=text] {
 		width: 54% !important;
 	}
-	/* end of 쓰기 폼 */
+	end of 쓰기 폼
 	.sustainability .gridderList .gridderThumb .overlay {
 		margin-top: -2.5em;
 	}
 }
 
-/* Safari Hack for H/Bold/Strong */
+Safari Hack for H/Bold/Strong
 .safari h1, .safari h2, .safari h3, .safari h4, .safari h5, .safari h6 {
 	font-weight: normal;
 }
@@ -14140,9 +14175,9 @@ textarea.refresh {
 .safari .customerGuide li div.title {
 	font-weight: normal;
 }
-/* end of Safari Hack*/
+end of Safari Hack
 
-/* 테스트용 클래스 */
+테스트용 클래스
 .t {
 	border: 1px red solid;
 }
@@ -14168,7 +14203,7 @@ textarea.refresh {
 }
 
 @media all and (min-width:1181px) {
-	#main #nav { /*margin-left:-203px !important;*/
+	#main #nav { margin-left:-203px !important;
 		width: 700px !important;
 	}
 	html.ie #main #nav {
@@ -14224,13 +14259,13 @@ body {
 	overflow-y: hidden;
 }
 
-/*
+
  Validator 결과 - 2014-01-28  - 30개 오류
  Validator 예외 속성
 - zoom:1
 - filter: progid:DXImageTransform.Microsoft.Alpha(opacity=10); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=10)";
 점검 항목 -  -webkit-min-device-pixel-ratio
-*/
+
 @media print {
 	#skipnavi, .moto, #header, #directMenu, #snsMenu, #gototop, #quicknav,
 		#footer, .footerline, #lnb .lnb, .aside {
@@ -14240,7 +14275,7 @@ body {
 		padding: 0;
 	}
 
-	/* 텝 메뉴 */
+	텝 메뉴
 	.hTabWrap li {
 		width: 100%;
 	}
@@ -14248,7 +14283,7 @@ body {
 		width: 100% !important;
 	}
 
-	/* 테이블 */
+	테이블
 	.tableWrap {
 		width: 100%;
 		overflow: hidden;
@@ -14257,7 +14292,7 @@ body {
 		width: 100%;
 	}
 
-	/* 쓰기 폼 */
+	쓰기 폼
 	.formWrite .innerWrap dt, .formWrite .innerWrap dd {
 		display: table-cell;
 		padding: 10px 0 4px 20px;
@@ -14287,7 +14322,7 @@ body {
 		border: 1px solid #ccc;
 	}
 
-	/* 게시판 */
+	게시판
 	.board.mobileVary {
 		display: table;
 		width: 100%;
@@ -14337,7 +14372,7 @@ body {
 		padding-left: 0;
 	}
 
-	/* 슬라이더 */
+	슬라이더
 	.slider .btnArrow, .slider .sliderPaging {
 		display: none;
 	}
@@ -14345,7 +14380,7 @@ body {
 		display: block;
 	}
 
-	/* 세계속의 아모레퍼시픽 지도 */
+	세계속의 아모레퍼시픽 지도
 	.tabCont .lineBoard .layout2cell .cell {
 		width: 50%;
 	}
@@ -14353,12 +14388,12 @@ body {
 		margin-left: 30px;
 	}
 
-	/* 브랜드 */
+	브랜드
 	.bgOverlay {
 		display: none;
 	}
 
-	/* 이사회 구성 */
+	이사회 구성
 	.directList {
 		padding-left: 245px;
 	}
@@ -14367,12 +14402,12 @@ body {
 		height: 129px;
 	}
 
-	/* 주주현황 */
+	주주현황
 	.parbase .desktop-767.tCenter {
 		display: block !important;
 	}
 
-	/* 주요재무지표 */
+	주요재무지표
 	.financeSheet.mobileVary .hTabWrap-2 li {
 		width: 100%;
 	}
@@ -14459,7 +14494,7 @@ body {
 	left: 1180px;
 	width: 100%;
 	height: 100%;
-	/*background:url(../../../content/dam/company/ko-kr/images/main/layer_bg.jpg);*/
+	background:url(../../../content/dam/company/ko-kr/images/main/layer_bg.jpg);
 	background-color: #fff
 }
 
@@ -14593,7 +14628,7 @@ body {
 	}
 }
 
-/*판매원 찾기*/
+판매원 찾기
 @media all and (max-width:767px) {
 	.ie8 .search_data {
 		width: 100%
@@ -14647,7 +14682,7 @@ body {
 #utilnav .utility li a {
 	margin-top: -11px
 }
-/* 20150401 70주년 엠블럼 추가 관련*/
+20150401 70주년 엠블럼 추가 관련
 #header.v_70th .logo {
 	height: 194px;
 }
@@ -14699,7 +14734,7 @@ body {
 		top: 53px
 	}
 }
-/*20150406 관련사이트 모바일 버전 수정*/
+20150406 관련사이트 모바일 버전 수정
 @media all and (max-width:360px) {
 	#familySite .brandListWrap .cell3 {
 		clear: both
@@ -14709,7 +14744,7 @@ body {
 	}
 }
 
-/* 20151112 */
+20151112
 .footer .copyright img {
 	vertical-align: -2px
-}
+} */

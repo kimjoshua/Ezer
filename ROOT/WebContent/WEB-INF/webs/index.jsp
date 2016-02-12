@@ -14,13 +14,13 @@
 <title>Color Ez - 컬러테라피 아카데미 스</title>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans'
 	rel='stylesheet' type='text/css'>
+<link href="/css/ezer.css" rel="stylesheet">
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
 	crossorigin="anonymous">
 <!-- Custom CSS -->
-<link href="/css/ezer.css" rel="stylesheet">
 <!-- Fonts -->
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script
@@ -55,11 +55,14 @@
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
 								<li data-target="#carousel-example-generic" data-slide-to="0"
-									class="active"></li>
+									class="active" style="
+    margin-right: 10px;"></li>
+							
 								<li data-target="#carousel-example-generic" data-slide-to="1"
-									class=""></li>
+									class="" style="
+    margin-right: 10px;"></li>
 								<li data-target="#carousel-example-generic" data-slide-to="2"
-									class=""></li>
+									class="" style="  margin-right: 10px;"></li>
 
 							</ol>
 
@@ -102,7 +105,7 @@
 												<h3>에제르코스메틱</h3>
 												<div class="text">
 													<a href="/symbole" onclick="" title="에제르코스메틱자세히 보기">
-														에제르코스메틱의 사업분야, <br> 연혁과 CI/BI등을 소개해 드립니다.
+														에제르코스메틱의 사업분야, <br> 연혁과 CI / BI등을 소개해 드립니다.
 													</a>
 												</div>
 												<div class="figure tCenter">
@@ -138,8 +141,8 @@
 											<div class="article">
 												<h3>제품 소개</h3>
 												<div class="text">
-													<a href="/bioacn" onclick="" title="제품 소개 자세히 보기">바이오진,
-														바이오셀렉스, 시뉴, 세븐이너프 <br>에제르의 제품들을 소개해드립니다.
+													<a href="/introBrand" onclick="" title="제품 소개 자세히 보기">바이오진,
+														바이오셀렉스, 시뉴, 세븐이너프, 솔루션 100 <br>에제르의 제품들을 소개해드립니다.
 													</a>
 												</div>
 												<div class="figure tCenter">
@@ -162,7 +165,7 @@
 								<div class="article">
 									<h3>뉴스 &amp; 미디어</h3>
 									<div class="text">
-										<a href="/ad" onclick="" title="뉴스  미디어 자세히 보기"> 에제르코스메틱과
+										<a href="/news" onclick="" title="뉴스  미디어 자세히 보기"> 에제르코스메틱과
 											각 브랜드 및 제품에 관한<br> 최신 소식을 알려드립니다.
 										</a>
 									</div>
@@ -175,7 +178,7 @@
 								<div class="article">
 									<h3>이벤트</h3>
 									<div class="text">
-										<a href="" onclick="" title="이벤트 자세히 보기"> 에제르코스메틱과 각 브랜드에서
+										<a href="/event" onclick="" title="이벤트 자세히 보기"> 에제르코스메틱과 각 브랜드에서
 											진행중인<br> 다양한 이벤트를 알려드립니다.
 										</a>
 									</div>

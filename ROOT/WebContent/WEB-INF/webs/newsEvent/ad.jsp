@@ -51,7 +51,8 @@
 					</div>
 
 				</div>
-			</div>
+				</div>
+			
 			<%@ include file="../template/footer.jsp"%>
 
 		</div>
