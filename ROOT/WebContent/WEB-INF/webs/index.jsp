@@ -43,7 +43,7 @@
 		<h1>Ezer cosmetic</h1>
 		<div class="moto"></div>
 		<div class="inwrap">
-			<%@ include file="template/nav.jsp"%>
+			<%@ include file="template/mainnav.jsp"%>
 			<div id="contents" class="v1">
 				<div id="visualarea">
 
@@ -51,7 +51,7 @@
 
 						<div id="carousel-example-generic" class="carousel slide"
 							data-ride="carousel"
-							style="position: relative; padding-bottom: 3%; padding-top: 6%;">
+							style="position: relative; padding-bottom: 3%; padding-top: 2%;">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
 								<li data-target="#carousel-example-generic" data-slide-to="0"
@@ -92,18 +92,16 @@
 
 
 
-					<div id="realcontents">
+					<div id="realcontents" style="padding-top: 8%; padding-bottom: 2%;">
 						<div class="realcon">
 							<div class="articleWrap">
 								<div class="layout3cell">
 									<div class="cell">
 										<div class="img1 parbase image">
 											<div class="article">
-												<h3>
-													<a href="/ezerCos" onclick="" title="에제르코스메틱">에제르코스메틱</a>
-												</h3>
+												<h3>에제르코스메틱</h3>
 												<div class="text">
-													<a href="/ezerCos" onclick="" title="에제르코스메틱자세히 보기">
+													<a href="/symbole" onclick="" title="에제르코스메틱자세히 보기">
 														에제르코스메틱의 사업분야, <br> 연혁과 CI/BI등을 소개해 드립니다.
 													</a>
 												</div>
@@ -119,13 +117,11 @@
 									<div class="cell">
 										<div class="img2 parbase image">
 											<div class="article">
-												<h3>
-													<a href="/introBrand" title="브랜드소개자세히 보기">브랜드소개</a>
-												</h3>
+												<h3>브랜드소개</h3>
 												<div class="text">
 													<a href="/introBrand" onclick="" title="브랜드소개자세히 보기">
-														에제르, 컬러이즈, 갤러시다, 티톡시, 나노수, 마고 <br>6개의 브랜드의 컨셉과 제품을
-														소개해 드립니다.
+														에제르, 컬러이즈, 갤러시아, 티톡시, 하이브리드 나노, 마고 <br>6개의 브랜드의 컨셉과
+														제품을 소개해 드립니다.
 													</a>
 												</div>
 												<div class="figure tCenter">
@@ -140,12 +136,10 @@
 									<div class="cell">
 										<div class="parbase image img3">
 											<div class="article">
-												<h3>
-													<a href="/bioacn" onclick="" title="제품 소개 자세히 보기">제품 소개</a>
-												</h3>
+												<h3>제품 소개</h3>
 												<div class="text">
 													<a href="/bioacn" onclick="" title="제품 소개 자세히 보기">바이오진,
-														바이오셀레믹스, 시뉴, 세븐이너프 <br>에제르의 제품들을 소개해드립니다.
+														바이오셀렉스, 시뉴, 세븐이너프 <br>에제르의 제품들을 소개해드립니다.
 													</a>
 												</div>
 												<div class="figure tCenter">
@@ -161,19 +155,12 @@
 							</div>
 						</div>
 					</div>
-
-
-
-
 					<div class="layout3cell">
 						<div class="cell">
 							<div class="txt1 parbase main_text">
 
 								<div class="article">
-									<h3>
-										<a href="/ad" onclick="" title="뉴스  미디어 자세히 보기">뉴스 &amp;
-											미디어</a>
-									</h3>
+									<h3>뉴스 &amp; 미디어</h3>
 									<div class="text">
 										<a href="/ad" onclick="" title="뉴스  미디어 자세히 보기"> 에제르코스메틱과
 											각 브랜드 및 제품에 관한<br> 최신 소식을 알려드립니다.
@@ -185,13 +172,8 @@
 						<div class="cell">
 							<div class="txt2 parbase main_text">
 
-
-
-
 								<div class="article">
-									<h3>
-										<a href="" onclick="" title="이벤트">이벤트</a>
-									</h3>
+									<h3>이벤트</h3>
 									<div class="text">
 										<a href="" onclick="" title="이벤트 자세히 보기"> 에제르코스메틱과 각 브랜드에서
 											진행중인<br> 다양한 이벤트를 알려드립니다.
@@ -203,46 +185,22 @@
 						<div class="cell">
 							<div class="txt3 parbase main_text">
 								<div class="article">
-									<h3>
-										<a href="" onclick="" target="" title="쇼핑몰 자세히 보기">쇼핑몰</a>
-									</h3>
-									<div class="text">
-										<a href="" onclick="" target="" title="쇼핑몰 자세히 보기">
-											에제르코스메틱과 각 브랜드 제품을 구입할 수 있고<br>커뮤니티를 이용할 수 있는 쇼핑몰로
-											이동됩니다.
+									<h3>쇼핑몰</h3>
+									<div class="noticeSiete text">
+										<a href="javascript:void(0)" onclick="" target=""
+											title="쇼핑몰 자세히 보기"> 에제르코스메틱과 각 브랜드 제품을 구입할 수 있고<br>커뮤니티를
+											이용할 수 있는 쇼핑몰로 이동됩니다.
 										</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
-
-					<%@ include file="template/footer.jsp"%>
-				</div>
-				<div id="footer">
-					<div class="footer mobileVary">
-						<div></div>
-						<div class="copyright center">
-							<span style="position: relative; right: 12%;"> ©E-ZER
-								COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-								style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 :
-								정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
-								src="" alt="">
-							</span>
-						</div>
-
-					</div>
 				</div>
 			</div>
+			<%@ include file="template/footer.jsp"%>
 		</div>
-
+		<div class="footerline"></div>
 	</div>
-	</div>
-	<div class="footerline"></div>
-
-	</div>
-	</div>
-
 </body>
 </html>

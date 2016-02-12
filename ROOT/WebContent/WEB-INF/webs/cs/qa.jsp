@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%-- 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> --%>
 <%
 	String cp = request.getContextPath();
 %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -27,7 +27,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
 	integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
 	crossorigin="anonymous"></script>
-<script src="<%=cp%>/js/ezer.js"></script>
+<script src="<%=cp%>/js/qa.js"></script>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -49,88 +49,78 @@
 					<div id="realcontents">
 						<div class="realcon">
 							<div id="pagetitle">
-								<div class="row">
-									<div class="col-sm-8 col-md-7 introBG">
-										<span> 질문과 답변</span>
-									</div>
+								<div class="mainText"
+									style="position: relative; padding: 5% 1% 1% 6%;">
+									<span
+										style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">질문과
+										답변</span>
+
 								</div>
 							</div>
-
-							<div>
-
+							<!-- pagetitle end -->
+							<div class="mainText">
+								<!-- 
 								<span> 자주 묻는 질문은 확인 하셨나요?<br> 고객상담전에 <strong>자주
 										묻는 질문</strong>에서 원하시는 정보를 먼저 확인하세요
 								</span>
-								<button>자주 묻는 질문 확인하기</button>
+								<button>자주 묻는 질문 확인하기</button> -->
 							</div>
+							<!-- mainText End -->
+							<div class="qaTextf">
 
-							<div>
-
-								<form>
-									<table>
+								<form action="ezerQa" method="post">
+									<table style="width: 63%;">
 
 										<tr>
-											<td>구분</td>
-											<td><input type="radio" name="categ"> 홈페이지</td>
-											<td><input type="radio" name="categ"> 화장품</td>
-											<td><input type="radio" name="categ"> 생활용품</td>
-											<td><input type="radio" name="categ"> 음료</td>
-											<td><input type="radio" name="categ"> 미용상품</td>
-											<td><input type="radio" name="categ"> IR</td>
+											<td style="width: 47px;">구분</td>
+											<td class="categText"><input type="radio" name="categ"
+												value="1"> 홈페이지</td>
+											<td class="categText"><input type="radio" name="categ"
+												value="2"> 화장품</td>
+											<td class="categText"><input type="radio" name="categ"
+												value="3"> 생활용품</td>
+											<td class="categText"><input type="radio" name="categ"
+												value="4"> 음료</td>
+											<td class="categText"><input type="radio" name="categ"
+												value="5"> 미용상품</td>
+											<td class="categText"><input type="radio" name="categ"
+												value="6"> IR</td>
 										</tr>
 										<tr>
 											<td>제목</td>
-											<td><input type="text" name="title"></td>
+											<td class="heightTd"><input type="text" name="title"
+												size="100"></td>
 										</tr>
-										<tr>
-											<td>첨부파일</td>
-											<td><input type="file" name="attachFile"></td>
-										</tr>
-										<tr>
-										<td>내용</td>
-										<td>
-										<span> * 글자수는 최대 400000 Byte까지 등록 가능합니다</span>
-										<div></div>
-										
-										
-										<textarea rows="" cols="" name="contents"></textarea>
-										</td>
-										</tr>
-									</table>
 
-		<input type="submit" value="문의 하기">
+										<tr>
+											<td>내용</td>
+											<td colspan="6" class="heightTd"><span> * 글자수는 최대
+													400000 Byte까지 등록 가능합니다</span><span class="remaining"
+												style="padding-left: 38%;"> <span class="count">0</span>/<span
+													class="maxcount">400000</span>byte
+													<div>
+														<textarea rows="20" cols="99" class="contents"
+															name="contents"></textarea>
+													</div></td>
+										</tr>
+
+									</table>
+									<div style="position: relative; padding-top: 2%; left: 29%;">
+										<button class="submit btn">문의 하기</button>
+									</div>
 								</form>
 
 							</div>
 
-
 						</div>
 					</div>
-					<%@ include file="../template/footer.jsp"%>
-				</div>
-				<div id="footer">
-					<div class="footer mobileVary">
-						<div></div>
-						<div class="copyright center">
-							<span style="position: relative; right: 12%;"> ©E-ZER
-								COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-								style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 :
-								정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
-								src="" alt="">
-							</span>
-						</div>
 
-					</div>
 				</div>
 			</div>
+			<%@ include file="../template/footer.jsp"%>
+
 		</div>
-
+		<div class="footerline"></div>
 	</div>
-	</div>
-	<div class="footerline"></div>
-
-	</div>
-	</div>
-
 </body>
 </html>

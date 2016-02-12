@@ -4,6 +4,7 @@
 <mappers>
 
 <mapper resource="com/ezer_g/www/mapper/ezer_notice.xml"/>
+<mapper resource="com/ezer_g/www/mapper/ezer_faq.xml"/>
 
 </mappers>
 </configuration>

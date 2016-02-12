@@ -1,11 +1,10 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%-- 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> --%>
 <%
 	String cp = request.getContextPath();
 %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -49,119 +48,99 @@
 				<div id="visualarea">
 					<div id="realcontents">
 						<div class="realcon">
-							<div class="row">
-								<div class="col-sm-8 col-md-7 introBG">
-									<span> 특징</span>
-									<p>바이오진의 스킨케어 라인은</p>
+
+							<div class="mainText"
+								style="position: relative; padding: 5% 1% 1% 6%;">
+								<span
+									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">특징</span>
+								<div class="symbole" style="width: 60%;">
+									<dl style="padding-left: 9px; padding-top: 2%;">
+										<dd>
+											<span>바이오진의 스킨케어 라인은 </span>
+										</dd>
+									</dl>
 								</div>
-								<div class="col-sm-4 col-md-4">
-									<img class="serviceImg" src="/img/intro_coloris_main.png">
-								</div>
+
 							</div>
-							<div class="introBG row">
-								<span> 제품 </span>
-								<div class="introBGImg">
+							<div class="ciLogo" align="middle">
+								<img alt="에제를 코스메틱 CI로고" src="/img/ciEzer.png"
+									style="position: relative; right: 1%; padding-top: 7%;">
+							</div>
+
+							<div
+								style="position: relative; padding: 1% 1% 1% 6%; width: 95%;">
+
+								<span
+									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">제품</span>
+
+								<div class="row mainRow">
 									<div class="row">
-										<div class="col-sm-4 col-md-3">
+										<div class="col-md-4">
 											<div class="">
-												<img class="thumbnail introProduct"
-													src="/img/intro_ezer_main.png" data-holder-rendered="true"
-													display:block;="">
+												<img class="introProduct" src="/img/cnbcream.jpg"
+													data-holder-rendered="true" display:block;="">
 
 												<div class="caption">
-													<h3>에센스</h3>
+													<span>미백 크림</span>
 												</div>
 												<div class="detailIntro">
-													<span> 시뉴 브라이트닝 에센스</span>
-													<P>제품소개 : 미백기능성 원료인 알파-비사보롤이 피부 미백에 도움을 주고 기가화이트,
-														액티화이트성분 등이 피부를 생기있고 촉촉하게 가꾸어주며, 7가지 버섯발효성분과 7가지 한방발효성분이
-														매끄럽고 산뜻하게 가꾸어줍니다.</P>
-													<span>용량 : 50ml</span>
-													<p>사용방법 : 아침저녁 세안 후, 적당량을 펌프하여 피부결에 따라 부드럽게 펴 발라
-														흡수시켜줍니다.</p>
-													<p>전성분 : 정제수, 부틸렌글라이콜, 글리세린, 디메치콘, 사이클로펜타실록산, 1,2-헥산디올,
-														사이클로헥사실록산, 황기추출물, 모과추출물, 더덕추출물, 길경추출물, 참마뿌리추출물, 베타인,
-														소듐하이알루로네이트, 칡꽃/잎/줄기추출물, 세테아릴올리베이트, 소르비탄올리베이트, 지황추출물,
-														하수오뿌리줄기/뿌리추출물, 알파-비사보롤, 효모/겨우살이발효추출물, 황금추출물, 감초추출물,
-														소듐폴리아크릴레이트, 락토바실러스/콩발효추출물, 콩싹추출물, 목련나무껍질추출물, 당귀추출물, 육계추출물,
-														쑥추출물, 생강추출물, 효모/모근발효추출물, 토코페릴아세테이트,
-														소듐아크릴레이트/소듐아크릴로일디메칠타우레이트코폴리머, 폴리이소부텐, 디포타슘글리시리제이트, 말로우추출물,
-														페퍼민트잎추출물, 카우슬립추출물, 성모초추출물, 꼬리풀추출물, 레몬밤잎추출물, 서양톱풀추출물,
-														바실러스/동충하초/영지/차가버섯/표고버섯/상황버섯/치마버섯/송이버섯추출물발효여과물,
-														락토바실러스/병풀/조각자나무가시/어성초추출물/황백/호장근/끌풀/사상자추출물발효여과물,
-														클로렐라/하얀루핀단백질발효물, 물냉이꽃/잎추출물, 카프릴릴/카프릴글루코사이드, 디소듐이디티에이,
-														글리세릴아크릴레이트/아크릴릭애씨드코폴리머, 변성알코올, 나이아신아마이드, 프로필렌글라이콜, 징크피씨에이,
-														에탄올, 오렌지껍질오일, 레몬오일, 자몽껍질오일, 회향유, 라임오일</p>
+													<span> 바이오 진 에센스</span>
+													<P>제품소개 : 끈 초건조성 및 초민감성 피부를 위한 제품으로, 특허받은 한방 증숙 추출물 원액을
+														담았습니다. 민감성 피부나 피부 트러블이 심한 남녀노소 모두가 안심하고 사용할 수 있는 에센스입니다.</P>
+													<span>용량 : 1000ml</span>
+													<p>사용방법 : 아침 저녁 한방 증숙 추출물로 만든 수제비누로 세정 후, 적당량의 허브 에센스를
+														취해 트러블성 피부 전체에 부드럽게 펴 바르면서 흡수시켜줍니다. 트러블 부위가 적을 경우 화장솜 등을
+														이용하여 해당 부위에만 사용하셔도 좋습니다.</p>
+													<p>전성분 : 쑥추출물, 금은화추출물, 어성초추출물, 살구추출물, 길경추출물, 천궁추출물,
+														생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물, 박하잎추출물, 참당귀추출물, 회화나무잎추출물</p>
 
 												</div>
-
 											</div>
 										</div>
-										<div class="col-sm-4 col-md-3">
+										<div class="col-md-4">
 											<div class="">
-												<img class="thumbnail introProduct"
-													src="/img/intro_coloris_main.png"
+												<img class=" introProduct" src="/img/cnbes.jpg"
 													data-holder-rendered="true" display:block;="">
 												<div class="caption">
-													<h3>크림</h3>
+													<span>미백 에센스</span>
 												</div>
 												<div class="detailIntro">
-													<span>시뉴 브라이트닝 크림</span>
-													<P>제품소개 : 미백 기능성 원료인 알파-비사보롤이 피부 미백에 도움을 주고, 기가화이트,
-														액티화이트성분 등이 피부를 생기있고 촉촉하게 가꾸어주며, 7가지 버섯발효성분과 7가지의 한방발효성분 등이
-														피부를 매끄럽고 산뜻하게 가꾸어줍니다.</P>
-													<span>용량 : 50g</span>
-													<p>사용방법 : 아침 저녁 스킨 또는 에센스 사용 후, 얼굴과 목 부위에 적당량을 펴 바른 뒤
-														가볍게 두드려 흡수시켜줍니다.</p>
-													<p>전성분 : 정제수, 글리세린, 카프릴릭/카프릭트리글리세라이드, 브틸렌글라이콜,
-														하이드로제네이티드폴리데센, 세테아릴알코올, 1,2-헥산디올, 쉐어버터, 사이클로펜타실록산, 모과추출물,
-														황기추출물, 글리세릴스테아레이트, 길경추출물, 더덕추출물, 참마뿌리추출물, 칡꽃/잎/줄기추출물,
-														하이드로제네이티드식물성오일, 디메치콘, 사이클로헥사실록산, 지황추출물, 하수오뿌리줄기/뿌리추출물,
-														피이지-40스테아레이트, 황금추출물, 폴리소르베이트60, 스테아릭애씨드, 알파-비사보롤,
-														하이드로제네이티드레시틴, 감초추출물, 당귀추출물, 육계추출물, 쑥추출물, 콩싹추출쿨, 목련나무껍질추출물,
-														생강추출물, 카보머, 트리에탄올아민,
-														바실러스/동충하초/영지/차가버섯/표고버섯/상황버섯/치마버섯/송이버섯추출물발효여과물,
-														락토바실러스/병풀/조각자나무가시/어성초추출물/황백/호장근/끌풀/사상자추출물발효여과물, 잔탄검,
-														토로페릴아세테이트, 소듐하이알루로네이트, 효모/겨우살이발효추출물, 락토바실러스/콩발효추출물,
-														효모/모근발효추출물, 말로우추출물, 페퍼민트잎추출물, 카우슬립추출물, 성모초추출물, 꼬리풀추출물,
-														레몬밤잎추출물, 서양톱풀추출물, 에탄올, 변성알코올, 디소듐이디티에이, 물냉이꽃/잎추출물,
-														나이아신아마이드, 클로렐라/하얀루핀단백질발효물, 징크피씨에이, 오렌지껍질오일, 레몬오일, 자몽껍질오일,
-														회향유, 라임오일</p>
+													<span> 바이오 진 스킨로션 </span>
+													<P>제품소개 : 한방증숙추출물과 한방증류액으로 처방된 화장수로, 바르는 순간 부드럽게 피부를 감싸
+														피부 트러블을 완화시켜주며, 각종 한방활성성분이 피부에 공급되어 피부에 활력과 건강을 선사합니다. 모든
+														피부에 사용 가능합니다.</P>
+													<span>용량 : 150ml<br>
+													</span>
+													<p>사용방법 : 아침 저녁 세안 후, 적당량의 내용물을 취해 얼굴 전체에 부드럽게 펴 바르면서
+														흡수시켜줍니다. 일반 화장수와는 달리 닦아내지않고 흡수시키는 타입입니다.</p>
+													<p>전성분 : 정제수, 서양장미꽃수, 프로필렌글라이콜, 글리세린, 지황추출물,
+														하수오뿌리줄기/뿌리추출물, 황기추출물, 황금추출물, 땅두릎추출물, 길경추출물, 더덕추출물,
+														칡꽃/잎/줄기추출물, 애엽추출물, 생강추출물, 당귀추출물, 모과추출물, 참마뿌리추출물, 감초추출물,
+														육계추출물, 단삼꽃/잎/뿌리추출물, 어성초추출물, 참당귀추출물, 쑥추출물, 천궁추출물, 회화나무잎추출물,
+														박하잎추출물, 살구추출물, 금은화추출물, 생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물,
+														메칠글루세스-20, 베타인, 트리에칠헥사노인, 효모추출물, 포투라카올레라세아추출물, 소듐피씨에이,
+														소르비톨, 알라닌, 프롤린, 세린, 트레오닌, 알기닌, 라이신, 글루타믹애시드, 트리에탄올아민, 향료,
+														피이지-40하이드로제네이티드캐스터오일, 글리세릴스테아레이트, 피이지-100스테아레이트,
+														하이드로제네이티드레시틴, 카보머, 디메치콘, 잔탄검, 디소듐이디티에이</p>
 
 												</div>
 
 											</div>
 										</div>
 									</div>
+
 								</div>
 							</div>
-						</div>
-					</div>
-					<%@ include file="../template/footer.jsp"%>
-				</div>
-				<div id="footer">
-					<div class="footer mobileVary">
-						<div></div>
-						<div class="copyright center">
-							<span style="position: relative; right: 12%;"> ©E-ZER
-								COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-								style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 :
-								정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
-								src="" alt="">
-							</span>
-						</div>
 
+						</div>
 					</div>
+
 				</div>
 			</div>
+			<%@ include file="../template/footer.jsp"%>
+
 		</div>
-
+		<div class="footerline"></div>
 	</div>
-	</div>
-	<div class="footerline"></div>
-
-	</div>
-	</div>
-
 </body>
 </html>

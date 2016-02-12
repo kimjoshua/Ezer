@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%-- 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> --%>
 <%
 	String cp = request.getContextPath();
 %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -27,7 +27,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
 	integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
 	crossorigin="anonymous"></script>
-<script src="<%=cp%>/js/ezer.js"></script>
+<%-- <script src="<%=cp%>/js/ezer.js"></script> --%>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -55,13 +55,13 @@
 									</div>
 								</div>
 								<div class="faqSerch">
-									<form>
-										<input class="faqSerchBar" type="text" name="faqSerchClick">
-										<button type="button" class="btn btn-default serchBtn"
-											aria-label="Left Align">
-											<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-										</button>
-									</form>
+
+									<input class="faqSerchBar" type="text" name="faqSerchClick">
+									<button type="button" class="btn btn-default searchBtn"
+										aria-label="Left Align">
+										<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+									</button>
+
 
 								</div>
 								<div class="faqCateg">
@@ -89,31 +89,13 @@
 							</div>
 						</div>
 					</div>
-					<%@ include file="../template/footer.jsp"%>
-				</div>
-				<div id="footer">
-					<div class="footer mobileVary">
-						<div></div>
-						<div class="copyright center">
-							<span style="position: relative; right: 12%;"> ©E-ZER
-								COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-								style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 :
-								정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
-								src="" alt="">
-							</span>
-						</div>
 
-					</div>
 				</div>
 			</div>
+			<%@ include file="../template/footer.jsp"%>
+
 		</div>
-
+		<div class="footerline"></div>
 	</div>
-	</div>
-	<div class="footerline"></div>
-
-	</div>
-	</div>
-
 </body>
 </html>

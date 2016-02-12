@@ -22,15 +22,15 @@ import com.ezer_g.www.dto.LtadminDt;
 import com.ezer_g.www.loghash.Hash;
 import com.ezer_g.www.model.CommonInout;
 import com.ezer_g.www.service.Lrunservice;
-import com.ezer_g.www.service.Ezer_Notice_Service_IMp;
+import com.ezer_g.www.service.Ezer_Service_IMp;
 
 @Controller
 public class ezerWebcon {
 	
-	private Ezer_Notice_Service_IMp se;
+	private Ezer_Service_IMp se;
 
 
-	public void setService(Ezer_Notice_Service_IMp se) {
+	public void setService(Ezer_Service_IMp se) {
 		this.se = se;
 	}
 
@@ -73,7 +73,7 @@ public class ezerWebcon {
 	public String serviceH() {
 		return "/introComp/serviceH";
 	}
-	@RequestMapping("symbole")
+	@RequestMapping("/symbole")
 	public String symbole() {
 		return "/introComp/symbole";
 	}

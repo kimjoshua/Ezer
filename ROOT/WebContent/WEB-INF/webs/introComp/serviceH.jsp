@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%-- 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> --%>
 <%
 	String cp = request.getContextPath();
 %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -27,7 +27,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
 	integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
 	crossorigin="anonymous"></script>
-<script src="<%=cp%>/js/ezer.js"></script>
+<%-- <script src="<%=cp%>/js/ezer.js"></script> --%>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -46,45 +46,40 @@
 			<%@ include file="../template/nav.jsp"%>
 			<div id="contents" class="v1">
 				<div id="visualarea">
-						<div id="realcontents">
+					<div id="realcontents">
 						<div class="realcon">
-							<div class="service">
-							<img class="serviceImg"src="/img/healthy.jpg" >
-							
+							<div class="introIMg">
+								<img class="" src="/img/healthy.jpg" alt="  " align="middle"
+									style="width: 100%;">
 							</div>
-							
-							<div class="serviceContents">
-							<p>
-							에제르 코스매틱은
-							</p>
-							</div>
-						</div>
-					</div>
-					<%@ include file="../template/footer.jsp"%>
-				</div>
-				<div id="footer">
-					<div class="footer mobileVary">
-						<div></div>
-						<div class="copyright center">
-							<span style="position: relative; right: 12%;"> ©E-ZER
-								COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-								style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 :
-								정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
-								src="" alt="">
-							</span>
-						</div>
+							<div class="introText">
 
+								<span>
+									<p class="introTextMain">
+										<strong>자연과 사람을 생각하는 회사</strong>
+									</p>
+								</span>
+								<p style="border-left: 5px solid #D2D1D1; padding-left: 1%;">
+									<strong>에제르코스메틱</strong> <strong>HEALTHY</strong> 사업은 아름다움을 넘어선
+									매혹적인 피부는 건강한 신체에서 비롯된다는 것에 기안하여<br> <strong>매혹적인
+										피부를 결정하는 다양한 요소를 몸 안에서부터 케어하는 것</strong>을 목표로 피부 근원부터 건강해지는 방법에 대해 끊임없이
+									연구하고 있습니다.<br> 신체 내적요인에 대한 관심은 매일 변하는 피부 컨디션에 따라 빠르고 효율적으로
+									대응하기 위한 가장 현명한 방법 중 하나입니다. 개인별 맞춤 티 서비스를 통해 한잔의 차로 피부 노폐물 배출 및
+									건강하고 화사한 피부톤을 위한 티브랜드 TEATOXY를 출시하였고, 세계 유일의 원천기술을 통해 피부 노화의
+									주범인 활성산소를 효과적으로 제거해주는 단 하나의 수소수브랜드 HYBRID NANOBUBBLES H를 출시함으로써
+									차별화된 고기능 프리미엄 제품으로 고객에게 새로운 가치를 제공하고 있습니다.<br> 고객에게 가장 필요한
+									가치로 신뢰를 드려 아름다움이 깃든 건강한 생활 창조에 이바지할 것을 약속드립니다.
+								</P>
+							</div>
+						</div>
 					</div>
+
 				</div>
 			</div>
+			<%@ include file="../template/footer.jsp"%>
+
 		</div>
-
+		<div class="footerline"></div>
 	</div>
-	</div>
-	<div class="footerline"></div>
-
-	</div>
-	</div>
-
 </body>
 </html>

@@ -1,11 +1,10 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%-- 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> --%>
 <%
 	String cp = request.getContextPath();
 %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -49,151 +48,147 @@
 				<div id="visualarea">
 					<div id="realcontents">
 						<div class="realcon">
-							<div class="row">
-								<div class="col-sm-8 col-md-7 introBG">
-									<span> 특징</span>
-									<p>바이오진의 스킨케어 라인은</p>
+
+							<div class="mainText"
+								style="position: relative; padding: 5% 1% 1% 6%;">
+								<span
+									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">특징</span>
+								<div class="symbole" style="width: 60%;">
+									<dl style="padding-left: 9px; padding-top: 2%;">
+										<dd>
+											<span>바이오진의 스킨케어 라인은 </span>
+										</dd>
+									</dl>
 								</div>
-								<div class="col-sm-4 col-md-4">
-									<img class="serviceImg" src="/img/intro_coloris_main.png">
-								</div>
+
 							</div>
-							<div class="introBG row">
-								<span> 제품 </span>
-								<div class="introBGImg">
+							<div class="ciLogo" align="middle">
+								<img alt="에제를 코스메틱 CI로고" src="/img/ciEzer.png"
+									style="position: relative; right: 1%; padding-top: 7%;">
+							</div>
+
+							<div
+								style="position: relative; padding: 1% 1% 1% 6%; width: 95%;">
+
+								<span
+									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">제품</span>
+
+								<div class="row mainRow">
 									<div class="row">
-										<div class="col-sm-4 col-md-3">
+										<div class="col-md-4">
 											<div class="">
-												<img class="thumbnail introProduct"
-													src="/img/intro_ezer_main.png" data-holder-rendered="true"
-													display:block;="">
+												<img class="introProduct" src="/img/mist.jpg"
+													data-holder-rendered="true" display:block;="">
 
 												<div class="caption">
-													<h3>미스트</h3>
+													<span>미스트 </span>
 												</div>
 												<div class="detailIntro">
-													<span> </span>
-													<P></P>
-													<span></span>
-													<p></p>
+													<span> 바이오 진 에센스</span>
+													<P>제품소개 : 끈 초건조성 및 초민감성 피부를 위한 제품으로, 특허받은 한방 증숙 추출물 원액을
+														담았습니다. 민감성 피부나 피부 트러블이 심한 남녀노소 모두가 안심하고 사용할 수 있는 에센스입니다.</P>
+													<span>용량 : 1000ml</span>
+													<p>사용방법 : 아침 저녁 한방 증숙 추출물로 만든 수제비누로 세정 후, 적당량의 허브 에센스를
+														취해 트러블성 피부 전체에 부드럽게 펴 바르면서 흡수시켜줍니다. 트러블 부위가 적을 경우 화장솜 등을
+														이용하여 해당 부위에만 사용하셔도 좋습니다.</p>
+													<p>전성분 : 쑥추출물, 금은화추출물, 어성초추출물, 살구추출물, 길경추출물, 천궁추출물,
+														생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물, 박하잎추출물, 참당귀추출물, 회화나무잎추출물</p>
 
 												</div>
 											</div>
 										</div>
-										<div class="col-sm-4 col-md-3">
+										<div class="col-md-4">
 											<div class="">
-												<img class="thumbnail introProduct"
-													src="/img/intro_coloris_main.png"
+												<img class=" introProduct" src="/img/lotion.jpg"
 													data-holder-rendered="true" display:block;="">
 												<div class="caption">
-													<h3>로션</h3>
+													<span>로션</span>
 												</div>
 												<div class="detailIntro">
-													<span> 바이오셀렉스 ATO 로션 </span>
-													<P>제품소개 : 산뜻하고 촉촉한 사용감으로 피부에 부드럽게 스며들어 피부를 빠르게 진정시켜주며
-														한방증류액은 물론 동백유 및 히아루론산, 내츄럴베타인 성분의 함유로 촉촉한 피부를 오랫동안
-														유지시켜줍니다.</P>
+													<span> 바이오 진 스킨로션 </span>
+													<P>제품소개 : 한방증숙추출물과 한방증류액으로 처방된 화장수로, 바르는 순간 부드럽게 피부를 감싸
+														피부 트러블을 완화시켜주며, 각종 한방활성성분이 피부에 공급되어 피부에 활력과 건강을 선사합니다. 모든
+														피부에 사용 가능합니다.</P>
 													<span>용량 : 150ml<br>
 													</span>
-													<p>전성분 : 정제수, 글리세린, 부틸렌글라이콜, 스쿠알란, 소듐하이일루로네이트, 동백오일,
-														사이클로펜타실록산, 폴리글리세릴-3메칠글루코스디스테아레이트, 페트롤라툴, 베타인,
-														글리세릴스테아레이트에스이, 베헤닐알코올, 황기추출물, 황금추출물, 하수오추출물, 콩싹추출물,
-														캐모마일추출물, 칡추출물, 참마뿌리추출물, 지황추출물, 육계추출물, 애엽추출물, 소르비탄스테아레이트,
-														소나무추출물, 생강추출물, 비즈왁스, 병풍추출물, 모과추출물, 땅두릅추출물, 디메치콘, 더덕추출물,
-														당귀추출물, 단삼추출물, 길경추출물, 피이지-100스테아레이트, 글리세릴스테아레이트, 클로브꽃추출물,
-														자몽추출물, 유칼립투스잎추출물, 유자추출물, 고삼추출물. 향료, 페네칠알코올, 판테놀, 트리에탄올아민,
-														카프릴릴글라이콜, 카보머, 감초추출물, 잔탄검, 디소듐이디티에이, 프롤린, 트레오닌, 알지닌, 알라닌,
-														스테아릴글리시레티네이트, 소르비툴, 소듐피씨에이, 세린, 라이신, 글루타믹애시드, 글라이신</p>
+													<p>사용방법 : 아침 저녁 세안 후, 적당량의 내용물을 취해 얼굴 전체에 부드럽게 펴 바르면서
+														흡수시켜줍니다. 일반 화장수와는 달리 닦아내지않고 흡수시키는 타입입니다.</p>
+													<p>전성분 : 정제수, 서양장미꽃수, 프로필렌글라이콜, 글리세린, 지황추출물,
+														하수오뿌리줄기/뿌리추출물, 황기추출물, 황금추출물, 땅두릎추출물, 길경추출물, 더덕추출물,
+														칡꽃/잎/줄기추출물, 애엽추출물, 생강추출물, 당귀추출물, 모과추출물, 참마뿌리추출물, 감초추출물,
+														육계추출물, 단삼꽃/잎/뿌리추출물, 어성초추출물, 참당귀추출물, 쑥추출물, 천궁추출물, 회화나무잎추출물,
+														박하잎추출물, 살구추출물, 금은화추출물, 생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물,
+														메칠글루세스-20, 베타인, 트리에칠헥사노인, 효모추출물, 포투라카올레라세아추출물, 소듐피씨에이,
+														소르비톨, 알라닌, 프롤린, 세린, 트레오닌, 알기닌, 라이신, 글루타믹애시드, 트리에탄올아민, 향료,
+														피이지-40하이드로제네이티드캐스터오일, 글리세릴스테아레이트, 피이지-100스테아레이트,
+														하이드로제네이티드레시틴, 카보머, 디메치콘, 잔탄검, 디소듐이디티에이</p>
 
 												</div>
 
 											</div>
 										</div>
-								
-									<div class="col-sm-4 col-md-3">
-										<div class="">
-											<img class="thumbnail introProduct"
-												src="/img/intro_galaxia_main.png"
-												data-holder-rendered="true" display:block;="">
-											<div class="caption">
-												<h3>크림</h3>
-											</div>
-											<div class="detailIntro">
-												<span> 바이오셀렉스 ATO 크림</span>
-												<P>제품소개 : 부드러운 발림성과 빠른 흡수로 피부에 부담없이 매끄러움을 선사해 줄 뿐만 아니라
-													뛰어난 보습성분인 동백유 및 히아루론산, 천연 보습인자 성분들의 함유로 건조하고 거칠어진 피부를 촉촉하게
-													가꾸어줍니다.</P>
-												<span>용량 : 50g<br>
-												</span>
-												<p>전성분 : 정제수, 글리세린, 부틸렌글라이콜, 동백오일, 스쿠알란, 디메치콘, 사이클로메치콘,
-													폴리글리세릴-3메칠글루코오스디스테아레이트, 소듐하이알루로네이트, 콩싹추출물, 캐모마일꽃추출물, 병풀추출물,
-													페트롤라툼, 소나무껍질추출물, 베타인, 베헤닐알코올, 폴리이소부텐, 소르비탄스테아레이트,
-													글리세릴스테아레이트에스이, 비즈왁스, 자몽추출물, 유자추출물, 유칼립투스잎추출물, 클로브꽃추출물,
-													고삼추출물, 글리세릴스테아레이트, 피이지-100스테아레이트, 폴리아크릴레이트-13. 폴리소르베이트20,
-													트리에탄올아민, 카보머, 향료, 페네칠알코올, 소듐피씨에이, 소르비톨, 알라닌, 프롤린, 세린, 트레오닌,
-													알지닌, 라이신, 글루타믹애씨드, 스테아릴글리시레티네이트, 카프릴릴글라이콜, 지황추출물,
-													하수오뿌리줄기/뿌리추출물, 황기추출물, 황금추출물, 땅두릅추출물, 길경추출물, 더덕추출물,
-													칡꽃/잎/줄기추출물, 애엽추출물, 생강추출물, 당귀추출물, 모과추출물, 참마뿌리추출물, 감초추출물,
-													육계추출물, 단삼꽃/잎/뿌리추출물, 디소듐이디티에이</p>
+										<div class="col-md-4">
+											<div class="">
+												<img class=" introProduct"
+													src="/img/cream.jpg"
+													data-holder-rendered="true" display:block;="">
+												<div class="caption">
+													<span>ATO크림</span>
+												</div>
+												<div class="detailIntro">
+													<span> 바이오셀렉스 ACN 폼클렌저 </span>
+													<P>제품소개 : 피부의 번들거림을 방지하고 피지 분비의 균형을 잡아주어 깔끔한 피부로 유지시켜주며
+														천연보습인자와 히아루론산, 비타민 및 보습효과에 탁월한 성분들이 항상 촉촉한 피부로 유지시켜줍니다.</P>
+													<span>용량 : 150ml<br>
+													</span>
+													<p>전성분 : 정제수, 글리세린, 포타슘하이드록사이드, 미리스틱애씨드, 팔미틱애씨드,
+														스테아릭애씨드, 라우릭애씨드, 코카미도프로필베타인, 프로필렌글라이콜, 피이지-100스테아레이트,
+														글리세릴스테아레이트, 콩싹추출물, 비즈왁스, 부틸렌글라이콜, 목련나무껍질추출물, 황기추출물, 황금추출물,
+														향료, 하수오뿌리줄기/뿌리추출물, 칡꽃/잎/줄기추출물, 참마뿌리추출물, 지황추출물, 육계추출물,
+														애엽추출물, 소나무추출물, 생강추출물, 모과추출물, 땅두릅추출물, 더덕추출물, 당귀추출물,
+														단삼꽃/잎/뿌리추출물, 길경추출물, 감초추출물, 클로브꽃추출물, 자몽추출물, 셀룰로오스, 페네칠알코올,
+														카프릴릴글라이콜, 디소듐이디티에이</p>
 
+												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-sm-4 col-md-3">
-										<div class="">
-											<img class="thumbnail introProduct"
-												src="/img/intro_galaxia_main.png"
-												data-holder-rendered="true" display:block;="">
-											<div class="caption">
-												<h3>바디클렌저</h3>
-											</div>
-											<div class="detailIntro">
-												<span> 바이오셀렉스 ACN 폼클렌저 </span>
-												<P>제품소개 : 피부의 번들거림을 방지하고 피지 분비의 균형을 잡아주어 깔끔한 피부로 유지시켜주며
-													천연보습인자와 히아루론산, 비타민 및 보습효과에 탁월한 성분들이 항상 촉촉한 피부로 유지시켜줍니다.</P>
-												<span>용량 : 150ml<br>
-												</span>
-												<p>전성분 : 정제수, 글리세린, 포타슘하이드록사이드, 미리스틱애씨드, 팔미틱애씨드,
-													스테아릭애씨드, 라우릭애씨드, 코카미도프로필베타인, 프로필렌글라이콜, 피이지-100스테아레이트,
-													글리세릴스테아레이트, 콩싹추출물, 비즈왁스, 부틸렌글라이콜, 목련나무껍질추출물, 황기추출물, 황금추출물,
-													향료, 하수오뿌리줄기/뿌리추출물, 칡꽃/잎/줄기추출물, 참마뿌리추출물, 지황추출물, 육계추출물,
-													애엽추출물, 소나무추출물, 생강추출물, 모과추출물, 땅두릅추출물, 더덕추출물, 당귀추출물,
-													단삼꽃/잎/뿌리추출물, 길경추출물, 감초추출물, 클로브꽃추출물, 자몽추출물, 셀룰로오스, 페네칠알코올,
-													카프릴릴글라이콜, 디소듐이디티에이</p>
+									<div class="row subRow">
+										<div class="col-md-4">
+											<div class="">
+												<img class="introProduct" src="/img/bodycleanger.jpg"
+													data-holder-rendered="true" display:block;="">
 
+												<div class="caption">
+													<span>바디클렌저</span>
+												</div>
+												<div class="detailIntro">
+													<span> 바이오 진 에센스</span>
+													<P>제품소개 : 끈 초건조성 및 초민감성 피부를 위한 제품으로, 특허받은 한방 증숙 추출물 원액을
+														담았습니다. 민감성 피부나 피부 트러블이 심한 남녀노소 모두가 안심하고 사용할 수 있는 에센스입니다.</P>
+													<span>용량 : 1000ml</span>
+													<p>사용방법 : 아침 저녁 한방 증숙 추출물로 만든 수제비누로 세정 후, 적당량의 허브 에센스를
+														취해 트러블성 피부 전체에 부드럽게 펴 바르면서 흡수시켜줍니다. 트러블 부위가 적을 경우 화장솜 등을
+														이용하여 해당 부위에만 사용하셔도 좋습니다.</p>
+													<p>전성분 : 쑥추출물, 금은화추출물, 어성초추출물, 살구추출물, 길경추출물, 천궁추출물,
+														생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물, 박하잎추출물, 참당귀추출물, 회화나무잎추출물</p>
+
+												</div>
 											</div>
 										</div>
 									</div>
-
 								</div>
 							</div>
-						</div>
-					</div>
-					<%@ include file="../template/footer.jsp"%>
-				</div>
-				<div id="footer">
-					<div class="footer mobileVary">
-						<div></div>
-						<div class="copyright center">
-							<span style="position: relative; right: 12%;"> ©E-ZER
-								COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-								style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 :
-								정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
-								src="" alt="">
-							</span>
-						</div>
 
+						</div>
 					</div>
+
 				</div>
 			</div>
+			<%@ include file="../template/footer.jsp"%>
+
 		</div>
-
+		<div class="footerline"></div>
 	</div>
-	</div>
-	<div class="footerline"></div>
-
-	</div>
-	</div>
-
 </body>
 </html>

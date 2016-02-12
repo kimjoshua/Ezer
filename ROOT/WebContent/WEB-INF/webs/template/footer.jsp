@@ -3,12 +3,14 @@
 
 <!-- go to top -->
 <div id="gototop">
-	<a href="" onclick=""><span>맨 위로 가기</span></a>
+	<a href="#"><img alt="top" src="/img/top.png" style="height: 70%;"><span>맨
+			위로 가기</span></a>
 </div>
 <!-- end of go to top -->
-<!-- Bottom Quick Menu -->
+
 <!-- <div id="quicknav"> -->
-<div class="row" id="quicknav">
+<div class="row" id="quicknav"
+	style="width: 100%; position: relative; left: 1%;">
 	<div class="col-md-10">
 		<ul class="footernav ">
 			<li>
@@ -58,7 +60,7 @@
 						<a href="/serviceB">사업분야</a>
 						<ul>
 							<li><a href="/serviceB">BEAUTY</a></li>
-							<li><a href="/serviceH">HEALTH</a></li>
+							<li><a href="/serviceH">HEALTHY</a></li>
 						</ul>
 					</dd>
 					<dd>
@@ -103,7 +105,7 @@
 						</ul>
 					</dd>
 					<dd>
-						<a href="/bioatox">BIOSELEMIX</a>
+						<a href="/bioato">BIOSELEX</a>
 						<ul>
 							<li><a href="/bioato">ATO</a></li>
 							<li><a href="/bioacn">ACN</a></li>
@@ -112,15 +114,15 @@
 					<dd>
 						<a href="/cygneBright">CYGNE</a>
 						<ul>
-							<li><a href="/cygneBright">cygneBright</a></li>
-							<li><a href="/cygneWrink">cygneWrink</a></li>
+							<li><a href="/cygneBright">WHITE BRIGHTENING</a></li>
+							<li><a href="/cygneWrink">WRINKLE ELIMINATION</a></li>
 						</ul>
 					</dd>
 					<dd>
 						<a href="/seven">SEVEN ENOUGH</a>
 					</dd>
 					<dd>
-						<a href="/amp">AMPOULE</a>
+						<a href="/amp">SOLUTION 100</a>
 					</dd>
 				</dl>
 			</li>
@@ -148,9 +150,6 @@
 						<a href="/notice" onclick="">NOTICE</a>
 					</dd>
 					<dd>
-						<a href="faq" onclick="">FAQ</a>
-					</dd>
-					<dd>
 						<a href="/qa" onclick="">Q &amp; A</a>
 					</dd>
 
@@ -168,9 +167,17 @@
 					<a href="/costom" class="blt-balloon fcLblack" onclick=""><strong>소비자
 							상담실</strong></a>
 				</dd> -->
+				<dd class="desktop" style="padding-left: 16%; width: 127px;">
+					<a href="/toroad" class="blt-balloon fcLblack"> <span
+						class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+
+
+						찾아오시는 길
+					</a>
+				</dd>
 				<dd class="desktop" style="padding-left: 16%; width: 100px;">
-					<a href="/toroad" class="blt-balloon fcLblack"><strong>찾아오시는
-							길</strong></a>
+					<a href="javascript:void(0)"
+						class="blt-balloon fcLblack noticeSiete">FAMILY SITE</a>
 				</dd> <!-- 	<dd class="desktop">
 					<a href="/change" class="blt-balloon fcLblack"><strong>교환 및 환불 규정</strong></a>
 				</dd> -->
@@ -184,6 +191,10 @@
 				<dd class="mobile store fDepth">
 					<a href="/toroad" class="blt-balloon toggleTrigger"><strong>찾아오시는
 							길</strong></a>
+				</dd>
+				<dd class="mobile store fDepth">
+					<a href="javascript:void(0)" class="blt-balloon toggleTrigger"><strong>FAMILY
+							SITE</strong></a>
 				</dd> <!-- 	<dd class="mobile store fDepth">
 					<a href="/change" class="blt-balloon toggleTrigger"><strong>교환 및 환불 규정</strong></a>
 				</dd> -->
@@ -192,5 +203,18 @@
 
 	</div>
 </div>
+<div id="footer">
+	<div class="footer mobileVary">
+		<div></div>
+		<div class="copyright center">
+			<span style="position: relative; right: 12%;"> ©E-ZER
+				COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
+				style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 : 정경모
+				| 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
+				src="" alt="">
+			</span>
+		</div>
 
+	</div>
+</div>
 

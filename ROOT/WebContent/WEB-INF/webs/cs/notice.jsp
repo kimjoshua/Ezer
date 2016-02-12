@@ -27,7 +27,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
 	integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
 	crossorigin="anonymous"></script>
-<script src="<%=cp%>/js/ezer.js"></script>
+<%-- <script src="<%=cp%>/js/ezer.js"></script> --%>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -64,45 +64,39 @@
 										</tr>
 									</thead>
 									<tbody>
-										<c:forEach items="${result.notice}" var="notice">
+										<%-- <c:forEach items="${result.notice}" var="notice">
 											<tr>
 												<td>${notice.notice_no }</td>
 												<td><a href="/noticeDetail?noticeNo=${notice.notice_no }">${notice.notice_title }</a></td>
 											
 											</tr>
-										</c:forEach>
+										</c:forEach> --%>
 
 									</tbody>
 								</table>
 
-								</script>
 							</div>
 						</div>
-						<%@ include file="../template/footer.jsp"%>
 					</div>
-					<div id="footer">
-						<div class="footer mobileVary">
-							<div></div>
-							<div class="copyright center">
-								<span style="position: relative; right: 12%;"> ©E-ZER
-									COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-									style="left: 6%; position: relative;">© (주) 에제르코스메틱 대표 :
-									정경모 | 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
-									src="" alt="">
-								</span>
-							</div>
-
-						</div>
-					</div>
+					<%@ include file="../template/footer.jsp"%>
+					
 				</div>
 			</div>
 
 		</div>
-	</div>
-	<div class="footerline"></div>
-
-	</div>
+		<div class="footerline"></div>
 	</div>
 
+<script>
+$(function() {
+
+
+	$.get('/noticeList', function(data) {
+
+		console.log(data.noticeList)
+
+	});
+});
+</script>
 </body>
 </html>

@@ -6,13 +6,13 @@ import java.util.List;
 import org.json.JSONObject;
 import org.springframework.dao.DataAccessException;
 
-import com.ezer_g.www.dto.Dto_Ezer_Notice;
+import com.ezer_g.www.dto.Dto_Ezer;
 
 
 public interface Dao_Ezer_notice {
 
-	List<Dto_Ezer_Notice> get_Notice() throws DataAccessException;
+	List<Dto_Ezer> get_Notice() throws DataAccessException;
 
-//	HashMap<String, String> login(LtadminDt vo);
+
 
 }

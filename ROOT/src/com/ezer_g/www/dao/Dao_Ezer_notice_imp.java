@@ -10,7 +10,7 @@ import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.ezer_g.www.dto.Dto_Ezer_Notice;
+import com.ezer_g.www.dto.Dto_Ezer;
 
 public class Dao_Ezer_notice_imp extends SqlSessionDaoSupport implements Dao_Ezer_notice{
 	private JdbcTemplate jdbcTemplate;
@@ -20,9 +20,9 @@ public class Dao_Ezer_notice_imp extends SqlSessionDaoSupport implements Dao_Eze
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 	@Override
-	public List <Dto_Ezer_Notice>get_Notice() throws DataAccessException {
+	public List <Dto_Ezer>get_Notice() throws DataAccessException {
 		SqlSession ss = getSqlSession();
-		List <Dto_Ezer_Notice> list=null;
+		List <Dto_Ezer> list=null;
 		
 		list =ss.selectList("notice_LIst");
 		return list;

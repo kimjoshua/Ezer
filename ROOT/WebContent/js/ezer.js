@@ -1,5 +1,8 @@
 $(function() {
 
+	$('.noticeSiete').click(function() {
+		alert("해당 사이트는 준비 중입니다. ");
+	});
 	var className = "";
 
 	var data = {
@@ -55,10 +58,6 @@ $(function() {
 		$('.' + classN).css("display", "none")
 	})
 
-	$.get('/noticeList', function(data) {
 
-		console.log(data.noticeList)
-
-	});
 
 });
