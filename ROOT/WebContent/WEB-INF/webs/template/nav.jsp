@@ -29,7 +29,7 @@
 			<div class="desktop">
 				<ul class="utility">
 					<li class="text"><a href="/toroad">오시는길</a></li>
-					<li class="desktop bar"><a href="/notice">공지사항</a></li>
+					<li class="desktop bar text"><a href="/notice">공지사항</a></li>
 				</ul>
 
 			</div>
@@ -44,7 +44,7 @@
 
 		<div class="nav desktop" style="position: relative; left: 19%;">
 			<ul>
-				<li><a href="#">COMPANY <span class="caret"></span></a>
+				<li><a href="#">회사 <span class="caret"></span></a>
 					<ul class="dropdown">
 						<li><a href="/introMain" onclick="">회사소개</a></li>
 						<li><a href="/serviceB">사업분야</a></li>
@@ -52,7 +52,7 @@
 						<li><a href="/history">연혁</a></li>
 						<li><a href="/symbole">CI / BI</a></li>
 					</ul></li>
-				<li><a href="#">BRAND <span class="caret"></span></a>
+				<li><a href="#">브랜드 <span class="caret"></span></a>
 					<ul class="dropdown">
 						<li><a href="javascript:void(0)">COLOR EZ</a></li>
 						<li><a href="javascript:void(0)">GALAXIA</a></li>
@@ -60,25 +60,27 @@
 						<li><a href="javascript:void(0)">HYBRID NANO</a></li>
 						<li><a href="javascript:void(0)">MARGOT</a></li>
 					</ul></li>
-				<li><a href="#">PRODUCT<span class="caret"></span></a>
+				<li><a href="#">상품<span class="caret"></span></a>
 					<ul class="dropdown">
 						<li><a href="/bioskin">SKIN CARE </a></li>
 						<li><a href="/biocare">HAIR CARE</a></li>
 						<li><a href="/bioato">ATO</a></li>
 						<li><a href="/bioacn">ACN</a></li>
-						<li><a href="/cygneBright">WHITE BRIGHTENING</a></li>
-						<li><a href="/cygneWrink">WRINKLE ELIMINATION</a></li>
+						<li><a href="cygneBright">WHITE BRIGHTENING </a></li>
+						<li><a href="/biocare">HAIR CARE</a></li>
+					<!-- 	<li><a href="/cygneBright">WHITE BRIGHTENING</a></li>
+						<li><a href="/cygneWrink">WRINKLE ELIMINATION</a></li> -->
 						<li><a href="/seven">SEVEN ENOUGH</a></li>
 						<li><a href="/amp">SOLUTION 100</a></li>
 					</ul></li>
-				<li><a href="#">NES &amp; EVENT <span class="caret"></span></a>
+				<li><a href="#">뉴스 &amp; 이벤트 <span class="caret"></span></a>
 					<ul class="dropdown">
 						<li><a href="/ad">AD</a></li>
 						<li><a href="/news">NEWS</a></li>
 						<li><a href="/media">MEDIA</a></li>
 						<li><a href="/event">EVENT</a></li>
 					</ul></li>
-				<li><a href="#">CS CENTER<span class="caret"></span></a>
+				<li><a href="#">고객 센터<span class="caret"></span></a>
 					<ul class="dropdown">
 						<li><a href="/notice" onclick="">NOTICE</a></li>
 						<li><a href="/qa" onclick="">Q &amp; A</a></li>
@@ -92,7 +94,7 @@
 				<ul class="nav navbar-nav">
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false">COMPANY <span class="caret"></span></a>
+						aria-expanded="false">회사 <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="/introMain" onclick="">회사소개</a></li>
 							<li><a href="/serviceB">사업분야</a></li>
@@ -102,7 +104,7 @@
 						</ul></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false">BRAND <span class="caret"></span></a>
+						aria-expanded="false">브랜드 <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="javascript:void(0)">COLOR EZ</a></li>
 							<li><a href="javascript:void(0)">GALAXIA</a></li>
@@ -112,7 +114,7 @@
 						</ul></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false">PRODUCT <span class="caret"></span></a>
+						aria-expanded="false">제품 <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="/bioskin">SKIN CARE </a></li>
 							<li><a href="/biocare">HAIR CARE</a></li>
@@ -125,7 +127,7 @@
 						</ul></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false">NES &amp; EVENT <span class="caret"></span></a>
+						aria-expanded="false">뉴스&amp;이벤트 <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="/ad">AD</a></li>
 							<li><a href="/news">NEWS</a></li>
@@ -134,7 +136,7 @@
 						</ul></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false">CS CENTER <span class="caret"></span></a>
+						aria-expanded="false">고객센터 <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="/notice" onclick="">NOTICE</a></li>
 							<li><a href="/qa" onclick="">Q &amp; A</a></li>
@@ -151,7 +153,7 @@
 			<a href="javascript:void(0))" id="btn2depth" class="hover">회사소개<span
 				class="">메뉴 목록 닫기</span></a>
 
-			<ul style="display: none;">
+			<ul >
 
 				<li class="hover"><a href="/ezerCos" class="dep01" onclick="">에제르코스테틱</a>
 					<ul class="dep2" style="left: 200px; top: 5px; display: block;">

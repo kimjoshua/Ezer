@@ -14,13 +14,13 @@
 <title>Color Ez - 컬러테라피 아카데미 스</title>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans'
 	rel='stylesheet' type='text/css'>
-<link href="/css/ezer.css" rel="stylesheet">
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
 	crossorigin="anonymous">
 <!-- Custom CSS -->
+<link href="/css/ezer.css" rel="stylesheet">
 <!-- Fonts -->
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script

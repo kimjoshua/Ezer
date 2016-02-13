@@ -32,7 +32,7 @@
 			<div class="desktop">
 				<ul class="utility">
 					<li class="text"><a href="/toroad">오시는길</a></li>
-					<li class="desktop bar"><a href="/notice">공지사항</a></li>
+					<li class="desktop bar text"><a href="/notice">공지사항</a></li>
 				</ul>
 
 			</div>

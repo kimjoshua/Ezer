@@ -74,14 +74,14 @@
 									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">제품</span>
 
 								<div class="row mainRow">
-									<div class="row">
+									<div class="row"style="width: 98%;">
 										<div class="col-md-4">
 											<div class="">
-												<img class="introProduct" src="/img/mist.jpg"
+												<img class="introProduct" src="/img/bodycleanger.jpg"
 													data-holder-rendered="true" display:block;="">
 
 												<div class="caption">
-													<span>미스트 </span>
+													<span>바디클렌저</span>
 												</div>
 												<div class="detailIntro">
 													<span> 바이오 진 에센스</span>
@@ -153,14 +153,14 @@
 											</div>
 										</div>
 									</div>
-									<div class="row subRow">
-										<div class="col-md-4">
+									<div class="row subRow"style="width: 98%;">
+									<div class="col-md-4">
 											<div class="">
-												<img class="introProduct" src="/img/bodycleanger.jpg"
+												<img class="introProduct" src="/img/mist.jpg"
 													data-holder-rendered="true" display:block;="">
 
 												<div class="caption">
-													<span>바디클렌저</span>
+													<span>미스트 </span>
 												</div>
 												<div class="detailIntro">
 													<span> 바이오 진 에센스</span>
@@ -176,6 +176,7 @@
 												</div>
 											</div>
 										</div>
+										
 									</div>
 								</div>
 							</div>

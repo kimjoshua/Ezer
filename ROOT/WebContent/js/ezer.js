@@ -18,17 +18,28 @@ $(function() {
 		this.src = '/img/' + className + '_main.png';
 
 	}).on('click', function(e) {
+		
+		$('.col-md-4').removeClass("rowLine")
+		
+		$('.bgc').css('background-color','#E0DFDF');
+		$(this).parent().parent().addClass("rowLine")
 		var toggleImg = $(this).attr('class');
-		console.log("toggleImg " + " :" + toggleImg)
+
 
 		if (data.toggle1 != null) {
 			var a2 = data.toggle2 = toggleImg;
 		}
-		console.log(className + " : " + toggleImg);
+	
 		$("." + className + "_detail").show();
-
+	
 		if (data.toggle1 != a2) {
 			$(".detail").hide();
+			
+		}else{
+			
+			console.log
+			$('.bgc').css('background-color','white');
+						
 		}
 
 		$("." + a2 + "_detail").toggle('slow');

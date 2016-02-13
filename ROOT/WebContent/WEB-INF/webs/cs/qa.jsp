@@ -6,6 +6,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -88,19 +89,20 @@
 										</tr>
 										<tr>
 											<td>제목</td>
-											<td class="heightTd"><input type="text" name="title"
-												size="100"></td>
+											<td class="heightTd" colspan="6"><input type="text" name="title" style="
+    position: relative;
+    width: 93%;
+"></td>
 										</tr>
 
 										<tr>
 											<td>내용</td>
 											<td colspan="6" class="heightTd"><span> * 글자수는 최대
-													400000 Byte까지 등록 가능합니다</span><span class="remaining"
-												style="padding-left: 38%;"> <span class="count">0</span>/<span
+													400000 Byte까지 등록 가능합니다</span>
+													<span class="remaining"	style="padding-left: 38%;"></span><span class="count">0</span>/<span
 													class="maxcount">400000</span>byte
 													<div>
-														<textarea rows="20" cols="99" class="contents"
-															name="contents"></textarea>
+														<textarea name="contents" class="contents" style="width: 93%; height: 300px;" rows="2" cols="20"></textarea></textarea>
 													</div></td>
 										</tr>
 

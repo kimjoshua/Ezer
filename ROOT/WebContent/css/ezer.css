@@ -9,11 +9,34 @@ body {
     color: #333;
     background-color: #fff;
 }
+
+.utility li.text a {
+	font-size: 12px;
+}
 html {
 	font-family: 'Arial', verdana, sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%
 }
+.footer .copyright span {
+    display: inline-block;
+    height: 12px;
+    color: #BDBDBD;
+}
+.footer {
+	height: 37px;
+	position: relative;
+	border-top: 1px #e2e2e2 solid;
+	font-size: 11px;
+	text-align: center;
+}
+.footer .copyright {
+	position: relative;
+	left: 0;
+	top: 15px;
+	
+}
+
 a {
 	text-decoration: none;
 	color: #808080!important;
@@ -36,7 +59,32 @@ a {
         text-decoration: none;
     }
     .dropdown li a{
-        width: 200%;
+    width: 229%;
+    position: inherit;
+    right: 33px;
+
+    }
+    .rowLine{
+    background-color:white;
+    }
+    .col-lg-5{
+     z-index: 100;
+    }
+    @media (min-width: 1200px){
+    .coverText{
+    top: 28%;
+    position: absolute;
+    padding-left: 7%;
+ 
+    }
+    }
+    .cover{
+      position: relative;
+    width: 1000px;
+    height: 247px;
+    left: 37%;
+    background-color: white; 
+       z-index: 1;
     }
     .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
     color: #262626;
@@ -53,10 +101,12 @@ a {
         display: none;
         position: absolute;
         z-index: 999;
-        left: 0;
+        left: 19%;
     }
     .nav ul li:hover ul.dropdown{
-        display: block;	/* Display the dropdown */
+           display: block;
+    background-color: gainsboro;
+    height: 268px;
     }
     .nav ul li ul.dropdown li{
         display: block;
@@ -159,7 +209,7 @@ a {
 }
 
 .categText {
-	width: 7%;
+
 	padding-bottom: 2%;
 	padding-top: 2%;
 }
@@ -2068,9 +2118,7 @@ h3.lineBottomBlack {
 	vertical-align: middle;
 }
 
-.utility li.text a {
-	font-size: 12px;
-	font-size: 1.2rem;
+font-size: 1.2rem;
 }
 
 .srcBox {
@@ -3459,25 +3507,9 @@ nav a ul li:hover ul.fallback {
 
 
 
-.footer {
-	height: 37px;
-	position: relative;
-	border-top: 1px #e2e2e2 solid;
-	font-size: 11px;
-	text-align: center;
-}
 
-.footer .copyright {
-	position: relative;
-	left: 0;
-	top: 15px;
-	padding-left: 35px;
-}
 
-.footer .copyright span {
-	display: inline-block;
-	height: 12px;
-}
+
 
 .footer .familysite {
 	position: absolute;

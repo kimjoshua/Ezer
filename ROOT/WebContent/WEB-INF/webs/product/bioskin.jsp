@@ -74,29 +74,8 @@
 									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">제품</span>
 
 								<div class="row mainRow">
-									<div class="row">
-										<div class="col-md-4">
-											<div class="">
-												<img class="introProduct" src="/img/biowetti.jpg"
-													data-holder-rendered="true" display:block;="">
-
-												<div class="caption">
-													<span>바이오진 물티슈</span>
-												</div>
-												<div class="detailIntro">
-													<span> 바이오 진 에센스</span>
-													<P>제품소개 : 끈 초건조성 및 초민감성 피부를 위한 제품으로, 특허받은 한방 증숙 추출물 원액을
-														담았습니다. 민감성 피부나 피부 트러블이 심한 남녀노소 모두가 안심하고 사용할 수 있는 에센스입니다.</P>
-													<span>용량 : 1000ml</span>
-													<p>사용방법 : 아침 저녁 한방 증숙 추출물로 만든 수제비누로 세정 후, 적당량의 허브 에센스를
-														취해 트러블성 피부 전체에 부드럽게 펴 바르면서 흡수시켜줍니다. 트러블 부위가 적을 경우 화장솜 등을
-														이용하여 해당 부위에만 사용하셔도 좋습니다.</p>
-													<p>전성분 : 쑥추출물, 금은화추출물, 어성초추출물, 살구추출물, 길경추출물, 천궁추출물,
-														생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물, 박하잎추출물, 참당귀추출물, 회화나무잎추출물</p>
-
-												</div>
-											</div>
-										</div>
+									<div class="row"style="width: 98%;">
+										
 										<div class="col-md-4">
 											<div class="">
 												<img class=" introProduct" src="/img/biogskin.jpg"
@@ -129,6 +108,28 @@
 										</div>
 										<div class="col-md-4">
 											<div class="">
+												<img class="introProduct" src="/img/bioem.jpg"
+													data-holder-rendered="true" display:block;="">
+
+												<div class="caption">
+													<span>바이오진 에멀전</span>
+												</div>
+												<div class="detailIntro">
+													<span> 바이오 진 에센스</span>
+													<P>제품소개 : 끈 초건조성 및 초민감성 피부를 위한 제품으로, 특허받은 한방 증숙 추출물 원액을
+														담았습니다. 민감성 피부나 피부 트러블이 심한 남녀노소 모두가 안심하고 사용할 수 있는 에센스입니다.</P>
+													<span>용량 : 1000ml</span>
+													<p>사용방법 : 아침 저녁 한방 증숙 추출물로 만든 수제비누로 세정 후, 적당량의 허브 에센스를
+														취해 트러블성 피부 전체에 부드럽게 펴 바르면서 흡수시켜줍니다. 트러블 부위가 적을 경우 화장솜 등을
+														이용하여 해당 부위에만 사용하셔도 좋습니다.</p>
+													<p>전성분 : 쑥추출물, 금은화추출물, 어성초추출물, 살구추출물, 길경추출물, 천궁추출물,
+														생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물, 박하잎추출물, 참당귀추출물, 회화나무잎추출물</p>
+
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="">
 												<img class=" introProduct"
 													src="/img/biomist.jpg"
 													data-holder-rendered="true" display:block;="">
@@ -153,29 +154,8 @@
 											</div>
 										</div>
 									</div>
-									<div class="row subRow">
-										<div class="col-md-4">
-											<div class="">
-												<img class="introProduct" src="/img/bioem.jpg"
-													data-holder-rendered="true" display:block;="">
-
-												<div class="caption">
-													<span>바이오진 에멀전</span>
-												</div>
-												<div class="detailIntro">
-													<span> 바이오 진 에센스</span>
-													<P>제품소개 : 끈 초건조성 및 초민감성 피부를 위한 제품으로, 특허받은 한방 증숙 추출물 원액을
-														담았습니다. 민감성 피부나 피부 트러블이 심한 남녀노소 모두가 안심하고 사용할 수 있는 에센스입니다.</P>
-													<span>용량 : 1000ml</span>
-													<p>사용방법 : 아침 저녁 한방 증숙 추출물로 만든 수제비누로 세정 후, 적당량의 허브 에센스를
-														취해 트러블성 피부 전체에 부드럽게 펴 바르면서 흡수시켜줍니다. 트러블 부위가 적을 경우 화장솜 등을
-														이용하여 해당 부위에만 사용하셔도 좋습니다.</p>
-													<p>전성분 : 쑥추출물, 금은화추출물, 어성초추출물, 살구추출물, 길경추출물, 천궁추출물,
-														생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물, 박하잎추출물, 참당귀추출물, 회화나무잎추출물</p>
-
-												</div>
-											</div>
-										</div>
+									<div class="row subRow"style="width: 98%;">
+										
 										<div class="col-md-4">
 											<div class="">
 												<img class="introProduct" src="/img/bioscream.jpg"
@@ -204,6 +184,28 @@
 
 												</div>
 
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="">
+												<img class="introProduct" src="/img/biowetti.jpg"
+													data-holder-rendered="true" display:block;="">
+
+												<div class="caption">
+													<span>바이오진 물티슈</span>
+												</div>
+												<div class="detailIntro">
+													<span> 바이오 진 에센스</span>
+													<P>제품소개 : 끈 초건조성 및 초민감성 피부를 위한 제품으로, 특허받은 한방 증숙 추출물 원액을
+														담았습니다. 민감성 피부나 피부 트러블이 심한 남녀노소 모두가 안심하고 사용할 수 있는 에센스입니다.</P>
+													<span>용량 : 1000ml</span>
+													<p>사용방법 : 아침 저녁 한방 증숙 추출물로 만든 수제비누로 세정 후, 적당량의 허브 에센스를
+														취해 트러블성 피부 전체에 부드럽게 펴 바르면서 흡수시켜줍니다. 트러블 부위가 적을 경우 화장솜 등을
+														이용하여 해당 부위에만 사용하셔도 좋습니다.</p>
+													<p>전성분 : 쑥추출물, 금은화추출물, 어성초추출물, 살구추출물, 길경추출물, 천궁추출물,
+														생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물, 박하잎추출물, 참당귀추출물, 회화나무잎추출물</p>
+
+												</div>
 											</div>
 										</div>
 									</div>

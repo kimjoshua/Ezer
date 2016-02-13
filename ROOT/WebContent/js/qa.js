@@ -30,7 +30,7 @@ $(function () {
                 }
             }
             // 사용자가 입력한 값이 제한 값을 초과하는지를 검사한다.
-            if (parseInt(cbyte) > parseInt(maximumByte)) {
+            if (parseInt(cbyte) > parseInt(400000)) {
                 alert('허용된 글자수가 초과되었습니다.\r\n\n초과된 부분은 자동으로 삭제됩니다.');
                 var str = $input.val();
                 var str2 = $input.val().substr(0, li_len);

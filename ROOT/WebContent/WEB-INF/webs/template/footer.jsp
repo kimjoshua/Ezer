@@ -191,7 +191,7 @@
 							길</strong></a>
 				</dd>
 				<dd class="mobile store fDepth">
-					<a href="javascript:void(0)" class="blt-balloon toggleTrigger"><strong>  <span class="glyphicon glyphicon-heart" aria-hidden="true"> 패밀리 사이트</strong></a>
+					<a href="javascript:void(0)" class="blt-balloon toggleTrigger"><strong>  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 패밀리 사이트</strong></a>
 				</dd> <!-- 	<dd class="mobile store fDepth">
 					<a href="/change" class="blt-balloon toggleTrigger"><strong>교환 및 환불 규정</strong></a>
 				</dd> -->
@@ -204,9 +204,9 @@
 	<div class="footer mobileVary">
 		<div></div>
 		<div class="copyright center">
-			<span style="position: relative; right: 12%;"> ©E-ZER
+			<span style="position: relative;right: 122px;">©E-ZER
 				COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-				style="left: 10%; position: relative;">(주) 에제르코스메틱 대표 : 정경모
+				style="left: 13%; position: relative;">(주) 에제르코스메틱 대표 : 정경모
 				| 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
 				src="" alt="">
 			</span>

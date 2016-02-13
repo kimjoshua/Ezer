@@ -48,32 +48,34 @@
 				<div id="visualarea">
 					<div id="realcontents">
 						<div class="realcon">
-							<div id="pagetitle">
-								<div class="row">
-									<div class="col-sm-8 col-md-7 introBG">
-										<span> 소비자 상담실</span>
-									</div>
-								</div>
+							<div class="mainText"
+								style="position: relative; padding: 5% 1% 1% 6%;">
+								<span
+									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">소비자 상담실</span>
+
 							</div>
-							<div class="newsTable">
-								<table>
-									<thead style="border-top: 0.2em solid grey;">
-										<tr style="text-align: center;">
-											<th style="text-align: center; width: 20%;">등록</th>
-											<th style="text-align: center">제목</th>
-										</tr>
-									</thead>
-									<tbody>
+							<div class="introText">
+								<div class="newsTable">
+									<table>
+										<thead style="border-top: 0.2em solid grey;">
+											<tr style="text-align: center;">
+												<th style="text-align: center; width: 20%;">등록</th>
+												<th style="text-align: center">제목</th>
+											</tr>
+										</thead>
+										<tbody>
 
-									</tbody>
-								</table>
-
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 			<%@ include file="../template/footer.jsp"%>
+
 		</div>
 		<div class="footerline"></div>
 	</div>
@@ -87,6 +89,6 @@
 
 			});
 		});
-	</script>
-</body>
-</html>
+		</body>
+		</html>
+	

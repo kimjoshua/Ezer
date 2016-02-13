@@ -74,7 +74,7 @@
 									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">제품</span>
 
 								<div class="row mainRow">
-									<div class="row ">
+									<div class="row "style="width: 98%;">
 										<div class="col-md-4">
 											<div class="">
 												<img class="introProduct" src="/img/shamp.jpg"
