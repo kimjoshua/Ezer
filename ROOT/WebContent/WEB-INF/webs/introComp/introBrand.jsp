@@ -58,7 +58,7 @@
 												<img class="intro_ezer" src="/img/intro_ezer_main.png"
 													data-holder-rendered="true" display:block;="">
 											</div>
-											<div class="row detail_row">
+											<div class="row detail_row" style="top: 15px; position: relative;">
 												<div class="intro_ezer_detail detail tale"
 													style="display: none;">
 													<div class="col-lg-5">
@@ -83,7 +83,7 @@
 												<img class="intro_coloris" src="/img/intro_coloris_main.png"
 													data-holder-rendered="true" display:block;="">
 											</div>
-											<div class="row detail_row">
+											<div class="row detail_row"style="top: 15px; position: relative;">
 												<div class="intro_coloris_detail detail tale2"
 													style="display: none;">
 													<div class="col-lg-5">
@@ -107,7 +107,7 @@
 												<img class="intro_galaxia" src="/img/intro_galaxia_main.png"
 													data-holder-rendered="true" display:block;="">
 											</div>
-											<div class="row detail_row">
+											<div class="row detail_row" style="top: 15px; position: relative;">
 												<div class="intro_galaxia_detail detail tale3"
 													style="display: none;">
 													<div class="col-lg-5">
@@ -133,7 +133,7 @@
 													data-holder-rendered="true" display:block;="">
 
 											</div>
-											<div class="row detail_row">
+											<div class="row detail_row"style="top: 15px; position: relative;">
 												<div class="intro_margot_detail detail tale"
 													style="display: none;">
 													<div class="col-lg-4">
@@ -157,7 +157,7 @@
 													src="/img/intro_nanobuble_main.png"
 													data-holder-rendered="true" display:block;="">
 											</div>
-											<div class="row detail_row">
+											<div class="row detail_row" style="top: 15px; position: relative;">
 												<div class="intro_nanobuble_detail detail tale2"
 													style="display: none;">
 													<div class="col-lg-4">
@@ -181,7 +181,7 @@
 												<img class="intro_teatoxy" src="/img/intro_teatoxy_main.png"
 													data-holder-rendered="true" display:block;="">
 											</div>
-											<div class="row detail_row">
+											<div class="row detail_row" style="top: 15px; position: relative;">
 												<div class="intro_teatoxy_detail detail tale3"
 													style="display: none;">
 													<div class="col-lg-5">

@@ -3,25 +3,34 @@
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
 
 body {
- font-family: 'Arial', verdana, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #fff;
+	font-family: 'Arial', verdana, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
 }
 
 .utility li.text a {
 	font-size: 12px;
 }
+
 html {
 	font-family: 'Arial', verdana, sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%
 }
+
 .footer .copyright span {
-    display: inline-block;
-    height: 12px;
-    color: #BDBDBD;
+	display: inline-block;
+	height: 12px;
+	color: #BDBDBD;
+}
+
+.col-lg-5 > img {
+	position: relative;
+	left: 29%;
+}
+
 }
 .footer {
 	height: 37px;
@@ -30,87 +39,96 @@ html {
 	font-size: 11px;
 	text-align: center;
 }
+
 .footer .copyright {
 	position: relative;
 	left: 0;
 	top: 15px;
-	
 }
 
 a {
 	text-decoration: none;
-	color: #808080!important;
+	color: #808080 !important;
 }
- .nav ul{
-        padding: 0;
-        list-style: none;
-  
-    }
-    .nav ul li{
-        display: inline-block;
-        position: relative;
-        line-height: 12px;
-        text-align: left;
-    }
-   .nav  ul li a{
-        display: block;
-        padding: 8px 25px;
-        color: #333;
-        text-decoration: none;
-    }
-    .dropdown li a{
-    width: 229%;
-    position: inherit;
-    right: 33px;
 
-    }
-    .rowLine{
-    background-color:white;
-    }
-    .col-lg-5{
-     z-index: 100;
-    }
-    @media (min-width: 1200px){
-    .coverText{
+.nav ul {
+	padding: 0;
+	list-style: none;
+}
+
+.nav ul li {
+	display: inline-block;
+	position: relative;
+	line-height: 12px;
+	text-align: left;
+}
+
+.nav  ul li a {
+	display: block;
+	padding: 8px 25px;
+	color: #333;
+	text-decoration: none;
+}
+
+.dropdown li a {
+	width: 229%;
+	position: inherit;
+	right: 33px;
+}
+
+.rowLine {
+	background-color: white;
+}
+
+.col-lg-5 {
+	z-index: 100;
+}
+
+@media ( min-width : 1200px) {
+	.coverText {
     top: 28%;
     position: absolute;
-    padding-left: 7%;
- 
-    }
-    }
-    .cover{
-      position: relative;
-    width: 1000px;
-    height: 247px;
-    left: 37%;
-    background-color: white; 
-       z-index: 1;
-    }
-    .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-    color: #262626;
-    text-decoration: none;
-    background-color: transparent; 
+    padding-left: 42%;
+	}
 }
-   .nav  ul li a:hover{
-        color: #fff;
-        text-decoration: underline;
-    }
-   .nav  ul li ul.dropdown{
-        min-width: 125px; /* Set width of the dropdown */
 
-        display: none;
-        position: absolute;
-        z-index: 999;
-        left: 19%;
-    }
-    .nav ul li:hover ul.dropdown{
-           display: block;
-    background-color: gainsboro;
-    height: 268px;
-    }
-    .nav ul li ul.dropdown li{
-        display: block;
-    }
+.cover {
+position: absolute;
+    width: 137%;
+    height: 247px;
+    background-color: white;
+    z-index: 1;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	color: #262626;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.nav  ul li a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.nav  ul li ul.dropdown {
+	min-width: 125px; /* Set width of the dropdown */
+	display: none;
+	position: absolute;
+	z-index: 999;
+	left: 19%;
+}
+
+.nav ul li:hover ul.dropdown {
+	display: block;
+	background-color: gainsboro;
+	height: 268px;
+}
+
+.nav ul li ul.dropdown li {
+	display: block;
+}
+
 #serch {
 	border-top: 0;
 	border-left: 0;
@@ -132,11 +150,12 @@ a {
 	height: 16px;
 	position: relative;
 }
+
 .utility li {
 	float: left;
-	
-	    padding: 0 4px 0 14px;
+	padding: 0 4px 0 14px;
 }
+
 .carousel-indicators li {
 	display: inline-block;
 	width: 10px;
@@ -149,6 +168,7 @@ a {
 	border-radius: 10px;
 	background-color: grey;
 }
+
 .quickmenu li dl {
 	margin-left: 18px;
 	margin-bottom: 11px;
@@ -209,7 +229,6 @@ a {
 }
 
 .categText {
-
 	padding-bottom: 2%;
 	padding-top: 2%;
 }
@@ -237,18 +256,21 @@ a {
 	padding-left: 3%;
 	padding-bottom: 4%
 }
-.mainRow{
-	    padding-top: 2%;
-    left: 2%;
-    position: relative;
-}
-.subRow{
-	    padding-top: 2%;
 
+.mainRow {
+	padding-top: 2%;
+	left: 2%;
+	position: relative;
 }
-.caption >span {
+
+.subRow {
+	padding-top: 2%;
+}
+
+.caption>span {
 	
 }
+
 .introText {
 	position: relative;
 	width: 93%;
@@ -301,20 +323,23 @@ a {
 ul>li {
 	float: left;
 }
-.detailIntro{
-	display:none;
-	
+
+.detailIntro {
+	display: none;
 }
-.mainRow{
-	    padding-top: 2%;
-    left: 2%;
-    position: relative;
+
+.mainRow {
+	padding-top: 2%;
+	left: 2%;
+	position: relative;
 }
-.brandmainRow{
-	    padding-top: 4%;
-    left: 2%;
-    position: relative;
+
+.brandmainRow {
+	padding-top: 4%;
+	left: 2%;
+	position: relative;
 }
+
 .ezer_intro, .intro_ezer4.intro_ezer5.intro_ezer6 {
 	display: block;
 	background-image: url('/img/intro_brand_ezer.png');
@@ -327,18 +352,20 @@ ul>li {
 .detail_row {
 	width: 205%;
 }
+
 #footer {
 	padding-bottom: 3%;
 }
+
 .newsTable {
 	position: relative;
 	padding: 3% 2% 2% 2%;
 }
 
 .qaTextf {
-    position: relative;
-    left: 20%;
-    padding-top: 2%;
+	position: relative;
+	left: 20%;
+	padding-top: 2%;
 }
 
 table>thead>tr>th {
@@ -355,6 +382,7 @@ table tr {
 	border-top: 1px solid gray;
 	height: 42px;
 }
+
 .caption {
 	position: relative;
 	top: 7px;
@@ -364,6 +392,7 @@ table tr {
 	font-size: 1.2rem;
 	color: #666666;
 }
+
 @media ( min-width : 1200px) and (max-width: 1199) {
 	.detail_row {
 		width: 70%;
@@ -376,34 +405,32 @@ table tr {
 	}
 	.tale {
 		position: relative;
-		 width: 839Px;
-    height: 200px;
+		width: 839Px;
+		height: 200px;
 	}
 	.tale2 {
 		right: 36%;
 		position: relative;
- width: 820px;
-    height: 200px;
-		
+		width: 820px;
+		height: 200px;
 	}
 	.tale3 {
-	    position: relative;
-    right: 243%;
-    width: 770px;
-    height: 200px;
+		position: relative;
+		right: 243%;
+		width: 770px;
+		height: 200px;
 	}
 	.histimg {
-position: relative;
-    width: 78%;
-    left: 11%;
-    padding-top: 4%;
-    
+		position: relative;
+		width: 78%;
+		left: 11%;
+		padding-top: 4%;
 	}
-.address{
-	    position: relative;
-    padding-left: 2%;
-    padding-top: 5%;
-}
+	.address {
+		position: relative;
+		padding-left: 2%;
+		padding-top: 5%;
+	}
 	.footernav {
 		border-bottom: 1px #e2e2e2 solid;
 		height: 57px;
@@ -470,14 +497,15 @@ position: relative;
 		float: inherit;
 		right: 7%;
 	}
-.nav ul li {
-    display: inline-block;
-    position: relative;
-    line-height: 21px;
-    text-align: left;
-    width: 50%;
-    left: 9%;background-color: #eee;
-}
+	.nav ul li {
+		display: inline-block;
+		position: relative;
+		line-height: 21px;
+		text-align: left;
+		width: 50%;
+		left: 9%;
+		background-color: #eee;
+	}
 }
 
 }
@@ -486,6 +514,7 @@ position: relative;
 	position: relative;
 	right: 2%;
 }
+
 .article h3 {
 	font-size: 1.4em;
 	text-align: center;
@@ -589,8 +618,6 @@ p {
 	margin: 0 0 20px 0;
 	padding: 0;
 }
-
-
 
 a:hover {
 	text-decoration: underline;
@@ -1569,8 +1596,6 @@ h3.lineBottomBlack {
 	padding-bottom: 10px;
 }
 
-
-
 .fontNormal {
 	font-weight: normal !important;
 }
@@ -1999,12 +2024,18 @@ h3.lineBottomBlack {
 	margin-left
 	
 	
+	
+	
 	:
+	
 	
 	 
 	
+	
 	4
 	.333333
+	
+	
 	
 	
 	%;
@@ -2014,12 +2045,18 @@ h3.lineBottomBlack {
 	margin-left
 	
 	
+	
+	
 	:
+	
 	
 	 
 	
+	
 	45
 	.666667
+	
+	
 	
 	
 	%;
@@ -2037,8 +2074,6 @@ h3.lineBottomBlack {
 #utilnav .mobile a {
 	display: block;
 }
-
-
 
 .serchBar {
 	border-top: 0;
@@ -2118,9 +2153,15 @@ h3.lineBottomBlack {
 	vertical-align: middle;
 }
 
-font-size: 1.2rem;
-}
+font-size
+:
+ 
+1
+.2rem
+;
 
+
+}
 .srcBox {
 	text-align: right;
 	margin: 5px 0 0 0;
@@ -3390,8 +3431,6 @@ nav a ul li:hover ul.fallback {
 	width: 167px;
 }
 
-
-
 .quickmenu li.bar {
 	width: 204px;
 	border-left: 1px #e2e2e2 solid;
@@ -3504,12 +3543,6 @@ nav a ul li:hover ul.fallback {
 .quickmenu .customer .footerMenu { /*margin-top:-5px;*/
 	margin-bottom: 15px;
 }
-
-
-
-
-
-
 
 .footer .familysite {
 	position: absolute;
@@ -10712,7 +10745,8 @@ textarea.refresh {
 		width: 95% !important;
 		height: 30px;
 		line-height: 30px;
-	}/* 
+	}
+} /* 
 	#srcBoxWrap input[type=text]:focus {
 		background-color: #efefef;
 		font-style: normal;
