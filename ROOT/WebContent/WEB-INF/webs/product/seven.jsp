@@ -56,7 +56,7 @@
 								<div class="symbole" style="width: 60%;">
 									<dl style="padding-left: 9px; padding-top: 2%;">
 										<dd>
-											<span>바이오진의 스킨케어 라인은 </span>
+											<span>SEVEN ENOUGH는 피부 회복에 도움을 주는 7가지 내추럴 오일을 블랜딩한 페이셜오일 제품으로, </span>
 										</dd>
 									</dl>
 								</div>

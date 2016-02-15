@@ -86,10 +86,10 @@
 											<div class="row detail_row"style="top: 15px; position: relative;">
 												<div class="intro_coloris_detail detail tale2"
 													style="display: none;">
-													<div class="col-lg-5">
+													<div class="col-lg-5 col2">
 														<img class="intro_ezer" src="/img/intro_coloris.jpg">
 													</div>
-												<div class="cover">
+												<div class="cover1">
 														<div class="coverText" >
 															<h4>컬러를 찾아 떠나는 힐링여행, 컬러테라피 브랜드 COLOR EZ</h4>
 
@@ -110,10 +110,10 @@
 											<div class="row detail_row" style="top: 15px; position: relative;">
 												<div class="intro_galaxia_detail detail tale3"
 													style="display: none;">
-													<div class="col-lg-5">
+													<div class="col-lg-5 col3">
 														<img class="galaxia_ezer" src="/img/intro_galaxia.jpg">
 													</div>
-													<div class="cover">
+													<div class="cover2">
 														<div class="coverText" >
 														<h4>생기 넘치는 피부의 매혹적인 아름다운 GALAXIA</h4>
 
@@ -136,7 +136,7 @@
 											<div class="row detail_row"style="top: 15px; position: relative;">
 												<div class="intro_margot_detail detail tale"
 													style="display: none;">
-													<div class="col-lg-4">
+													<div class="col-lg-5">
 														<img class="intro_margot" src="/img/intro_margot.jpg">
 													</div>
 													<div class="cover">
@@ -160,11 +160,11 @@
 											<div class="row detail_row" style="top: 15px; position: relative;">
 												<div class="intro_nanobuble_detail detail tale2"
 													style="display: none;">
-													<div class="col-lg-4">
+													<div class="col-lg-5 col2">
 														<img class="intro_nanobuble"
 															src="/img/intro_nanobuble.jpg">
 													</div>
-													<div class="cover">
+													<div class="cover1">
 														<div class="coverText" >
 														<h4>혁신적인 이너뷰티의 새 이름 HYBRID NANO</h4>
 
@@ -184,10 +184,10 @@
 											<div class="row detail_row" style="top: 15px; position: relative;">
 												<div class="intro_teatoxy_detail detail tale3"
 													style="display: none;">
-													<div class="col-lg-5">
+													<div class="col-lg-5 col3">
 														<img class="teatoxy_ezer" src="/img/intro_teatoxy.jpg">
 													</div>
-												<div class="cover">
+												<div class="cover2">
 														<div class="coverText" >
 														<h4>가치를 아는 이의 프리미엄 티 브랜드 TEATOXY</h4>
 

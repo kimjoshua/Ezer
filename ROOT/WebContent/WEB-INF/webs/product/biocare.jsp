@@ -56,7 +56,8 @@
 								<div class="symbole" style="width: 60%;">
 									<dl style="padding-left: 9px; padding-top: 2%;">
 										<dd>
-											<span>바이오진의 스킨케어 라인은 </span>
+											<span>BIO GIN 헤어케어 라인은 방부제를 첨가하지 않은 천연 한방 헤어제품으로,<br>
+전문 헤어샵에서 두피와 탈모관리를 받은 듯 건강한 두피와 풍성한 모발을 선사해드립니다.</span>
 										</dd>
 									</dl>
 								</div>

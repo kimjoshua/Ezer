@@ -99,7 +99,30 @@ position: absolute;
     background-color: white;
     z-index: 1;
 }
+.cover1 {
+    position: absolute;
+    width: 138%;
+    height: 247px;
+    background-color: white;
+    z-index: 1;
+    right: -4px;
 
+}
+.cover2 {
+      position: absolute;
+    width: 1142px;
+    height: 247px;
+    background-color: white;
+    z-index: 1;
+    left: -42%;
+
+}
+.col2{
+	right: 33%;
+}
+.col3{
+    right: 38%;
+}
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
 	color: #262626;
 	text-decoration: none;

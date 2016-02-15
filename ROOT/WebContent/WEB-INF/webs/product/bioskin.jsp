@@ -56,7 +56,9 @@
 								<div class="symbole" style="width: 60%;">
 									<dl style="padding-left: 9px; padding-top: 2%;">
 										<dd>
-											<span>바이오진의 스킨케어 라인은 </span>
+											<span> BIO GIN 스킨케어 라인은 민감성과 트러블 피부를 위한 천연 한방 기초제품으로,<br>
+												바르는 순간 자극 없이 각종 피부 문제들을 완화시켜주며 피부에 활력을 되찾아드립니다.
+											</span>
 										</dd>
 									</dl>
 								</div>
@@ -74,8 +76,8 @@
 									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">제품</span>
 
 								<div class="row mainRow">
-									<div class="row"style="width: 98%;">
-										
+									<div class="row" style="width: 98%;">
+
 										<div class="col-md-4">
 											<div class="">
 												<img class=" introProduct" src="/img/biogskin.jpg"
@@ -130,8 +132,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="">
-												<img class=" introProduct"
-													src="/img/biomist.jpg"
+												<img class=" introProduct" src="/img/biomist.jpg"
 													data-holder-rendered="true" display:block;="">
 												<div class="caption">
 													<span>바이오진 미스트</span>
@@ -154,8 +155,8 @@
 											</div>
 										</div>
 									</div>
-									<div class="row subRow"style="width: 98%;">
-										
+									<div class="row subRow" style="width: 98%;">
+
 										<div class="col-md-4">
 											<div class="">
 												<img class="introProduct" src="/img/bioscream.jpg"

@@ -67,9 +67,7 @@
 						<li><a href="/bioato">ATO</a></li>
 						<li><a href="/bioacn">ACN</a></li>
 						<li><a href="cygneBright">WHITE BRIGHTENING </a></li>
-						<li><a href="/biocare">HAIR CARE</a></li>
-					<!-- 	<li><a href="/cygneBright">WHITE BRIGHTENING</a></li>
-						<li><a href="/cygneWrink">WRINKLE ELIMINATION</a></li> -->
+						<li><a href="/cygneWrink">WRINKLE ELIMINATION</a></li>
 						<li><a href="/seven">SEVEN ENOUGH</a></li>
 						<li><a href="/amp">SOLUTION 100</a></li>
 					</ul></li>
@@ -90,11 +88,11 @@
 
 		</div>
 		<div id="" class="mobile">
-			<div class="nav " style="position: relative; left: 19%;">
+			<div class="nav " style="position: relative; left: 26%;">
 				<ul class="nav navbar-nav">
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false">회사 <span class="caret"></span></a>
+						aria-expanded="false">회사소개 <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="/introMain" onclick="">회사소개</a></li>
 							<li><a href="/serviceB">사업분야</a></li>
@@ -148,35 +146,32 @@
 
 	</div>
 	<div id="directMenu" class="desktop">
-		<div class="depth2 hover">
+		<div class="depth2 ">
 
-			<a href="javascript:void(0))" id="btn2depth" class="hover">회사소개<span
-				class="">메뉴 목록 닫기</span></a>
+			<a href="javascript:void(0)" id="btn2depth" class="hover">회사소개<span
+				class="">메뉴 목록 닫기</span></a> 
+				<a href="javascript:void(0)" id="depth01" style="
+    position: relative;
+    top: -25px;
+    left: 111%;
+"></a>
+<script type="text/javascript">
 
-			<ul >
+// 변수에 넣어서 출력
+var s = location.href;
+var addr=s.split("/")
 
-				<li class="hover"><a href="/ezerCos" class="dep01" onclick="">에제르코스테틱</a>
-					<ul class="dep2" style="left: 200px; top: 5px; display: block;">
-						<li class=""><a href="" class="" onclick="">BEAUTY</a></li>
-						<li class=""><a href="" class="" onclick="">HEATHY</a></li>
-					</ul></li>
+switch(addr[3]){
+	case 'cygneWrink': 
+		$('#depth01').text('WRINKLEELIMINATION').appendTo();
+		break;
+	case 'introMain':
+		$('#depth01').text('회사소개').appendTo();
+		break;
+}
 
-				<li><a href="" class="dep01"
-					onclick="trackClicksEx('LNB AP WAY')">사업분야</a></li>
 
-				<li><a href="" class="dep01"
-					onclick="trackClicksEx('LNB 창업자 이야기')">연혁</a></li>
-
-				<li><a href="/sysbol" class="dep01"
-					onclick="trackClicksEx('LNB 연혁')"> CI / BI</a></li>
-
-				<li><a href="toroad" class="dep01"
-					onclick="trackClicksEx('LNB 관계사 소개')">오시는길</a></li>
-
-				<li
-					style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(204, 204, 204);">
-				</li>
-			</ul>
+</script>
 		</div>
 	</div>
 </div>
