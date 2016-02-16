@@ -56,14 +56,15 @@
 								<div class="symbole" style="width: 60%;">
 									<dl style="padding-left: 9px; padding-top: 2%;">
 										<dd>
-											<span>바이오진의 스킨케어 라인은 </span>
+											<span>피부 주름개선에 도움을 주는 아데노신 성분이 함유된 링클 엘리미네이션 라인은,<br>
+흰목이버섯추출물 등의 보습성분이 보다 촉촉한 피부로 가꾸어드리는 주름개선 화장품입니다. </span>
 										</dd>
 									</dl>
 								</div>
 
 							</div>
 							<div class="ciLogo" align="middle">
-								<img alt="에제를 코스메틱 CI로고" src="/img/ciEzer.png"
+								<img alt="에제를 코스메틱 CI로고" src="/img/pcr.png"
 									style="position: relative; right: 1%; padding-top: 7%;">
 							</div>
 

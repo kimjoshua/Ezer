@@ -23,7 +23,7 @@ $(function() {
 		this.src = '/img/' + className + '_main.png';
 		$('.col-md-4').removeClass("rowLine")
 		
-		$('.bgc').css('background-color','#E0DFDF');
+		$('.bgc').css('background-color','#E4E4E4');
 		$(this).parent().parent().addClass("rowLine")
 		var toggleImg = $(this).attr('class');
 
@@ -36,12 +36,12 @@ $(function() {
 		if (data.toggle1 != a2) {
 			tog=0
 			$(".detail").hide();
-			$('.bgc').css('background-color','#E0DFDF');
+			$('.bgc').css('background-color','#E4E4E4');
 		}else {
 			tog=1;
 			
 			if(tog==1){
-				$('.bgc').css('background-color','#E0DFDF');
+				$('.bgc').css('background-color','#E4E4E4');
 				
 			}else{
 				tog=0;

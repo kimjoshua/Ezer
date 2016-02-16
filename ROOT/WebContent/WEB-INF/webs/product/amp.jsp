@@ -55,7 +55,9 @@
 								<div class="symbole" style="width: 60%;">
 									<dl style="padding-left: 9px; padding-top: 2%;">
 										<dd>
-											<span>솔루션 100의 제품
+											<span>SOLUTION 100
+피부에 가장 효과적인 성분들을 엄선하여 100% 단일성분으로만 제작되는 솔루션 100은,<br>
+피부보습, 피부결개선, 피부톤개선 등 각각의 효과를 최대로 발휘할 수 있도록 제작된 앰플입니다.<br>
 											</span>
 										</dd>
 									</dl>
@@ -63,7 +65,7 @@
 
 							</div>
 							<div class="ciLogo" align="middle">
-								<img alt="에제를 코스메틱 CI로고" src="/img/ciEzer.png"
+								<img alt="에제를 코스메틱 CI로고" src="/img/ps100.png"
 									style="position: relative; right: 1%; padding-top: 7%;">
 							</div>
 							
@@ -74,7 +76,7 @@
 									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">제품</span>
 
 								<div class="row" style="padding-top: 2%;">
-									
+									제품 준비중 
 								</div>
 							</div>
 

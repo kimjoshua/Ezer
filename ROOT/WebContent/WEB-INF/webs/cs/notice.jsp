@@ -51,7 +51,7 @@
 							<div class="mainText"
 								style="position: relative; padding: 5% 1% 1% 6%;">
 								<span
-									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">소비자 상담실</span>
+									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">공지 사항</span>
 
 							</div>
 							<div class="introText">

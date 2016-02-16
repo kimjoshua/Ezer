@@ -161,7 +161,7 @@
 	</div>
 	<div class="col-md-2" style="height: 100%;">
 		<ul class="" style="padding-top: 11%;">
-			<li class="bar desktop" style="height: 172%; padding-bottom: 140%;">
+			<li class="bar desktop" style="height: 172%; padding-bottom: 186%;">
 
 				<!-- <dd class="desktop">
 					<a href="/costom" class="blt-balloon fcLblack" onclick=""><strong>소비자

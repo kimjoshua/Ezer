@@ -42,7 +42,7 @@
 	</div>
 	<div class="row" style="padding-bottom: 2%; padding-top: 1%;">
 
-		<div class="nav desktop" style="position: relative; left: 19%;">
+		<div class="nav desktop" style="position: relative;left: 27%;">
 			<ul>
 				<li><a href="#">회사 <span class="caret"></span></a>
 					<ul class="dropdown">
@@ -168,6 +168,55 @@ switch(addr[3]){
 	case 'introMain':
 		$('#depth01').text('회사소개').appendTo();
 		break;
+	case 'serviceB':
+		$('#depth01').text('BEAUTY').appendTo();
+		break;
+	case 'history':
+		$('#depth01').text('역혁').appendTo();
+		break;
+	case 'symbole':
+		$('#depth01').text('CI BI').appendTo();
+		break;
+	case 'bioskin':
+		$('#depth01').text('Skin Care').appendTo();
+		break;
+	case 'biocare':
+		$('#depth01').text('Hair Care').appendTo();
+		break;
+	case 'bioato':
+		$('#depth01').text('ATO').appendTo();
+		break;
+	case 'bioacn':
+		$('#depth01').text('ACN').appendTo();
+		break;
+	case 'cygneBright':
+		$('#depth01').text('WHITE BRIGHTENING').appendTo();
+		break;
+	case 'cygneWrink':
+		$('#depth01').text('WRINKLE ELIMINATION').appendTo();
+		break;
+	case 'ad':
+		$('#depth01').text('AD').appendTo();
+		break;
+	
+	case 'news':
+		$('#depth01').text('NEWS').appendTo();
+		break;
+	
+	case 'event':
+		$('#depth01').text('EVENT').appendTo();
+		break;
+	
+	case 'media':
+		$('#depth01').text('media').appendTo();
+		break;
+	case 'notice':
+		$('#depth01').text('공지사항').appendTo();
+		break;
+	case 'qa':
+		$('#depth01').text('문의사항').appendTo();
+		break;
+	
 }
 
 

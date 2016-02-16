@@ -1,16 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%-- 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> --%>
 <%
 	String cp = request.getContextPath();
 %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Color Ez - 컬러테라피 아카데미 스</title>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans'
@@ -22,38 +21,15 @@
 	crossorigin="anonymous">
 <!-- Custom CSS -->
 <link href="/css/ezer.css" rel="stylesheet">
-<link type="text/css" rel="stylesheet"
-	href="http://static.naver.com/openapi_map/maps_openapi.css?14528700001">
-<link
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
-	crossorigin="anonymous">
-
-
-<title>Color Ez - 컬러테라피 아카데미 스</title>
-
-
-<!-- prevent IE6 flickering -->
+<!-- Fonts -->
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script type="text/javascript">
-	try {
-		document.execCommand('BackgroundImageCache', false, true);
-	} catch (e) {
-	}
-</script>
-
- <script type="text/javascript"
-	src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&amp;key=755e3cb5ad7856b9a3ef50983579e260"></script> 
+ <script type="text/javascript" src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&amp;key=755e3cb5ad7856b9a3ef50983579e260"></script><link type="text/css" rel="stylesheet" href="http://static.naver.com/openapi_map/maps_openapi.css?14555484001"> 
 <!-- 	<script type="text/javascript"
-	src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&amp;key=10d217d22e05e88c77d0014f83395b5c	"></script> -->
+	src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&amp;key=10d217d22e05e88c77d0014f83395b5c"></script> -->
 
 <!-- Custom CSS -->
 
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
-	integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
-	crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -61,9 +37,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
 	<div id="wrapper">
+
 		<h1>Ezer cosmetic</h1>
 		<div class="moto"></div>
 		<div class="inwrap">
@@ -72,9 +48,8 @@
 				<div id="visualarea">
 					<div id="realcontents">
 						<div class="realcon">
-
-							<div
-								style="position: relative; padding: 1% 1% 1% 1%; width: 95%; padding-top: 8%;">
+							
+							<div style="position: relative;padding: 1% 1% 1% 13%; width: 95%; padding-top: 8%;">
 								<div class="row brandmainRow">
 									<div id="map" ></div>
 									<script type="text/javascript">
@@ -93,7 +68,7 @@
 											activateBicycleMap : false,
 											activateRealtyMap : true,
 											minMaxLevel : [ 1, 14 ],
-											size : new nhn.api.map.Size(700,
+											size : new nhn.api.map.Size(900,
 													500)
 										});
 										var oSlider = new nhn.api.map.ZoomControl();
@@ -166,11 +141,21 @@
 					</div>
 				</div>
 			</div>
-
 			<%@ include file="../template/footer.jsp"%>
 
 		</div>
 		<div class="footerline"></div>
 	</div>
-</body>
-</html>
+
+	<script>
+		$(function() {
+
+			$.get('/noticeList', function(data) {
+
+				console.log(data.noticeList)
+
+			});
+		});
+		</body>
+		</html>
+	

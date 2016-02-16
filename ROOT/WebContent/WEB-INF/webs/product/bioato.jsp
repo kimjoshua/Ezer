@@ -56,14 +56,16 @@
 								<div class="symbole" style="width: 60%;">
 									<dl style="padding-left: 9px; padding-top: 2%;">
 										<dd>
-											<span>바이오진의 스킨케어 라인은 </span>
+											<span>BIOSELEX ATO는 민감성과 건성피부에 <br>
+피부보습에 효과적인 Selemix AT 성분을 함유한 Bioselex ATO 제품은,<br>
+촉촉함을 오랜시간 유지시켜주며 피부당김현상을 예방하여 부드러운 피부를 선사합니다. </span>
 										</dd>
 									</dl>
 								</div>
 
 							</div>
 							<div class="ciLogo" align="middle">
-								<img alt="에제를 코스메틱 CI로고" src="/img/ciEzer.png"
+								<img alt="에제를 코스메틱 CI로고" src="/img/pato.png"
 									style="position: relative; right: 1%; padding-top: 7%;">
 							</div>
 
@@ -81,7 +83,29 @@
 													data-holder-rendered="true" display:block;="">
 
 												<div class="caption">
-													<span>바디클렌저</span>
+													<span>ATO 바디클렌저</span>
+												</div>
+												<div class="detailIntro">
+													<span> 바이오 진 에센스</span>
+													<P>제품소개 : 끈 초건조성 및 초민감성 피부를 위한 제품으로, 특허받은 한방 증숙 추출물 원액을
+														담았습니다. 민감성 피부나 피부 트러블이 심한 남녀노소 모두가 안심하고 사용할 수 있는 에센스입니다.</P>
+													<span>용량 : 1000ml</span>
+													<p>사용방법 : 아침 저녁 한방 증숙 추출물로 만든 수제비누로 세정 후, 적당량의 허브 에센스를
+														취해 트러블성 피부 전체에 부드럽게 펴 바르면서 흡수시켜줍니다. 트러블 부위가 적을 경우 화장솜 등을
+														이용하여 해당 부위에만 사용하셔도 좋습니다.</p>
+													<p>전성분 : 쑥추출물, 금은화추출물, 어성초추출물, 살구추출물, 길경추출물, 천궁추출물,
+														생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물, 박하잎추출물, 참당귀추출물, 회화나무잎추출물</p>
+
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="">
+												<img class="introProduct" src="/img/mist.jpg"
+													data-holder-rendered="true" display:block;="">
+
+												<div class="caption">
+													<span>미스트 </span>
 												</div>
 												<div class="detailIntro">
 													<span> 바이오 진 에센스</span>
@@ -102,7 +126,7 @@
 												<img class=" introProduct" src="/img/lotion.jpg"
 													data-holder-rendered="true" display:block;="">
 												<div class="caption">
-													<span>로션</span>
+													<span>ATO 로션</span>
 												</div>
 												<div class="detailIntro">
 													<span> 바이오 진 스킨로션 </span>
@@ -127,6 +151,10 @@
 
 											</div>
 										</div>
+										
+									</div>
+									<div class="row subRow"style="width: 98%;">
+									
 										<div class="col-md-4">
 											<div class="">
 												<img class=" introProduct"
@@ -148,30 +176,6 @@
 														애엽추출물, 소나무추출물, 생강추출물, 모과추출물, 땅두릅추출물, 더덕추출물, 당귀추출물,
 														단삼꽃/잎/뿌리추출물, 길경추출물, 감초추출물, 클로브꽃추출물, 자몽추출물, 셀룰로오스, 페네칠알코올,
 														카프릴릴글라이콜, 디소듐이디티에이</p>
-
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="row subRow"style="width: 98%;">
-									<div class="col-md-4">
-											<div class="">
-												<img class="introProduct" src="/img/mist.jpg"
-													data-holder-rendered="true" display:block;="">
-
-												<div class="caption">
-													<span>미스트 </span>
-												</div>
-												<div class="detailIntro">
-													<span> 바이오 진 에센스</span>
-													<P>제품소개 : 끈 초건조성 및 초민감성 피부를 위한 제품으로, 특허받은 한방 증숙 추출물 원액을
-														담았습니다. 민감성 피부나 피부 트러블이 심한 남녀노소 모두가 안심하고 사용할 수 있는 에센스입니다.</P>
-													<span>용량 : 1000ml</span>
-													<p>사용방법 : 아침 저녁 한방 증숙 추출물로 만든 수제비누로 세정 후, 적당량의 허브 에센스를
-														취해 트러블성 피부 전체에 부드럽게 펴 바르면서 흡수시켜줍니다. 트러블 부위가 적을 경우 화장솜 등을
-														이용하여 해당 부위에만 사용하셔도 좋습니다.</p>
-													<p>전성분 : 쑥추출물, 금은화추출물, 어성초추출물, 살구추출물, 길경추출물, 천궁추출물,
-														생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물, 박하잎추출물, 참당귀추출물, 회화나무잎추출물</p>
 
 												</div>
 											</div>

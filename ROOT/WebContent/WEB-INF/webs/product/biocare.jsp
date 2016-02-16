@@ -82,7 +82,7 @@
 													data-holder-rendered="true" display:block;="">
 
 												<div class="caption">
-													<span>헤어샴푸</span>
+													<span>바이오진 헤어샴푸</span>
 												</div>
 												<div class="detailIntro">
 													<span> 바이오 진 에센스</span>
@@ -103,7 +103,7 @@
 												<img class=" introProduct" src="/img/linse.jpg"
 													data-holder-rendered="true" display:block;="">
 												<div class="caption">
-													<span>헤어린스</span>
+													<span>바이오진 헤어린스</span>
 												</div>
 												<div class="detailIntro">
 													<span> 바이오 진 스킨로션 </span>
@@ -134,7 +134,7 @@
 													src="/img/tonic.jpg"
 													data-holder-rendered="true" display:block;="">
 												<div class="caption">
-													<span>토닉</span>
+													<span>바이오진 토닉</span>
 												</div>
 												<div class="detailIntro">
 													<span> 바이오셀렉스 ACN 폼클렌저 </span>

@@ -56,14 +56,15 @@
 								<div class="symbole" style="width: 60%;">
 									<dl style="padding-left: 9px; padding-top: 2%;">
 										<dd>
-											<span>바이오진의 스킨케어 라인은 </span>
+											<span>트러블 피부개선에 효과적인 Selemix AN 성분을 함유한 Bioselex ACN 제품은,<br>
+끈적이지 않는 가벼운 느낌으로 한결 밝아진 느낌의 피부를 선사합니다.</span>
 										</dd>
 									</dl>
 								</div>
 
 							</div>
 							<div class="ciLogo" align="middle">
-								<img alt="에제를 코스메틱 CI로고" src="/img/ciEzer.png"
+								<img alt="에제를 코스메틱 CI로고" src="/img/pacn.png"
 									style="position: relative; right: 1%; padding-top: 7%;">
 							</div>
 
@@ -81,7 +82,7 @@
 													data-holder-rendered="true" display:block;="">
 
 												<div class="caption">
-													<span>폼클렌저</span>
+													<span>ACN 폼클렌저</span>
 												</div>
 												<div class="detailIntro">
 													<span> 바이오 진 에센스</span>
@@ -103,7 +104,7 @@
 													data-holder-rendered="true" display:block;="">
 
 												<div class="caption">
-													<span>에센스</span>
+													<span>ACN 에센스</span>
 												</div>
 												<div class="detailIntro">
 													<span> 바이오 진 에센스</span>
@@ -125,7 +126,7 @@
 												<img class=" introProduct" src="/img/acncream.jpg"
 													data-holder-rendered="true" display:block;="">
 												<div class="caption">
-													<span>ACN크림</span>
+													<span>ACN 크림</span>
 												</div>
 												<div class="detailIntro">
 													<span> 바이오셀렉스 ACN 폼클렌저 </span>
@@ -151,7 +152,7 @@
 												<img class=" introProduct" src="/img/mask.jpg"
 													data-holder-rendered="true" display:block;="">
 												<div class="caption">
-													<span>마스크팩</span>
+													<span>ACN 마스크팩</span>
 												</div>
 												<div class="detailIntro">
 													<span> 바이오 진 스킨로션 </span>
