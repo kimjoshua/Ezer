@@ -12,25 +12,46 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.ezer_g.www.dto.Dto_Ezer;
 
-public class Dao_Ezer_notice_imp extends SqlSessionDaoSupport implements Dao_Ezer_notice{
+public class Dao_Ezer_Qa_imp extends SqlSessionDaoSupport implements Dao_Ezer_Qa{
 	private JdbcTemplate jdbcTemplate;
 	private DataSource dataSource;
 	
 	public void setDataSource(DataSource dataSource) {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
-	
+
 	@Override
-	public List<Dto_Ezer> get_Notice(Dto_Ezer de) {
+	public void addQA(HashMap<String, Object> inOutHashMap) {
 		SqlSession ss = getSqlSession();
-				
-		return ss.selectList("notice_LIst");
-	}
-	@Override
-	public int getProductContactUsCount(Dto_Ezer de) {
-		// TODO Auto-generated method stub
-		return 0;
+		ss.insert("addQa",inOutHashMap);
+		
 	}
 
 
-}
+
+//	@Override
+//	public void addQA(Dto_Ezer de) {
+//	SqlSession ss = getSqlSession();
+//			
+//		
+//		ss.insert("addQa",de);
+//		
+//	}
+
+
+
+
+
+//	@Override
+//	public void insertMember(MemberVO vo) {
+//		ss.insert("insertMember", vo);
+//	}
+//
+//	@Override
+//	public boolean idCheck(String id) {
+//		boolean check = false;
+//		check = ss.selectOne("idCheck", id);
+//		return check;
+	}
+
+

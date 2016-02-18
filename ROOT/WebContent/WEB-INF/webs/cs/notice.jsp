@@ -85,10 +85,12 @@
 
 			$.get('/noticeList', function(data) {
 
-				console.log(data.noticeList)
+				console.log(data.noticeLIst)
 
 			});
 		});
+	</script>
+		
 		</body>
 		</html>
 	

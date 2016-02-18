@@ -65,7 +65,7 @@
 
 							</div>
 							<div class="ciLogo" align="middle">
-								<img alt="에제를 코스메틱 CI로고" src="/img/ciEzer.png"
+								<img alt="에제를 코스메틱 CI로고" src="/img/perzer.png"
 									style="position: relative; right: 1%; padding-top: 7%;">
 							</div>
 
@@ -77,7 +77,30 @@
 
 								<div class="row mainRow">
 									<div class="row" style="width: 98%;">
+									<div class="col-md-4">
+											<div class="">
+												<img class=" introProduct" src="/img/biomist.jpg"
+													data-holder-rendered="true" display:block;="">
+												<div class="caption">
+													<span>바이오진 미스트</span>
+												</div>
+												<div class="detailIntro">
+													<span> 바이오셀렉스 ACN 폼클렌저 </span>
+													<P>제품소개 : 피부의 번들거림을 방지하고 피지 분비의 균형을 잡아주어 깔끔한 피부로 유지시켜주며
+														천연보습인자와 히아루론산, 비타민 및 보습효과에 탁월한 성분들이 항상 촉촉한 피부로 유지시켜줍니다.</P>
+													<span>용량 : 150ml<br>
+													</span>
+													<p>전성분 : 정제수, 글리세린, 포타슘하이드록사이드, 미리스틱애씨드, 팔미틱애씨드,
+														스테아릭애씨드, 라우릭애씨드, 코카미도프로필베타인, 프로필렌글라이콜, 피이지-100스테아레이트,
+														글리세릴스테아레이트, 콩싹추출물, 비즈왁스, 부틸렌글라이콜, 목련나무껍질추출물, 황기추출물, 황금추출물,
+														향료, 하수오뿌리줄기/뿌리추출물, 칡꽃/잎/줄기추출물, 참마뿌리추출물, 지황추출물, 육계추출물,
+														애엽추출물, 소나무추출물, 생강추출물, 모과추출물, 땅두릅추출물, 더덕추출물, 당귀추출물,
+														단삼꽃/잎/뿌리추출물, 길경추출물, 감초추출물, 클로브꽃추출물, 자몽추출물, 셀룰로오스, 페네칠알코올,
+														카프릴릴글라이콜, 디소듐이디티에이</p>
 
+												</div>
+											</div>
+										</div>
 										<div class="col-md-4">
 											<div class="">
 												<img class=" introProduct" src="/img/biogskin.jpg"
@@ -130,30 +153,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4">
-											<div class="">
-												<img class=" introProduct" src="/img/biomist.jpg"
-													data-holder-rendered="true" display:block;="">
-												<div class="caption">
-													<span>바이오진 미스트</span>
-												</div>
-												<div class="detailIntro">
-													<span> 바이오셀렉스 ACN 폼클렌저 </span>
-													<P>제품소개 : 피부의 번들거림을 방지하고 피지 분비의 균형을 잡아주어 깔끔한 피부로 유지시켜주며
-														천연보습인자와 히아루론산, 비타민 및 보습효과에 탁월한 성분들이 항상 촉촉한 피부로 유지시켜줍니다.</P>
-													<span>용량 : 150ml<br>
-													</span>
-													<p>전성분 : 정제수, 글리세린, 포타슘하이드록사이드, 미리스틱애씨드, 팔미틱애씨드,
-														스테아릭애씨드, 라우릭애씨드, 코카미도프로필베타인, 프로필렌글라이콜, 피이지-100스테아레이트,
-														글리세릴스테아레이트, 콩싹추출물, 비즈왁스, 부틸렌글라이콜, 목련나무껍질추출물, 황기추출물, 황금추출물,
-														향료, 하수오뿌리줄기/뿌리추출물, 칡꽃/잎/줄기추출물, 참마뿌리추출물, 지황추출물, 육계추출물,
-														애엽추출물, 소나무추출물, 생강추출물, 모과추출물, 땅두릅추출물, 더덕추출물, 당귀추출물,
-														단삼꽃/잎/뿌리추출물, 길경추출물, 감초추출물, 클로브꽃추출물, 자몽추출물, 셀룰로오스, 페네칠알코올,
-														카프릴릴글라이콜, 디소듐이디티에이</p>
-
-												</div>
-											</div>
-										</div>
+										
 									</div>
 									<div class="row subRow" style="width: 98%;">
 

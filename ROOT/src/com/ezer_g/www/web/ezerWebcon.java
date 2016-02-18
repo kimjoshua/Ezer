@@ -196,10 +196,10 @@ public class ezerWebcon {
 		return result;
 		
 	}*/
-/*	@RequestMapping(value="/notice")
+	@RequestMapping(value="/notice")
 	public String notice() {
 		return "/cs/notice";
-	}*/
+	}
 	@RequestMapping("qa")
 	public String qa() {
 		return "/cs/qa";

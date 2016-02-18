@@ -11,7 +11,13 @@ import com.ezer_g.www.dto.Dto_Ezer;
 
 public interface Dao_Ezer_notice {
 
-	List<Dto_Ezer> get_Notice() throws DataAccessException;
+	
+
+	List get_Notice(Dto_Ezer de);
+
+	int getProductContactUsCount(Dto_Ezer de);
+
+	
 
 
 

@@ -69,7 +69,6 @@
 							<!-- mainText End -->
 							<div class="qaTextf">
 
-								<form action="ezerQa" method="post">
 									<table style="width: 63%;">
 
 										<tr>
@@ -89,10 +88,7 @@
 										</tr>
 										<tr>
 											<td>제목</td>
-											<td class="heightTd" colspan="6"><input type="text" name="title" style="
-    position: relative;
-    width: 93%;
-"></td>
+											<td class="heightTd" colspan="6"><input type="text" name="title" style="  position: relative; width: 93%;"></td>
 										</tr>
 
 										<tr>
@@ -108,9 +104,9 @@
 
 									</table>
 									<div style="position: relative; padding-top: 2%; left: 29%;">
-										<button class="submit btn">문의 하기</button>
+										<button class="sub btn">문의 하기</button>
 									</div>
-								</form>
+							
 
 							</div>
 
