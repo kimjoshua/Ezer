@@ -35,7 +35,37 @@ public class ezerDataCont {
 	public void setService(Ezer_Service_IMp se) {
 		this.se = se;
 	}
+	/*
+	@RequestMapping("login")
+	public ModelAndView adminLogin(HttpServletRequest req,
+			HttpServletResponse rs, LtadminDt vo, Model model)
+			throws UnsupportedEncodingException {
+		Hash hs = new Hash();
+		String id = req.getParameter("id");
+		String pwd = req.getParameter("pwd");
+		System.out.println(id + pwd);
+		byte pbCipher[] = new byte[32];
+		hs.SHA256_Encrpyt(req.getParameter("pwd").getBytes("UTF-8"),
+				pwd.length(), pbCipher);
+		String hashpwdresult = "";
+		for (int i = 0; i < 32; i++) {
+			hashpwdresult += Integer.toHexString(0xff & pbCipher[i]);
+		}
+		vo.setId(id);
+		vo.setPwd(hashpwdresult);
+		System.out.println(vo.getPwd());
 
+		HashMap<String, String> result = se
+				.loging(vo);
+		if (result != null) {
+			req.getSession().setAttribute("userInfo", result);
+			return new ModelAndView("/view/ap", "userInfo", result);
+		} else {
+			return new ModelAndView("/Ladmintrade/adminPage", "userInfo", null);
+		}
+
+	}*/
+	
 	
 	
 	@RequestMapping(value="/noticeList",produces = "application/json; charset=utf-8",method = RequestMethod.GET)
