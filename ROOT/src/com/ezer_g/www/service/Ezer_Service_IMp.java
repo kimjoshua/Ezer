@@ -24,14 +24,6 @@ public class Ezer_Service_IMp  {
 	private Dao_Ezer_notice den;
 	private Dao_Ezer_faq def;
 	private Dao_Ezer_Qa qa;
-//
-//	public void setDen(Dao_Ezer_notice den) {
-//		this.den = den;
-//	}
-//
-//	public void setDef(Dao_Ezer_faq def) {
-//		this.def = def;
-//	}
 
 	public HashMap<String, Object> noticeLIst(Dto_Ezer de) {
 		HashMap<String, Object> inOutHashMap= new HashMap<String, Object>();

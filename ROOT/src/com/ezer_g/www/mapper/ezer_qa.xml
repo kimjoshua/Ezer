@@ -3,13 +3,14 @@
 <mapper namespace="qa">
 
 	<insert id="addQa" parameterType="java.util.HashMap">
-		INSERT INTO exer_qa
-		(qa_title,qa_contents,qa_catege)
+		INSERT INTO ezer_qa
+		(qa_title
+		,	qa_contents
+		,	qa_categ)
 		VALUES(
-		#{qa_title}
-		#{qa_contents}
-		#{qa_catege}
-		
+			'${qa_title}'
+		,	'${qa_contents}'
+		,	'${qa_categ}'
 		)
 		
 	</insert>

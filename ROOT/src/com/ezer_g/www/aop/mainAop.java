@@ -28,25 +28,26 @@ public class mainAop {
 //	@Autowired
 //	private MessageSourceAccessor msa;
 	
+	@SuppressWarnings("unchecked")
 	@Around("execution(* com.ezer_g.www.web.*Cont.*(..))")
 	public HashMap<String, Object> serviceAop(ProceedingJoinPoint pjp) throws Throwable{
 	
 	  Object target = pjp.getTarget();
 	  Object[] args = pjp.getArgs();
   
-//	  for(int i=0; i < args.length; i++){
-//	   System.out.println("args[" + i + "] : " + args[i].toString());
-//	  }
+	  for(int i=0; i < args.length; i++){
+	   System.out.println("args[" + i + "] : " + args[i].toString());
+	  }
 		HashMap<String, Object> rtnHashMap = null;
 		rtnHashMap =((HashMap<String, Object>) pjp.proceed());
 		
 		Dto_Ezer de;
-		de= (Dto_Ezer) args[3];
-		
+		de= (Dto_Ezer) args[2];
+		System.out.println("aop"+de);
 		rtnHashMap =((HashMap<String, Object>)pjp.proceed());
 		
 		System.out.println("rtn"+rtnHashMap);
-		return rtnHashMap;
+		return null;
 		
 	}
 	

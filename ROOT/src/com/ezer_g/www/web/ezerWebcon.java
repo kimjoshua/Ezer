@@ -35,22 +35,17 @@ public class ezerWebcon {
 	}
 
 	@RequestMapping("/")
-	public String index() {
+	public  String index() {
 		return "index";
 
 	}
 
 	@RequestMapping("/index")
-	public ModelAndView indexx() {
+	public String indexx() {
 		System.out.println("ddd");
-		return new ModelAndView("index");
+		return "index";
 	}
 
-	/*
-	 * @RequestMapping("memberIn") public ModelAndView join() {
-	 * System.out.println("ddd"); return new ModelAndView("/join/memberIn"); }
-	 */
-	
 
 	@RequestMapping("introMain")
 	public String compIntr(){
@@ -136,66 +131,6 @@ public class ezerWebcon {
 	}
 	
 	
-/*
-	@RequestMapping("login")
-	public ModelAndView adminLogin(HttpServletRequest req,
-			HttpServletResponse rs, LtadminDt vo, Model model)
-			throws UnsupportedEncodingException {
-		Hash hs = new Hash();
-		String id = req.getParameter("id");
-		String pwd = req.getParameter("pwd");
-		System.out.println(id + pwd);
-		byte pbCipher[] = new byte[32];
-		hs.SHA256_Encrpyt(req.getParameter("pwd").getBytes("UTF-8"),
-				pwd.length(), pbCipher);
-		String hashpwdresult = "";
-		for (int i = 0; i < 32; i++) {
-			hashpwdresult += Integer.toHexString(0xff & pbCipher[i]);
-		}
-		vo.setId(id);
-		vo.setPwd(hashpwdresult);
-		System.out.println(vo.getPwd());
-
-		HashMap<String, String> result = se
-				.loging(vo);
-		if (result != null) {
-			req.getSession().setAttribute("userInfo", result);
-			return new ModelAndView("/view/ap", "userInfo", result);
-		} else {
-			return new ModelAndView("/Ladmintrade/adminPage", "userInfo", null);
-		}
-
-	}*/
-	
-/*	@RequestMapping(value="/notice")
-	public ModelAndView list(HttpServletRequest req, HttpServletResponse rs,
-            ModelMap model,CommonInout commonInout) throws JSONException, IOException {
-		
-		HashMap<String, Object> result = se.noticeLIst(commonInout);
-		System.out.println(result+"webcont");
-        return new ModelAndView("/cs/notice","result",result);
-
-    }*/
-	/*@RequestMapping(value="/noticeList", produces = "application/json; charset=utf-8",method = RequestMethod.GET)
-	public @ResponseBody Object noticeList(CommonInout commonInout, HttpServletRequest request,
-			HttpServletResponse reesponse) throws Throwable {
-		System.out.println("sdfsdf");
-		HashMap<String, Object> result = se.noticeLIst(commonInout);
-		System.out.println(result+"webcont");
-				
-		return result;
-	}
-	@RequestMapping(value="/noticeList1")
-	public HashMap<String, Object> adminLogin(HttpServletRequest req,CommonInout commonInout,
-			HttpServletResponse rs, LtadminDt vo, Model model)
-			throws UnsupportedEncodingException {
-		System.out.println("sdfsdf");
-		HashMap<String, Object> result = se.noticeLIst(commonInout);
-		System.out.println(result+"webcont");
-				
-		return result;
-		
-	}*/
 	@RequestMapping(value="/notice")
 	public String notice() {
 		return "/cs/notice";
