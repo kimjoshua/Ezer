@@ -19,6 +19,7 @@
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:prefix="/WEB-INF/webs/" p:suffix=".jsp"></bean>
 	<!-- 공통 관심사 -->
+ <aop:config />
  <aop:aspectj-autoproxy />
 	<bean id="mainAop" class="com.ezer_g.www.aop.mainAop"></bean> 
 	<bean id="fileLogger" class="com.ezer_g.www.aop.fileLogger">
@@ -61,7 +62,7 @@
 	</bean>
  	<mvc:interceptors>
 		<mvc:interceptor>
-			<mvc:mapping path="/" />
+			<mvc:mapping path="/**" />
 			<bean class="com.ezer_g.www.aop.interceptors"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors> 

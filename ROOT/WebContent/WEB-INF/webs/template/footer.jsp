@@ -1,6 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
 <!-- go to top -->
 <div id="gototop">
 	<a href="#"><img alt="top" src="/img/top.png" style="height: 70%;"><span>맨

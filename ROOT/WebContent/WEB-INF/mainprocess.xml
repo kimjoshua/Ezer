@@ -13,7 +13,7 @@
 
 	<bean id="internalResourceViewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-		p:prefix="/WEB-INF/webs/" p:suffix=".jsp"></bean>
+		p:prefix="/WEB-INF/webs" p:suffix=".jsp"></bean>
 
 	<bean id="propertyPlaceholderConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">

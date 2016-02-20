@@ -53,16 +53,23 @@ public class Ezer_Service_IMp  {
 		HashMap<String, Object> inOutHashMap= new HashMap<String, Object>();
 		HashMap<String, Object> rtnHashMap = new HashMap();
 
-		if("".equals(de.getQa_categ())
-			|| de.getQa_categ()==null	){
+		if(		"".equals(de.getQa_categ())
+			|| 	de.getQa_categ()==null
+			||	"".equals(de.getQa_contents())
+			||	de.getQa_contents()==null
+			||	"".equals(de.getQa_title())
+			||	de.getQa_title()==null){
 			rtnHashMap.put("data",false );
 		}
 		inOutHashMap.put("qa_title", de.getQa_title());
 		inOutHashMap.put("qa_categ", de.getQa_categ());
 		inOutHashMap.put("qa_contents", de.getQa_contents());
+		
+	
+		System.out.println(inOutHashMap);
 		qa.addQA(inOutHashMap);
 	
-		rtnHashMap.put("rtn message", 0);
+		rtnHashMap.put("rtn_message", 0);
 		return rtnHashMap;
 		
 		

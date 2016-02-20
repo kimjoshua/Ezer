@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
 <div id="header">
 	<div class="logo desktop">
 		<a href="/" onclick="" title="홈페이지로 이동"><img id="deskLogo"
