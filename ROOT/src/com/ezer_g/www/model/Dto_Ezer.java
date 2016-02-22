@@ -9,7 +9,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class Dto_Ezer extends mainModel{
+public class Dto_Ezer extends MainModel{
 	
 	 private String notice_title=null;
 	 private String faqsearch=null;

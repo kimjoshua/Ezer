@@ -1,104 +1,82 @@
 package com.ezer_g.www.aop;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Type;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Locale;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.reflect.MethodSignature;
-import org.codehaus.jackson.map.JsonDeserializer;
+import org.aspectj.lang.annotation.Pointcut;
+import org.codehaus.jackson.JsonParser;
 import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.type.TypeReference;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.NoSuchMessageException;
-import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StopWatch;
-
+import org.springframework.util.SystemPropertyUtils;
+import org.json.simple.JSONArray;
+import org.json.simple.parser.JSONParser;
 import com.ezer_g.www.model.Dto_Ezer;
-import com.mysql.fabric.xmlrpc.base.Array;
+import com.ezer_g.www.model.MainModel;
+import com.google.gson.*;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 
+import ch.qos.logback.core.pattern.parser.Parser;
 @Aspect
 @Component
 public class mainAop {
 
-//	@Autowired
-//	private MessageSourceAccessor msa;
+	// @Autowired
+	// private MessageSourceAccessor msa;
 	private ObjectMapper mapper = new ObjectMapper();
 
-	@Around("execution(* com.ezer_g.www.web.*Cont.*(..))")
-	public Object serviceAop(ProceedingJoinPoint pjp) throws Throwable{
-
-	 /*   MethodSignature signature = (MethodSignature) pjp.getSignature();*/
-/*	    String methodName= pjp.getSignature().getName();
-	    StopWatch sw = new StopWatch();
-	    sw.start(methodName);
-	    sw.stop();
-*/	    Object rtnObject= pjp.proceed();
-	
+	@Pointcut("execution(* com.ezer_g.www.web.*Cont.*(..)) ||execution(* com.ezer_g.www.web.*model.*(..))")
+	public Object serviceAop(ProceedingJoinPoint pjp) throws Throwable {
+		
+		/* MethodSignature signature = (MethodSignature) pjp.getSignature(); */
+		/*
+		 * String methodName= pjp.getSignature().getName(); StopWatch sw = new
+		 * StopWatch(); sw.start(methodName); sw.stop();
+		 */ 
 		Object[] args = pjp.getArgs();
 
-		  HashMap<String, Object> hmap = new HashMap<String, Object>();
 		
-	/*	  Dto_Ezer de =(Dto_Ezer)rtnObject;
-		  hmap.put("datalist", de);*/
-	    int a=0;
-/*	    for(Object i:args){
-	    	System.out.println(args[a++]);
-	    }*/
-	    
-	    try{
-	    	
-	    	return rtnObject;
-	    }catch(Throwable e){
-	    	System.out.println("fail");
-	    }
-	    
-
-//	    Dto_Ezer abstratModel = (Dto_Ezer) args[0];
-//	    HttpServletRequest request = (HttpServletRequest) args[1];
-//	    HttpServletResponse response = (HttpServletResponse) args[2];
-
-//	    JSONParser parser = new JSONParser();
+		Gson gs= new GsonBuilder().create();
+		MainModel mainModel = new MainModel();
+		
+		String jsonString=gs.toJson(pjp.proceed());
+//print out		
+		JSONParser parser = new JSONParser();
+		JSONObject jsonObject = ( JSONObject ) parser.parse( jsonString );
+		HashMap<String, Object> hmap =jsonObject;
 	
-//	    
-//	    response.addHeader("Access-Control-Allow-Methods","Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With");
-//	    response.addHeader("Access-Control-Allow-Headers","GET, PUT, OPTIONS, X-XSRF-TOKEN");
-//	    response.addHeader("Access-Control-Allow-Origin", "*");
-//	    Object[] newArgs = getCopyedArray(args);
-//	    String strEtzJsonData = abstratModel.getEtzJsonData();
-//	    String sid = null;
-//
-//
-//	    Object proceed = pjp.proceed(newArgs);
-//	    String res = mapper.writeValueAsString(proceed);
-//	    	System.out.println("r"+res);
-//	    	System.out.println("eee"+strEtzJsonData);
-//	    String encData = null;
+		try {
 
-	   return null;
+			return hmap;
+		} catch (Throwable e) {
+			System.out.println("fail");
+			
+			hmap.put("rtn_messga", -1);
+			return hmap;
+		}
 
-	  }
-//	private Object[] getCopyedArray(Object[] args) {
-//		Object[] result = new Object[ args.length ];
-//		for( int i = 0; i < args.length; i++ ) {
-//			result[ i ] = args[ i ];
-//		}
-//
-//		return result;
-//	}
+
+	}
+	@Around("execution(* com.ezer_g.www.web.*Cont.*(..)) ")
+	public Object addQA(ProceedingJoinPoint pjp) throws Throwable {
+		
+		
+		try {
+			
+			return pjp.proceed();
+		} catch (Throwable e) {
+			System.out.println("fail");
+		}
+		
+		
+		
+		return null;
+		
+	}
+
 
 }

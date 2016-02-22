@@ -52,7 +52,7 @@ public class Ezer_Service_IMp  {
 	public HashMap<String, Object> addQa(Dto_Ezer de) {
 		HashMap<String, Object> inOutHashMap= new HashMap<String, Object>();
 		HashMap<String, Object> rtnHashMap = new HashMap();
-
+System.out.println("getEtz"+de.getEtzJsonData());
 		if(		"".equals(de.getQa_categ())
 			|| 	de.getQa_categ()==null
 			||	"".equals(de.getQa_contents())
@@ -60,22 +60,24 @@ public class Ezer_Service_IMp  {
 			||	"".equals(de.getQa_title())
 			||	de.getQa_title()==null
 			||	de.getPage_no()==0
-			||	de.getPage_no() >=0){
+			||	de.getPage_no() >=0
+			){
 			rtnHashMap.put("data",false );
-		}
+		}else{
 		inOutHashMap.put("qa_title", de.getQa_title());
 		inOutHashMap.put("qa_categ", de.getQa_categ());
 		inOutHashMap.put("qa_contents", de.getQa_contents());
 	
-		
+		 
 	
-		System.out.println(inOutHashMap);
+		System.out.println("ser"+inOutHashMap);
 		qa.addQA(inOutHashMap);
 	
 		rtnHashMap.put("rtn_message", 0);
+	
+		
+		
+		}
 		return rtnHashMap;
-		
-		
-		
 	}
 }

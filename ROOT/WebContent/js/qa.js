@@ -88,12 +88,14 @@ $(function() {
 
 var addQa=function(text,catage,title){
 
-	var ezerData={
+	var etzJsonData={
 			"qa_contents" : text,
 			"qa_categ" : catage,
 			"qa_title" : title
 		}
-	$.post("/addQa",ezerData, function(data) {
+	
+	console.log(etzJsonData);
+	$.post("/addQa",etzJsonData, function(data) {
 
 		$('.contents').val() == '';
 		console.log('data %O', data)

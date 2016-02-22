@@ -21,9 +21,9 @@
 	<!-- 공통 관심사 -->
  <aop:config />
  <aop:aspectj-autoproxy />
-	<bean id="mainAop" class="com.ezer_g.www.aop.mainAop"></bean> 
+	<bean id="mainAop" class="com.ezer_g.www.aop.mainAop">	</bean> 
 	<bean id="fileLogger" class="com.ezer_g.www.aop.fileLogger">
-	</bean>
+	</bean> 
 	<!-- 웹컨트 -->
 	<bean id="ezerWebcont" class="com.ezer_g.www.web.ezerWebcon">
 		<property name="service" ref="ezer_Notice_Service_IMp"></property>
