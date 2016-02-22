@@ -20,10 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-
-import com.ezer_g.www.dto.Dto_Ezer;
-import com.ezer_g.www.dto.LtadminDt;
-import com.ezer_g.www.model.CommonInout;
+import com.ezer_g.www.model.Dto_Ezer;
 import com.ezer_g.www.service.Ezer_Service_IMp;
 
 @Controller
@@ -41,7 +38,7 @@ public class ezerDataCont {
 	
 	@RequestMapping(value="/noticeList",produces = "application/json; charset=utf-8",method = RequestMethod.GET)
 	public @ResponseBody 
-	HashMap<String, Object> noticeList(HttpServletRequest req,HttpServletResponse rs,Model model,Dto_Ezer denn)
+	HashMap<String, Object> noticeList(HttpServletRequest req,HttpServletResponse rs,Dto_Ezer denn)
 			throws Throwable {		
 
 		HashMap<String, Object> result= se.noticeLIst(denn);
@@ -49,7 +46,7 @@ public class ezerDataCont {
 		return result;
 		
 	}
-
+/*
 	
 	@RequestMapping(value = "/searchfaq")
 	public void searchfaq(HttpServletRequest req, HttpServletResponse rs, Dto_Ezer denn)
@@ -77,14 +74,13 @@ public class ezerDataCont {
 		rs.setContentType("application/x-json; charset=UTF-8");
 		rs.getWriter().print(obj);
 
-	}
+	}*/
 
 
 	@RequestMapping(value="/addQa",produces = "application/json; charset=utf-8",method = RequestMethod.POST)
 	public @ResponseBody 
 	HashMap<String, Object> addQa(HttpServletRequest req,HttpServletResponse rs,Dto_Ezer denn)
-			throws Throwable {		
-		System.out.println("1");
+			throws Throwable {	
 		HashMap<String, Object> result= se.addQa(denn);
 		
 		return result;

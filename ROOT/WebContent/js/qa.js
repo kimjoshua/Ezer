@@ -1,5 +1,5 @@
 /**
- * 
+ * auth  joshuakim
  */
 
 "use strict";
@@ -60,6 +60,7 @@ $(function() {
 		var text = $('textarea[name="contents"]').val();
 		var title = $('input[name="title"]').val();
 		var catage = $("input:checked").val();
+	
 		var check = 1;
 		if (!text) {
 			alert('내용을 입력해 주세요');
@@ -87,11 +88,12 @@ $(function() {
 
 var addQa=function(text,catage,title){
 
-	$.post("/addQa", {
-		"qa_contents" : text,
-		"qa_categ" : catage,
-		"qa_title" : title
-	}, function(data) {
+	var ezerData={
+			"qa_contents" : text,
+			"qa_categ" : catage,
+			"qa_title" : title
+		}
+	$.post("/addQa",ezerData, function(data) {
 
 		$('.contents').val() == '';
 		console.log('data %O', data)

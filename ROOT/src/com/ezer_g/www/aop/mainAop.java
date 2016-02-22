@@ -3,7 +3,9 @@ package com.ezer_g.www.aop;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Locale;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +16,9 @@ import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
+import org.codehaus.jackson.map.JsonDeserializer;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.type.TypeReference;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -22,10 +26,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.NoSuchMessageException;
 import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StopWatch;
 
-
-
-import com.ezer_g.www.dto.Dto_Ezer;
+import com.ezer_g.www.model.Dto_Ezer;
 import com.mysql.fabric.xmlrpc.base.Array;
 
 @Aspect
@@ -39,13 +42,27 @@ public class mainAop {
 	@Around("execution(* com.ezer_g.www.web.*Cont.*(..))")
 	public Object serviceAop(ProceedingJoinPoint pjp) throws Throwable{
 
-	    MethodSignature signature = (MethodSignature) pjp.getSignature();
+	 /*   MethodSignature signature = (MethodSignature) pjp.getSignature();*/
+/*	    String methodName= pjp.getSignature().getName();
+	    StopWatch sw = new StopWatch();
+	    sw.start(methodName);
+	    sw.stop();
+*/	    Object rtnObject= pjp.proceed();
+	
+		Object[] args = pjp.getArgs();
+
+		  HashMap<String, Object> hmap = new HashMap<String, Object>();
+		
+	/*	  Dto_Ezer de =(Dto_Ezer)rtnObject;
+		  hmap.put("datalist", de);*/
+	    int a=0;
+/*	    for(Object i:args){
+	    	System.out.println(args[a++]);
+	    }*/
 	    
-	    Object[] args = pjp.getArgs();
-	    System.out.println(args);
 	    try{
 	    	
-	    	return pjp.proceed();
+	    	return rtnObject;
 	    }catch(Throwable e){
 	    	System.out.println("fail");
 	    }

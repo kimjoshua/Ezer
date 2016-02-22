@@ -60,12 +60,12 @@
 		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
 		<property name="supportedMediaTypes" value="application/json"></property>
 	</bean>
- 	<mvc:interceptors>
+ 	<!-- <mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/**" />
 			<bean class="com.ezer_g.www.aop.interceptors"></bean>
 		</mvc:interceptor>
-	</mvc:interceptors> 
+	</mvc:interceptors>  -->
 
 	
 

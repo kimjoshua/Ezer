@@ -9,7 +9,7 @@ import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.ezer_g.www.dto.Dto_Ezer;
+import com.ezer_g.www.model.Dto_Ezer;
 
 public class Dao_Ezer_faq_imp extends SqlSessionDaoSupport implements Dao_Ezer_faq{
 	private JdbcTemplate jdbcTemplate;

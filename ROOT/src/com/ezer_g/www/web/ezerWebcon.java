@@ -17,11 +17,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.ezer_g.www.dto.LrtmemDto;
-import com.ezer_g.www.dto.LtadminDt;
 import com.ezer_g.www.loghash.Hash;
-import com.ezer_g.www.model.CommonInout;
-import com.ezer_g.www.service.Lrunservice;
 import com.ezer_g.www.service.Ezer_Service_IMp;
 
 @Controller

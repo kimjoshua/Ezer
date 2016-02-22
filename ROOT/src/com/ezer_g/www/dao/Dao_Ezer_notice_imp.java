@@ -13,7 +13,7 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.ezer_g.www.aop.interceptors;
-import com.ezer_g.www.dto.Dto_Ezer;
+import com.ezer_g.www.model.Dto_Ezer;
 
 public class Dao_Ezer_notice_imp extends SqlSessionDaoSupport implements Dao_Ezer_notice{
 	
@@ -25,17 +25,22 @@ public class Dao_Ezer_notice_imp extends SqlSessionDaoSupport implements Dao_Eze
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 	
+
 	@Override
-	public List<Dto_Ezer> get_Notice(Dto_Ezer de) {
+	public List get_Notice(HashMap<String, Object> inOutHashMap) {
 		SqlSession ss = getSqlSession();
-				
-		return ss.selectList("notice_LIst");
+		
+		return ss.selectList("notice_LIst",inOutHashMap);
 	}
+
 	@Override
-	public int getProductContactUsCount(Dto_Ezer de) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int noticeCount(Dto_Ezer de) {
+		SqlSession ss = getSqlSession();
+		
+		return ss.selectOne("noticeCount");
 	}
+
+
 
 
 }

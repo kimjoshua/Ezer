@@ -1,6 +1,6 @@
 package com.ezer_g.www.loghash;
 
-import com.ezer_g.www.service.Lrunservice;
+
 
 /**
 @file KISA_SHA256.java
@@ -10,12 +10,12 @@ import com.ezer_g.www.service.Lrunservice;
 */
 
 public class Hash {
-	private Lrunservice service;
+/*	private Lrunservice service;
 
 	public void setService(Lrunservice service) {
 		this.service = service;
 	}
-	
+	*/
 	
 	
 	// DEFAULT : JAVA = BIG_ENDIAN

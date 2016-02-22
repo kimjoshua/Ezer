@@ -7,9 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class CommonInout extends AbstratModel {
 
-	
-	private String notice_title=null;
-	
+public class mainModel {
+	private String etzJsonData = "{}";
 }

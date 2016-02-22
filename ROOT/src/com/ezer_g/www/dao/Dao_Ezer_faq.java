@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Repository;
 
-import com.ezer_g.www.dto.Dto_Ezer;
+import com.ezer_g.www.model.Dto_Ezer;
 
 @Repository
 public interface Dao_Ezer_faq {

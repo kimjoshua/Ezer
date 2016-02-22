@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html;" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%
 	String cp = request.getContextPath();
 %>
@@ -26,6 +27,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
 	integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
 	crossorigin="anonymous"></script>
+<script src="<%=cp%>/js/notice.js"></script>
 <%-- <script src="<%=cp%>/js/ezer.js"></script> --%>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,7 +52,8 @@
 							<div class="mainText"
 								style="position: relative; padding: 5% 1% 1% 6%;">
 								<span
-									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">공지 사항</span>
+									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">공지
+									사항</span>
 
 							</div>
 							<div class="introText">
@@ -62,9 +65,27 @@
 												<th style="text-align: center">제목</th>
 											</tr>
 										</thead>
-										<tbody>
+										<tbody class="noticeTable">
 
 										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="2">
+													<div class=" ">
+														<ul class="pagination">
+															<li><a href="#" aria-label="Previous"> <span
+																	aria-hidden="true">&laquo;</span>
+															</a></li>
+													
+														
+															<li><a href="#" aria-label="Next"> <span
+																	aria-hidden="true">&raquo;</span>
+															</a></li>
+														</ul>
+													</div>
+												</td>
+											</tr>
+										</tfoot>
 									</table>
 								</div>
 							</div>
@@ -80,16 +101,8 @@
 	</div>
 
 	<script>
-		$(function() {
-
-			$.get('/noticeList', function(data) {
-
-				console.log(data.noticeLIst)
-
-			});
-		});
-	</script>
 		
-		</body>
-		</html>
-	
+	</script>
+
+</body>
+</html>

@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import org.springframework.stereotype.Service;
 
-import com.ezer_g.www.dto.Dto_Ezer;
+import com.ezer_g.www.model.Dto_Ezer;
 
 @Service
 public interface Ezer_Service {
