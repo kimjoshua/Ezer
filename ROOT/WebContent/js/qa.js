@@ -95,7 +95,11 @@ var addQa=function(text,catage,title){
 		}
 	
 	console.log(etzJsonData);
-	$.post("/addQa",etzJsonData, function(data) {
+	$.post("/addQa",{
+		"qa_contents" : text,
+		"qa_categ" : catage,
+		"qa_title" : title
+	}, function(data) {
 
 		$('.contents').val() == '';
 		console.log('data %O', data)

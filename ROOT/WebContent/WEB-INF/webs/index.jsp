@@ -13,6 +13,7 @@
 <title>Color Ez - 컬러테라피 아카데미 스</title>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans'
 	rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="<%=cp %>/img/ico.jpg" />
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet"

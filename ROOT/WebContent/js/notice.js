@@ -10,7 +10,7 @@ $(function() {
 
 
 	$.get('/noticeList',{"page_no":page_no}, function(data) {
-		console.log(data.noticeLIst)
+		console.log(data)
 
 		
 		for(var i=0;i<data.noticeLIst.length;i++){

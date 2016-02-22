@@ -1,10 +1,13 @@
 package com.ezer_g.www.aop;
 
 import java.util.HashMap;
+
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.codehaus.jackson.JsonParser;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -28,8 +31,57 @@ public class mainAop {
 	// @Autowired
 	// private MessageSourceAccessor msa;
 	private ObjectMapper mapper = new ObjectMapper();
+	/*@Before("addQa()")*/
+	@Before("execution(* com.ezer_g.www.web.*Cont.*(..)) ")
+public Object addQA(JoinPoint pjp) throws Throwable {
 
-	@Pointcut("execution(* com.ezer_g.www.web.*Cont.*(..)) ||execution(* com.ezer_g.www.web.*model.*(..))")
+			Object[] params = pjp.getArgs();
+			MainModel mainModel = new MainModel();
+
+			String etzJsonData = mainModel.getEtzJsonData();
+
+			System.out.println("getIn" + ((ProceedingJoinPoint) pjp).proceed());
+
+			try {
+
+				return null;
+			} catch (Throwable e) {
+				System.out.println("fail");
+			}
+
+			return null;
+
+		}
+
+
+	
+/*	@Around("execution(* com.ezer_g.www.web.*Cont.*(..)) ")
+	public Object addQA(ProceedingJoinPoint pjp) throws Throwable {
+		Object[] args = pjp.getArgs();
+		System.out.println(args[0]);
+		System.out.println(args[1]);
+		System.out.println(args[2]);
+		MainModel mainModel = new MainModel();
+		
+		String etzJsonData=mainModel.getEtzJsonData();
+		
+		
+		
+		System.out.println("getIn"+pjp.proceed());
+		
+		try {
+			
+			return pjp.proceed();
+		} catch (Throwable e) {
+			System.out.println("fail");
+		}
+		
+		
+		
+		return null;
+		
+	}*/
+	@Pointcut("execution(* com.ezer_g.www.web.*Cont.*(..)) || execution(* com.ezer_g.www.web.*model.*(..))")
 	public Object serviceAop(ProceedingJoinPoint pjp) throws Throwable {
 		
 		/* MethodSignature signature = (MethodSignature) pjp.getSignature(); */
@@ -61,22 +113,7 @@ public class mainAop {
 
 
 	}
-	@Around("execution(* com.ezer_g.www.web.*Cont.*(..)) ")
-	public Object addQA(ProceedingJoinPoint pjp) throws Throwable {
-		
-		
-		try {
-			
-			return pjp.proceed();
-		} catch (Throwable e) {
-			System.out.println("fail");
-		}
-		
-		
-		
-		return null;
-		
-	}
+
 
 
 }
