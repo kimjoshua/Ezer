@@ -87,19 +87,14 @@ $(function() {
 });
 
 var addQa=function(text,catage,title){
-
 	var etzJsonData={
 			"qa_contents" : text,
 			"qa_categ" : catage,
 			"qa_title" : title
 		}
-	
-	console.log(etzJsonData);
-	$.post("/addQa",{
-		"qa_contents" : text,
-		"qa_categ" : catage,
-		"qa_title" : title
-	}, function(data) {
+	var json= JSON.stringify(etzJsonData);
+	console.log(json);
+	$.post("/addQa",etzJsonData, function(data) {
 
 		$('.contents').val() == '';
 		console.log('data %O', data)

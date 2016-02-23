@@ -10,7 +10,9 @@ $(function() {
 
 
 	$.get('/noticeList',{"page_no":page_no}, function(data) {
-		console.log(data)
+		
+		var dataList=JSON.stringify(data)
+		console.log(dataList)
 
 		
 		for(var i=0;i<data.noticeLIst.length;i++){

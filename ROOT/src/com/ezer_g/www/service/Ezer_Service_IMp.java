@@ -18,64 +18,55 @@ import lombok.Setter;
 
 @Setter
 @Service
-public class Ezer_Service_IMp  {
+public class Ezer_Service_IMp {
 	private static final org.slf4j.Logger logger = LoggerFactory.getLogger(ezerDataCont.class);
 	private Dao_Ezer_notice den;
 	private Dao_Ezer_faq def;
 	private Dao_Ezer_Qa qa;
 
 	public HashMap<String, Object> noticeLIst(Dto_Ezer de) {
-		HashMap<String, Object> inOutHashMap= new HashMap<String, Object>();
+		HashMap<String, Object> inOutHashMap = new HashMap<String, Object>();
 		HashMap<String, Object> rtnHashMap = new HashMap();
-		
+
 		inOutHashMap.put("page_no", de.getPage_no());
-		List<HashMap<String, Object>>noticeLIst=den.get_Notice(inOutHashMap);
-	
-		 int ntotalCount =	den.noticeCount(de);
-		 
-		rtnHashMap.put("total_count", ntotalCount); 
-		 
-		 rtnHashMap.put("noticeLIst", noticeLIst);
+		List<HashMap<String, Object>> noticeLIst = den.get_Notice(inOutHashMap);
+
+		int ntotalCount = den.noticeCount(de);
+
+		rtnHashMap.put("total_count", ntotalCount);
+
+		rtnHashMap.put("noticeLIst", noticeLIst);
 		return rtnHashMap;
 
 	}
 
-/*	public List searchfaq(Dto_Ezer de) {
-		return def.get_search(de);
-	}
-
-	public List faqList() {
-		// TODO Auto-generated method stub
-		return def.get_FaqList();
-	}
-*/
+	/*
+	 * public List searchfaq(Dto_Ezer de) { return def.get_search(de); }
+	 * 
+	 * public List faqList() { // TODO Auto-generated method stub return
+	 * def.get_FaqList(); }
+	 */
 	public HashMap<String, Object> addQa(Dto_Ezer de) {
-		HashMap<String, Object> inOutHashMap= new HashMap<String, Object>();
+		HashMap<String, Object> inOutHashMap = new HashMap<String, Object>();
 		HashMap<String, Object> rtnHashMap = new HashMap();
+		if ("".equals(de.getQa_categ()) || de.getQa_categ() == null || "".equals(de.getQa_contents())
+				|| de.getQa_contents() == null || "".equals(de.getQa_title()) || de.getQa_title() == null
 
-		if(		"".equals(de.getQa_categ())
-			|| 	de.getQa_categ()==null
-			||	"".equals(de.getQa_contents())
-			||	de.getQa_contents()==null
-			||	"".equals(de.getQa_title())
-			||	de.getQa_title()==null
-			||	de.getPage_no()==0
-			||	de.getPage_no() >=0
-			){
-			rtnHashMap.put("data",false );
-		}else{
-		inOutHashMap.put("qa_title", de.getQa_title());
-		inOutHashMap.put("qa_categ", de.getQa_categ());
-		inOutHashMap.put("qa_contents", de.getQa_contents());
-	
+		) {
+			rtnHashMap.put("data", false);
+		} else {
+			inOutHashMap.put("qa_title", de.getQa_title());
+			inOutHashMap.put("qa_categ", de.getQa_categ());
+			inOutHashMap.put("qa_contents", de.getQa_contents());
 
-		qa.addQA(inOutHashMap);
-	
-		rtnHashMap.put("rtn_message", 0);
-	
-		
-		
+			qa.addQA(inOutHashMap);
+			System.out.println("cate" + de.getQa_categ());
+			System.out.println("conten" + de.getQa_contents());
+			System.out.println("ti" + de.getQa_title());
+			rtnHashMap.put("rtn_message", 0);
+
 		}
+
 		return rtnHashMap;
 	}
 }

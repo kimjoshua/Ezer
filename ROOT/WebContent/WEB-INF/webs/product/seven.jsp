@@ -11,9 +11,10 @@
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Color Ez - 컬러테라피 아카데미 스</title>
+<title>진정한 아름다움을 위한 조력자, E-ZER COSMETIC</title></title>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans'
 	rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="<%=cp %>/img/ico.jpg" />
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet"

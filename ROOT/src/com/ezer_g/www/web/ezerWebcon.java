@@ -153,7 +153,7 @@ public class ezerWebcon {
 	}
 	@RequestMapping("toroad")
 	public String toroad() {
-		return "/etc/toroad";
+		return "etc/toroad";
 	}
 
 
