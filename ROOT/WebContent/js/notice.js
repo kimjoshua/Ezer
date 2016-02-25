@@ -17,16 +17,20 @@ $(function() {
 	var pN=new pag_No()
 	var data={
 		"pageTab":pN.pageTab,
-		"page_no":pN.page_no
+			"page_no":pN.page_no,
+			"paNo":pN.curpag
 	}
 	pagination(data);
 	$(document).on('click','li.pVal', function(){
 		$('.noticeTable,.pagination').children().remove();
-	$('li.pVal').addClass('active');
 	pN.page_no=($(this).val()-1)*20;
+	pN.curpag=$(this).val()
+	$(this).closest().addClass("active");
+
 	data={
 			"pageTab":pN.pageTab,
-			"page_no":pN.page_no
+			"page_no":pN.page_no,
+			"paNo":pN.curpag
 		}
 		console.log('pN.page_no %O',pN.page_no);
 		pagination(data);
@@ -37,11 +41,13 @@ $(function() {
 		$('.noticeTable,.pagination').children().remove();
 		pN.pageTab+=10
 		pN.page_no=(pN.pageTab)*20
+		pN.curpag=pN.pageTab+1
 //		pN.page_no=pN.page_no+(pN.pageTab/10)*10
 		
 		data={
-		"pageTab":pN.pageTab,
-		"page_no":pN.page_no
+			"pageTab":pN.pageTab,
+			"page_no":pN.page_no,
+			"paNo":pN.curpag
 	}
 		pagination(data);
 	});
@@ -50,7 +56,7 @@ $(function() {
 		
 		pN.pageTab-=10
 		pN.page_no=pN.page_no-20
-		
+		pN.curpag=pN.pageTab+1
 		
 		
 		if(pN.pageTab>=0){
@@ -58,7 +64,8 @@ $(function() {
 		}
 		data={
 				"pageTab":pN.pageTab,
-				"page_no":pN.page_no
+				"page_no":pN.page_no,
+				"paNo":pN.curpag
 		}
 				pagination(data);
 
@@ -84,15 +91,15 @@ console.log(rTdata)
 
 		
 		if(Page_Count <=10){
-			pageList(Page_Count,pageTab)
+			pageList(Page_Count,pageTab,rTdata.paNo)
 			                                                                                                 
 		}else if(Page_Count >10 && pageTab==0){
-			pageList(Page_Count,pageTab)
+			pageList(Page_Count,pageTab,rTdata.paNo)
 			$('<li value="10" class="next"><a href="javascript:void(0)" aria-label="Next"> <span aria-hidden="true">&raquo;</span></a></li>').appendTo(".pagination")
 		}else{
 			
 			$('<li value="-10" class="before"><a href="javascript:void(0)" aria-label="Previous"> <span	aria-hidden="true">&laquo;</span></a></li>').appendTo(".pagination")
-			pageList(Page_Count,pageTab)
+			pageList(Page_Count,pageTab,rTdata.paNo)
 			$('<li value="10" class="next"><a href="javascript:void(0)" aria-label="Next"> <span aria-hidden="true">&raquo;</span></a></li>').appendTo(".pagination")
 		}
 		
@@ -101,23 +108,23 @@ console.log(rTdata)
 	})
 
 }
-function pageList(Page_Count,pageTab){
-	var	pg=0;
-	if(Page_Count >=10 && pageTab==0){
-	pg=Page_Count-(Math.floor(Page_Count)%10)
-	
-	}else if(pageTab >0){
-		pg=Page_Count
-	}
+function pageList(Page_Count,pageTab,curpag){
 
-	for(var i=1+pageTab;i<=10+pageTab;i++){                                                        
-		$('.pagination').append("<li value='"+i+"'class='pVal'><a href='javascript:void(0)'>"+i+"</a><li>")
+
+	for(var i=1+pageTab;i<=10+pageTab;i++){      
+		console.log("i =",i +"paNo",curpag)
+		if(i==curpag){
+			$('.pagination').append("<li value='"+i+"'class='pVal active'><a href='javascript:void(0)'>"+i+"</a><li>")			
+		}else{
+			
+			$('.pagination').append("<li value='"+i+"'class='pVal'><a href='javascript:void(0)'>"+i+"</a><li>")			
+		}
 	} 
 }
 var pag_No=function(){
 	this.page_no=0;
 	this.Page_Count=null;
 	this.oldPag=null;
-	this.curpag=null;
+	this.curpag=1;
 	this.pageTab=0;
 }
