@@ -42,7 +42,6 @@ $(function() {
 		pN.pageTab+=10
 		pN.page_no=(pN.pageTab)*20
 		pN.curpag=pN.pageTab+1
-//		pN.page_no=pN.page_no+(pN.pageTab/10)*10
 		
 		data={
 			"pageTab":pN.pageTab,
@@ -74,8 +73,6 @@ $(function() {
 
 
 var pagination=function(rTdata){
-console.log(rTdata)
-//	console.log("p_No %O");
 	$.get('/noticeList',{"page_no":rTdata.page_no}, function(data) {
 
 //		$('.pagination').html(data).trigger("create")
@@ -111,8 +108,7 @@ console.log(rTdata)
 function pageList(Page_Count,pageTab,curpag){
 
 
-	for(var i=1+pageTab;i<=10+pageTab;i++){      
-		console.log("i =",i +"paNo",curpag)
+	for(var i=1+pageTab;i<=10+pageTab;i++){  
 		if(i==curpag){
 			$('.pagination').append("<li value='"+i+"'class='pVal active'><a href='javascript:void(0)'>"+i+"</a><li>")			
 		}else{

@@ -1,3 +1,8 @@
+/**
+ * auth  joshuakim
+ */
+
+"use strict";
 $(function() {
 
 	$('.noticeSiete').click(function() {

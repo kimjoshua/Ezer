@@ -22,6 +22,10 @@ body {
 	position:relative;
 	left:25%
 }
+.pagination>.active>a{
+	background-color: #D0D3D6!important;
+	border-color: #C3C3C3!important;
+}
 html {
 	font-family: 'Arial', verdana, sans-serif;
 	-webkit-text-size-adjust: 100%;
