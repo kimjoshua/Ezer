@@ -7,8 +7,8 @@
 	ORDER BY notice_no DESC
 	
 	<!-- 보여줄 페이지 -->
-	LIMIT 10
-	
+	<!-- LIMIT 10 -->
+	LIMIT 20
 <!-- 	이동할 페이지 -->
     OFFSET ${page_no};
 		

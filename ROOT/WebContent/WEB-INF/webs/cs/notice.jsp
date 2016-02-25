@@ -14,7 +14,7 @@
 <title>진정한 아름다움을 위한 조력자, E-ZER COSMETIC</title>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans'
 	rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="<%=cp %>/img/ico.jpg" />
+<link rel="shortcut icon" href="<%=cp%>/img/ico.jpg" />
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -28,6 +28,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
 	integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
 	crossorigin="anonymous"></script>
+<script src="<%=cp%>/js/common.js"></script>
 <script src="<%=cp%>/js/notice.js"></script>
 <%-- <script src="<%=cp%>/js/ezer.js"></script> --%>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -69,25 +70,11 @@
 										<tbody class="noticeTable">
 
 										</tbody>
-										<tfoot>
-											<tr>
-												<td colspan="2">
-													<div class=" ">
-														<ul class="pagination">
-															<li><a href="#" aria-label="Previous"> <span
-																	aria-hidden="true">&laquo;</span>
-															</a></li>
-													
-														
-															<li><a href="#" aria-label="Next"> <span
-																	aria-hidden="true">&raquo;</span>
-															</a></li>
-														</ul>
-													</div>
-												</td>
-											</tr>
-										</tfoot>
+
 									</table>
+
+										<ul class="pagination">
+										</ul>
 								</div>
 							</div>
 						</div>

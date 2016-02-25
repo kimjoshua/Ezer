@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 
 <%
 	String cp = request.getContextPath();
@@ -16,7 +17,7 @@
 <title>진정한 아름다움을 위한 조력자, E-ZER COSMETIC</title>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans'
 	rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="<%=cp %>/img/ico.jpg" />
+<link rel="shortcut icon" href="<%=cp%>/img/ico.jpg" />
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -71,44 +72,46 @@
 							<!-- mainText End -->
 							<div class="qaTextf">
 
-									<table style="width: 63%;">
+								<table style="width: 63%;">
 
-										<tr>
-											<td style="width: 47px;">구분</td>
-											<td class="categText"><input type="radio" name="categ"
-												value="1"> 홈페이지</td>
-											<td class="categText"><input type="radio" name="categ"
-												value="2"> 화장품</td>
-											<td class="categText"><input type="radio" name="categ"
-												value="3"> 생활용품</td>
-											<td class="categText"><input type="radio" name="categ"
-												value="4"> 음료</td>
-											<td class="categText"><input type="radio" name="categ"
-												value="5"> 미용상품</td>
-											<td class="categText"><input type="radio" name="categ"
-												value="6"> IR</td>
-										</tr>
-										<tr>
-											<td>제목</td>
-											<td class="heightTd" colspan="6"><input type="text" name="title" style="  position: relative; width: 93%;"></td>
-										</tr>
+									<tr>
+										<td style="width: 47px;">구분</td>
+										<td class="categText"><input type="radio" name="categ"
+											value="1"> 홈페이지</td>
+										<td class="categText"><input type="radio" name="categ"
+											value="2"> 화장품</td>
+										<td class="categText"><input type="radio" name="categ"
+											value="3"> 생활용품</td>
+										<td class="categText"><input type="radio" name="categ"
+											value="4"> 음료</td>
+										<td class="categText"><input type="radio" name="categ"
+											value="5"> 미용상품</td>
+										<td class="categText"><input type="radio" name="categ"
+											value="6"> IR</td>
+									</tr>
+									<tr>
+										<td>제목</td>
+										<td class="heightTd" colspan="6"><input type="text"
+											name="title" style="position: relative; width: 93%;"></td>
+									</tr>
 
-										<tr>
-											<td>내용</td>
-											<td colspan="6" class="heightTd"><span> * 글자수는 최대
-													400000 Byte까지 등록 가능합니다</span>
-													<span class="remaining"	style="padding-left: 38%;"></span><span class="count">0</span>/<span
-													class="maxcount">400000</span>byte
-													<div>
-														<textarea name="contents" class="contents" style="width: 93%; height: 300px;" rows="2" cols="20"></textarea></textarea>
-													</div></td>
-										</tr>
+									<tr>
+										<td>내용</td>
+										<td colspan="6" class="heightTd"><span> * 글자수는 최대
+												400000 Byte까지 등록 가능합니다</span> <span class="remaining"
+											style="padding-left: 38%;"></span><span class="count">0</span>/<span
+											class="maxcount">400000</span>byte
+											<div>
+												<textarea name="contents" class="contents"
+													style="width: 93%; height: 300px;" rows="2" cols="20"></textarea>
+											</div></td>
+									</tr>
 
-									</table>
-									<div style="position: relative; padding-top: 2%; left: 29%;">
-										<button class="sub btn">문의 하기</button>
-									</div>
-							
+								</table>
+								<div style="position: relative; padding-top: 2%; left: 29%;">
+									<button class="sub btn">문의 하기</button>
+								</div>
+
 
 							</div>
 

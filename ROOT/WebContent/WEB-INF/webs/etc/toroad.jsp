@@ -60,7 +60,7 @@
 								style="position: relative; padding: 1% 1% 1% 13%; width: 95%; padding-top: 8%;">
 								<div class="row brandmainRow">
 									<div id="map_canvas"
-										style="border: 1px solid #000; width: 500px; height: 400px; margin: 20px;"></div>
+										style="border: 1px solid #000; width: 90%; height: 500px; margin: 20px;"></div>
 
 									<div class="address">
 										<div class="row">
@@ -97,15 +97,5 @@
 		<div class="footerline"></div>
 	</div>
 
-	<script>
-		$(function() {
-
-			$.get('/noticeList', function(data) {
-
-				console.log(data.noticeList)
-
-			});
-		});
-		</body>
-		</html>
-	
+</body>
+</html>
