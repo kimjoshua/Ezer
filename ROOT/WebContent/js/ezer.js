@@ -9,7 +9,7 @@ $(function() {
 		alert("해당 사이트는 준비 중입니다. ");
 	});
 	var className = "";
-	var to=0;
+	var tog=0;
 	var data = {
 		toggle1 : null,
 		toggle2 : null,
@@ -59,7 +59,17 @@ $(function() {
 		$("." + a2 + "_detail").toggle('slow');
 		data.toggle1 = toggleImg
 	})
+
+$('.introProduct').on('click',function(){
+
+	  var div = $(this).next().next(".toggle");
+	  $(".toggle").not(div).slideUp();
+	    div.slideToggle("slow");
+
 	
 
-
+})
+$('.toggle').click(function(){
+	$(this).slideUp();
+});
 });

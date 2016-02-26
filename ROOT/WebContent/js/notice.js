@@ -9,7 +9,6 @@ $(function() {
 	$(document).on('click','.viewContents',function(){
 		
 		$('tr[data-contensView="'+$(this).attr('data-contents')+'"]').toggle('slow');
-	//	$('.contents').css("display","table-row")
 		
 	});
 
@@ -25,14 +24,12 @@ $(function() {
 		$('.noticeTable,.pagination').children().remove();
 	pN.page_no=($(this).val()-1)*20;
 	pN.curpag=$(this).val()
-	$(this).closest().addClass("active");
 
 	data={
 			"pageTab":pN.pageTab,
 			"page_no":pN.page_no,
 			"paNo":pN.curpag
 		}
-		console.log('pN.page_no %O',pN.page_no);
 		pagination(data);
 	});
 	

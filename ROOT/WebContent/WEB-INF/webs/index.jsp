@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%-- 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> --%>
 <%
@@ -13,7 +14,7 @@
 <title>진정한 아름다움을 위한 조력자, E-ZER COSMETIC</title>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans'
 	rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="<%=cp %>/img/ico.jpg" />
+<link rel="shortcut icon" href="<%=cp%>/img/ico.jpg" />
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -55,14 +56,12 @@
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
 								<li data-target="#carousel-example-generic" data-slide-to="0"
-									class="active" style="
-    margin-right: 10px;"></li>
-							
+									class="active" style="margin-right: 10px;"></li>
+
 								<li data-target="#carousel-example-generic" data-slide-to="1"
-									class="" style="
-    margin-right: 10px;"></li>
+									class="" style="margin-right: 10px;"></li>
 								<li data-target="#carousel-example-generic" data-slide-to="2"
-									class="" style="  margin-right: 10px;"></li>
+									class="" style="margin-right: 10px;"></li>
 
 							</ol>
 
@@ -165,8 +164,8 @@
 								<div class="article">
 									<h3>뉴스 &amp; 미디어</h3>
 									<div class="text">
-										<a href="/news" onclick="" title="뉴스  미디어 자세히 보기"> 에제르코스메틱과
-											각 브랜드 및 제품에 관한<br> 최신 소식을 알려드립니다.
+										<a href="/news" onclick="" title="뉴스  미디어 자세히 보기">
+											에제르코스메틱과 각 브랜드 및 제품에 관한<br> 최신 소식을 알려드립니다.
 										</a>
 									</div>
 								</div>
@@ -178,8 +177,8 @@
 								<div class="article">
 									<h3>이벤트</h3>
 									<div class="text">
-										<a href="/event" onclick="" title="이벤트 자세히 보기"> 에제르코스메틱과 각 브랜드에서
-											진행중인<br> 다양한 이벤트를 알려드립니다.
+										<a href="/event" onclick="" title="이벤트 자세히 보기"> 에제르코스메틱과 각
+											브랜드에서 진행중인<br> 다양한 이벤트를 알려드립니다.
 										</a>
 									</div>
 								</div>

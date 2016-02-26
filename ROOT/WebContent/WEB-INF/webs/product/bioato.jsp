@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%
 	String cp = request.getContextPath();
 %>
@@ -13,7 +14,7 @@
 <title>진정한 아름다움을 위한 조력자, E-ZER COSMETIC</title>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans'
 	rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="<%=cp %>/img/ico.jpg" />
+<link rel="shortcut icon" href="<%=cp%>/img/ico.jpg" />
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -56,9 +57,10 @@
 								<div class="symbole" style="width: 60%;">
 									<dl style="padding-left: 9px; padding-top: 2%;">
 										<dd>
-											<span>BIOSELEX ATO는 민감성과 건성피부에 <br>
-피부보습에 효과적인 Selemix AT 성분을 함유한 Bioselex ATO 제품은,<br>
-촉촉함을 오랜시간 유지시켜주며 피부당김현상을 예방하여 부드러운 피부를 선사합니다. </span>
+											<span>BIOSELEX ATO는 민감성과 건성피부에 <br> 피부보습에 효과적인
+												Selemix AT 성분을 함유한 Bioselex ATO 제품은,<br> 촉촉함을 오랜시간
+												유지시켜주며 피부당김현상을 예방하여 부드러운 피부를 선사합니다.
+											</span>
 										</dd>
 									</dl>
 								</div>
@@ -76,38 +78,49 @@
 									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">제품</span>
 
 								<div class="row mainRow">
-									<div class="row"style="width: 98%;">
+									<div class="row" style="width: 98%;">
 										<div class="col-md-4">
 											<div class="">
 												<img class="introProduct" src="/img/bodycleanger.jpg"
-													data-holder-rendered="true" display:block;="">
+													data-holder-rendered="true" display:block;=""
+													data-image="bodyC">
 
 												<div class="caption">
 													<span>ATO 바디클렌저</span>
 												</div>
-												<div class="detailIntro">
-													<span> 바이오 진 에센스</span>
-													<P>제품소개 : 끈 초건조성 및 초민감성 피부를 위한 제품으로, 특허받은 한방 증숙 추출물 원액을
-														담았습니다. 민감성 피부나 피부 트러블이 심한 남녀노소 모두가 안심하고 사용할 수 있는 에센스입니다.</P>
-													<span>용량 : 1000ml</span>
-													<p>사용방법 : 아침 저녁 한방 증숙 추출물로 만든 수제비누로 세정 후, 적당량의 허브 에센스를
-														취해 트러블성 피부 전체에 부드럽게 펴 바르면서 흡수시켜줍니다. 트러블 부위가 적을 경우 화장솜 등을
-														이용하여 해당 부위에만 사용하셔도 좋습니다.</p>
-													<p>전성분 : 쑥추출물, 금은화추출물, 어성초추출물, 살구추출물, 길경추출물, 천궁추출물,
-														생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물, 박하잎추출물, 참당귀추출물, 회화나무잎추출물</p>
-
+												<div class="detailIntro toggle" data-view="bodyC">
+													<div class="row">
+														<div class="col-lg-8">
+															<span> 바이오 진 에센스</span>
+															<P style="width: 140%">제품소개 : 끈 초건조성 및 초민감성 피부를 위한
+																제품으로, 특허받은 한방 증숙 추출물 원액을 담았습니다. 민감성 피부나 피부 트러블이 심한 남녀노소
+																모두가 안심하고 사용할 수 있는 에센스입니다.</P>
+															<span>용량 : 1000ml</span>
+															<p>사용방법 : 아침 저녁 한방 증숙 추출물로 만든 수제비누로 세정 후, 적당량의 허브
+																에센스를 취해 트러블성 피부 전체에 부드럽게 펴 바르면서 흡수시켜줍니다. 트러블 부위가 적을 경우
+																화장솜 등을 이용하여 해당 부위에만 사용하셔도 좋습니다.</p>
+															<p>전성분 : 쑥추출물, 금은화추출물, 어성초추출물, 살구추출물, 길경추출물, 천궁추출물,
+																생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물, 박하잎추출물, 참당귀추출물, 회화나무잎추출물</p>
+														</div>
+														<div class="col-lg-4">
+															<img class="" src="/img/bodycleanger.jpg"
+																style="position: relative; padding-right: 8%; top: 110px; height: 200px;">
+														</div>
+														<div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 										<div class="col-md-4">
 											<div class="">
 												<img class="introProduct" src="/img/mist.jpg"
-													data-holder-rendered="true" display:block;="">
+													data-holder-rendered="true" display:block;=""
+													data-image='mist'>
 
 												<div class="caption">
 													<span>미스트 </span>
 												</div>
-												<div class="detailIntro">
+												<div class="detailIntro toggle" data-view="mist">
 													<span> 바이오 진 에센스</span>
 													<P>제품소개 : 끈 초건조성 및 초민감성 피부를 위한 제품으로, 특허받은 한방 증숙 추출물 원액을
 														담았습니다. 민감성 피부나 피부 트러블이 심한 남녀노소 모두가 안심하고 사용할 수 있는 에센스입니다.</P>
@@ -117,18 +130,19 @@
 														이용하여 해당 부위에만 사용하셔도 좋습니다.</p>
 													<p>전성분 : 쑥추출물, 금은화추출물, 어성초추출물, 살구추출물, 길경추출물, 천궁추출물,
 														생강추출물, 현삼추출물, 녹차추출물, 카렌둘라꽃추출물, 박하잎추출물, 참당귀추출물, 회화나무잎추출물</p>
-
+													<img alt="" src="">
 												</div>
 											</div>
 										</div>
 										<div class="col-md-4">
 											<div class="">
 												<img class=" introProduct" src="/img/lotion.jpg"
-													data-holder-rendered="true" display:block;="">
+													data-holder-rendered="true" display:block;=""
+													data-image="lotion">
 												<div class="caption">
 													<span>ATO 로션</span>
 												</div>
-												<div class="detailIntro">
+												<div class="detailIntro toggle" data-view="lotion">
 													<span> 바이오 진 스킨로션 </span>
 													<P>제품소개 : 한방증숙추출물과 한방증류액으로 처방된 화장수로, 바르는 순간 부드럽게 피부를 감싸
 														피부 트러블을 완화시켜주며, 각종 한방활성성분이 피부에 공급되어 피부에 활력과 건강을 선사합니다. 모든
@@ -151,19 +165,19 @@
 
 											</div>
 										</div>
-										
+
 									</div>
-									<div class="row subRow"style="width: 98%;">
-									
+									<div class="row subRow" style="width: 98%;">
+
 										<div class="col-md-4">
 											<div class="">
-												<img class=" introProduct"
-													src="/img/cream.jpg"
-													data-holder-rendered="true" display:block;="">
+												<img class=" introProduct" src="/img/cream.jpg"
+													data-holder-rendered="true" display:block;=""
+													data-image="cream">
 												<div class="caption">
 													<span>ATO크림</span>
 												</div>
-												<div class="detailIntro">
+												<div class="detailIntro toggle" data-view="cream">
 													<span> 바이오셀렉스 ACN 폼클렌저 </span>
 													<P>제품소개 : 피부의 번들거림을 방지하고 피지 분비의 균형을 잡아주어 깔끔한 피부로 유지시켜주며
 														천연보습인자와 히아루론산, 비타민 및 보습효과에 탁월한 성분들이 항상 촉촉한 피부로 유지시켜줍니다.</P>
@@ -176,11 +190,12 @@
 														애엽추출물, 소나무추출물, 생강추출물, 모과추출물, 땅두릅추출물, 더덕추출물, 당귀추출물,
 														단삼꽃/잎/뿌리추출물, 길경추출물, 감초추출물, 클로브꽃추출물, 자몽추출물, 셀룰로오스, 페네칠알코올,
 														카프릴릴글라이콜, 디소듐이디티에이</p>
+													<img alt="" src="">
 
 												</div>
 											</div>
 										</div>
-										
+
 									</div>
 								</div>
 							</div>
@@ -189,7 +204,7 @@
 					</div>
 
 				</div>
-				</div>
+			</div>
 
 			<%@ include file="../template/footer.jsp"%>
 

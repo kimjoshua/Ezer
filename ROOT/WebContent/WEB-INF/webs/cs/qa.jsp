@@ -99,8 +99,7 @@
 										<td>내용</td>
 										<td colspan="6" class="heightTd"><span> * 글자수는 최대
 												400000 Byte까지 등록 가능합니다</span> <span class="remaining"
-											style="padding-left: 38%;"></span><span class="count">0</span>/<span
-											class="maxcount">400000</span>byte
+											style="padding-left: 38%;"></span><span class="count">0</span>/<span class="maxcount">80</span>byte(한글 40자, 영어 80자)byte
 											<div>
 												<textarea name="contents" class="contents"
 													style="width: 93%; height: 300px;" rows="2" cols="20"></textarea>

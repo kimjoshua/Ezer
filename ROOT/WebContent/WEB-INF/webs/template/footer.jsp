@@ -1,7 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!-- go to top -->
 <div id="gototop">
-	<a href="#"><img alt="top" src="/img/top.png" style="height: 70%;"><span>맨
+	<a href="#"><img alt="top" src="/img/top.png" style="height: 78px;"><span>맨
 			위로 가기</span></a>
 </div>
 <!-- end of go to top -->
@@ -65,7 +66,7 @@
 						<a href="/history">연혁</a>
 					</dd>
 					<dd>
-						<a href="/symbole">CI /  BI</a>
+						<a href="/symbole">CI / BI</a>
 					</dd>
 				</dl>
 			</li>
@@ -166,14 +167,17 @@
 							상담실</strong></a>
 				</dd> -->
 				<dd class="desktop" style="padding-left: 16%; width: 127px;">
-					<a href="/toroad" class="blt-balloon"> <span	class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+					<a href="/toroad" class="blt-balloon"> <span
+						class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
 
 						찾아오시는 길
 					</a>
 				</dd>
-				<dd class="desktop" style="padding-left: 16%;width: 122px;">
-					<a href="javascript:void(0)"
-						class="noticeSiete"> <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 패밀리 사이트</a>
+				<dd class="desktop" style="padding-left: 16%; width: 122px;">
+					<a href="javascript:void(0)" class="noticeSiete"> <span
+						class="glyphicon glyphicon-heart" aria-hidden="true"></span> 패밀리
+						사이트
+					</a>
 				</dd> <!-- 	<dd class="desktop">
 					<a href="/change" class="blt-balloon fcLblack"><strong>교환 및 환불 규정</strong></a>
 				</dd> -->
@@ -189,7 +193,10 @@
 							길</strong></a>
 				</dd>
 				<dd class="mobile store fDepth">
-					<a href="javascript:void(0)" class="blt-balloon toggleTrigger"><strong>  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 패밀리 사이트</strong></a>
+					<a href="javascript:void(0)" class="blt-balloon toggleTrigger"><strong>
+							<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+							패밀리 사이트
+					</strong></a>
 				</dd> <!-- 	<dd class="mobile store fDepth">
 					<a href="/change" class="blt-balloon toggleTrigger"><strong>교환 및 환불 규정</strong></a>
 				</dd> -->
@@ -202,11 +209,11 @@
 	<div class="footer mobileVary">
 		<div></div>
 		<div class="copyright center">
-			<span style="position: relative;right: 122px;">©E-ZER
+			<span style="position: relative; right: 122px;">©E-ZER
 				COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-				style="left: 13%; position: relative;">(주) 에제르코스메틱 대표 : 정경모
-				| 서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img
-				src="" alt="">
+				style="left: 13%; position: relative;">(주) 에제르코스메틱 대표 : 정경모 |
+				서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img src=""
+				alt="">
 			</span>
 		</div>
 

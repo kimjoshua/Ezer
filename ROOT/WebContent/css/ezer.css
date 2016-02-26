@@ -18,6 +18,14 @@ body {
 .utility li.text a {
 	font-size: 12px;
 }
+.detailIntro{
+    position: absolute;
+    z-index: 15;
+    background-color: white;
+    top: 4%;
+    right: -81%;
+    padding-left: 1%;
+    width: 175%;}
 .pagination{
 	position:relative;
 	left:25%
@@ -214,7 +222,7 @@ position: absolute;
 	position: relative;
 	display: block;
 	margin-top: 100px;
-	left: 86%;
+	right: 1%;
 }
 
 .carousel-indicators .active {
@@ -10090,7 +10098,7 @@ textarea.refresh {
 	border: 1px solid #d0d0d0;
 }
 /* end of 온라인 매장 */
-
+/* 
 /* 로그인 */
 .loginWrap {
 	width: 1003px;
@@ -10201,12 +10209,12 @@ textarea.refresh {
 	background: url(../img/bu_hyphen.gif) 0 10px no-repeat;
 	padding-left: 10px;
 }
-/* end of 로그인 */
+end of 로그인
 .customerMy .hTabWrap .board tbody td a {
 	word-break: break-all;
 }
 
-/* 오류페이지 */
+오류페이지
 #errorWrap {
 	
 }
@@ -10322,23 +10330,23 @@ textarea.refresh {
 	}
 }
 
-/* 1024 부터 1180 까지 */
+1024 부터 1180 까지
 @media all and (max-width:1180px) {
-	/* 3뎁스 위치 */
+	3뎁스 위치
 	#main .navwrap {
-		width: 143px; /*margin-left:-30px*/
-	} /* 1뎁스 */
-	/*.safari #main .navwrap { width: 143px; }  1뎁스 */
+		width: 143px; margin-left:-30px
+	} 1뎁스
+	.safari #main .navwrap { width: 143px; }  1뎁스
 	#main .navwrap div {
-		height: 446px; /*left:214px;*/
+		height: 446px; left:214px;
 		left: 143px
-	} /* 2뎁스 위치 */
-	/* .safari #main .navwrap div { left:143px } 2뎁스 위치 */
+	} 2뎁스 위치
+	.safari #main .navwrap div { left:143px } 2뎁스 위치
 	#main #nav .navwrap div#dep0203 .dep02 li:nth-child(4) {
 		position: absolute;
 		top: 20px;
 		left: 255px;
-	} /* 이노베이션 오픈이노베이션 */
+	} 이노베이션 오픈이노베이션
 	#main #nav .navwrap div#dep0203 .dep03 li:nth-child(4) {
 		position: relative;
 		top: 0;
@@ -10348,7 +10356,7 @@ textarea.refresh {
 		position: absolute;
 		top: 20px;
 		left: 255px;
-	} /* 지속가능경영 환경과함께 */
+	} 지속가능경영 환경과함께
 	#main #nav .navwrap div#dep0204 .dep03 li:nth-child(4) {
 		position: relative;
 		top: 0;
@@ -10358,7 +10366,7 @@ textarea.refresh {
 		position: absolute;
 		top: 165px;
 		left: 255px;
-	} /* 지속가능경영 임직원/비즈니스파트너와 함께 */
+	} 지속가능경영 임직원/비즈니스파트너와 함께
 	#main #nav .navwrap div#dep0204 .dep03 li:nth-child(5) {
 		position: relative;
 		top: 0;
@@ -10368,7 +10376,7 @@ textarea.refresh {
 		position: absolute;
 		top: 259px;
 		left: 255px;
-	} /* 지속가능경영 사회와함께 */
+	} 지속가능경영 사회와함께
 	#main #nav .navwrap div#dep0204 .dep03 li:nth-child(6) {
 		position: relative;
 		top: 0;
@@ -10378,7 +10386,7 @@ textarea.refresh {
 		position: absolute;
 		top: 20px;
 		left: 255px;
-	} /* 투자자정보 실시간주가 */
+	} 투자자정보 실시간주가
 	#main #nav .navwrap div#dep0205 .dep03 li:nth-child(5) {
 		position: relative;
 		top: 0;
@@ -10388,17 +10396,17 @@ textarea.refresh {
 		position: absolute;
 		top: 20px;
 		left: 255px;
-	} /* 투자자정보 재무정보 */
+	} 투자자정보 재무정보
 	#main #nav .navwrap div#dep0206 .dep02 li:nth-child(6) {
 		position: absolute;
 		top: 140px;
 		left: 255px;
-	} /* 투자자정보 재무정보 */
+	} 투자자정보 재무정보
 	#main #nav .navwrap div#dep0206 .dep02 li:nth-child(7) {
 		position: absolute;
 		top: 250px;
 		left: 255px;
-	} /* 투자자정보 재무정보 */
+	} 투자자정보 재무정보
 	#main #nav .navwrap div#dep0205 .dep03 li:nth-child(6) {
 		position: relative;
 		top: 0;
@@ -10414,21 +10422,21 @@ textarea.refresh {
 		height: 145px;
 	}
 
-	/* sub 지속가능 */
+	sub 지속가능
 	#dep0204 ul.dep02 li {
 		padding-right: 4px;
 	}
 	#dep0204 ul.dep03 li {
 		padding: 0;
 	}
-	/* end of sub 지속가능 */
+	end of sub 지속가능
 
-	/* end of 3뎁스 위치 */
+	end of 3뎁스 위치
 	.imgArea img {
 		width: 100%;
 		max-width: 100%;
-	} /* 이미지 관련 */
-	/* 홍보영상 */
+	} 이미지 관련
+	홍보영상
 	.videoList .listGroup {
 		margin-left: 70px;
 		height: 147px;
@@ -10446,12 +10454,12 @@ textarea.refresh {
 		width: 146px;
 		height: 71px;
 	}
-	/* end of 홍보영상 */
+	end of 홍보영상
 	.brandCont img {
 		max-width: 100%;
 		width: 100%;
-	} /* 브랜드 */
-	/* 고객상담 */
+	} 브랜드
+	고객상담
 	.customerGuide li div.info p {
 		display: block;
 		margin-left: 0px;
@@ -10459,18 +10467,18 @@ textarea.refresh {
 	.customLink .layout2cell, .customLink .layout2cell .btn {
 		margin: 0 0 6px 0;
 	}
-	/* end of 고객상담 */
+	end of 고객상담
 	.formWrite .innerWrap dd .email select {
 		margin: 0 0 0 5px;
 		width: 25%;
 		vertical-align: top;
-	} /* 쓰기폼 */
+	} 쓰기폼
 	.boardList p.tit {
 		height: 55px;
 		overflow: hidden;
-	} /* News Media 게시판 리스트 */
+	} News Media 게시판 리스트
 
-	/* faq */
+	faq
 	.faqList .num {
 		text-align: center;
 		width: 10%;
@@ -10482,12 +10490,12 @@ textarea.refresh {
 	.faqList .type {
 		width: 27%;
 	}
-	/* 상세검색 */
+	상세검색
 	.srcBoxWrap {
 		margin: 0 11.5% 0 10.5%;
 	}
 }
-
+ */
 /* 1024 */
 @media all and (min-width:1024px) and (max-width:1080px) {
 	#main .navwrap div p {

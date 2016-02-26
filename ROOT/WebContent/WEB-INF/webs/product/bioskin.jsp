@@ -84,7 +84,7 @@
 												<div class="caption">
 													<span>바이오진 미스트</span>
 												</div>
-												<div class="detailIntro">
+												<div class="detailIntro toggle">
 													<span> 바이오셀렉스 ACN 폼클렌저 </span>
 													<P>제품소개 : 피부의 번들거림을 방지하고 피지 분비의 균형을 잡아주어 깔끔한 피부로 유지시켜주며
 														천연보습인자와 히아루론산, 비타민 및 보습효과에 탁월한 성분들이 항상 촉촉한 피부로 유지시켜줍니다.</P>
