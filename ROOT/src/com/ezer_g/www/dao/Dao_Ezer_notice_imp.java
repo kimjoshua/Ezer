@@ -11,9 +11,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
-
 import com.ezer_g.www.aop.interceptors;
 import com.ezer_g.www.model.Dto_Ezer;
+
 
 public class Dao_Ezer_notice_imp extends SqlSessionDaoSupport implements Dao_Ezer_notice{
 	

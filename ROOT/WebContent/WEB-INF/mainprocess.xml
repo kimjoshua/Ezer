@@ -22,7 +22,7 @@
 
 
 	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
-		<constructor-arg ref="sqlSessionFactoryBean"></constructor-arg>
+		<constructor-arg ref="sqlSessionFactoryBean" index="0"/>
 	</bean>
 
  <!-- query xml create read -->
@@ -38,6 +38,7 @@
  	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="simpleDriverDataSource"></property>
 		<property name="databaseIdProvider" ref="databaseIdProvider"></property>
+		<property name="configLocation" value="/WEB-INF/mybatis/config/sql-map-config.xml"></property>
 		<property name="mapperLocations" value="classpath:com/ezer_g/www/mapper/*.xml"></property>
 	</bean> 
 	
