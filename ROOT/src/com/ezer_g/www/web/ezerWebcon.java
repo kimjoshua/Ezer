@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -23,6 +24,7 @@ import com.ezer_g.www.service.Ezer_Service_IMp;
 @Controller
 public class ezerWebcon {
 	
+	@Autowired
 	private Ezer_Service_IMp se;
 
 
@@ -34,6 +36,11 @@ public class ezerWebcon {
 	public  String index() {
 		return "index";
 
+	}
+	@RequestMapping(value = {"/**"})
+	public  String Err() {
+		return "error/404";
+		
 	}
 
 	@RequestMapping("/index")

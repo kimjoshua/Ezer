@@ -9,8 +9,16 @@ body {
 	color: #333;
 	background-color: #fff;
 }
+.text{
+	    text-align: center;
+}
 .viewContents:hover{
 	 cursor: pointer;
+}
+.player{
+	    position: relative;
+    padding-top: 8%;
+    left: 20%;
 }
 .nContents{
 	display: none;

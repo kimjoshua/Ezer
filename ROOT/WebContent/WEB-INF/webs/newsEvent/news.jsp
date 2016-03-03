@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%
 	String cp = request.getContextPath();
 %>
@@ -13,7 +14,7 @@
 <title>진정한 아름다움을 위한 조력자, E-ZER COSMETIC</title>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans'
 	rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="<%=cp %>/img/ico.jpg" />
+<link rel="shortcut icon" href="<%=cp%>/img/ico.jpg" />
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -27,6 +28,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
 	integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
 	crossorigin="anonymous"></script>
+<script src="<%=cp%>/js/news.js"></script>
 <%-- <script src="<%=cp%>/js/ezer.js"></script> --%>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,14 +61,18 @@
 									<table>
 										<thead style="border-top: 0.2em solid grey;">
 											<tr style="text-align: center;">
-												<th style="text-align: center; width: 20%;">등록</th>
-												<th style="text-align: c;">제목</th>
+												<th style="text-align: center; width: 20%;">등록일</th>
+												<th style="text-align: center">제목</th>
 											</tr>
 										</thead>
-										<tbody>
+										<tbody class="noticeTable">
 
 										</tbody>
+
 									</table>
+
+										<ul class="pagination">
+										</ul>
 								</div>
 							</div>
 						</div>
@@ -80,15 +86,5 @@
 		<div class="footerline"></div>
 	</div>
 
-	<script>
-		$(function() {
-
-			$.get('/noticeList', function(data) {
-
-				console.log(data.noticeList)
-
-			});
-		});
-		</body>
-		</html>
-	
+</body>
+</html>

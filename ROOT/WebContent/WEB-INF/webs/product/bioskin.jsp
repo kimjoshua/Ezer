@@ -65,7 +65,7 @@
 
 							</div>
 							<div class="ciLogo" align="middle">
-								<img alt="에제를 코스메틱 CI로고" src="/img/perzer.png"
+								<img alt="에제를 코스메틱 CI로고" src="<%=cp%>/img/pezer.png"
 									style="position: relative; right: 1%; padding-top: 7%;">
 							</div>
 

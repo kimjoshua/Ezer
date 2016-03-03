@@ -44,12 +44,16 @@
 	<bean id="dao_Ezer_Qa_imp" class="com.ezer_g.www.dao.Dao_Ezer_Qa_imp">
 		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
 	</bean>
+	<bean id="dao_Ezer_news_Imp" class="com.ezer_g.www.dao.Dao_Ezer_news_Imp">
+		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
+	</bean>
 
 	<!-- 서비스 임플 -->
 	<bean id="ezer_Notice_Service_IMp" class="com.ezer_g.www.service.Ezer_Service_IMp">
 		<property name="den" ref="dao_Dao_Ezer_notice_imp"></property>
 		<property name="def" ref="dao_Ezer_faq_imp"></property>
 		<property name="qa" ref="dao_Ezer_Qa_imp"></property>
+		<property name="news" ref="dao_Ezer_news_Imp"></property>
 	</bean>
 
 	<bean

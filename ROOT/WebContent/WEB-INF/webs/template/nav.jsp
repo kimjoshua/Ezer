@@ -74,7 +74,6 @@
 					<ul class="dropdown">
 						<li><a href="/ad">AD</a></li>
 						<li><a href="/news">NEWS</a></li>
-						<li><a href="/media">MEDIA</a></li>
 						<li><a href="/event">EVENT</a></li>
 					</ul></li>
 				<li><a href="#">고객 센터<span class="caret"></span></a>

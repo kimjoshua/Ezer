@@ -25,11 +25,37 @@
 		<constructor-arg ref="sqlSessionFactoryBean"></constructor-arg>
 	</bean>
 
-	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+ <!-- query xml create read -->
+<!-- 	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="simpleDriverDataSource"></property>
 		<property name="configLocation" value="/WEB-INF/mybatis/SqlMapConf.xml"></property>
+	</bean> -->
+	
+	
+	
+	
+	<!-- query xml auto read -->
+ 	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="simpleDriverDataSource"></property>
+		<property name="databaseIdProvider" ref="databaseIdProvider"></property>
+		<property name="mapperLocations" value="classpath:com/ezer_g/www/mapper/*.xml"></property>
+	</bean> 
+	
+	<bean id="databaseIdProvider" class="org.apache.ibatis.mapping.VendorDatabaseIdProvider">
+		<property name="properties" ref="vendorProperties"></property>
 	</bean>
-
+	
+	<bean id="vendorProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="properties">
+			<props>
+				<prop key="SQL Server">sqlserver</prop>
+				<prop key="DB2">db2</prop>
+				<prop key="Oracle">oracle</prop>
+				<prop key="MySql">mysql</prop>
+			</props>
+		</property>
+	
+	</bean> 
 
 	<bean id="simpleDriverDataSource"
 		class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
@@ -38,6 +64,7 @@
 		<property name="username" value="${username}" />
 		<property name="password" value="${password}" />
 	</bean>
+
 
 
 </beans>

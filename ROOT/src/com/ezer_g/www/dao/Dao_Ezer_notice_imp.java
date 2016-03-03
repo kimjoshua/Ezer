@@ -24,7 +24,6 @@ public class Dao_Ezer_notice_imp extends SqlSessionDaoSupport implements Dao_Eze
 	public void setDataSource(DataSource dataSource) {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
-	
 
 	@Override
 	public List get_Notice(HashMap<String, Object> inOutHashMap) {

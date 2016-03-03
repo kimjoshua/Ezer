@@ -63,7 +63,7 @@
 									<table>
 										<thead style="border-top: 0.2em solid grey;">
 											<tr style="text-align: center;">
-												<th style="text-align: center; width: 20%;">등록</th>
+												<th style="text-align: center; width: 20%;">등록일</th>
 												<th style="text-align: center">제목</th>
 											</tr>
 										</thead>

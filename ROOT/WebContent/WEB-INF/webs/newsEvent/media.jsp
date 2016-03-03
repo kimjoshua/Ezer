@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%
 	String cp = request.getContextPath();
 %>
@@ -13,7 +14,7 @@
 <title>진정한 아름다움을 위한 조력자, E-ZER COSMETIC</title>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans'
 	rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="<%=cp %>/img/ico.jpg" />
+<link rel="shortcut icon" href="<%=cp%>/img/ico.jpg" />
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -46,10 +47,12 @@
 			<%@ include file="../template/nav.jsp"%>
 			<div id="contents" class="v1">
 				<div id="visualarea">
-					<div id="realcontents">
-					<div class="realcon"></div>
+					<div class=player>
+						<iframe
+							src='http://serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=740752762295E5EBE06429B730550CC1EB40&outKey=V129a6bf335721dd1a33a1ab575d276bef7230038617fd7190d7a1ab575d276bef723&controlBarMovable=true&jsCallable=true&isAutoPlay=true&skinName=tvcast_white'
+							frameborder='no' scrolling='no' marginwidth='0' marginheight='0'
+							WIDTH='740' HEIGHT='416' allowfullscreen></iframe>
 					</div>
-
 				</div>
 			</div>
 			<%@ include file="../template/footer.jsp"%>

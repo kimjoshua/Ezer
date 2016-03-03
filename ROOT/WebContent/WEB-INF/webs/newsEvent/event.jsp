@@ -47,7 +47,34 @@
 			<div id="contents" class="v1">
 				<div id="visualarea">
 					<div id="realcontents">
-					<div class="realcon"></div>
+						<div class="realcon">
+							<div class="mainText"
+								style="position: relative; padding: 5% 1% 1% 6%;">
+								<span
+									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">공지
+									사항</span>
+
+							</div>
+							<div class="introText">
+								<div class="newsTable">
+									<table>
+										<thead style="border-top: 0.2em solid grey;">
+											<tr style="text-align: center;">
+												<th style="text-align: center; width: 20%;">등록일</th>
+												<th style="text-align: center">제목</th>
+											</tr>
+										</thead>
+										<tbody class="noticeTable">
+
+										</tbody>
+
+									</table>
+
+										<ul class="pagination">
+										</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 
 				</div>
@@ -57,5 +84,6 @@
 		</div>
 		<div class="footerline"></div>
 	</div>
+
 </body>
 </html>

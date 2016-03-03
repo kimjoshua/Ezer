@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -26,14 +27,14 @@ import com.ezer_g.www.service.Ezer_Service_IMp;
 @Controller
 public class ezerDataCont {
 
-	
+
 	private Ezer_Service_IMp se;
 
 	public void setService(Ezer_Service_IMp se) {
 		this.se = se;
 	}
 	
-	
+
 	
 	
 	@RequestMapping(value="/noticeList",produces = "application/json; charset=utf-8",method = RequestMethod.GET)
@@ -43,6 +44,16 @@ public class ezerDataCont {
 
 		HashMap<String, Object> result= se.noticeLIst(denn);
 				
+		return result;
+		
+	}
+	@RequestMapping(value="/newsList",produces = "application/json; charset=utf-8",method = RequestMethod.GET)
+	public @ResponseBody 
+	HashMap<String, Object> newsList(HttpServletRequest req,HttpServletResponse rs,Dto_Ezer denn)
+			throws Throwable {		
+		
+		HashMap<String, Object> result= se.newsLIst(denn);
+		
 		return result;
 		
 	}
