@@ -8,19 +8,10 @@ import org.springframework.stereotype.Repository;
 import com.ezer_g.www.model.Dto_Ezer;
 
 @Repository
-public interface Dao_Ezer_notice {
+public interface Dao_Ezer_event {
 
-	
+	List get_event(HashMap<String, Object> inOutHashMap);
 
-	List get_Notice(HashMap<String, Object> inOutHashMap);
-
-	int noticeCount(Dto_Ezer de);
-
-
-
-
-	
-
-
+	int eventCount(Dto_Ezer de); 
 
 }

@@ -5,16 +5,7 @@
 "use strict";
 
 $(function() {
-	$(document).on(
-			'click',
-			'.viewContents',
-			function() {
-
-				$(
-						'tr[data-contensView="' + $(this).attr('data-contents')
-								+ '"]').toggle('slow');
-
-			});
+	$(document).on('click','.viewContents',function() {$('tr[data-contensView="' + $(this).attr('data-contents')+ '"]').toggle('slow');			});
 
 	var pN = new pag_No()
 	var data = {
@@ -25,53 +16,39 @@ $(function() {
 	pagination(data);
 	$(document).on('click', 'li.pVal', function() {
 		$('.noticeTable,.pagination').children().remove();
-		pN.page_no = ($(this).val() - 1) * 20;
-		pN.curpag = $(this).val()
+		data.page_no=pN.page_no = ($(this).val() - 1) * 20;
+		data.paNo=pN.curpag = $(this).val()
 
-		data = {
-			"pageTab" : pN.pageTab,
-			"page_no" : pN.page_no,
-			"paNo" : pN.curpag
-		}
 		pagination(data);
 	});
 
 	$(document).on('click', '.next', function() {
 		$('.noticeTable,.pagination').children().remove();
-		pN.pageTab += 10
-		pN.page_no = (pN.pageTab) * 20
-		pN.curpag = pN.pageTab + 1
-
-		data = {
-			"pageTab" : pN.pageTab,
-			"page_no" : pN.page_no,
-			"paNo" : pN.curpag
-		}
+		data.pageTab=pN.pageTab += 10
+		data.page_no=pN.page_no = (data.pageTab) * 20
+		data.paNo=pN.curpag = data.pageTab + 1
+		
 		pagination(data);
 	});
 	$(document).on('click', '.before', function() {
 		$('.noticeTable,.pagination').children().remove();
 
-		pN.pageTab -= 10
-		pN.page_no = pN.page_no - 20
-		pN.curpag = pN.pageTab + 1
+		data.pageTab=pN.pageTab -= 10
+		data.page_no=pN.page_no = data.page_no - 20
+		data.paNo=pN.curpag = data.pageTab + 1
 
 		if (pN.pageTab >= 0) {
 			pN.pageTab == 0
 		}
-		data = {
-			"pageTab" : pN.pageTab,
-			"page_no" : pN.page_no,
-			"paNo" : pN.curpag
-		}
+
 		pagination(data);
 
 	});
 });
 
 var pagination = function(rTdata) {
-	$
-			.get('/noticeList',	{"page_no" : rTdata.page_no	},function(data) {
+
+	$.get('/noticeList',	{"page_no" : rTdata.page_no	},function(data) {
 
 						// $('.pagination').html(data).trigger("create")
 						var dataList = JSON.stringify(data)
@@ -79,7 +56,7 @@ var pagination = function(rTdata) {
 						var Page_Count = Math.ceil(T_Page / 20);
 						pag_No.Page_Count = Page_Count
 						var pageTab = rTdata.pageTab
-
+						var paNo=rTdata.curpag
 						if (data.total_count == 0) {
 							var text = "해당 내용이 없습니다."
 							$('.noticeTable')
@@ -128,7 +105,7 @@ var pagination = function(rTdata) {
 
 }
 function pageList(Page_Count, pageTab, curpag) {
-
+console.log(curpag)
 	for (var i = 1 + pageTab; i <= 10 + pageTab; i++) {
 		if (i == curpag) {
 			$('.pagination')

@@ -24,7 +24,7 @@ import com.ezer_g.www.service.Ezer_Service_IMp;
 @Controller
 public class ezerWebcon {
 	
-	@Autowired
+	
 	private Ezer_Service_IMp se;
 
 

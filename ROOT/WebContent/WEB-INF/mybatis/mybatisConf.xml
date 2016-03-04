@@ -21,8 +21,8 @@
  <aop:config />
  <aop:aspectj-autoproxy />
 	<bean id="mainAop" class="com.ezer_g.www.aop.mainAop">	</bean> 
-	<bean id="fileLogger" class="com.ezer_g.www.aop.fileLogger">
-	</bean> 
+	<bean id="fileLogger" class="com.ezer_g.www.aop.fileLogger"></bean> 
+
 	<!-- 웹컨트 -->
 	<bean id="ezerWebcont" class="com.ezer_g.www.web.ezerWebcon">
 		<property name="service" ref="ezer_Notice_Service_IMp"></property>
@@ -31,7 +31,7 @@
 		<property name="service" ref="ezer_Notice_Service_IMp"></property>
 	</bean>
 
-	<!-- dao임플 -->
+<!-- dao임플 -->
 
 	<bean id="dao_Dao_Ezer_notice_imp" class="com.ezer_g.www.dao.Dao_Ezer_notice_imp">
 		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
@@ -46,6 +46,9 @@
 	<bean id="dao_Ezer_news_Imp" class="com.ezer_g.www.dao.Dao_Ezer_news_Imp">
 		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
 	</bean>
+	<bean id="dao_Ezer_event_imp" class="com.ezer_g.www.dao.Dao_Ezer_event_imp">
+		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
+	</bean>
 
 	<!-- 서비스 임플 -->
 	<bean id="ezer_Notice_Service_IMp" class="com.ezer_g.www.service.Ezer_Service_IMp">
@@ -53,10 +56,10 @@
 		<property name="def" ref="dao_Ezer_faq_imp"></property>
 		<property name="qa" ref="dao_Ezer_Qa_imp"></property>
 		<property name="news" ref="dao_Ezer_news_Imp"></property>
+		<property name="event" ref="dao_Ezer_event_imp"></property>
 	</bean>
 
-	<bean
-		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
 		<property name="messageConverters" ref="jsonConvert"></property>
 	</bean>
 	<bean id="jsonConvert"
@@ -73,7 +76,3 @@
 	
 
 </beans>
-
-<!-- mysql 외부 접속 use mysql; select host,user from user; host에 설정된 ip를 내가 
-	외부에서 접속할 ip로 변경해 준다 update user set host='192.168.0.%' where user ='root' 
-	and host='192.168.1.%'; FLUSH PRIVILEGES; commit; -->

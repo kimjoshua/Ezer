@@ -6,8 +6,11 @@ import java.util.List;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.ezer_g.www.dao.Dao_Ezer_News;
 import com.ezer_g.www.dao.Dao_Ezer_Qa;
+import com.ezer_g.www.dao.Dao_Ezer_event;
 import com.ezer_g.www.dao.Dao_Ezer_faq;
 import com.ezer_g.www.dao.Dao_Ezer_news_Imp;
 import com.ezer_g.www.dao.Dao_Ezer_notice;
@@ -19,13 +22,16 @@ import lombok.Setter;
 
 @Setter
 @Service
+@Transactional
 public class Ezer_Service_IMp {
 	private static final org.slf4j.Logger logger = LoggerFactory.getLogger(ezerDataCont.class);
+	
 	
 	private Dao_Ezer_notice den;
 	private Dao_Ezer_faq def;
 	private Dao_Ezer_Qa qa;
-	private Dao_Ezer_news_Imp news;
+	private Dao_Ezer_News news;
+	private Dao_Ezer_event event;
 
 	public HashMap<String, Object> noticeLIst(Dto_Ezer de) {
 		HashMap<String, Object> inOutHashMap = new HashMap<String, Object>();
@@ -54,6 +60,21 @@ public class Ezer_Service_IMp {
 		rtnHashMap.put("total_count", ntotalCount);
 		
 		rtnHashMap.put("noticeLIst", newsList);
+		return rtnHashMap;
+		
+	}
+	public HashMap<String, Object> eventList(Dto_Ezer de){
+		HashMap<String, Object> inOutHashMap = new HashMap<String, Object>();
+		HashMap<String, Object> rtnHashMap = new HashMap();
+		
+		inOutHashMap.put("page_no", de.getPage_no());
+		List<HashMap<String, Object>> eventList = event.get_event(inOutHashMap);
+		
+		int ntotalCount = event.eventCount(de);
+		
+		rtnHashMap.put("total_count", ntotalCount);
+		
+		rtnHashMap.put("noticeLIst", eventList);
 		return rtnHashMap;
 		
 	}
@@ -87,5 +108,6 @@ public class Ezer_Service_IMp {
 
 		return rtnHashMap;
 	}
+
 
 }

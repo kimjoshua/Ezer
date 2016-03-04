@@ -27,7 +27,7 @@ import com.ezer_g.www.service.Ezer_Service_IMp;
 @Controller
 public class ezerDataCont {
 
-
+	
 	private Ezer_Service_IMp se;
 
 	public void setService(Ezer_Service_IMp se) {
@@ -53,6 +53,16 @@ public class ezerDataCont {
 			throws Throwable {		
 		
 		HashMap<String, Object> result= se.newsLIst(denn);
+		
+		return result;
+		
+	}
+	@RequestMapping(value="/eventList",produces = "application/json; charset=utf-8",method = RequestMethod.GET)
+	public @ResponseBody 
+	HashMap<String, Object> eventList(HttpServletRequest req,HttpServletResponse rs,Dto_Ezer denn)
+			throws Throwable {		
+		
+		HashMap<String, Object> result= se.eventList(denn);
 		
 		return result;
 		

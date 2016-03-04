@@ -45,8 +45,8 @@ $(function() {
 
 
 var pagination=function(rTdata){
-	$.get('/newsList',{"page_no":rTdata.page_no}, function(data) {
-console.log(data.total_count)
+	$.get('/eventList',{"page_no":rTdata.page_no}, function(data) {
+
 //		$('.pagination').html(data).trigger("create")
 		if(data.total_count==0){
 			var text="해당 내용이 없습니다."
@@ -58,11 +58,10 @@ console.log(data.total_count)
 			var Page_Count=Math.ceil(T_Page/20);
 			pag_No.Page_Count=Page_Count
 			var pageTab =rTdata.pageTab
-			for(var i=0;i<data.noticeLIst.length;i++){
-				$('.noticeTable').append("<tr class='viewContents' data-contents='"+data.noticeLIst[i].notice_no+"'style='cursor:pointer'><td>"+data.noticeLIst[i].notice_no+"</td><td>"+data.noticeLIst[i].notice_title+"</td>/tr><tr class='nContents'data-contensView="+data.noticeLIst[i].notice_no+"><td colspan='2'>"+data.noticeLIst[i].notice_contents+"</a></td></tr>")
+			for(var i=0;i<data.eventLIst.length;i++){
+				$('.noticeTable').append("<tr class='viewContents' data-contents='"+data.eventLIst[i].event_no+"'style='cursor:pointer'><td>"+data.eventLIst[i].event_no+"</td><td>"+data.eventLIst[i].event_title+"</td>/tr><tr class='nContents'data-contensView="+data.eventLIst[i].event_no+"><td colspan='2'>"+data.eventLIst[i].event_contents+"</a></td></tr>")
 				
 			}
-			
 			
 			if(Page_Count <=10){
 				pageList(Page_Count,pageTab,rTdata.paNo)
