@@ -118,7 +118,7 @@
 													data-image='mist'>
 
 												<div class="caption">
-													<span>미스트 </span>
+													<span>ATO 미스트 </span>
 												</div>
 												<div class="detailIntro toggle" data-view="mist">
 													<span> 바이오 진 에센스</span>

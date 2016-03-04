@@ -75,7 +75,7 @@
 								<span
 									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">제품</span>
 
-								<div class="row" style="padding-top: 2%;">
+							<div class="row" style="padding-top: 2%;position: relative;left: 2.2%;">
 									제품 준비중 
 								</div>
 							</div>

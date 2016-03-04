@@ -2,14 +2,13 @@
 	pageEncoding="UTF-8"%>
 <!-- go to top -->
 <div id="gototop">
-	<a href="#"><img alt="top" src="/img/top.png" style="height: 78px;"><span>맨
+	<a href="#"><img alt="top" src="/img/top.png" style="height: 48px;"><span>맨
 			위로 가기</span></a>
 </div>
 <!-- end of go to top -->
 
 <!-- <div id="quicknav"> -->
-<div class="row" id="quicknav"
-	style="width: 100%; position: relative; left: 1%;">
+<div class="row" id="quicknav" style="width: 100%; position: relative; left: 1%;border-top: 1px solid #e2e2e2;border-bottom: 1px solid #e2e2e2;">
 	<div class="col-md-10">
 		<ul class="footernav ">
 			<li>
@@ -29,7 +28,7 @@
 			<li>
 				<dl>
 					<dt class="desktop">
-						<a href="/introBrand">PRODUCT</a>
+						<a href="/bioskin">PRODUCT</a>
 					</dt>
 				</dl>
 			</li>
@@ -160,7 +159,7 @@
 	</div>
 	<div class="col-md-2" style="height: 100%;">
 		<ul class="" style="padding-top: 11%;">
-			<li class="bar desktop" style="height: 172%; padding-bottom: 186%;">
+			<li class="bar desktop" style="height: 172%; padding-bottom: 170%;">
 
 				<!-- <dd class="desktop">
 					<a href="/costom" class="blt-balloon fcLblack" onclick=""><strong>소비자
@@ -209,9 +208,9 @@
 	<div class="footer mobileVary">
 		<div></div>
 		<div class="copyright center">
-			<span style="position: relative; right: 122px;">©E-ZER
+			<span style="position: relative; ">© E-ZER
 				COSMETICS CORPORATION. ALL RIGHT RESERVED. </span> <span
-				style="left: 13%; position: relative;">(주) 에제르코스메틱 대표 : 정경모 |
+				style="left: 22.5%; position: relative;">(주) 에제르코스메틱 대표 : 정경모 |
 				서울시 강남구 삼성로 107길길 7, (삼성동, 보아스빌딩) | 사업자번호 :221-81-29582 <img src=""
 				alt="">
 			</span>
