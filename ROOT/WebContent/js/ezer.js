@@ -5,6 +5,20 @@
 "use strict";
 $(function() {
 	
+	(function($){
+		$(document).ready(function(){
+			$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+				event.preventDefault(); 
+				event.stopPropagation(); 
+				$(this).parent().siblings().removeClass('open');
+				$(this).parent().toggleClass('open');
+			});
+		});
+	})(jQuery);
+	
+
+	
+
 	$('.noticeSiete').click(function() {
 		alert("해당 사이트는 준비 중입니다. ");
 	});
@@ -25,7 +39,7 @@ $(function() {
 			$('.bgc').css('background-color', 'white');
 	
 		} else {
-			$('.bgc').css('background-color', '#E4E4E4');
+			$('.bgc').css('background-color', '#F5F5F5');
 			$(this).animate({
 	            'opacity':'0'
 	        })

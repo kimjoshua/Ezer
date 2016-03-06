@@ -47,7 +47,6 @@
 				<li><a href="#">회사 <span class="caret"></span></a>
 					<ul class="dropdown">
 						<li><a href="/introMain" onclick="">회사소개</a></li>
-						<li><a href="/serviceB">사업분야</a></li>
 						<li><a href="/serviceB">BEAUTY</a></li>
 						<li><a href="/serviceH">HEALTHY</a></li>
 						<li><a href="/history">연혁</a></li>
@@ -95,7 +94,6 @@
 						aria-expanded="false">회사소개 <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="/introMain" onclick="">회사소개</a></li>
-							<li><a href="/serviceB">사업분야</a></li>
 							<li><a href="/serviceB">BEAUTY</a></li>
 							<li><a href="/serviceH">HEALTHY</a></li>
 							<li><a href="/history">연혁</a></li>
@@ -146,75 +144,21 @@
 		</div>
 
 	</div>
-	<div id="directMenu" class="desktop">
-		<div class="depth2 ">
+	<div id="dMenu" class="desktop">
+		<div class="introB ">
 
-			<a href="javascript:void(0)" id="btn2depth" class="hover">회사소개<span
-				class="">메뉴 목록 닫기</span></a> <a href="javascript:void(0)" id="depth01"
-				style="position: relative; top: -25px; left: 111%;"></a>
-			<script type="text/javascript">
-				// 변수에 넣어서 출력
-				var s = location.href;
-				var addr = s.split("/")
+			<ul class="">
+				<li class=" dropdown-submenu" style="top: 13px;"><a href="#"
+					class="dropdowndropdown-toggle" data-toggle="dropdown"
+					id="btn2depth" class="hover"> 뉴스 &amp;이벤트 <span class="">메뉴 목록
+							닫기</span></a>
 
-				switch (addr[3]) {
-				case 'cygneWrink':
-					$('#depth01').text('WRINKLEELIMINATION').appendTo();
-					break;
-				case 'introMain':
-					$('#depth01').text('회사소개').appendTo();
-					break;
-				case 'serviceB':
-					$('#depth01').text('BEAUTY').appendTo();
-					break;
-				case 'history':
-					$('#depth01').text('역혁').appendTo();
-					break;
-				case 'symbole':
-					$('#depth01').text('CI BI').appendTo();
-					break;
-				case 'bioskin':
-					$('#depth01').text('Skin Care').appendTo();
-					break;
-				case 'biocare':
-					$('#depth01').text('Hair Care').appendTo();
-					break;
-				case 'bioato':
-					$('#depth01').text('ATO').appendTo();
-					break;
-				case 'bioacn':
-					$('#depth01').text('ACN').appendTo();
-					break;
-				case 'cygneBright':
-					$('#depth01').text('WHITE BRIGHTENING').appendTo();
-					break;
-				case 'cygneWrink':
-					$('#depth01').text('WRINKLE ELIMINATION').appendTo();
-					break;
-				case 'ad':
-					$('#depth01').text('AD').appendTo();
-					break;
-
-				case 'news':
-					$('#depth01').text('NEWS').appendTo();
-					break;
-
-				case 'event':
-					$('#depth01').text('EVENT').appendTo();
-					break;
-
-				case 'media':
-					$('#depth01').text('media').appendTo();
-					break;
-				case 'notice':
-					$('#depth01').text('공지사항').appendTo();
-					break;
-				case 'qa':
-					$('#depth01').text('문의사항').appendTo();
-					break;
-
-				}
-			</script>
+					<ul class="subintroB dropdown-menu"
+						style="left: 133px; padding-left: 0; padding-top: 0;">
+						<li><a href="/notice" onclick="">NOTICE</a></li>
+						<li><a href="/qa" onclick="">Q &amp; A</a></li>
+					</ul></li>
+			</ul>
 		</div>
 	</div>
 </div>

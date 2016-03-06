@@ -46,7 +46,7 @@
 		<h1>Ezer cosmetic</h1>
 		<div class="moto"></div>
 		<div class="inwrap">
-			<%@ include file="../template/nav.jsp"%>
+		<%@ include file="../template/cs_nav.jsp"%>
 			<div id="contents" class="v1">
 				<div id="visualarea">
 					<div id="realcontents">

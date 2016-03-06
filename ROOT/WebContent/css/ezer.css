@@ -3,45 +3,210 @@
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
 
 body {
+	-webkit-text-size-adjust: none;
+	margin: 0;
+	padding: 0;
 	font-family: 'Arial', verdana, sans-serif;
-	font-size: 14px;
+	color: #666666;
+	font-size: 13px;
+	font-size: 1.3rem;
 	line-height: 1.42857143;
-	color: #333;
-	background-color: #fff;
+} /* -webkit-text-size-adjust:none; 글자 확대 방지 추가 */
+.text {
+	text-align: center;
 }
-.text{
-	    text-align: center;
+
+.subintroB ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+
 }
-.viewContents:hover{
-	 cursor: pointer;
+.marginBottom-0 {
+	margin-bottom: 0;
 }
-.player{
-	    position: relative;
-    padding-top: 8%;
-    left: 20%;
+.
+.dropdown-submenu {
+	position: relative;
 }
-.nContents{
+
+#dMenu .introB ul .dropdown-submenu>.dropdown-menu {
+	position: absolute;
+	right: 0;
+	left: 80px;
+	width: 220px;
+	top: 0;
+	margin-top: -6px;
+	margin-left: -1px;
+	-webkit-border-radius: 0 6px 6px 6px;
+	-moz-border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu>a:after {
+	display: block;
+	content: " ";
+	float: right;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #cccccc;
+	margin-top: 5px;
+	margin-right: -20px;
+}
+
+.dropdown-menu {
+	background-color: #F1F1F1;
+}
+
+.dropdown-menu>li {
+	float:	none;
+}
+
+.dropdown-menu>li>a {
+	padding: 3px 5px;
+}
+
+.dropdown-submenu.pull-left {
+	float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+	left: -100%;
+	margin-left: 10px;
+	-webkit-border-radius: 6px 0 6px 6px;
+	-moz-border-radius: 6px 0 6px 6px;
+	border-radius: 6px 0 6px 6px;
+}
+
+#dMenu {
+	width: auto;
+	height: 24px;
+	position: relative;
+	border-bottom: 1px #c1c1c1 solid;
+	background: url(../img/directmenu_bg.png) center bottom repeat-x;
+}
+
+#dMenu .introB {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 290px;
+	height: 24px;
+	line-height: 24px;
+	z-index: 1;
+}
+
+#dMenu .introB a#btn2depth {
+	
+}
+
+#dMenu .introB a#btn2depth:link {
+	font-size: 15px;
+	font-size: 1.5rem;
+	display: block;
+	font-weight: bold;
+}
+
+#dMenu .introB a#btn2depth span {
+	display: inline-block;
+	overflow: hidden;
+	width: 9px;
+	height: 9px;
+	margin-top: 7px;
+	float: right;
+	background: url(../img/blt_arrow_right.gif) no-repeat;
+	font-size: 0;
+	text-indent: -10000em;
+}
+
+#dMenu .introB a#btn2depth span.on {
+	background-image: url(../img/blt_on_arrow_right.gif);
+}
+
+#dMenu .introB .nosub {
+	font-size: 15px;
+	font-size: 1.5rem;
+	display: block;
+	font-weight: bold;
+	color: #333333;
+}
+
+#dMenu .introB .nosub.active {
+	color: #005699;
+}
+
+#dMenu .introB ul.subintroB {
+	position: absolute;
+	top: -26px;
+	right: 0;
+	left: 290px;
+	width: 220px;
+	padding-left: 9px;
+	background-clip: border-box;
+	padding-top: 13px;
+}
+
+#dMenu .introB ul:after {
+	content: '';
+}
+
+#directMenu .introB ul li {
+	background: #f2f2f2;
+	border-right: 1px #cccccc solid;
+	padding: 0 20px 20px 20px;
+	line-height: 12px;
+}
+
+#dMenu .introB ul li.hover a {
+	color: #005699;
+}
+
+#dMenu .introB ul li a {
+	font-size: 12px;
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+.viewContents:hover {
+	cursor: pointer;
+}
+
+.player {
+	position: relative;
+	padding-top: 8%;
+	left: 20%;
+}
+
+.nContents {
 	display: none;
 }
+
 .utility li.text a {
 	font-size: 12px;
 }
-.detailIntro{
-    position: absolute;
-    z-index: 15;
-    background-color: white;
-    top: 4%;
-    right: -81%;
-    padding-left: 1%;
-    width: 175%;}
-.pagination{
-	position:relative;
-	left:25%
+
+.detailIntro {
+	position: absolute;
+	z-index: 15;
+	background-color: white;
+	top: 4%;
+	right: -81%;
+	padding-left: 1%;
+	width: 175%;
 }
-.pagination>.active>a{
-	background-color: #D0D3D6!important;
-	border-color: #C3C3C3!important;
+
+.pagination {
+	position: relative;
+	left: 25%
 }
+
+.pagination>.active>a {
+	background-color: #D0D3D6 !important;
+	border-color: #C3C3C3 !important;
+}
+
 html {
 	font-family: 'Arial', verdana, sans-serif;
 	-webkit-text-size-adjust: 100%;
@@ -54,7 +219,7 @@ html {
 	color: #BDBDBD;
 }
 
-.col-lg-5 > img {
+.col-lg-5>img {
 	position: relative;
 	left: 29%;
 }
@@ -72,7 +237,7 @@ html {
 	position: relative;
 	left: 0;
 	top: 15px;
-	    font-size: 11px;
+	font-size: 11px;
 }
 
 a {
@@ -84,29 +249,30 @@ a {
 	padding: 0;
 	list-style: none;
 }
-.introBody{
-	    background-color: white;
+
+.introBody {
+	background-color: white;
 }
-.introDetail{
+
+.introDetail {
 	display: none;
 }
 
-.intro{
-	  float:left;
-
+.intro {
+	float: left;
 }
 
-.introImg{
-
-    opacity:0;
-    position:absolute;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-filter: blur(0px);
-    cursor:pointer;
+.introImg {
+	opacity: 0;
+	position: absolute;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-webkit-transition-duration: 1s;
+	transition-duration: 1s;
+	-webkit-filter: blur(0px);
+	cursor: pointer;
 }
+
 .nav ul li {
 	display: inline-block;
 	position: relative;
@@ -121,11 +287,7 @@ a {
 	text-decoration: none;
 }
 
-.dropdown li a {
-	width: 229%;
-	position: inherit;
-	right: 33px;
-}
+
 
 .rowLine {
 	background-color: white;
@@ -137,42 +299,51 @@ a {
 
 @media ( min-width : 1200px) {
 	.coverText {
-    top: 28%;
-    position: absolute;
-    padding-left: 42%;
+		top: 28%;
+		position: absolute;
+		padding-left: 42%;
 	}
 }
 
 .cover {
-position: absolute;
-    width: 137%;
-    height: 247px;
-    background-color: white;
-    z-index: 1;
+	position: absolute;
+	width: 137%;
+	height: 247px;
+	background-color: white;
+	z-index: 1;
 }
+
 .cover1 {
-    position: absolute;
-    width: 138%;
-    height: 247px;
-    background-color: white;
-    z-index: 1;
-    right: -4px;
-
+	position: absolute;
+	width: 138%;
+	height: 247px;
+	background-color: white;
+	z-index: 1;
+	right: -4px;
 }
+
 .cover2 {
-      position: absolute;
-    width: 1142px;
-    height: 247px;
-    background-color: white;
-    z-index: 1;
-    left: -42%;
-
+	position: absolute;
+	width: 1142px;
+	height: 247px;
+	background-color: white;
+	z-index: 1;
+	left: -42%;
 }
-.col2{
+
+.col2 {
 	right: 33%;
 }
-.col3{
-    right: 38%;
+
+.col3 {
+	right: 38%;
+}
+.introIMg{
+	    width: 86%;
+    padding-top: 58px;
+    left: 78px;
+    position: relative;
+	    padding-bottom: 3%;
 }
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
 	color: #262626;
@@ -184,7 +355,13 @@ position: absolute;
 	color: #fff;
 	text-decoration: underline;
 }
+ul.dropdown >li{
+	float: none;
 
+}
+ul.dropdown >li > a{
+    padding: 9px 0px;
+}
 .nav  ul li ul.dropdown {
 	min-width: 125px; /* Set width of the dropdown */
 	display: none;
@@ -193,11 +370,13 @@ position: absolute;
 	left: 19%;
 }
 
-.nav ul li:hover ul.dropdown {
+ .nav ul li:hover ul.dropdown {
 	display: block;
 	background-color: gainsboro;
 	height: 268px;
-}
+	    top: 79%;
+    width: 200px;
+} 
 
 .nav ul li ul.dropdown li {
 	display: block;
@@ -330,32 +509,34 @@ position: absolute;
 	padding-left: 3%;
 	padding-bottom: 4%
 } */
-.bgcol{
-height:240px;
-background-color:white;
+.bgcol {
+	height: 240px;
+	background-color: white;
 }
-.dText{
+
+.dText {
 	top: 64px;
-    position: relative;
+	position: relative;
 }
-.sText{
+
+.sText {
 	top: 60px;
-    position: relative;
+	position: relative;
 }
+
 .mainRow {
 	padding-top: 2%;
 	left: 2%;
 	position: relative;
 }
+
 .col-lg-12 {
-    width: 318%;
-    background-color: white;
-    height: 271px;
-    position: relative;
-    padding-bottom: 62px;
-
+	width: 318%;
+	background-color: white;
+	height: 271px;
+	position: relative;
+	padding-bottom: 62px;
 }
-
 
 .subRow {
 	padding-top: 4%;
@@ -437,11 +618,12 @@ ul>li {
 .ezer_intro.intro_ezer4.intro_ezer5.intro_ezer6 {
 	display: block;
 	background-image: url('/img/intro_brand_ezer.png');
+}
 
+.intro_ezer {
+	width: 100%
 }
-.intro_ezer{
-		width: 100%
-}
+
 .ezer_intro:hover {
 	image: url('/img/intro_hover_ezer.png')
 }
@@ -630,15 +812,6 @@ html {
 	font-size: 62.5%
 }
 
-body {
-	-webkit-text-size-adjust: none;
-	margin: 0;
-	padding: 0;
-	font-family: 'Arial', verdana, sans-serif;
-	color: #666666;
-	font-size: 13px;
-	font-size: 1.3rem;
-} /* -webkit-text-size-adjust:none; 글자 확대 방지 추가 */
 body, html {
 	overflow-x: hidden;
 }
@@ -2123,14 +2296,26 @@ h3.lineBottomBlack {
 	
 	
 	
+	
+	
+	
+	
 	:
+	
+	
 	
 	
 	 
 	
 	
+	
+	
 	4
 	.333333
+	
+	
+	
+	
 	
 	
 	
@@ -2144,14 +2329,26 @@ h3.lineBottomBlack {
 	
 	
 	
+	
+	
+	
+	
 	:
+	
+	
 	
 	
 	 
 	
 	
+	
+	
 	45
 	.666667
+	
+	
+	
+	
 	
 	
 	
@@ -2251,13 +2448,23 @@ h3.lineBottomBlack {
 }
 
 font-size
+
+
+
+
 :
+
+
  
+
+
 1
 .2rem
+
+
+
+
 ;
-
-
 }
 .srcBox {
 	text-align: right;
@@ -2983,217 +3190,6 @@ nav a ul li:hover ul.fallback {
 	display: block;
 }
 
-#directMenu {
-	width: auto;
-	height: 24px;
-	position: relative;
-	border-bottom: 1px #c1c1c1 solid;
-	background: url(../img/directmenu_bg.png) center bottom repeat-x;
-}
-
-#directMenu .depth2 {
-	position: relative;
-	left: 0;
-	top: 0;
-	display: block;
-	width: 290px;
-	height: 24px;
-	line-height: 24px;
-	z-index: 1;
-}
-
-#directMenu .depth2 a#btn2depth {
-	
-}
-
-#directMenu .depth2 a#btn2depth:link {
-	font-size: 15px;
-	font-size: 1.5rem;
-	display: block;
-	font-weight: bold;
-}
-
-#directMenu .depth2 a#btn2depth.nobg {
-	background: none;
-}
-
-#directMenu .depth2 a#btn2depth span {
-	display: inline-block;
-	overflow: hidden;
-	width: 9px;
-	height: 9px;
-	margin-top: 7px;
-	float: right;
-	background: url(../img/blt_arrow_right.gif) no-repeat;
-	font-size: 0;
-	text-indent: -10000em;
-}
-
-#directMenu .depth2 a#btn2depth span.on {
-	background-image: url(../img/blt_on_arrow_right.gif);
-}
-
-#directMenu .depth2 .nosub {
-	font-size: 15px;
-	font-size: 1.5rem;
-	display: block;
-	font-weight: bold;
-	color: #333333;
-}
-
-#directMenu .depth2 .nosub.active {
-	color: #005699;
-}
-
-#directMenu .depth2 ul {
-	position: absolute;
-	top: -26px;
-	right: 0;
-	left: 290px;
-	width: 220px;
-	background: url(../img/directMenu_2.png) 0 13px no-repeat;
-	padding-left: 9px;
-	background-clip: border-box;
-	display: none;
-	padding-top: 13px;
-}
-
-#directMenu .depth2 ul:after {
-	content: '';
-}
-
-#directMenu .depth2 ul li {
-	background: #f2f2f2;
-	border-right: 1px #cccccc solid;
-	padding: 0 20px 20px 20px;
-	line-height: 12px;
-}
-
-#directMenu .depth2 ul li:first-child {
-	padding-top: 20px;
-	background: #f2f2f2;
-	border-bottom: 0;
-	border-top: 1px #cccccc solid;
-}
-
-#directMenu .depth2 ul li:last-child {
-	border-bottom: 1px #cccccc solid;
-}
-
-#directMenu .depth2 ul li.hover a {
-	color: #005699;
-}
-
-#directMenu .depth2 ul li a {
-	font-size: 12px;
-	font-size: 1.2rem;
-	font-weight: normal;
-}
-
-#directMenu .depth3 {
-	position: relative;
-	left: 0;
-	top: 2px;
-	display: block;
-	width: 290px;
-	height: 24px;
-	line-height: 24px;
-	z-index: 1;
-}
-
-#directMenu .depth3 a#btn3depth {
-	
-}
-
-#directMenu .depth3 a#btn3depth:link {
-	font-size: 15px;
-	font-size: 1.5rem;
-	display: block;
-	font-weight: bold;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	#directMenu .depth3 a#btn3depth:link {
-		font-size: 1.5rem;
-	}
-}
-
-#directMenu .depth3 a#btn3depth.nobg {
-	background: none;
-}
-
-#directMenu .depth3 a#btn3depth span {
-	display: inline-block;
-	overflow: hidden;
-	width: 9px;
-	height: 9px;
-	margin-top: 7px;
-	float: right;
-	background: url(/blt_arrow_right.gif) no-repeat;
-	font-size: 0;
-	text-indent: -10000em;
-}
-
-#directMenu .depth3 a#btn3depth span.on {
-	background-image: url(/blt_on_arrow_right.gif);
-}
-
-#directMenu .depth3 .nosub { /*font-size:15px;*/
-	font-size: 1.5rem;
-	display: block;
-	font-weight: bold;
-	color: #333333;
-}
-
-#directMenu .depth3 .nosub.active {
-	color: #005699;
-}
-
-#directMenu .depth3 ul {
-	display: block;
-	position: absolute;
-	top: -25px;
-	left: 290px;
-	width: 220px;
-	background: url(n/directMenu_2.png) 0 13px no-repeat;
-	padding-left: 9px;
-	background-clip: border-box;
-	display: none;
-	padding-top: 13px;
-}
-
-#directMenu .depth3 ul:after {
-	content: '';
-}
-
-#directMenu .depth3 ul li {
-	background: #f2f2f2;
-	border-right: 1px #cccccc solid;
-	padding: 0 20px 20px 20px;
-	line-height: 12px;
-}
-
-#directMenu .depth3 ul li:first-child {
-	padding-top: 20px;
-	background: #f2f2f2;
-	border-bottom: 0;
-	border-top: 1px #cccccc solid;
-}
-
-#directMenu .depth3 ul li:last-child {
-	border-bottom: 1px #cccccc solid;
-}
-
-#directMenu .depth3 ul li.hover a {
-	color: #005699;
-}
-
-#directMenu .depth3 ul li a {
-	font-size: 12px;
-	font-size: 1.2rem;
-	font-weight: normal;
-}
-
 /*
 			#directMenu .depth3 { position:absolute; right:0; top:0; display:block; height:24px; line-height:24px; }
 			#directMenu .depth3 ul {}
@@ -3483,9 +3479,6 @@ nav a ul li:hover ul.fallback {
 	font-size: 12px;
 	color: #999999;
 }
-
-
-
 
 .quickmenu dt {
 	font-size: 14px;
@@ -10238,6 +10231,7 @@ textarea.refresh {
 	background: url(../img/bu_hyphen.gif) 0 10px no-repeat;
 	padding-left: 10px;
 }
+
 end of 로그인
 .customerMy .hTabWrap .board tbody td a {
 	word-break: break-all;
@@ -10359,23 +10353,48 @@ end of 로그인
 	}
 }
 
-1024 부터 1180 까지
-@media all and (max-width:1180px) {
-	3뎁스 위치
+1024
+부터
+
+ 
+
+1180
+까지
+
+
+
+
+@media all and (max-width:1180px) { 3
+	뎁스 위치
 	#main .navwrap {
-		width: 143px; margin-left:-30px
-	} 1뎁스
-	.safari #main .navwrap { width: 143px; }  1뎁스
+		width: 143px;
+		margin-left: -30px
+	}
+	1
+	뎁스
+	.safari #main .navwrap {
+		width: 143px;
+	}
+	1
+	뎁스
 	#main .navwrap div {
-		height: 446px; left:214px;
+		height: 446px;
+		left: 214px;
 		left: 143px
-	} 2뎁스 위치
-	.safari #main .navwrap div { left:143px } 2뎁스 위치
+	}
+	2
+	뎁스 위치
+	.safari #main .navwrap div {
+		left: 143px
+	}
+	2
+	뎁스 위치
 	#main #nav .navwrap div#dep0203 .dep02 li:nth-child(4) {
 		position: absolute;
 		top: 20px;
 		left: 255px;
-	} 이노베이션 오픈이노베이션
+	}
+	이노베이션 오픈이노베이션
 	#main #nav .navwrap div#dep0203 .dep03 li:nth-child(4) {
 		position: relative;
 		top: 0;
@@ -10385,7 +10404,8 @@ end of 로그인
 		position: absolute;
 		top: 20px;
 		left: 255px;
-	} 지속가능경영 환경과함께
+	}
+	지속가능경영 환경과함께
 	#main #nav .navwrap div#dep0204 .dep03 li:nth-child(4) {
 		position: relative;
 		top: 0;
@@ -10395,7 +10415,8 @@ end of 로그인
 		position: absolute;
 		top: 165px;
 		left: 255px;
-	} 지속가능경영 임직원/비즈니스파트너와 함께
+	}
+	지속가능경영 임직원 /비즈니스파트너와 함께
 	#main #nav .navwrap div#dep0204 .dep03 li:nth-child(5) {
 		position: relative;
 		top: 0;
@@ -10405,7 +10426,8 @@ end of 로그인
 		position: absolute;
 		top: 259px;
 		left: 255px;
-	} 지속가능경영 사회와함께
+	}
+	지속가능경영 사회와함께
 	#main #nav .navwrap div#dep0204 .dep03 li:nth-child(6) {
 		position: relative;
 		top: 0;
@@ -10415,7 +10437,8 @@ end of 로그인
 		position: absolute;
 		top: 20px;
 		left: 255px;
-	} 투자자정보 실시간주가
+	}
+	투자자정보 실시간주가
 	#main #nav .navwrap div#dep0205 .dep03 li:nth-child(5) {
 		position: relative;
 		top: 0;
@@ -10425,17 +10448,20 @@ end of 로그인
 		position: absolute;
 		top: 20px;
 		left: 255px;
-	} 투자자정보 재무정보
+	}
+	투자자정보 재무정보
 	#main #nav .navwrap div#dep0206 .dep02 li:nth-child(6) {
 		position: absolute;
 		top: 140px;
 		left: 255px;
-	} 투자자정보 재무정보
+	}
+	투자자정보 재무정보
 	#main #nav .navwrap div#dep0206 .dep02 li:nth-child(7) {
 		position: absolute;
 		top: 250px;
 		left: 255px;
-	} 투자자정보 재무정보
+	}
+	투자자정보 재무정보
 	#main #nav .navwrap div#dep0205 .dep03 li:nth-child(6) {
 		position: relative;
 		top: 0;
@@ -10450,7 +10476,6 @@ end of 로그인
 	.ie8 #main #dep0204 .dep02>li {
 		height: 145px;
 	}
-
 	sub 지속가능
 	#dep0204 ul.dep02 li {
 		padding-right: 4px;
@@ -10464,7 +10489,8 @@ end of 로그인
 	.imgArea img {
 		width: 100%;
 		max-width: 100%;
-	} 이미지 관련
+	}
+	이미지 관련
 	홍보영상
 	.videoList .listGroup {
 		margin-left: 70px;
@@ -10487,7 +10513,8 @@ end of 로그인
 	.brandCont img {
 		max-width: 100%;
 		width: 100%;
-	} 브랜드
+	}
+	브랜드
 	고객상담
 	.customerGuide li div.info p {
 		display: block;
@@ -10501,11 +10528,13 @@ end of 로그인
 		margin: 0 0 0 5px;
 		width: 25%;
 		vertical-align: top;
-	} 쓰기폼
+	}
+	쓰기폼
 	.boardList p.tit {
 		height: 55px;
 		overflow: hidden;
-	} News Media 게시판 리스트
+	}
+	News Media 게시판 리스트
 
 	faq
 	.faqList .num {
@@ -10524,8 +10553,14 @@ end of 로그인
 		margin: 0 11.5% 0 10.5%;
 	}
 }
- */
+
+*
+/
 /* 1024 */
+
+
+
+
 @media all and (min-width:1024px) and (max-width:1080px) {
 	#main .navwrap div p {
 		left: 15%;

@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%
 	String cp = request.getContextPath();
 %>
@@ -13,7 +14,7 @@
 <title>진정한 아름다움을 위한 조력자, E-ZER COSMETIC</title>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans'
 	rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="<%=cp %>/img/ico.jpg" />
+<link rel="shortcut icon" href="<%=cp%>/img/ico.jpg" />
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -43,7 +44,7 @@
 		<h1>Ezer cosmetic</h1>
 		<div class="moto"></div>
 		<div class="inwrap">
-			<%@ include file="../template/nav.jsp"%>
+			<%@ include file="../template/product_nav.jsp"%>
 			<div id="contents" class="v1">
 				<div id="visualarea">
 					<div id="realcontents">
@@ -77,7 +78,7 @@
 
 								<div class="row mainRow">
 									<div class="row" style="width: 98%;">
-									<div class="col-md-4">
+										<div class="col-md-4">
 											<div class="">
 												<img class=" introProduct" src="/img/biomist.jpg"
 													data-holder-rendered="true" display:block;="">
@@ -153,7 +154,7 @@
 												</div>
 											</div>
 										</div>
-										
+
 									</div>
 									<div class="row subRow" style="width: 98%;">
 
