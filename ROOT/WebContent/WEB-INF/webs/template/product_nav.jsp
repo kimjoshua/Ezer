@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<style>
+
+#dMenu .introB a#btn2depth span { left: 133.5px;}
+</style>
+
 <div id="header">
 	<div class="logo desktop">
 		<a href="/" onclick="" title="홈페이지로 이동"><img id="deskLogo"
@@ -145,12 +150,14 @@
 
 	</div>
 	<div id="dMenu" class="desktop">
-		<div class="introB ">
+		<div class="introB " style="
+    left: 12px;
+">
 			<a href="javascript:void(0)" id="btn2depth" class="hover">회사 소개<span
 				class="">메뉴 목록 닫기</span></a>
 
 			<ul class="subintroB">
-				<li class="dropdown dropdown-submenu" style="top: 13px;"><a
+				<li class="dropdown dropdown-submenu" style="top: 13px;right: 68px;"><a
 					href="#" class="dropdown-toggle" data-toggle="dropdown">사업 분야</a>
 					<ul class="dropdown-menu">
 							<li><a href="/bioskin">SKIN CARE </a></li>

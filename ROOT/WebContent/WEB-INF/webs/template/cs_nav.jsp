@@ -1,5 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
+
+<style>
+.dropdown-submenu>a:after {
+	border-left-color: white;
+	   
+}
+#dMenu .introB a#btn2depth span { left: 140px;}
+</style>
 <div id="header">
 	<div class="logo desktop">
 		<a href="/" onclick="" title="홈페이지로 이동"><img id="deskLogo"
@@ -145,16 +154,15 @@
 
 	</div>
 	<div id="dMenu" class="desktop">
-		<div class="introB ">
+		<div class="introB " style="width: 200px;">
 
 			<ul class="">
 				<li class=" dropdown-submenu" style="top: 13px;"><a href="#"
 					class="dropdowndropdown-toggle" data-toggle="dropdown"
-					id="btn2depth" class="hover"> 뉴스 &amp;이벤트 <span class="">메뉴 목록
-							닫기</span></a>
+					id="btn2depth" class="hover"> 고객 센터 <span class=""
+						>메뉴 목록 닫기</span></a>
 
-					<ul class="subintroB dropdown-menu"
-						style="left: 133px; padding-left: 0; padding-top: 0;">
+					<ul class="subintroB dropdown-menu" style="left: 242px; padding-left: 0; padding-top: 0;top: 12px;">
 						<li><a href="/notice" onclick="">NOTICE</a></li>
 						<li><a href="/qa" onclick="">Q &amp; A</a></li>
 					</ul></li>

@@ -82,16 +82,11 @@
 				<div class="ciLogo" align="middle">
 					
 				</div>
-
-
-
-			</div>
 		</div>
+			<%@ include file="../template/footer.jsp"%>
 
-		<%@ include file="../template/footer.jsp"%>
-
-	</div>
-	<div class="footerline"></div>
+		</div>
+		<div class="footerline"></div>
 	</div>
 </body>
 </html>
