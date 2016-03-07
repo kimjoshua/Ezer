@@ -136,6 +136,7 @@ public class mainAop {
 		MainModel mainModel = new MainModel();
 
 		String jsonString = gs.toJson(pjp.proceed());
+
 		// print out
 		JSONParser parser = new JSONParser();
 		JSONObject jsonObject = (JSONObject) parser.parse(jsonString);

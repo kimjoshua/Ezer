@@ -34,7 +34,14 @@
 		</where> -->
 
 	</select>
+<resultMap type="java.util.HashMap" id="select">
+<result property="news_no" column="news_no" javaType="int"/>
+</resultMap>
+
+	<select id="getNewsList"  parameterType="java.util.HashMap"	resultMap="select">
 	
+	 select * from ezer_news where news_no=${news_no}
+	</select>
 	
 
 </mapper>

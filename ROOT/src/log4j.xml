@@ -8,7 +8,7 @@
 		</layout>
 	</appender>
 	<!-- Application Loggers -->
-	<logger name="com.withtest.www">
+	<logger name="com.ezer_g.www">
 		<level value="info" />
 	</logger>
 	<!-- 3rdparty Loggers -->

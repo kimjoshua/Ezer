@@ -17,6 +17,7 @@ import com.ezer_g.www.dao.Dao_Ezer_notice;
 import com.ezer_g.www.model.Dto_Ezer;
 import com.ezer_g.www.web.ezerDataCont;
 
+import ch.qos.logback.core.joran.action.NestedBasicPropertyIA;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -59,7 +60,7 @@ public class Ezer_Service_IMp {
 		
 		rtnHashMap.put("total_count", ntotalCount);
 		
-		rtnHashMap.put("noticeLIst", newsList);
+		rtnHashMap.put("newsList", newsList);
 		return rtnHashMap;
 		
 	}
@@ -103,6 +104,24 @@ public class Ezer_Service_IMp {
 			System.out.println("conten" + de.getQa_contents());
 			System.out.println("ti" + de.getQa_title());
 			rtnHashMap.put("rtn_message", 0);
+
+		}
+
+		return rtnHashMap;
+	}
+	public HashMap<String, Object> news_detail(Dto_Ezer de) {
+		HashMap<String, Object> inOutHashMap = new HashMap<String, Object>();
+		HashMap<String, Object> rtnHashMap = new HashMap();
+		if ("".equals(de.getNews_no()) || de.getNews_no() == 0 
+		) {
+			rtnHashMap.put("data", false);
+		} else {
+			inOutHashMap.put("news_no", de.getNews_no());
+			
+			List<Object> getNewSelect =  news.getNewsList(inOutHashMap);
+		
+			rtnHashMap.put("rtn_message", 0);
+			rtnHashMap.put("getNewSelect", getNewSelect);
 
 		}
 

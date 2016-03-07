@@ -11,4 +11,7 @@ public interface Dao_Ezer_News {
 
 	List get_News(HashMap<String, Object> inOutHashMap);
 
+	public List<Object> getNewsList(HashMap<String, Object> inOutHashMap);
+
+
 }

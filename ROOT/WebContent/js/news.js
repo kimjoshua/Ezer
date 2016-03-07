@@ -12,7 +12,7 @@ $(function() {
 	}
 	pagination(data);
 	$(document).on('click', 'li.pVal', function() {
-		$('.noticeTable,.pagination').children().remove();
+		$('.newsTable,.pagination').children().remove();
 		data.page_no=pN.page_no = ($(this).val() - 1) * 20;
 		data.paNo=pN.curpag = $(this).val()
 
@@ -20,7 +20,7 @@ $(function() {
 	});
 
 	$(document).on('click', '.next', function() {
-		$('.noticeTable,.pagination').children().remove();
+		$('.newsTable,.pagination').children().remove();
 		data.pageTab=pN.pageTab += 10
 		data.page_no=pN.page_no = (data.pageTab) * 20
 		data.paNo=pN.curpag = data.pageTab + 1
@@ -28,7 +28,7 @@ $(function() {
 		pagination(data);
 	});
 	$(document).on('click', '.before', function() {
-		$('.noticeTable,.pagination').children().remove();
+		$('.newsTable,.pagination').children().remove();
 
 		data.pageTab=pN.pageTab -= 10
 		data.page_no=pN.page_no = data.page_no - 20
@@ -46,11 +46,11 @@ $(function() {
 
 var pagination=function(rTdata){
 	$.get('/newsList',{"page_no":rTdata.page_no}, function(data) {
-console.log(data.total_count)
+console.log(data)
 //		$('.pagination').html(data).trigger("create")
 		if(data.total_count==0){
 			var text="해당 내용이 없습니다."
-			$('.noticeTable').append("<span style=' position: absolute; text-align: center; padding-top: 20px; left: 437px;;'>"+text+"</span>")
+			$('.newsTable').append("<span style=' position: absolute; text-align: center; padding-top: 20px; left: 437px;;'>"+text+"</span>")
 		}else{
 			
 			var dataList=JSON.stringify(data)
@@ -58,8 +58,11 @@ console.log(data.total_count)
 			var Page_Count=Math.ceil(T_Page/20);
 			pag_No.Page_Count=Page_Count
 			var pageTab =rTdata.pageTab
-			for(var i=0;i<data.noticeLIst.length;i++){
-				$('.noticeTable').append("<tr class='viewContents' data-contents='"+data.noticeLIst[i].notice_no+"'style='cursor:pointer'><td>"+data.noticeLIst[i].notice_no+"</td><td>"+data.noticeLIst[i].notice_title+"</td>/tr><tr class='nContents'data-contensView="+data.noticeLIst[i].notice_no+"><td colspan='2'>"+data.noticeLIst[i].notice_contents+"</a></td></tr>")
+			for(var i=0;i<data.newsList.length;i++){
+				$('.noticeTable').append("<tr class='viewContents' style='cursor:pointer'>" +
+						
+						"<td>"+data.newsList[i].regedate+"</td>" +
+						"<td><a href=/news_detail?news_no="+data.newsList[i].news_no+">" +data.newsList[i].news_title+"</td></a></tr>")
 				
 			}
 			

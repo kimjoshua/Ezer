@@ -70,7 +70,7 @@ var pagination = function(rTdata) {
 												"<tr class='viewContents' data-contents='"
 														+ data.noticeLIst[i].notice_no
 														+ "'style='cursor:pointer'>Auto</p><td>"
-														+ data.noticeLIst[i].notice_no
+														+ data.noticeLIst[i].regedate
 														+ "</td><td>"
 														+ data.noticeLIst[i].notice_title
 														+ "</td>/tr><tr class='nContents'data-contensView="

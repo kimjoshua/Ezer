@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <style>
 
-#dMenu .introB a#btn2depth span { left: 133.5px;}
+#dMenu .introB a#btn2depth span { left: 126px;}
 </style>
 
 <div id="header">
