@@ -162,10 +162,10 @@ public class ezerWebcon {
 	public String toroad() {
 		return "etc/toroad";
 	}
-//	@RequestMapping("news_detail")
-//	public String news_detail() {
-//		return "newsEvent/newsDetail";
-//	}
+	@RequestMapping("news_detail")
+	public String news_detail() {
+		return "newsEvent/newsDetail";
+	}
 
 
 		

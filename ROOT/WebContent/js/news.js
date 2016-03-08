@@ -44,6 +44,12 @@ $(function() {
 		pagination(data);
 
 	});
+	
+	
+//	$(document).on('click',"tr.viewContents [data-News_no]",function(){
+//	var news_Detail_no=$(this).attr("data-News_no")
+//	alert(news_Detail_no)
+//});
 });
 
 

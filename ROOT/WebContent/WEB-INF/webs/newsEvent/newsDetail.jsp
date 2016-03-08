@@ -43,19 +43,69 @@
 
 <script>
 
-var ss = location.href;
-var s = location.search.substring(1)
-var se=s.split("=");
-var addr = s.split("/")
-console.log( se[1]);
+
 $(function(){
-$.get("/news_View",function(data){
-	console.log(data)
+	
+	var ss = location.href;
+	var s = location.search.substring(1)
+	var se=s.split("=");
+	var addr = s.split("/");
+	var view_no= se[1];
+$.get("/news_de",{"news_no":view_no},function(data){
+	console.log(data.getNewSelect[0])
+	$('.noticeTable').append("<tr class='viewContents' style='cursor:pointer'>" +
+			"<td>" +data.getNewSelect[0].news_contents+"</td><</tr>")
+	
 });
 	
 })
 
 </script>
+<div id="wrapper">
+
+		<h1>Ezer cosmetic</h1>
+		<div class="moto"></div>
+		<div class="inwrap">
+			<%@ include file="../template/ne_nav.jsp"%>
+			<div id="contents" class="v1">
+				<div id="visualarea">
+					<div id="realcontents">
+						<div class="realcon">
+							<div class="mainText"
+								style="position: relative; padding: 5% 1% 1% 6%;">
+								<span
+									style="font-size: 1.3em; border-left: 3px solid #CCCCCC; padding-left: 6px;">뉴스</span>
+
+							</div>
+							<div class="introText">
+								<div class="newsTable">
+									<table>
+										<thead style="border-top: 0.2em solid grey;">
+											<tr style="text-align: center;">
+												<th style="text-align: center; width: 20%;">등록일</th>
+												<th style="text-align: center">제목</th>
+											</tr>
+										</thead>
+										<tbody class="noticeTable">
+
+										</tbody>
+
+									</table>
+
+										<ul class="pagination">
+										</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<%@ include file="../template/footer.jsp"%>
+
+		</div>
+		<div class="footerline"></div>
+	</div>
 
 </body>
 </html>

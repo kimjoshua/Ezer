@@ -171,4 +171,72 @@
 			</ul>
 		</div>
 	</div>
+	
+	
+<script type="text/javascript">
+// 변수에 넣어서 출력
+var s = location.href;
+var addr = s.split("/")
+console.log(addr[3])
+switch (addr[3]) {
+case 'cygneWrink':
+	$('#depth01').text('WRINKLEELIMINATION').appendTo();
+	break;
+case 'introMain':
+	$('.introB').append("<p style='position: relative;left: 74%;'>회사 소개 </p>");
+	break;
+case 'serviceB':
+	$('#depth01').text('BEAUTY').appendTo();
+	break;
+case 'history':
+	$('#depth01').text('역혁').appendTo();
+	break;
+case 'symbole':
+	$('#depth01').text('CI BI').appendTo();
+	break;
+case 'bioskin':
+	$('#depth01').text('Skin Care').appendTo();
+	break;
+case 'biocare':
+	$('#depth01').text('Hair Care').appendTo();
+	break;
+case 'bioato':
+	$('#depth01').text('ATO').appendTo();
+	break;
+case 'bioacn':
+	$('#depth01').text('ACN').appendTo();
+	break;
+case 'cygneBright':
+	$('#depth01').text('WHITE BRIGHTENING').appendTo();
+	break;
+case 'cygneWrink':
+	$('#depth01').text('WRINKLE ELIMINATION').appendTo();
+	break;
+case 'ad':
+	$('#depth01').text('AD').appendTo();
+	break;
+
+case 'news':
+	$('#depth01').text('NEWS').appendTo();
+	break;
+
+case 'event':
+	$('#depth01').text('EVENT').appendTo();
+	break;
+
+case 'media':
+	$('#depth01').text('media').appendTo();
+	break;
+case 'notice':
+	$('#depth01').text('공지사항').appendTo();
+	break;
+case 'qa':
+	$('#depth01').text('문의사항').appendTo();
+	break;
+
+}
+
+
+
+</script>
 </div>

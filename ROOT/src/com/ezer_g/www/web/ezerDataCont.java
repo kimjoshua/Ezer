@@ -57,13 +57,12 @@ public class ezerDataCont {
 		return result;
 		
 	}
-	@RequestMapping(value="/news_detail",produces = "application/json; charset=utf-8",method = RequestMethod.GET)
+	@RequestMapping(value="/news_de",produces = "application/json; charset=utf-8",method = RequestMethod.GET)
 	public @ResponseBody 
-	HashMap<String, Object> news_detail(HttpServletRequest req,HttpServletResponse rs,Dto_Ezer denn, ModelAndView mv)
+	HashMap<String, Object> news_de(HttpServletRequest req,HttpServletResponse rs,Dto_Ezer denn, ModelAndView mv)
 			throws Throwable {		
 	
 		HashMap<String, Object> result= se.news_detail(denn);
-		result.put("newsEvent/newsDetail","dd");
 		return result;
 		
 	}
