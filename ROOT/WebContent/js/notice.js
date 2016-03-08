@@ -105,8 +105,21 @@ var pagination = function(rTdata) {
 
 }
 function pageList(Page_Count, pageTab, curpag) {
-console.log(curpag)
-	for (var i = 1 + pageTab; i <= 10 + pageTab; i++) {
+
+var page_Len=0;
+
+if(10 > Page_Count){
+	page_Len=Page_Count
+	
+}else{
+	
+	if((10+pageTab)<Page_Count){
+		page_Len=10+pageTab
+	}else{
+		page_Len=Page_Count;
+	}
+}
+	for (var i = 1 + pageTab;i <=page_Len;  i++) {
 		if (i == curpag) {
 			$('.pagination')
 					.append(

@@ -75,7 +75,7 @@ public class Ezer_Service_IMp {
 		
 		rtnHashMap.put("total_count", ntotalCount);
 		
-		rtnHashMap.put("noticeLIst", eventList);
+		rtnHashMap.put("eventList", eventList);
 		return rtnHashMap;
 		
 	}
