@@ -78,7 +78,8 @@
 						<li><a href="cygneBright">WHITE BRIGHTENING </a></li>
 						<li><a href="/cygneWrink">WRINKLE ELIMINATION</a></li>
 						<li><a href="/seven">SEVEN ENOUGH</a></li>
-						<li><a href="/amp">SOLUTION 100</a></li>
+						<li><a href="/solution">SOLUTION 100</a></li>
+						<li><a href="/introBrand">브랜드 소개</a></li>
 					</ul></li>
 				<li><a href="#">뉴스 &amp; 이벤트 <span class="caret"></span></a>
 					<ul class="dropdown">
@@ -129,7 +130,8 @@
 							<li><a href="/cygneBright">WHITE BRIGHTENING</a></li>
 							<li><a href="/cygneWrink">WRINKLE ELIMINATION</a></li>
 							<li><a href="/seven">SEVEN ENOUGH</a></li>
-							<li><a href="/amp">SOLUTION 100</a></li>
+							<li><a href="/solution">SOLUTION 100</a></li>
+							<li><a href="/introBrand">브랜드 소개</a></li>
 						</ul></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -170,3 +172,31 @@
 		</div>
 	</div>
 </div>
+
+	
+<script type="text/javascript">
+// 변수에 넣어서 출력
+var s = location.href;
+var addr = s.split("/")
+console.log(addr[3])
+switch (addr[3]) {
+
+case 'notice':
+	$('.introB').append("<span style='position: inherit;left: 152px;cursor:pointer;float: left;' class='toggl'>공지 사항</span>");
+	break;
+case 'qa':
+	$('.introB').append("<span style='position: inherit;left: 152px;cursor:pointer;float: left;' class='toggl'>문의 </span>");
+	break;
+
+
+}
+
+$(function(){
+	$(document).on('click','span.toggl',function(){
+		$('.dropdown-menu').toggle();
+	});
+
+});
+
+
+</script>

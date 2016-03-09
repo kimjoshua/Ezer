@@ -76,7 +76,8 @@
 						<li><a href="cygneBright">WHITE BRIGHTENING </a></li>
 						<li><a href="/cygneWrink">WRINKLE ELIMINATION</a></li>
 						<li><a href="/seven">SEVEN ENOUGH</a></li>
-						<li><a href="/amp">SOLUTION 100</a></li>
+						<li><a href="/solution">SOLUTION 100</a></li>
+						<li><a href="/introBrand">브랜드 소개</a></li>
 					</ul></li>
 				<li><a href="#">뉴스 &amp; 이벤트 <span class="caret"></span></a>
 					<ul class="dropdown">
@@ -127,7 +128,8 @@
 							<li><a href="/cygneBright">WHITE BRIGHTENING</a></li>
 							<li><a href="/cygneWrink">WRINKLE ELIMINATION</a></li>
 							<li><a href="/seven">SEVEN ENOUGH</a></li>
-							<li><a href="/amp">SOLUTION 100</a></li>
+							<li><a href="/solution">SOLUTION 100</a></li>
+							<li><a href="/introBrand">브랜드 소개</a></li>
 						</ul></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -183,59 +185,30 @@ case 'cygneWrink':
 	$('#depth01').text('WRINKLEELIMINATION').appendTo();
 	break;
 case 'introMain':
-	$('.introB').append("<p style='position: relative;left: 74%;'>회사 소개 </p>");
+	$('.introB').append("<span style='position: relative;left: 74%;cursor:pointer' class='toggl'><a>회사 소개</a></span>");
+	break;
+case 'serviceH':
+	$('.introB').append("<span style='position: relative;left: 74%;cursor:pointer' class='toggl'><a>HEALTHY</a></span>");
 	break;
 case 'serviceB':
-	$('#depth01').text('BEAUTY').appendTo();
+	$('.introB').append("<span style='position: relative;left: 74%;cursor:pointer' class='toggl'><a>BEAUTY</a></span>");
 	break;
 case 'history':
-	$('#depth01').text('역혁').appendTo();
+	$('.introB').append("<span style='position: relative;left: 74%;cursor:pointer' class='toggl'><a>회사 연혁</a></span>");
 	break;
 case 'symbole':
-	$('#depth01').text('CI BI').appendTo();
+	$('.introB').append("<span style='position: relative;left: 74%;cursor:pointer' class='toggl'><a>CI / BI</a></span>");
 	break;
-case 'bioskin':
-	$('#depth01').text('Skin Care').appendTo();
+case 'introBrand':
+	$('.introB').append("<span style='position: relative;left: 74%;cursor:pointer' class='toggl'><a>브랜드 소개</a></span>");
 	break;
-case 'biocare':
-	$('#depth01').text('Hair Care').appendTo();
-	break;
-case 'bioato':
-	$('#depth01').text('ATO').appendTo();
-	break;
-case 'bioacn':
-	$('#depth01').text('ACN').appendTo();
-	break;
-case 'cygneBright':
-	$('#depth01').text('WHITE BRIGHTENING').appendTo();
-	break;
-case 'cygneWrink':
-	$('#depth01').text('WRINKLE ELIMINATION').appendTo();
-	break;
-case 'ad':
-	$('#depth01').text('AD').appendTo();
-	break;
-
-case 'news':
-	$('#depth01').text('NEWS').appendTo();
-	break;
-
-case 'event':
-	$('#depth01').text('EVENT').appendTo();
-	break;
-
-case 'media':
-	$('#depth01').text('media').appendTo();
-	break;
-case 'notice':
-	$('#depth01').text('공지사항').appendTo();
-	break;
-case 'qa':
-	$('#depth01').text('문의사항').appendTo();
-	break;
-
 }
 
+$(function(){
+	$(document).on('click','span.toggl',function(){
+		$('.subintroB').toggle();
+	});
+});
 
 
 </script>

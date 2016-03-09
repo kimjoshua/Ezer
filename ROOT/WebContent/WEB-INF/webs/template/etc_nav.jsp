@@ -1,5 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
+<style>
+.dropdown-submenu>a:after {
+	border-left-color: white;
+}
+
+#dMenu .introB a#btn2depth span {
+	left: 126px;
+    top: -21px;
+}
+</style>
 <div id="header">
 	<div class="logo desktop">
 		<a href="/" onclick="" title="홈페이지로 이동"><img id="deskLogo"
@@ -69,7 +80,8 @@
 						<li><a href="cygneBright">WHITE BRIGHTENING </a></li>
 						<li><a href="/cygneWrink">WRINKLE ELIMINATION</a></li>
 						<li><a href="/seven">SEVEN ENOUGH</a></li>
-						<li><a href="/amp">SOLUTION 100</a></li>
+						<li><a href="/solution">SOLUTION 100</a></li>
+						<li><a href="/introBrand">브랜드 소개</a></li>
 					</ul></li>
 				<li><a href="#">뉴스 &amp; 이벤트 <span class="caret"></span></a>
 					<ul class="dropdown">
@@ -120,7 +132,8 @@
 							<li><a href="/cygneBright">WHITE BRIGHTENING</a></li>
 							<li><a href="/cygneWrink">WRINKLE ELIMINATION</a></li>
 							<li><a href="/seven">SEVEN ENOUGH</a></li>
-							<li><a href="/amp">SOLUTION 100</a></li>
+							<li><a href="/solution">SOLUTION 100</a></li>
+							<li><a href="/introBrand">브랜드 소개</a></li>
 						</ul></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -150,15 +163,14 @@
 			<ul class="">
 				<li class=" dropdown-submenu" style="top: 13px;"><a href="#"
 					class="dropdowndropdown-toggle" data-toggle="dropdown"
-					id="btn2depth" class="hover"> 뉴스 &amp;이벤트 <span class="">메뉴 목록
-							닫기</span></a>
+					id="btn2depth" class="hover"> 뉴스 &amp;이벤트 <span class="">메뉴
+							목록 닫기</span></a>
 
 					<ul class="subintroB dropdown-menu"
 						style="left: 133px; padding-left: 0; padding-top: 0;">
-						<li ><a href="/toroad">오시는길</a></li>
-					<li ><a href="javascript:void(0)" class="blt-balloon toggleTrigger">
-							패밀리 사이트
-				</a></li>
+						<li><a href="/toroad">오시는길</a></li>
+						<li><a href="javascript:void(0)"
+							class="blt-balloon toggleTrigger"> 패밀리 사이트 </a></li>
 					</ul></li>
 			</ul>
 		</div>

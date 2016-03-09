@@ -103,9 +103,9 @@ public class ezerWebcon {
 	public String cygneWrink() {
 		return "/product/cygneWrink";
 	}
-	@RequestMapping("/amp")
+	@RequestMapping("/solution")
 	public String amp() {
-		return "/product/amp";
+		return "/product/solution";
 	}
 	@RequestMapping("/seven")
 	public String seven() {

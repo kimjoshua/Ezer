@@ -120,7 +120,7 @@
 						<a href="/seven">SEVEN ENOUGH</a>
 					</dd>
 					<dd>
-						<a href="/amp">SOLUTION 100</a>
+						<a href="/solution">SOLUTION 100</a>
 					</dd>
 				</dl>
 			</li>

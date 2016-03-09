@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
-
+h5{
+	color: #D2D2D2;
+}
 body {
 	-webkit-text-size-adjust: none;
 	margin: 0;
@@ -823,7 +825,7 @@ body, html {
 	overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4,  h6 {
 	margin: 0;
 	padding: 0;
 	color: #333333;

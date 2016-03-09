@@ -82,7 +82,7 @@
 											<img class=" introProduct" src="/img/intro_ezer_main.png"
 												data-holder-rendered="true" display:block;="">
 											<div class="caption">
-												<h3>E-ZER</h3>
+												<h5>E-ZER</h5>
 											</div>
 										</div>
 									</div>
@@ -91,7 +91,7 @@
 											<img class=" introProduct" src="/img/intro_coloris_main.png"
 												data-holder-rendered="true" display:block;="">
 											<div class="caption">
-												<h3>COLOR EZ</h3>
+												<h5>COLOR EZ</h5>
 											</div>
 
 
@@ -102,7 +102,7 @@
 											<img class=" introProduct" src="/img/intro_galaxia_main.png"
 												data-holder-rendered="true" display:block;="">
 											<div class="caption">
-												<h3>GALAXIA</h3>
+												<h5>GALAXIA</h5>
 											</div>
 
 										</div>
@@ -114,7 +114,7 @@
 											<img class=" introProduct" src="/img/intro_teatoxy_main.png"
 												data-holder-rendered="true" display:block;="">
 											<div class="caption">
-												<h3>TEATOXY</h3>
+												<h5>TEATOXY</h5>
 											</div>
 
 
@@ -126,7 +126,7 @@
 												src="/img/intro_nanobuble_main.png"
 												data-holder-rendered="true" display:block;="">
 											<div class="caption">
-												<h3>HYBRID NANO</h3>
+												<h5>HYBRID NANO</h5>
 											</div>
 
 										</div>
@@ -136,7 +136,7 @@
 											<img class=" introProduct" src="/img/intro_margot_main.png"
 												data-holder-rendered="true" display:block;="">
 											<div class="caption">
-												<h3>MARGOT</h3>
+												<h5>MARGOT</h5>
 											</div>
 
 										</div>
