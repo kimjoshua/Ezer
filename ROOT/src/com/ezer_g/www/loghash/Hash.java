@@ -1,6 +1,10 @@
 package com.ezer_g.www.loghash;
 
+import org.springframework.beans.factory.annotation.Autowired;
 
+import com.ezer_g.www.service.Ezer_Service_IMp;
+
+import lombok.Setter;
 
 /**
 @file KISA_SHA256.java
@@ -8,14 +12,11 @@ package com.ezer_g.www.loghash;
 @author Copyright (c) 2013 by KISA
 @remarks http://seed.kisa.or.kr/
 */
-
+@Setter
 public class Hash {
-/*	private Lrunservice service;
+	@Autowired
+	private Ezer_Service_IMp service;
 
-	public void setService(Lrunservice service) {
-		this.service = service;
-	}
-	*/
 	
 	
 	// DEFAULT : JAVA = BIG_ENDIAN

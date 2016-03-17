@@ -66,6 +66,12 @@
 		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
 		<property name="supportedMediaTypes" value="application/json"></property>
 	</bean>
+	
+<!-- 	<bean class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+	<property name="objectMapper" ref="objectMapper"></property>
+	<property name="modelKey" value="result"></property>
+	<property name="extractValueFromSingleKeyModel" value="true"></property>
+	</bean> -->
  	<!-- <mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/**" />
