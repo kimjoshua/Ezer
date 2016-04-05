@@ -20,38 +20,38 @@
 	<!-- 공통 관심사 -->
  <aop:config />
  <aop:aspectj-autoproxy />
-	<bean id="mainAop" class="com.ezer_g.www.aop.mainAop">	</bean> 
-	<bean id="fileLogger" class="com.ezer_g.www.aop.fileLogger"></bean> 
+	<bean id="mainAop" class="com.secuTest.www.aop.mainAop">	</bean> 
+	<bean id="fileLogger" class="com.secuTest.www.aop.fileLogger"></bean> 
 
 	<!-- 웹컨트 -->
-	<bean id="ezerWebcont" class="com.ezer_g.www.web.ezerWebcon">
+	<bean id="ezerWebcont" class="com.secuTest.www.web.secuWebcon">
 		<property name="service" ref="ezer_Notice_Service_IMp"></property>
 	</bean>
-	<bean id="ezerDataCont" class="com.ezer_g.www.web.ezerDataCont">
+	<bean id="ezerDataCont" class="com.secuTest.www.web.secuDataCont">
 		<property name="service" ref="ezer_Notice_Service_IMp"></property>
 	</bean>
 
 <!-- dao임플 -->
 
-	<bean id="dao_Dao_Ezer_notice_imp" class="com.ezer_g.www.dao.Dao_Ezer_notice_imp">
+	<bean id="dao_Dao_Ezer_notice_imp" class="com.secuTest.www.dao.Dao_secu_notice_imp">
 		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
 	</bean>
 
-	<bean id="dao_Ezer_faq_imp" class="com.ezer_g.www.dao.Dao_Ezer_faq_imp">
+	<bean id="dao_Ezer_faq_imp" class="com.secuTest.www.dao.Dao_secu_faq_imp">
 		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
 	</bean>
-	<bean id="dao_Ezer_Qa_imp" class="com.ezer_g.www.dao.Dao_Ezer_Qa_imp">
+	<bean id="dao_Ezer_Qa_imp" class="com.secuTest.www.dao.Dao_secu_Qa_imp">
 		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
 	</bean>
-	<bean id="dao_Ezer_news_Imp" class="com.ezer_g.www.dao.Dao_Ezer_news_Imp">
+	<bean id="dao_Ezer_news_Imp" class="com.secuTest.www.dao.Dao_secu_news_Imp">
 		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
 	</bean>
-	<bean id="dao_Ezer_event_imp" class="com.ezer_g.www.dao.Dao_Ezer_event_imp">
+	<bean id="dao_Ezer_event_imp" class="com.secuTest.www.dao.Dao_secu_event_imp">
 		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
 	</bean>
 
 	<!-- 서비스 임플 -->
-	<bean id="ezer_Notice_Service_IMp" class="com.ezer_g.www.service.Ezer_Service_IMp">
+	<bean id="ezer_Notice_Service_IMp" class="com.secuTest.www.service.secu_Service_IMp">
 		<property name="den" ref="dao_Dao_Ezer_notice_imp"></property>
 		<property name="def" ref="dao_Ezer_faq_imp"></property>
 		<property name="qa" ref="dao_Ezer_Qa_imp"></property>
@@ -66,10 +66,16 @@
 		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
 		<property name="supportedMediaTypes" value="application/json"></property>
 	</bean>
+	
+<!-- 	<bean class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+	<property name="objectMapper" ref="objectMapper"></property>
+	<property name="modelKey" value="result"></property>
+	<property name="extractValueFromSingleKeyModel" value="true"></property>
+	</bean> -->
  	<!-- <mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/**" />
-			<bean class="com.ezer_g.www.aop.interceptors"></bean>
+			<bean class="com.secuTest.www.aop.interceptors"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors>  -->
 

@@ -197,15 +197,13 @@ display: inline-block;
 }
 
 .detailIntro {
-	position: absolute;
-	z-index: 15;
+	position: relative;
 	background-color: white;
-	top: 4%;
-	right: -81%;
-	padding-left: 1%;
 	width: 175%;
 }
-
+.prodImg{
+	width: 20%;
+}
 .pagination {
 	position: relative;
 	left: 25%

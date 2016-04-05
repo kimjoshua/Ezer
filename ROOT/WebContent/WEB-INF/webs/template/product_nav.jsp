@@ -144,7 +144,6 @@
 						<ul class="dropdown-menu">
 							<li><a href="/notice" onclick="">NOTICE</a></li>
 							<li><a href="/qa" onclick="">Q &amp; A</a></li>
-							<li><a href="#">One more separated link</a></li>
 						</ul></li>
 				</ul>
 			</div>

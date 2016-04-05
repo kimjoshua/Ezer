@@ -3,9 +3,9 @@
 <!-- <configuration>
 <mappers>
 
-<mapper resource="com/ezer_g/www/mapper/ezer_notice.xml"/>
-<mapper resource="com/ezer_g/www/mapper/ezer_faq.xml"/>
-<mapper resource="com/ezer_g/www/mapper/ezer_qa.xml"/>
-<mapper resource="com/ezer_g/www/mapper/ezer_news.xml"/>
+<mapper resource="com/secuTest/www/mapper/ezer_notice.xml"/>
+<mapper resource="com/secuTest/www/mapper/ezer_faq.xml"/>
+<mapper resource="com/secuTest/www/mapper/ezer_qa.xml"/>
+<mapper resource="com/secuTest/www/mapper/ezer_news.xml"/>
 </mappers>
 </configuration> -->

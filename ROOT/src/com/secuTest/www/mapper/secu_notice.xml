@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="notice">
+
+	<select id="notice_LIst" parameterType="java.util.HashMap"	resultType="java.util.HashMap">
+		select * FROM ezer_notice
+	ORDER BY notice_no DESC
+	
+	<!-- 보여줄 페이지 -->
+	<!-- LIMIT 10 -->
+	LIMIT 20
+<!-- 	이동할 페이지 -->
+    OFFSET ${page_no};
+		
+		
+		
+	</select>
+	<!-- 문의 카운트 조회 -->
+	<select id="noticeCount" resultType="java.lang.Integer"
+		parameterType="java.util.HashMap">
+		SELECT COUNT(*)
+		FROM ezer_notice
+<!-- 		<where>
+			<if test="contact_type &gt; 0 ">
+				AND contact_type = #{contact_type}
+			</if>
+			<if test="contact_register !=null and !contact_register.equalsIgnoreCase('')">
+				AND name like '%'+ #{contact_register} +'%'
+			</if>
+			<if test="contact_result &gt; 0 ">
+				AND contact_result = #{contact_result}
+			</if>
+			
+		</where> -->
+
+	</select>
+<insert id="addNotice" parameterType="java.util.HashMap">
+		INSERT INTO ezer_notice
+		(notice_title
+		,	notice_contents
+		)
+		VALUES(
+			'${notice_title}'
+		,	'${notice_contents}'
+
+		)
+		
+	</insert>
+	
+
+</mapper>

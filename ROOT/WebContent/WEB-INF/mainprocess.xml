@@ -8,40 +8,58 @@
 		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
-	<context:component-scan base-package="com.ezer_g.*"></context:component-scan>
-
+	<context:component-scan base-package="com.secuTest.*"/>
 
 	<bean id="internalResourceViewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:prefix="/WEB-INF/webs" p:suffix=".jsp"></bean>
-
+<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+	<property name="basenames">
+		<list>
+			<value>
+				/WEB-INF/message/message.properties
+			</value>
+		</list>
+	</property>
+	<property name="defaultEncoding" value="UTF-8"/>
+	<property name="cacheSeconds" value="5"/>
+</bean>
 	<bean id="propertyPlaceholderConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="location" value="/WEB-INF/mybatis/mysql.properties"></property>
 	</bean>
-
+<!-- 	<bean id="propertyPlaceholderConfigurer_2"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="/WEB-INF/mybatis/mysql_2.properties"></property>
+	</bean>
+ -->
 
 	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg ref="sqlSessionFactoryBean" index="0"/>
 	</bean>
 
- <!-- query xml create read -->
-<!-- 	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="simpleDriverDataSource"></property>
-		<property name="configLocation" value="/WEB-INF/mybatis/SqlMapConf.xml"></property>
-	</bean> -->
-	
-	
-	
-	
 	<!-- query xml auto read -->
  	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="simpleDriverDataSource"></property>
 		<property name="databaseIdProvider" ref="databaseIdProvider"></property>
 		<property name="configLocation" value="/WEB-INF/mybatis/config/sql-map-config.xml"></property>
-		<property name="mapperLocations" value="classpath:com/ezer_g/www/mapper/*.xml"></property>
+		<property name="mapperLocations" value="classpath:com/secuTest/www/mapper/*.xml"></property>
 	</bean> 
-	
+	<!-- <bean id="sqlSessionTemplate_2" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactoryBean_2" index="0"/>
+	</bean>
+	query xml auto read
+ 	<bean id="sqlSessionFactoryBean_2" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="simpleDriverDataSource_2"></property>
+		<property name="databaseIdProvider" ref="databaseIdProvider"></property>
+		<property name="configLocation" value="/WEB-INF/mybatis/config/sql-map-config.xml"></property>
+		<property name="mapperLocations" value="classpath:com/secuTest/www/mapper/*.xml"></property>
+	</bean>  -->
+ <!-- query xml create read -->
+<!-- 	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="simpleDriverDataSource"></property>
+		<property name="configLocation" value="/WEB-INF/mybatis/SqlMapConf.xml"></property>
+	</bean> -->	
 	<bean id="databaseIdProvider" class="org.apache.ibatis.mapping.VendorDatabaseIdProvider">
 		<property name="properties" ref="vendorProperties"></property>
 	</bean>
@@ -49,10 +67,10 @@
 	<bean id="vendorProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
 		<property name="properties">
 			<props>
-				<prop key="SQL Server">sqlserver</prop>
+				<!-- <prop key="SQL Server">sqlserver</prop>
 				<prop key="DB2">db2</prop>
-				<prop key="Oracle">oracle</prop>
-				<prop key="MySql">mysql</prop>
+				<prop key="Oracle">oracle</prop> -->
+				<prop key="MySql">mySql</prop>
 			</props>
 		</property>
 	
@@ -65,6 +83,13 @@
 		<property name="username" value="${username}" />
 		<property name="password" value="${password}" />
 	</bean>
+<!-- 	<bean id="simpleDriverDataSource_2"
+		class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass" value="${driver}" />
+		<property name="url" value="${url}" />
+		<property name="username" value="${username}" />
+		<property name="password" value="${password}" />
+	</bean> -->
 
 
 
