@@ -17,18 +17,15 @@ import org.springframework.stereotype.Repository;
 import com.ezer_g.www.aop.interceptors;
 import com.ezer_g.www.model.Dto_Ezer;
 
+import lombok.Setter;
 
+@Setter
 public class Dao_Ezer_notice_imp extends SqlSessionDaoSupport implements Dao_Ezer_notice{
 	
 	
 	private JdbcTemplate jdbcTemplate;
-
 	private DataSource dataSource;
 	
-	public void setDataSource(DataSource dataSource) {
-		this.jdbcTemplate = new JdbcTemplate(dataSource);
-	}
-
 	@Override
 	public List get_Notice(HashMap<String, Object> inOutHashMap) {
 		SqlSession ss = getSqlSession();

@@ -17,17 +17,14 @@ import org.springframework.stereotype.Repository;
 import com.ezer_g.www.aop.interceptors;
 import com.ezer_g.www.model.Dto_Ezer;
 
+import lombok.Setter;
 
+@Setter
 public class Dao_Ezer_Qa_imp extends SqlSessionDaoSupport implements Dao_Ezer_Qa{
 
-	
 	private JdbcTemplate jdbcTemplate;
 	private DataSource dataSource;
 	
-	public void setDataSource(DataSource dataSource) {
-		this.jdbcTemplate = new JdbcTemplate(dataSource);
-	}
-
 	@Override
 	public void addQA(HashMap<String, Object> inOutHashMap) {
 		SqlSession ss = getSqlSession();

@@ -11,13 +11,16 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.ezer_g.www.model.Dto_Ezer;
 
+import lombok.Setter;
+
+@Setter
 public class Dao_Ezer_faq_imp extends SqlSessionDaoSupport implements Dao_Ezer_faq{
 	private JdbcTemplate jdbcTemplate;
 	private DataSource dataSource;
 	
-	public void setDataSource(DataSource dataSource) {
-		this.jdbcTemplate = new JdbcTemplate(dataSource);
-	}
+//	public void setDataSource(DataSource dataSource) {
+//		this.jdbcTemplate = new JdbcTemplate(dataSource);
+//	}
 
 	@Override
 	public List<Dto_Ezer> get_search(Dto_Ezer den) throws DataAccessException {

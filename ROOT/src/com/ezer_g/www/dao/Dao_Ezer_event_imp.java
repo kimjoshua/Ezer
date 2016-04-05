@@ -11,13 +11,12 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.ezer_g.www.model.Dto_Ezer;
 
+import lombok.Setter;
+
+@Setter
 public class Dao_Ezer_event_imp extends SqlSessionDaoSupport implements Dao_Ezer_event{
 	private JdbcTemplate jdbcTemplate;
 	private DataSource dataSource;
-	
-	public void setDataSource(DataSource dataSource) {
-		this.jdbcTemplate = new JdbcTemplate(dataSource);
-	}
 
 
 	@Override

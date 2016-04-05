@@ -11,13 +11,13 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.ezer_g.www.model.Dto_Ezer;
 
+import lombok.Setter;
+
+@Setter
 public class Dao_Ezer_news_Imp extends SqlSessionDaoSupport implements Dao_Ezer_News{
 	private JdbcTemplate jdbcTemplate;
 	private DataSource dataSource;
-	
-	public void setDataSource(DataSource dataSource) {
-		this.jdbcTemplate = new JdbcTemplate(dataSource);
-	}
+
 	public List<HashMap<String, Object>> get_News(HashMap<String, Object> inOutHashMap) {
 	SqlSession ss = getSqlSession();
 		

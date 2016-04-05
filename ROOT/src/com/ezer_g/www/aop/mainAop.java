@@ -51,7 +51,6 @@ public class mainAop {
 	// } catch (Throwable e) {
 	// System.out.println("fail");
 	//
-	//
 	// return ((ProceedingJoinPoint) pjp).proceed();
 	// }
 	// System.out.println("here is Around");
@@ -147,7 +146,6 @@ public class mainAop {
 
 			return hmap;
 		} catch (Throwable e) {
-			System.out.println("fail");
 
 			hmap.put("rtn_messga", -1);
 			return hmap;
