@@ -1,14 +1,10 @@
 package com.ezer_g.www.model;
 
-import java.util.HashMap;
-import java.util.List;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import lombok.ToString;
 
-@Getter
-@Setter
+@Data
 @ToString
 public class Dto_Ezer extends MainModel {
 

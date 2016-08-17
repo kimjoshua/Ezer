@@ -22,10 +22,11 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Setter
+@Getter
 @Service
 @Transactional
 public class Ezer_Service_IMp {
-	private static final org.slf4j.Logger logger = LoggerFactory.getLogger(ezerDataCont.class);
+	private static final org.slf4j.Logger logger = LoggerFactory.getLogger(Ezer_Service_IMp.class);
 	
 	
 	private Dao_Ezer_notice den;
