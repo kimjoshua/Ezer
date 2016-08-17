@@ -44,8 +44,7 @@ $(function() {
 });
 
 var pagination = function(rTdata) {
-	$
-			.get(	'/eventList',{"page_no" : rTdata.page_no},function(data) {
+	$.get(	'/eventList',{"page_no" : rTdata.page_no},function(data) {
 
 				if(data.total_count==0){
 					var text="해당 내용이 없습니다."
