@@ -1,16 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.2.4</modelVersion>
-	<groupId>ROOT</groupId>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Joshuakim</groupId>
 	<artifactId>ROOT</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+	<version>0.0.1</version>
 	<properties>
 		<java-version>1.8</java-version>
 		<org.springframework-version>3.2.5.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.7.4</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
-		<org.springframework.mobile-version>1.0.1.RELEASE</org.springframework.mobile-version>
+		<!-- <org.springframework.mobile-version>1.0.1.RELEASE</org.springframework.mobile-version> -->
 	</properties>
 
 	<dependencies>
@@ -97,12 +97,6 @@
 			<version>2.5</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>javax.servlet.jsp</groupId>
-			<artifactId>jsp-api</artifactId>
-			<version>2.1</version>
-			<scope>provided</scope>
-		</dependency>
 		<!-- transaction -->
 		<dependency>
 			<groupId>cglib</groupId>
@@ -110,11 +104,6 @@
 			<version>3.1</version>
 		</dependency>
 		<!-- mybatis -->
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis</artifactId>
-			<version>3.2.2</version>
-		</dependency>
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
@@ -174,12 +163,12 @@
 			<artifactId>spring-mobile-device</artifactId>
 			<version>1.0.0.M3</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.mobile</groupId>
 			<artifactId>spring-mobile-device</artifactId>
 			<version>${org.springframework.mobile-version}</version>
 		</dependency>
-
+ -->
 
 		<!-- javamail -->
 		<dependency>
@@ -252,14 +241,7 @@
 			</snapshots>
 		</repository>
 
-		<repository>
-			<id>spring-snapshots</id>
-			<name>Spring Snapshots</name>
-			<url>http://repo.spring.io/snapshot</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
+
 		<repository>
 			<id>springsource-repo</id>
 			<name>SpringSource Repository</name>
